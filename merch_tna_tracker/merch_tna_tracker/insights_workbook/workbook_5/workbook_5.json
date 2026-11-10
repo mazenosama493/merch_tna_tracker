@@ -17,7 +17,7 @@
       "operations": [
         {
           "data_source": "Site DB",
-          "raw_sql": "SELECT \n    t.name AS tracker_id,\n    t.buyer,\n    t.manager,\n    t.merchant,\n    t.style_no,\n    t.sales_order,\n    t.order_status,\n    t.so_qty,\n    t.total_events,\n    t.failed_events,\n    ROUND((t.failed_events / NULLIF(t.total_events, 0)) * 100, 1) AS order_failure_rate_pct\nFROM `tabOrder TNA Tracker` t\nWHERE t.order_status != 'Completed'",
+          "raw_sql": "SELECT \n    t.name AS tracker_id,\n    t.factory,\n    t.buyer,\n    t.manager,\n    t.merchant,\n    t.style_no,\n    t.sales_order,\n    t.order_status,\n    t.so_qty,\n    t.total_events,\n    t.failed_events,\n    ROUND((t.failed_events / NULLIF(t.total_events, 0)) * 100, 1) AS order_failure_rate_pct\nFROM `tabOrder TNA Tracker` t\nWHERE t.order_status != 'Completed'",
           "type": "sql"
         }
       ]
@@ -35,7 +35,7 @@
       "operations": [
         {
           "data_source": "Site DB",
-          "raw_sql": "SELECT \n    t.name AS tracker_id,\n    t.buyer,\n    t.manager,\n    t.merchant,\n    t.style_no,\n    t.sales_order,\n    t.ex_fty_date AS planned_ex_fty,\n    d.plan_date AS hod_plan_date,\n    d.actual_date AS hod_actual_date,\n    COALESCE(\n        DATEDIFF(d.plan_date, d.actual_date),\n        0\n    ) AS ex_fty_slippage_days\nFROM `tabOrder TNA Tracker` t\nLEFT JOIN `tabTNA Tracker Detail` d ON d.parent = t.name AND d.event_name = 'HOD'",
+          "raw_sql": "SELECT \n    t.name AS tracker_id,\n    t.factory,\n    t.buyer,\n    t.manager,\n    t.merchant,\n    t.style_no,\n    t.sales_order,\n    t.ex_fty_date AS planned_ex_fty,\n    d.plan_date AS hod_plan_date,\n    d.actual_date AS hod_actual_date,\n    COALESCE(\n        DATEDIFF(d.plan_date, d.actual_date),\n        0\n    ) AS ex_fty_slippage_days\nFROM `tabOrder TNA Tracker` t\nLEFT JOIN `tabTNA Tracker Detail` d ON d.parent = t.name AND d.event_name = 'HOD'",
           "type": "sql"
         }
       ]
@@ -53,7 +53,7 @@
       "operations": [
         {
           "data_source": "Site DB",
-          "raw_sql": "SELECT \n    t.buyer,\n    t.manager,\n    t.merchant,\n    t.style_no,\n    t.sales_order,\n    d.event_name AS bottleneck_event,\n    DATEDIFF(d.plan_date, d.actual_date) AS delay_days,\n    CONCAT(\n        d.event_name, ' (', t.buyer, ' - ', t.style_no, ') | Plan: ', \n        DATE_FORMAT(d.plan_date, '%d-%b'), ' -> Act: ', DATE_FORMAT(d.actual_date, '%d-%b')\n    ) AS bottleneck_details\nFROM `tabOrder TNA Tracker` t\nJOIN `tabTNA Tracker Detail` d ON d.parent = t.name\nWHERE t.order_status != 'Completed'\n  AND d.actual_date IS NOT NULL\n  AND d.actual_date > d.plan_date\nORDER BY DATEDIFF(d.plan_date, d.actual_date) ASC",
+          "raw_sql": "SELECT \n    t.buyer,\n    t.factory,\n    t.manager,\n    t.merchant,\n    t.style_no,\n    t.sales_order,\n    d.event_name AS bottleneck_event,\n    DATEDIFF(d.plan_date, d.actual_date) AS delay_days,\n    CONCAT(\n        d.event_name, ' (', t.buyer, ' - ', t.style_no, ') | Plan: ', \n        DATE_FORMAT(d.plan_date, '%d-%b'), ' -> Act: ', DATE_FORMAT(d.actual_date, '%d-%b')\n    ) AS bottleneck_details\nFROM `tabOrder TNA Tracker` t\nJOIN `tabTNA Tracker Detail` d ON d.parent = t.name\nWHERE t.order_status != 'Completed'\n  AND d.actual_date IS NOT NULL\n  AND d.actual_date > d.plan_date\nORDER BY DATEDIFF(d.plan_date, d.actual_date) ASC",
           "type": "sql"
         }
       ]
@@ -71,7 +71,7 @@
       "operations": [
         {
           "data_source": "Site DB",
-          "raw_sql": "SELECT\n    t.name AS tracker,\n    t.buyer,\n    t.manager,\n    t.merchant,\n    t.style_no,\n    t.sales_order,\n    d.event_name,\n    DATEDIFF(d.actual_date, d.plan_date) AS total_delay,\n    DATEDIFF(d.actual_date, d.plan_date) AS `Total Delay`,\n    CASE WHEN DATEDIFF(d.actual_date, d.plan_date) BETWEEN 1 AND 6\n         THEN DATEDIFF(d.actual_date, d.plan_date) END AS `Minor Delay (1-6d)`,\n    CASE WHEN DATEDIFF(d.actual_date, d.plan_date) BETWEEN 7 AND 14\n         THEN DATEDIFF(d.actual_date, d.plan_date) END AS `Moderate Delay (7-14d)`,\n    CASE WHEN DATEDIFF(d.actual_date, d.plan_date) > 14\n         THEN DATEDIFF(d.actual_date, d.plan_date) END AS `Severe Delay (>14d)`\nFROM `tabOrder TNA Tracker` t\nJOIN `tabTNA Tracker Detail` d ON d.parent = t.name\nWHERE t.order_status != 'Completed'\n    AND d.actual_date IS NOT NULL\n    AND d.actual_date > d.plan_date",
+          "raw_sql": "SELECT\n    t.name AS tracker,\n    t.factory,\n    t.buyer,\n    t.manager,\n    t.merchant,\n    t.style_no,\n    t.sales_order,\n    d.event_name,\n    DATEDIFF(d.actual_date, d.plan_date) AS total_delay,\n    DATEDIFF(d.actual_date, d.plan_date) AS `Total Delay`,\n    CASE WHEN DATEDIFF(d.actual_date, d.plan_date) BETWEEN 1 AND 6\n         THEN DATEDIFF(d.actual_date, d.plan_date) END AS `Minor Delay (1-6d)`,\n    CASE WHEN DATEDIFF(d.actual_date, d.plan_date) BETWEEN 7 AND 14\n         THEN DATEDIFF(d.actual_date, d.plan_date) END AS `Moderate Delay (7-14d)`,\n    CASE WHEN DATEDIFF(d.actual_date, d.plan_date) > 14\n         THEN DATEDIFF(d.actual_date, d.plan_date) END AS `Severe Delay (>14d)`\nFROM `tabOrder TNA Tracker` t\nJOIN `tabTNA Tracker Detail` d ON d.parent = t.name\nWHERE t.order_status != 'Completed'\n    AND d.actual_date IS NOT NULL\n    AND d.actual_date > d.plan_date",
           "type": "sql"
         }
       ]
@@ -89,7 +89,7 @@
       "operations": [
         {
           "data_source": "Site DB",
-          "raw_sql": "SELECT \n    t.buyer,\n    t.manager,\n    t.merchant,\n    t.style_no,\n    t.sales_order,\n    d.name AS detail_row_id,\n    d.event_name,\n    CASE \n        WHEN d.actual_date IS NULL THEN 'Marked N/A (Unlogged)'\n        WHEN DATEDIFF(d.actual_date, d.plan_date) > 14 THEN 'Severe Delay (>14d)'\n        WHEN DATEDIFF(d.actual_date, d.plan_date) BETWEEN 7 AND 14 THEN 'Moderate Delay (7–14d)'\n        WHEN DATEDIFF(d.actual_date, d.plan_date) BETWEEN 1 AND 6 THEN 'Minor Delay (1–6d)'\n        ELSE 'On Time / Early (<=0d)'\n    END AS health_category\nFROM `tabOrder TNA Tracker` t\nJOIN `tabTNA Tracker Detail` d ON d.parent = t.name\nWHERE t.order_status != 'Completed'",
+          "raw_sql": "SELECT \n    t.buyer,\n    t.factory,\n    t.manager,\n    t.merchant,\n    t.style_no,\n    t.sales_order,\n    d.name AS detail_row_id,\n    d.event_name,\n    CASE \n        WHEN d.actual_date IS NULL THEN 'Marked N/A (Unlogged)'\n        WHEN DATEDIFF(d.actual_date, d.plan_date) > 14 THEN 'Severe Delay (>14d)'\n        WHEN DATEDIFF(d.actual_date, d.plan_date) BETWEEN 7 AND 14 THEN 'Moderate Delay (7–14d)'\n        WHEN DATEDIFF(d.actual_date, d.plan_date) BETWEEN 1 AND 6 THEN 'Minor Delay (1–6d)'\n        ELSE 'On Time / Early (<=0d)'\n    END AS health_category\nFROM `tabOrder TNA Tracker` t\nJOIN `tabTNA Tracker Detail` d ON d.parent = t.name\nWHERE t.order_status != 'Completed'",
           "type": "sql"
         }
       ]
@@ -107,7 +107,7 @@
       "operations": [
         {
           "data_source": "Site DB",
-          "raw_sql": "SELECT \n    t.buyer,\n    t.manager,\n    t.merchant,\n    t.style_no,\n    t.sales_order,\n    COALESCE(e.sequence, 99) AS seq,\n    CONCAT(LPAD(COALESCE(e.sequence, 99), 2, '0'), ' - ', d.event_name) AS milestone_ordered,\n    d.event_name AS milestone,\n    d.plan_date AS planned_date,\n    d.actual_date AS actual_date,\n    d.days_offset AS planned_day_offset,\n    (d.days_offset + DATEDIFF(d.actual_date, d.plan_date)) AS actual_day_offset,\n    -- 1. Positive number for delays (e.g., +21 days late)\n    DATEDIFF(d.actual_date, d.plan_date) AS delay_days,\n    -- 2. Negative number for delays (e.g., -21 days variance, matching your cards)\n    DATEDIFF(d.plan_date, d.actual_date) AS variance_days,\n    CASE \n        WHEN DATEDIFF(d.actual_date, d.plan_date) > 14 THEN 'Severe Delay (>14d)'\n        WHEN DATEDIFF(d.actual_date, d.plan_date) BETWEEN 7 AND 14 THEN 'Moderate Delay (7–14d)'\n        WHEN DATEDIFF(d.actual_date, d.plan_date) BETWEEN 1 AND 6 THEN 'Minor Delay (1–6d)'\n        ELSE 'On Time (<=0d)'\n    END AS delay_severity\nFROM `tabOrder TNA Tracker` t\nJOIN `tabTNA Tracker Detail` d ON d.parent = t.name\nLEFT JOIN `tabTNA Event` e ON e.name = d.event_name\nWHERE t.order_status != 'Completed'\n  AND d.actual_date IS NOT NULL",
+          "raw_sql": "SELECT \n    t.buyer,\n    t.factory,\n    t.manager,\n    t.merchant,\n    t.style_no,\n    t.sales_order,\n    COALESCE(e.sequence, 99) AS seq,\n    CONCAT(LPAD(COALESCE(e.sequence, 99), 2, '0'), ' - ', d.event_name) AS milestone_ordered,\n    d.event_name AS milestone,\n    d.plan_date AS planned_date,\n    d.actual_date AS actual_date,\n    d.days_offset AS planned_day_offset,\n    (d.days_offset + DATEDIFF(d.actual_date, d.plan_date)) AS actual_day_offset,\n    -- 1. Positive number for delays (e.g., +21 days late)\n    DATEDIFF(d.actual_date, d.plan_date) AS delay_days,\n    -- 2. Negative number for delays (e.g., -21 days variance, matching your cards)\n    DATEDIFF(d.plan_date, d.actual_date) AS variance_days,\n    CASE \n        WHEN DATEDIFF(d.actual_date, d.plan_date) > 14 THEN 'Severe Delay (>14d)'\n        WHEN DATEDIFF(d.actual_date, d.plan_date) BETWEEN 7 AND 14 THEN 'Moderate Delay (7–14d)'\n        WHEN DATEDIFF(d.actual_date, d.plan_date) BETWEEN 1 AND 6 THEN 'Minor Delay (1–6d)'\n        ELSE 'On Time (<=0d)'\n    END AS delay_severity\nFROM `tabOrder TNA Tracker` t\nJOIN `tabTNA Tracker Detail` d ON d.parent = t.name\nLEFT JOIN `tabTNA Event` e ON e.name = d.event_name\nWHERE t.order_status != 'Completed'\n  AND d.actual_date IS NOT NULL",
           "type": "sql"
         }
       ]
@@ -527,7 +527,7 @@
           "layout": {
             "h": 2,
             "i": "9nmujvt6",
-            "w": 4,
+            "w": 3,
             "x": 0,
             "y": 0
           },
@@ -548,8 +548,8 @@
           "layout": {
             "h": 2,
             "i": "comn4laz",
-            "w": 4,
-            "x": 4,
+            "w": 3,
+            "x": 3,
             "y": 0
           },
           "links": {
@@ -569,8 +569,8 @@
           "layout": {
             "h": 2,
             "i": "8o3f6y42",
-            "w": 4,
-            "x": 12,
+            "w": 3,
+            "x": 9,
             "y": 0
           },
           "links": {
@@ -590,8 +590,8 @@
           "layout": {
             "h": 2,
             "i": "iip76pcp",
-            "w": 4,
-            "x": 16,
+            "w": 3,
+            "x": 12,
             "y": 0
           },
           "links": {
@@ -611,8 +611,8 @@
           "layout": {
             "h": 2,
             "i": "ea1881cl",
-            "w": 4,
-            "x": 8,
+            "w": 3,
+            "x": 6,
             "y": 0
           },
           "links": {
@@ -636,9 +636,34 @@
             "y": 6
           },
           "type": "chart"
+        },
+        {
+          "default_operator": "in",
+          "default_value": [
+            "VA",
+            "VJ"
+          ],
+          "filter_name": "Factory",
+          "filter_type": "String",
+          "layout": {
+            "h": 2,
+            "i": "i2aisy1l",
+            "w": 3,
+            "x": 15,
+            "y": 0
+          },
+          "links": {
+            "workbook-5-active-order-qty": "`workbook-5-tna_kpi_active_orders_and_failure`.`factory`",
+            "workbook-5-average-delay-by-functional-stage-days-behind-plan": "`workbook-5-tna_stage_delay_bar_chart`.`factory`",
+            "workbook-5-critical-bottleneck": "`workbook-5-tna_kpi_critical_bottleneck`.`factory`",
+            "workbook-5-ex-factory-slippage": "`workbook-5-tna_kpi_ex_factory_slippage`.`factory`",
+            "workbook-5-milestone-failure-rate": "`workbook-5-tna_kpi_active_orders_and_failure`.`factory`",
+            "workbook-5-milestone-health-distribution": "`workbook-5-tna_milestone_health_donut`.`factory`"
+          },
+          "type": "filter"
         }
       ],
-      "vertical_compact_layout": 1
+      "vertical_compact_layout": 0
     }
   }
 }

@@ -15,6 +15,7 @@
   "so_qty",
   "style_no",
   "order_status",
+  "factory",
   "style_image",
   "sec_dates",
   "order_received_date",
@@ -162,13 +163,21 @@
    "options": "Not yet Started\nIn Progress\nCompleted",
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "default": "VA",
+   "fieldname": "factory",
+   "fieldtype": "Select",
+   "label": "Factory",
+   "options": "VA\nVJ",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "image_field": "style_image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-11-09 12:22:53.615135",
+ "modified": "2026-11-10 14:34:24.370815",
  "modified_by": "Administrator",
  "module": "Merch TNA Tracker",
  "name": "Order TNA Tracker",
