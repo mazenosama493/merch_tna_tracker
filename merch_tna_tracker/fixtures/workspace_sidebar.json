@@ -1,0 +1,71 @@
+[
+ {
+  "app": "merch_tna_tracker",
+  "docstatus": 0,
+  "doctype": "Workspace Sidebar",
+  "for_user": null,
+  "header_icon": "calendar",
+  "items": [
+   {
+    "child": 0,
+    "collapsible": 1,
+    "default_workspace": 0,
+    "filters": null,
+    "icon": "group-by",
+    "indent": 0,
+    "keep_closed": 0,
+    "label": "Events",
+    "link_to": "TNA Event",
+    "link_type": "DocType",
+    "navigate_to_tab": null,
+    "open_in_new_tab": 1,
+    "route_options": null,
+    "show_arrow": 0,
+    "type": "Link",
+    "url": null
+   },
+   {
+    "child": 0,
+    "collapsible": 1,
+    "default_workspace": 0,
+    "filters": null,
+    "icon": "map",
+    "indent": 0,
+    "keep_closed": 0,
+    "label": "Plans",
+    "link_to": "TNA Plan Template",
+    "link_type": "DocType",
+    "navigate_to_tab": null,
+    "open_in_new_tab": 1,
+    "route_options": null,
+    "show_arrow": 0,
+    "type": "Link",
+    "url": null
+   },
+   {
+    "child": 0,
+    "collapsible": 1,
+    "default_workspace": 0,
+    "filters": null,
+    "icon": "file-video-camera",
+    "indent": 0,
+    "keep_closed": 0,
+    "label": "Trackers",
+    "link_to": "Order TNA Tracker",
+    "link_type": "DocType",
+    "navigate_to_tab": null,
+    "open_in_new_tab": 1,
+    "route_options": null,
+    "show_arrow": 0,
+    "type": "Link",
+    "url": null
+   }
+  ],
+  "modified": "2026-11-08 08:15:35.491427",
+  "module": "Merch TNA Tracker",
+  "module_onboarding": null,
+  "name": "Merch TNA Tracker",
+  "standard": 0,
+  "title": "Merch TNA Tracker"
+ }
+]

@@ -1,0 +1,199 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "format:{buyer}-{style_no}-{sales_order}-{####}",
+ "creation": "2026-11-07 11:36:41.655460",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "sec_order_info",
+  "buyer",
+  "manager",
+  "merchant",
+  "sales_order",
+  "so_qty",
+  "style_no",
+  "order_status",
+  "style_image",
+  "sec_dates",
+  "order_received_date",
+  "ex_fty_date",
+  "lead_time",
+  "tna_plan",
+  "total_events",
+  "failed_events",
+  "sec_schedule",
+  "tna_details",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "sec_order_info",
+   "fieldtype": "Section Break",
+   "label": "Order & Style Info"
+  },
+  {
+   "fieldname": "buyer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Buyer",
+   "options": "Merch Buyer",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Sales Order (SO No)",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "so_qty",
+   "fieldtype": "Float",
+   "label": "SO Qty",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "style_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Style No",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "style_image",
+   "fieldtype": "Attach Image",
+   "label": "Style Image",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sec_dates",
+   "fieldtype": "Section Break",
+   "label": "Dates & Plan Calculation"
+  },
+  {
+   "fieldname": "order_received_date",
+   "fieldtype": "Date",
+   "label": "Order Received Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ex_fty_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Ex Fty Date",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "lead_time",
+   "fieldtype": "Int",
+   "label": "Lead Time (Days)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tna_plan",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Matched TNA Plan",
+   "options": "TNA Plan Template",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_events",
+   "fieldtype": "Int",
+   "label": "Total Events",
+   "read_only": 1
+  },
+  {
+   "fieldname": "failed_events",
+   "fieldtype": "Int",
+   "label": "Failed Events",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sec_schedule",
+   "fieldtype": "Section Break",
+   "label": "TNA Schedule"
+  },
+  {
+   "fieldname": "tna_details",
+   "fieldtype": "Table",
+   "label": "TNA Details",
+   "options": "TNA Tracker Detail"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "manager",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Manager",
+   "options": "Merch Manager",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "merchant",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Merchant",
+   "options": "Merchant",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "default": "Not yet Started",
+   "fieldname": "order_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Order Status",
+   "options": "Not yet Started\nIn Progress\nCompleted",
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "image_field": "style_image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-11-09 12:22:53.615135",
+ "modified_by": "Administrator",
+ "module": "Merch TNA Tracker",
+ "name": "Order TNA Tracker",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

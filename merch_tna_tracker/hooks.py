@@ -5,6 +5,117 @@ app_description = "Time and Action Tracker for Merchandising"
 app_email = "mazenosama987654321@gmial.com"
 app_license = "mit"
 
+fixtures = [
+    {
+        "dt": "Workspace",
+        "filters": [["module", "=", "Merch TNA Tracker"]],
+    },
+    {
+        "dt": "Workspace Sidebar",
+        "filters": [["module", "=", "Merch TNA Tracker"]],
+    },
+    {
+        "dt": "Sidebar",
+        "filters": [["module", "=", "Merch TNA Tracker"]],
+    },
+    {
+        "dt": "Desktop Icon",
+        "filters": [["label", "=", "TNA Tracker"]],
+    },
+    {
+        "dt": "Dashboard Chart",
+        "filters": [["module", "=", "Merch TNA Tracker"]],
+    },
+    {
+        "dt": "Number Card",
+        "filters": [["module", "=", "Merch TNA Tracker"]],
+    },
+    {
+        "dt": "Notification",
+        "filters": [["module", "=", "Merch TNA Tracker"]],
+    },
+    {
+        "dt": "Client Script",
+        "filters": [
+            [
+                "dt",
+                "in",
+                [
+                    "Merch Buyer",
+                    "Merch Manager",
+                    "Merchant",
+                    "Order TNA Tracker",
+                    "TNA Event",
+                    "TNA Plan Event",
+                    "TNA Plan Template",
+                    "TNA Tracker Detail",
+                ],
+            ]
+        ],
+    },
+    {
+        "dt": "Custom Field",
+        "filters": [
+            [
+                "dt",
+                "in",
+                [
+                    "Merch Buyer",
+                    "Merch Manager",
+                    "Merchant",
+                    "Order TNA Tracker",
+                    "TNA Event",
+                    "TNA Plan Event",
+                    "TNA Plan Template",
+                    "TNA Tracker Detail",
+                ],
+            ]
+        ],
+    },
+    {
+        "dt": "Role",
+        "filters": [
+            [
+                "role_name",
+                "in",
+                [
+                    "TNA Tracker Admin",
+                    "TNA Tracker Manager",
+                    "TNA Tracker Merchant"
+                ]
+            ]
+        ]
+    },
+    {
+        "dt": "Property Setter",
+        "filters": [
+            [
+                "doc_type",
+                "in",
+                [
+                    "Merch Buyer",
+                    "Merch Manager",
+                    "Merchant",
+                    "Order TNA Tracker",
+                    "TNA Event",
+                    "TNA Plan Event",
+                    "TNA Plan Template",
+                    "TNA Tracker Detail",
+                ],
+            ]
+        ],
+    },
+]
+
+add_to_apps_screen = [
+    {
+        "name": "merch_tna_tracker",
+        "title": "TNA Tracker",
+        "route": "/app/order-tna-tracker",
+        "logo": "/assets/frappe/images/frappe-framework-logo.svg"  # Fallback standard icon
+    }
+]
+
 # Apps
 # ------------------
 
@@ -276,4 +387,3 @@ app_license = "mit"
 # ------------
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
-

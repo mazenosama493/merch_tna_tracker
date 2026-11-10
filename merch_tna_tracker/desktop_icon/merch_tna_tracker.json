@@ -1,0 +1,33 @@
+{
+ "app": "merch_tna_tracker",
+ "bg_color": "gray",
+ "creation": "2026-11-08 08:15:35.501611",
+ "docstatus": 0,
+ "doctype": "Desktop Icon",
+ "hidden": 0,
+ "icon_image": "/assets/merch_tna_tracker/icons/Tracker.png",
+ "icon_type": "App",
+ "idx": 0,
+ "label": "Merch TNA Tracker",
+ "link_to": "Merch TNA Tracker",
+ "link_type": "Workspace Sidebar",
+ "logo_url": "/assets/merch_tna_tracker/icons/Tracker.png",
+ "modified": "2026-11-09 15:30:21.665434",
+ "modified_by": "Administrator",
+ "name": "Merch TNA Tracker",
+ "owner": "Administrator",
+ "restrict_removal": 0,
+ "roles": [
+  {
+   "role": "TNA Tracker Merchant"
+  },
+  {
+   "role": "TNA Tracker Admin"
+  },
+  {
+   "role": "TNA Tracker Manager"
+  }
+ ],
+ "sidebar": "Merch TNA Tracker",
+ "standard": 1
+}

@@ -1,0 +1,98 @@
+[
+ {
+  "charts": [],
+  "content": "[{\"id\": \"hdr1\", \"type\": \"header\", \"data\": {\"text\": \"\\u003cspan class=\\\"h4\\\"\\u003e\\u003cb\\u003eTNA Tracker\\u003c/b\\u003e\\u003c/span\\u003e\", \"col\": 12}}, {\"id\": \"sc1\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Order TNA Tracker\", \"col\": 4}}, {\"id\": \"sc3\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"TNA Event\", \"col\": 4}}, {\"id\": \"sc2\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"TNA Plan Template\", \"col\": 4}}, {\"id\": \"EiG1Wj_2cU\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Dashboard\", \"col\": 3}}]",
+  "custom_blocks": [],
+  "docstatus": 0,
+  "doctype": "Workspace",
+  "external_link": null,
+  "for_user": null,
+  "hide_custom": 0,
+  "icon": "calendar",
+  "indicator_color": "green",
+  "is_hidden": 0,
+  "label": "TNA Tracker",
+  "link_to": null,
+  "link_type": "DocType",
+  "links": [],
+  "modified": "2026-11-09 16:11:29.226761",
+  "module": "Merch TNA Tracker",
+  "module_onboarding": null,
+  "name": "TNA Tracker",
+  "number_cards": [],
+  "parent_page": null,
+  "public": 1,
+  "quick_lists": [],
+  "restrict_to_domain": null,
+  "roles": [
+   {
+    "role": "TNA Tracker Admin"
+   },
+   {
+    "role": "TNA Tracker Manager"
+   }
+  ],
+  "sequence_id": 0.0,
+  "shortcuts": [
+   {
+    "color": "Blue",
+    "doc_view": "",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Order TNA Tracker",
+    "link_to": "Order TNA Tracker",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": null,
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Dashboard",
+    "link_to": null,
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": null,
+    "type": "URL",
+    "url": "http://localhost:8000/insights/workbook/5/query/n4rgutup8c"
+   },
+   {
+    "color": "Green",
+    "doc_view": "",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "TNA Plan Template",
+    "link_to": "TNA Plan Template",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": null,
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Orange",
+    "doc_view": "",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "TNA Event",
+    "link_to": "TNA Event",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": null,
+    "type": "DocType",
+    "url": null
+   }
+  ],
+  "standard": 0,
+  "title": "TNA Tracker",
+  "type": "Workspace"
+ }
+]
