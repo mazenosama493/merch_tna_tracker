@@ -1,688 +1,675 @@
 {
- "charts": {
-  "workbook-5-active-order-qty": {
-   "chart_type": "Number",
-   "config": {
-    "date_column": {},
-    "filters": {
-     "filters": [],
-     "logical_operator": "And"
+  "doctype": "Insights Workbook",
+  "name": "workbook-5",
+  "title": "Workbook 5",
+  "folders": [
+    {
+      "title": "Untitled",
+      "type": "query",
+      "sort_order": 0
+    }
+  ],
+  "queries": {
+    "workbook-5-tna_kpi_active_orders_and_failure": {
+      "name": "workbook-5-tna_kpi_active_orders_and_failure",
+      "title": "TNA_KPI_Active_Orders_And_Failure",
+      "workbook": "workbook-5",
+      "folder": null,
+      "sort_order": 0,
+      "use_live_connection": 1,
+      "is_script_query": 0,
+      "is_builder_query": 0,
+      "is_native_query": 1,
+      "operations": [
+        {
+          "data_source": "Site DB",
+          "raw_sql": "SELECT \n    t.name AS tracker_id,\n    t.factory,\n    t.buyer,\n    t.manager,\n    t.merchant,\n    t.style_no,\n    t.sales_order,\n    t.order_status,\n    t.so_qty,\n    t.total_events,\n    t.failed_events,\n    ROUND((t.failed_events / NULLIF(t.total_events, 0)) * 100, 1) AS order_failure_rate_pct\nFROM `tabOrder TNA Tracker` t\nWHERE t.order_status != 'Completed'",
+          "type": "sql"
+        }
+      ]
     },
-    "limit": 100,
-    "number_column_options": [
-     {
-      "color": "#000000",
-      "negative_is_better": false
-     }
-    ],
-    "number_columns": [
-     {
-      "aggregation": "sum",
-      "column_name": "so_qty",
-      "data_type": "Decimal",
-      "id": "470e1a62",
-      "measure_name": "ACTIVE ORDER QTY"
-     }
-    ],
-    "number_format": {
-     "prefix": "PCS",
-     "shorten": false,
-     "suffix": ""
+    "workbook-5-tna_kpi_ex_factory_slippage": {
+      "name": "workbook-5-tna_kpi_ex_factory_slippage",
+      "title": "TNA_KPI_Ex_Factory_Slippage",
+      "workbook": "workbook-5",
+      "folder": null,
+      "sort_order": 1,
+      "use_live_connection": 1,
+      "is_script_query": 0,
+      "is_builder_query": 0,
+      "is_native_query": 1,
+      "operations": [
+        {
+          "data_source": "Site DB",
+          "raw_sql": "SELECT \n    t.name AS tracker_id,\n    t.factory,\n    t.buyer,\n    t.manager,\n    t.merchant,\n    t.style_no,\n    t.sales_order,\n    t.ex_fty_date AS planned_ex_fty,\n    d.plan_date AS hod_plan_date,\n    d.actual_date AS hod_actual_date,\n    COALESCE(\n        DATEDIFF(d.plan_date, d.actual_date),\n        0\n    ) AS ex_fty_slippage_days\nFROM `tabOrder TNA Tracker` t\nLEFT JOIN `tabTNA Tracker Detail` d ON d.parent = t.name AND d.event_name = 'HOD'",
+          "type": "sql"
+        }
+      ]
     },
-    "number_formats": {
-     "ACTIVE ORDER QTY": {
-      "prefix": "PCS ",
-      "shorten": false
-     }
+    "workbook-5-tna_kpi_critical_bottleneck": {
+      "name": "workbook-5-tna_kpi_critical_bottleneck",
+      "title": "TNA_KPI_Critical_Bottleneck",
+      "workbook": "workbook-5",
+      "folder": null,
+      "sort_order": 2,
+      "use_live_connection": 1,
+      "is_script_query": 0,
+      "is_builder_query": 0,
+      "is_native_query": 1,
+      "operations": [
+        {
+          "data_source": "Site DB",
+          "raw_sql": "SELECT \n    t.buyer,\n    t.factory,\n    t.manager,\n    t.merchant,\n    t.style_no,\n    t.sales_order,\n    d.event_name AS bottleneck_event,\n    DATEDIFF(d.plan_date, d.actual_date) AS delay_days,\n    CONCAT(\n        d.event_name, ' (', t.buyer, ' - ', t.style_no, ') | Plan: ', \n        DATE_FORMAT(d.plan_date, '%d-%b'), ' -> Act: ', DATE_FORMAT(d.actual_date, '%d-%b')\n    ) AS bottleneck_details\nFROM `tabOrder TNA Tracker` t\nJOIN `tabTNA Tracker Detail` d ON d.parent = t.name\nWHERE t.order_status != 'Completed'\n  AND d.actual_date IS NOT NULL\n  AND d.actual_date > d.plan_date\nORDER BY DATEDIFF(d.plan_date, d.actual_date) ASC",
+          "type": "sql"
+        }
+      ]
     },
-    "order_by": []
-   },
-   "description": "",
-   "folder": null,
-   "info": "",
-   "name": "workbook-5-active-order-qty",
-   "query": "workbook-5-tna_kpi_active_orders_and_failure",
-   "sort_order": 0,
-   "title": "ACTIVE ORDER QTY",
-   "workbook": "workbook-5"
+    "workbook-5-tna_stage_delay_bar_chart": {
+      "name": "workbook-5-tna_stage_delay_bar_chart",
+      "title": "TNA_Stage_Delay_Bar_Chart",
+      "workbook": "workbook-5",
+      "folder": "Untitled",
+      "sort_order": 2,
+      "use_live_connection": 1,
+      "is_script_query": 0,
+      "is_builder_query": 0,
+      "is_native_query": 1,
+      "operations": [
+        {
+          "data_source": "Site DB",
+          "raw_sql": "SELECT\n    t.name AS tracker,\n    t.factory,\n    t.buyer,\n    t.manager,\n    t.merchant,\n    t.style_no,\n    t.sales_order,\n    d.event_name,\n    DATEDIFF(d.actual_date, d.plan_date) AS total_delay,\n    DATEDIFF(d.actual_date, d.plan_date) AS `Total Delay`,\n    CASE WHEN DATEDIFF(d.actual_date, d.plan_date) BETWEEN 1 AND 6\n         THEN DATEDIFF(d.actual_date, d.plan_date) END AS `Minor Delay (1-6d)`,\n    CASE WHEN DATEDIFF(d.actual_date, d.plan_date) BETWEEN 7 AND 14\n         THEN DATEDIFF(d.actual_date, d.plan_date) END AS `Moderate Delay (7-14d)`,\n    CASE WHEN DATEDIFF(d.actual_date, d.plan_date) > 14\n         THEN DATEDIFF(d.actual_date, d.plan_date) END AS `Severe Delay (>14d)`\nFROM `tabOrder TNA Tracker` t\nJOIN `tabTNA Tracker Detail` d ON d.parent = t.name\nWHERE t.order_status != 'Completed'\n    AND d.actual_date IS NOT NULL\n    AND d.actual_date > d.plan_date",
+          "type": "sql"
+        }
+      ]
+    },
+    "workbook-5-tna_milestone_health_donut": {
+      "name": "workbook-5-tna_milestone_health_donut",
+      "title": "TNA_Milestone_Health_Donut",
+      "workbook": "workbook-5",
+      "folder": "Untitled",
+      "sort_order": 1,
+      "use_live_connection": 1,
+      "is_script_query": 0,
+      "is_builder_query": 0,
+      "is_native_query": 1,
+      "operations": [
+        {
+          "data_source": "Site DB",
+          "raw_sql": "SELECT \n    t.buyer,\n    t.factory,\n    t.manager,\n    t.merchant,\n    t.style_no,\n    t.sales_order,\n    d.name AS detail_row_id,\n    d.event_name,\n    CASE \n        WHEN d.actual_date IS NULL THEN 'Marked N/A (Unlogged)'\n        WHEN DATEDIFF(d.actual_date, d.plan_date) > 14 THEN 'Severe Delay (>14d)'\n        WHEN DATEDIFF(d.actual_date, d.plan_date) BETWEEN 7 AND 14 THEN 'Moderate Delay (7–14d)'\n        WHEN DATEDIFF(d.actual_date, d.plan_date) BETWEEN 1 AND 6 THEN 'Minor Delay (1–6d)'\n        ELSE 'On Time / Early (<=0d)'\n    END AS health_category\nFROM `tabOrder TNA Tracker` t\nJOIN `tabTNA Tracker Detail` d ON d.parent = t.name\nWHERE t.order_status != 'Completed'",
+          "type": "sql"
+        }
+      ]
+    },
+    "workbook-5-tna_critical_path_timeline": {
+      "name": "workbook-5-tna_critical_path_timeline",
+      "title": "TNA_Critical_Path_Timeline",
+      "workbook": "workbook-5",
+      "folder": "Untitled",
+      "sort_order": 0,
+      "use_live_connection": 1,
+      "is_script_query": 0,
+      "is_builder_query": 0,
+      "is_native_query": 1,
+      "operations": [
+        {
+          "data_source": "Site DB",
+          "raw_sql": "SELECT \n    t.buyer,\n    t.factory,\n    t.manager,\n    t.merchant,\n    t.style_no,\n    t.sales_order,\n    COALESCE(e.sequence, 99) AS seq,\n    CONCAT(LPAD(COALESCE(e.sequence, 99), 2, '0'), ' - ', d.event_name) AS milestone_ordered,\n    d.event_name AS milestone,\n    d.plan_date AS planned_date,\n    d.actual_date AS actual_date,\n    d.days_offset AS planned_day_offset,\n    (d.days_offset + DATEDIFF(d.actual_date, d.plan_date)) AS actual_day_offset,\n    -- 1. Positive number for delays (e.g., +21 days late)\n    DATEDIFF(d.actual_date, d.plan_date) AS delay_days,\n    -- 2. Negative number for delays (e.g., -21 days variance, matching your cards)\n    DATEDIFF(d.plan_date, d.actual_date) AS variance_days,\n    CASE \n        WHEN DATEDIFF(d.actual_date, d.plan_date) > 14 THEN 'Severe Delay (>14d)'\n        WHEN DATEDIFF(d.actual_date, d.plan_date) BETWEEN 7 AND 14 THEN 'Moderate Delay (7–14d)'\n        WHEN DATEDIFF(d.actual_date, d.plan_date) BETWEEN 1 AND 6 THEN 'Minor Delay (1–6d)'\n        ELSE 'On Time (<=0d)'\n    END AS delay_severity\nFROM `tabOrder TNA Tracker` t\nJOIN `tabTNA Tracker Detail` d ON d.parent = t.name\nLEFT JOIN `tabTNA Event` e ON e.name = d.event_name\nWHERE t.order_status != 'Completed'\n  AND d.actual_date IS NOT NULL",
+          "type": "sql"
+        }
+      ]
+    }
   },
-  "workbook-5-average-delay-by-functional-stage-days-behind-plan": {
-   "chart_type": "Row",
-   "config": {
-    "filters": {
-     "filters": [],
-     "logical_operator": "And"
-    },
-    "limit": 100,
-    "number_formats": {
-     "Average Of Days Delayed": {
-      "shorten": false
-     },
-     "avg_of_Total Delay": {
-      "shorten": false
-     }
-    },
-    "order_by": [
-     {
-      "column": {
-       "column_name": "avg_of_Minor Delay (1-6d)",
-       "type": "column"
-      },
-      "direction": "desc"
-     },
-     {
-      "column": {
-       "column_name": "avg_of_Moderate Delay (7-14d)",
-       "type": "column"
-      },
-      "direction": "desc"
-     },
-     {
-      "column": {
-       "column_name": "avg_of_Severe Delay (>14d)",
-       "type": "column"
-      },
-      "direction": "desc"
-     }
-    ],
-    "split_by": {
-     "dimension": {},
-     "max_split_values": 10
-    },
-    "tooltip": {
-     "measures": []
-    },
-    "x_axis": {
-     "dimension": {
-      "column_name": "event_name",
-      "data_type": "String",
-      "dimension_name": "event_name"
-     }
-    },
-    "y_axis": {
-     "normalize": false,
-     "overlap": false,
-     "reference_lines": [],
-     "series": [
-      {
-       "color": [
-        "#f01313"
-       ],
-       "measure": {
-        "aggregation": "avg",
-        "column_name": "Severe Delay (>14d)",
-        "data_type": "Decimal",
-        "measure_name": "avg_of_Severe Delay (>14d)"
-       }
-      },
-      {
-       "color": [
-        "#ffad33"
-       ],
-       "measure": {
-        "aggregation": "avg",
-        "column_name": "Moderate Delay (7-14d)",
-        "data_type": "Decimal",
-        "measure_name": "avg_of_Moderate Delay (7-14d)"
-       }
-      },
-      {
-       "color": [
-        "#039416"
-       ],
-       "measure": {
-        "aggregation": "avg",
-        "column_name": "Minor Delay (1-6d)",
-        "data_type": "Decimal",
-        "measure_name": "avg_of_Minor Delay (1-6d)"
-       }
+  "charts": {
+    "workbook-5-active-order-qty": {
+      "name": "workbook-5-active-order-qty",
+      "title": "ACTIVE ORDER QTY",
+      "description": "",
+      "info": "",
+      "workbook": "workbook-5",
+      "folder": null,
+      "sort_order": 0,
+      "query": "workbook-5-tna_kpi_active_orders_and_failure",
+      "chart_type": "Number",
+      "config": {
+        "date_column": {},
+        "filters": {
+          "filters": [],
+          "logical_operator": "And"
+        },
+        "limit": 100,
+        "number_column_options": [
+          {
+            "color": "#000000",
+            "negative_is_better": false
+          }
+        ],
+        "number_columns": [
+          {
+            "aggregation": "sum",
+            "column_name": "so_qty",
+            "data_type": "Decimal",
+            "id": "470e1a62",
+            "measure_name": "ACTIVE ORDER QTY"
+          }
+        ],
+        "number_format": {
+          "prefix": "PCS",
+          "shorten": false,
+          "suffix": ""
+        },
+        "number_formats": {
+          "ACTIVE ORDER QTY": {
+            "prefix": "PCS ",
+            "shorten": false
+          }
+        },
+        "order_by": []
       }
-     ],
-     "show_axis_label": false,
-     "show_data_labels": false,
-     "stack": true
-    }
-   },
-   "description": "",
-   "folder": null,
-   "info": "",
-   "name": "workbook-5-average-delay-by-functional-stage-days-behind-plan",
-   "query": "workbook-5-tna_stage_delay_bar_chart",
-   "sort_order": 4,
-   "title": "Average Delay by Functional Stage (Days Behind Plan)",
-   "workbook": "workbook-5"
-  },
-  "workbook-5-critical-bottleneck": {
-   "chart_type": "Number",
-   "config": {
-    "date_column": {},
-    "filters": {
-     "filters": [],
-     "logical_operator": "And"
     },
-    "limit": 100,
-    "number_column_options": [
-     {}
-    ],
-    "number_columns": [
-     {
-      "aggregation": "min",
-      "column_name": "delay_days",
-      "data_type": "Integer",
-      "id": "b59062e4",
-      "measure_name": "CRITICAL BOTTLENECK"
-     }
-    ],
-    "number_formats": {
-     "CRITICAL BOTTLENECK": {
-      "prefix": "Days "
-     }
-    },
-    "order_by": []
-   },
-   "description": "",
-   "folder": null,
-   "info": "",
-   "name": "workbook-5-critical-bottleneck",
-   "query": "workbook-5-tna_kpi_critical_bottleneck",
-   "sort_order": 3,
-   "title": "CRITICAL BOTTLENECK",
-   "workbook": "workbook-5"
-  },
-  "workbook-5-critical-path-slippage-timeline-planned-vs-actual": {
-   "chart_type": "Row",
-   "config": {
-    "filters": {
-     "filters": [],
-     "logical_operator": "And"
-    },
-    "limit": 100,
-    "order_by": [],
-    "x_axis": {
-     "dimension": {
-      "column_name": "planned_date",
-      "data_type": "Date",
-      "dimension_name": "planned_date",
-      "granularity": "month"
-     }
-    },
-    "y_axis": {
-     "series": [
-      {
-       "measure": {
-        "aggregation": "count",
-        "column_name": "",
-        "data_type": "Decimal",
-        "measure_name": ""
-       }
-      },
-      {
-       "measure": {
-        "aggregation": "avg",
-        "column_name": "actual_day_offset",
-        "data_type": "Integer",
-        "measure_name": "avg_of_actual_day_offset"
-       }
+    "workbook-5-milestone-failure-rate": {
+      "name": "workbook-5-milestone-failure-rate",
+      "title": "MILESTONE FAILURE RATE",
+      "description": "",
+      "info": "",
+      "workbook": "workbook-5",
+      "folder": null,
+      "sort_order": 1,
+      "query": "workbook-5-tna_kpi_active_orders_and_failure",
+      "chart_type": "Number",
+      "config": {
+        "date_column": {},
+        "filters": {
+          "filters": [],
+          "logical_operator": "And"
+        },
+        "limit": 100,
+        "number_column_options": [
+          {}
+        ],
+        "number_columns": [
+          {
+            "aggregation": "avg",
+            "column_name": "order_failure_rate_pct",
+            "data_type": "Decimal",
+            "id": "b663ea64",
+            "measure_name": "MILESTONE FAILURE RATE"
+          }
+        ],
+        "number_format": {
+          "decimals": 1,
+          "prefix": "%"
+        },
+        "order_by": []
       }
-     ],
-     "stack": false
+    },
+    "workbook-5-ex-factory-slippage": {
+      "name": "workbook-5-ex-factory-slippage",
+      "title": "EX-FACTORY SLIPPAGE",
+      "description": "",
+      "info": "",
+      "workbook": "workbook-5",
+      "folder": null,
+      "sort_order": 2,
+      "query": "workbook-5-tna_kpi_ex_factory_slippage",
+      "chart_type": "Number",
+      "config": {
+        "date_column": {},
+        "filters": {
+          "filters": [],
+          "logical_operator": "And"
+        },
+        "limit": 100,
+        "number_column_options": [
+          {}
+        ],
+        "number_columns": [
+          {
+            "aggregation": "avg",
+            "column_name": "ex_fty_slippage_days",
+            "data_type": "Integer",
+            "id": "234cdb74",
+            "measure_name": "EX-FACTORY SLIPPAGE"
+          }
+        ],
+        "number_formats": {
+          "EX-FACTORY SLIPPAGE": {
+            "prefix": "Days "
+          }
+        },
+        "order_by": []
+      }
+    },
+    "workbook-5-critical-bottleneck": {
+      "name": "workbook-5-critical-bottleneck",
+      "title": "CRITICAL BOTTLENECK",
+      "description": "",
+      "info": "",
+      "workbook": "workbook-5",
+      "folder": null,
+      "sort_order": 3,
+      "query": "workbook-5-tna_kpi_critical_bottleneck",
+      "chart_type": "Number",
+      "config": {
+        "date_column": {},
+        "filters": {
+          "filters": [],
+          "logical_operator": "And"
+        },
+        "limit": 100,
+        "number_column_options": [
+          {}
+        ],
+        "number_columns": [
+          {
+            "aggregation": "min",
+            "column_name": "delay_days",
+            "data_type": "Integer",
+            "id": "b59062e4",
+            "measure_name": "CRITICAL BOTTLENECK"
+          }
+        ],
+        "number_formats": {
+          "CRITICAL BOTTLENECK": {
+            "prefix": "Days "
+          }
+        },
+        "order_by": []
+      }
+    },
+    "workbook-5-average-delay-by-functional-stage-days-behind-plan": {
+      "name": "workbook-5-average-delay-by-functional-stage-days-behind-plan",
+      "title": "Average Delay by Functional Stage (Days Behind Plan)",
+      "description": "",
+      "info": "",
+      "workbook": "workbook-5",
+      "folder": null,
+      "sort_order": 4,
+      "query": "workbook-5-tna_stage_delay_bar_chart",
+      "chart_type": "Row",
+      "config": {
+        "filters": {
+          "filters": [],
+          "logical_operator": "And"
+        },
+        "limit": 100,
+        "number_formats": {
+          "Average Of Days Delayed": {
+            "shorten": false
+          },
+          "avg_of_Total Delay": {
+            "shorten": false
+          }
+        },
+        "order_by": [
+          {
+            "column": {
+              "column_name": "avg_of_Minor Delay (1-6d)",
+              "type": "column"
+            },
+            "direction": "desc"
+          },
+          {
+            "column": {
+              "column_name": "avg_of_Moderate Delay (7-14d)",
+              "type": "column"
+            },
+            "direction": "desc"
+          },
+          {
+            "column": {
+              "column_name": "avg_of_Severe Delay (>14d)",
+              "type": "column"
+            },
+            "direction": "desc"
+          }
+        ],
+        "split_by": {
+          "dimension": {},
+          "max_split_values": 10
+        },
+        "tooltip": {
+          "measures": []
+        },
+        "x_axis": {
+          "dimension": {
+            "column_name": "event_name",
+            "data_type": "String",
+            "dimension_name": "event_name"
+          }
+        },
+        "y_axis": {
+          "normalize": false,
+          "overlap": false,
+          "reference_lines": [],
+          "series": [
+            {
+              "color": [
+                "#f01313"
+              ],
+              "measure": {
+                "aggregation": "avg",
+                "column_name": "Severe Delay (>14d)",
+                "data_type": "Decimal",
+                "measure_name": "avg_of_Severe Delay (>14d)"
+              }
+            },
+            {
+              "color": [
+                "#ffad33"
+              ],
+              "measure": {
+                "aggregation": "avg",
+                "column_name": "Moderate Delay (7-14d)",
+                "data_type": "Decimal",
+                "measure_name": "avg_of_Moderate Delay (7-14d)"
+              }
+            },
+            {
+              "color": [
+                "#039416"
+              ],
+              "measure": {
+                "aggregation": "avg",
+                "column_name": "Minor Delay (1-6d)",
+                "data_type": "Decimal",
+                "measure_name": "avg_of_Minor Delay (1-6d)"
+              }
+            }
+          ],
+          "show_axis_label": false,
+          "show_data_labels": false,
+          "stack": true
+        }
+      }
+    },
+    "workbook-5-milestone-health-distribution": {
+      "name": "workbook-5-milestone-health-distribution",
+      "title": "Milestone Health Distribution",
+      "description": "",
+      "info": "",
+      "workbook": "workbook-5",
+      "folder": null,
+      "sort_order": 5,
+      "query": "workbook-5-tna_milestone_health_donut",
+      "chart_type": "Donut",
+      "config": {
+        "filters": {
+          "filters": [],
+          "logical_operator": "And"
+        },
+        "label_column": {
+          "column_name": "health_category",
+          "data_type": "String",
+          "dimension_name": "health_category"
+        },
+        "limit": 100,
+        "order_by": [],
+        "show_inline_labels": false,
+        "value_column": {
+          "aggregation": "count",
+          "column_name": "detail_row_id",
+          "data_type": "Integer",
+          "measure_name": "count_of_detail_row_id"
+        }
+      }
+    },
+    "workbook-5-critical-path-slippage-timeline-planned-vs-actual": {
+      "name": "workbook-5-critical-path-slippage-timeline-planned-vs-actual",
+      "title": "Critical Path Slippage Timeline: Planned vs. Actual",
+      "description": "",
+      "info": "",
+      "workbook": "workbook-5",
+      "folder": null,
+      "sort_order": 6,
+      "query": "workbook-5-tna_critical_path_timeline",
+      "chart_type": "Row",
+      "config": {
+        "filters": {
+          "filters": [],
+          "logical_operator": "And"
+        },
+        "limit": 100,
+        "order_by": [],
+        "x_axis": {
+          "dimension": {
+            "column_name": "planned_date",
+            "data_type": "Date",
+            "dimension_name": "planned_date",
+            "granularity": "month"
+          }
+        },
+        "y_axis": {
+          "series": [
+            {
+              "measure": {
+                "aggregation": "count",
+                "column_name": "",
+                "data_type": "Decimal",
+                "measure_name": ""
+              }
+            },
+            {
+              "measure": {
+                "aggregation": "avg",
+                "column_name": "actual_day_offset",
+                "data_type": "Integer",
+                "measure_name": "avg_of_actual_day_offset"
+              }
+            }
+          ],
+          "stack": false
+        }
+      }
     }
-   },
-   "description": "",
-   "folder": null,
-   "info": "",
-   "name": "workbook-5-critical-path-slippage-timeline-planned-vs-actual",
-   "query": "workbook-5-tna_critical_path_timeline",
-   "sort_order": 6,
-   "title": "Critical Path Slippage Timeline: Planned vs. Actual",
-   "workbook": "workbook-5"
   },
-  "workbook-5-ex-factory-slippage": {
-   "chart_type": "Number",
-   "config": {
-    "date_column": {},
-    "filters": {
-     "filters": [],
-     "logical_operator": "And"
-    },
-    "limit": 100,
-    "number_column_options": [
-     {}
-    ],
-    "number_columns": [
-     {
-      "aggregation": "avg",
-      "column_name": "ex_fty_slippage_days",
-      "data_type": "Integer",
-      "id": "234cdb74",
-      "measure_name": "EX-FACTORY SLIPPAGE"
-     }
-    ],
-    "number_formats": {
-     "EX-FACTORY SLIPPAGE": {
-      "prefix": "Days "
-     }
-    },
-    "order_by": []
-   },
-   "description": "",
-   "folder": null,
-   "info": "",
-   "name": "workbook-5-ex-factory-slippage",
-   "query": "workbook-5-tna_kpi_ex_factory_slippage",
-   "sort_order": 2,
-   "title": "EX-FACTORY SLIPPAGE",
-   "workbook": "workbook-5"
-  },
-  "workbook-5-milestone-failure-rate": {
-   "chart_type": "Number",
-   "config": {
-    "date_column": {},
-    "filters": {
-     "filters": [],
-     "logical_operator": "And"
-    },
-    "limit": 100,
-    "number_column_options": [
-     {}
-    ],
-    "number_columns": [
-     {
-      "aggregation": "avg",
-      "column_name": "order_failure_rate_pct",
-      "data_type": "Decimal",
-      "id": "b663ea64",
-      "measure_name": "MILESTONE FAILURE RATE"
-     }
-    ],
-    "number_format": {
-     "decimals": 1,
-     "prefix": "%"
-    },
-    "order_by": []
-   },
-   "description": "",
-   "folder": null,
-   "info": "",
-   "name": "workbook-5-milestone-failure-rate",
-   "query": "workbook-5-tna_kpi_active_orders_and_failure",
-   "sort_order": 1,
-   "title": "MILESTONE FAILURE RATE",
-   "workbook": "workbook-5"
-  },
-  "workbook-5-milestone-health-distribution": {
-   "chart_type": "Donut",
-   "config": {
-    "filters": {
-     "filters": [],
-     "logical_operator": "And"
-    },
-    "label_column": {
-     "column_name": "health_category",
-     "data_type": "String",
-     "dimension_name": "health_category"
-    },
-    "limit": 100,
-    "order_by": [],
-    "show_inline_labels": false,
-    "value_column": {
-     "aggregation": "count",
-     "column_name": "detail_row_id",
-     "data_type": "Integer",
-     "measure_name": "count_of_detail_row_id"
+  "dashboards": {
+    "workbook-5-tna-velocity-—-executive-production-milestone-dashboard": {
+      "name": "workbook-5-tna-velocity-—-executive-production-milestone-dashboard",
+      "title": "TNA VELOCITY — EXECUTIVE PRODUCTION & MILESTONE DASHBOARD",
+      "workbook": "workbook-5",
+      "items": [
+        {
+          "chart": "workbook-5-active-order-qty",
+          "layout": {
+            "h": 4,
+            "i": "48qc879x",
+            "w": 4,
+            "x": 0,
+            "y": 2
+          },
+          "reading": "470e1a62",
+          "type": "chart"
+        },
+        {
+          "chart": "workbook-5-milestone-failure-rate",
+          "layout": {
+            "h": 4,
+            "i": "ipev2gkn",
+            "w": 4,
+            "x": 5,
+            "y": 2
+          },
+          "reading": "b663ea64",
+          "type": "chart"
+        },
+        {
+          "chart": "workbook-5-ex-factory-slippage",
+          "layout": {
+            "h": 4,
+            "i": "22ckeifb",
+            "w": 4,
+            "x": 11,
+            "y": 2
+          },
+          "reading": "234cdb74",
+          "type": "chart"
+        },
+        {
+          "chart": "workbook-5-critical-bottleneck",
+          "layout": {
+            "h": 4,
+            "i": "3djedvs8",
+            "w": 4,
+            "x": 16,
+            "y": 2
+          },
+          "reading": "b59062e4",
+          "type": "chart"
+        },
+        {
+          "chart": "workbook-5-milestone-health-distribution",
+          "layout": {
+            "h": 20,
+            "i": "bnatrsb.",
+            "w": 10,
+            "x": 10,
+            "y": 6
+          },
+          "type": "chart"
+        },
+        {
+          "filter_name": "Buyer",
+          "filter_type": "String",
+          "layout": {
+            "h": 2,
+            "i": "9nmujvt6",
+            "w": 3,
+            "x": 0,
+            "y": 0
+          },
+          "links": {
+            "workbook-5-active-order-qty": "`workbook-5-tna_kpi_active_orders_and_failure`.`buyer`",
+            "workbook-5-average-delay-by-functional-stage-days-behind-plan": "`workbook-5-tna_stage_delay_bar_chart`.`buyer`",
+            "workbook-5-critical-bottleneck": "`workbook-5-tna_kpi_critical_bottleneck`.`buyer`",
+            "workbook-5-critical-path-slippage-timeline-planned-vs-actual": "`workbook-5-tna_critical_path_timeline`.`buyer`",
+            "workbook-5-ex-factory-slippage": "`workbook-5-tna_kpi_ex_factory_slippage`.`buyer`",
+            "workbook-5-milestone-failure-rate": "`workbook-5-tna_kpi_active_orders_and_failure`.`buyer`",
+            "workbook-5-milestone-health-distribution": "`workbook-5-tna_milestone_health_donut`.`buyer`"
+          },
+          "type": "filter"
+        },
+        {
+          "filter_name": "Merchant",
+          "filter_type": "String",
+          "layout": {
+            "h": 2,
+            "i": "comn4laz",
+            "w": 3,
+            "x": 3,
+            "y": 0
+          },
+          "links": {
+            "workbook-5-active-order-qty": "`workbook-5-tna_kpi_active_orders_and_failure`.`merchant`",
+            "workbook-5-average-delay-by-functional-stage-days-behind-plan": "`workbook-5-tna_stage_delay_bar_chart`.`merchant`",
+            "workbook-5-critical-bottleneck": "`workbook-5-tna_kpi_critical_bottleneck`.`merchant`",
+            "workbook-5-critical-path-slippage-timeline-planned-vs-actual": "`workbook-5-tna_critical_path_timeline`.`merchant`",
+            "workbook-5-ex-factory-slippage": "`workbook-5-tna_kpi_ex_factory_slippage`.`merchant`",
+            "workbook-5-milestone-failure-rate": "`workbook-5-tna_kpi_active_orders_and_failure`.`merchant`",
+            "workbook-5-milestone-health-distribution": "`workbook-5-tna_milestone_health_donut`.`merchant`"
+          },
+          "type": "filter"
+        },
+        {
+          "filter_name": "Style No",
+          "filter_type": "String",
+          "layout": {
+            "h": 2,
+            "i": "8o3f6y42",
+            "w": 3,
+            "x": 9,
+            "y": 0
+          },
+          "links": {
+            "workbook-5-active-order-qty": "`workbook-5-tna_kpi_active_orders_and_failure`.`style_no`",
+            "workbook-5-average-delay-by-functional-stage-days-behind-plan": "`workbook-5-tna_stage_delay_bar_chart`.`style_no`",
+            "workbook-5-critical-bottleneck": "`workbook-5-tna_kpi_critical_bottleneck`.`style_no`",
+            "workbook-5-critical-path-slippage-timeline-planned-vs-actual": "`workbook-5-tna_critical_path_timeline`.`style_no`",
+            "workbook-5-ex-factory-slippage": "`workbook-5-tna_kpi_ex_factory_slippage`.`style_no`",
+            "workbook-5-milestone-failure-rate": "`workbook-5-tna_kpi_active_orders_and_failure`.`style_no`",
+            "workbook-5-milestone-health-distribution": "`workbook-5-tna_milestone_health_donut`.`style_no`"
+          },
+          "type": "filter"
+        },
+        {
+          "filter_name": "Sales Order",
+          "filter_type": "String",
+          "layout": {
+            "h": 2,
+            "i": "iip76pcp",
+            "w": 3,
+            "x": 12,
+            "y": 0
+          },
+          "links": {
+            "workbook-5-active-order-qty": "`workbook-5-tna_kpi_active_orders_and_failure`.`sales_order`",
+            "workbook-5-average-delay-by-functional-stage-days-behind-plan": "`workbook-5-tna_stage_delay_bar_chart`.`sales_order`",
+            "workbook-5-critical-bottleneck": "`workbook-5-tna_kpi_critical_bottleneck`.`sales_order`",
+            "workbook-5-critical-path-slippage-timeline-planned-vs-actual": "`workbook-5-tna_critical_path_timeline`.`sales_order`",
+            "workbook-5-ex-factory-slippage": "`workbook-5-tna_kpi_ex_factory_slippage`.`sales_order`",
+            "workbook-5-milestone-failure-rate": "`workbook-5-tna_kpi_active_orders_and_failure`.`sales_order`",
+            "workbook-5-milestone-health-distribution": "`workbook-5-tna_milestone_health_donut`.`sales_order`"
+          },
+          "type": "filter"
+        },
+        {
+          "filter_name": "Manager",
+          "filter_type": "String",
+          "layout": {
+            "h": 2,
+            "i": "ea1881cl",
+            "w": 3,
+            "x": 6,
+            "y": 0
+          },
+          "links": {
+            "workbook-5-active-order-qty": "`workbook-5-tna_kpi_active_orders_and_failure`.`manager`",
+            "workbook-5-average-delay-by-functional-stage-days-behind-plan": "`workbook-5-tna_stage_delay_bar_chart`.`manager`",
+            "workbook-5-critical-bottleneck": "`workbook-5-tna_kpi_critical_bottleneck`.`manager`",
+            "workbook-5-critical-path-slippage-timeline-planned-vs-actual": "`workbook-5-tna_critical_path_timeline`.`manager`",
+            "workbook-5-ex-factory-slippage": "`workbook-5-tna_kpi_ex_factory_slippage`.`manager`",
+            "workbook-5-milestone-failure-rate": "`workbook-5-tna_kpi_active_orders_and_failure`.`manager`",
+            "workbook-5-milestone-health-distribution": "`workbook-5-tna_milestone_health_donut`.`manager`"
+          },
+          "type": "filter"
+        },
+        {
+          "chart": "workbook-5-average-delay-by-functional-stage-days-behind-plan",
+          "layout": {
+            "h": 20,
+            "i": "2q52lzmh",
+            "w": 10,
+            "x": 0,
+            "y": 6
+          },
+          "type": "chart"
+        },
+        {
+          "default_operator": "in",
+          "default_value": [
+            "VA",
+            "VJ"
+          ],
+          "filter_name": "Factory",
+          "filter_type": "String",
+          "layout": {
+            "h": 2,
+            "i": "i2aisy1l",
+            "w": 3,
+            "x": 15,
+            "y": 0
+          },
+          "links": {
+            "workbook-5-active-order-qty": "`workbook-5-tna_kpi_active_orders_and_failure`.`factory`",
+            "workbook-5-average-delay-by-functional-stage-days-behind-plan": "`workbook-5-tna_stage_delay_bar_chart`.`factory`",
+            "workbook-5-critical-bottleneck": "`workbook-5-tna_kpi_critical_bottleneck`.`factory`",
+            "workbook-5-ex-factory-slippage": "`workbook-5-tna_kpi_ex_factory_slippage`.`factory`",
+            "workbook-5-milestone-failure-rate": "`workbook-5-tna_kpi_active_orders_and_failure`.`factory`",
+            "workbook-5-milestone-health-distribution": "`workbook-5-tna_milestone_health_donut`.`factory`"
+          },
+          "type": "filter"
+        }
+      ],
+      "vertical_compact_layout": 0
     }
-   },
-   "description": "",
-   "folder": null,
-   "info": "",
-   "name": "workbook-5-milestone-health-distribution",
-   "query": "workbook-5-tna_milestone_health_donut",
-   "sort_order": 5,
-   "title": "Milestone Health Distribution",
-   "workbook": "workbook-5"
   }
- },
- "creation": "2026-11-09 09:55:33.432896",
- "dashboards": {
-  "workbook-5-tna-velocity-\u2014-executive-production-milestone-dashboard": {
-   "items": [
-    {
-     "chart": "workbook-5-active-order-qty",
-     "layout": {
-      "h": 4,
-      "i": "48qc879x",
-      "w": 4,
-      "x": 0,
-      "y": 2
-     },
-     "reading": "470e1a62",
-     "type": "chart"
-    },
-    {
-     "chart": "workbook-5-milestone-failure-rate",
-     "layout": {
-      "h": 4,
-      "i": "ipev2gkn",
-      "w": 4,
-      "x": 5,
-      "y": 2
-     },
-     "reading": "b663ea64",
-     "type": "chart"
-    },
-    {
-     "chart": "workbook-5-ex-factory-slippage",
-     "layout": {
-      "h": 4,
-      "i": "22ckeifb",
-      "w": 4,
-      "x": 11,
-      "y": 2
-     },
-     "reading": "234cdb74",
-     "type": "chart"
-    },
-    {
-     "chart": "workbook-5-critical-bottleneck",
-     "layout": {
-      "h": 4,
-      "i": "3djedvs8",
-      "w": 4,
-      "x": 16,
-      "y": 2
-     },
-     "reading": "b59062e4",
-     "type": "chart"
-    },
-    {
-     "chart": "workbook-5-milestone-health-distribution",
-     "layout": {
-      "h": 20,
-      "i": "bnatrsb.",
-      "w": 10,
-      "x": 10,
-      "y": 6
-     },
-     "type": "chart"
-    },
-    {
-     "filter_name": "Buyer",
-     "filter_type": "String",
-     "layout": {
-      "h": 2,
-      "i": "9nmujvt6",
-      "w": 3,
-      "x": 0,
-      "y": 0
-     },
-     "links": {
-      "workbook-5-active-order-qty": "`workbook-5-tna_kpi_active_orders_and_failure`.`buyer`",
-      "workbook-5-average-delay-by-functional-stage-days-behind-plan": "`workbook-5-tna_stage_delay_bar_chart`.`buyer`",
-      "workbook-5-critical-bottleneck": "`workbook-5-tna_kpi_critical_bottleneck`.`buyer`",
-      "workbook-5-critical-path-slippage-timeline-planned-vs-actual": "`workbook-5-tna_critical_path_timeline`.`buyer`",
-      "workbook-5-ex-factory-slippage": "`workbook-5-tna_kpi_ex_factory_slippage`.`buyer`",
-      "workbook-5-milestone-failure-rate": "`workbook-5-tna_kpi_active_orders_and_failure`.`buyer`",
-      "workbook-5-milestone-health-distribution": "`workbook-5-tna_milestone_health_donut`.`buyer`"
-     },
-     "type": "filter"
-    },
-    {
-     "filter_name": "Merchant",
-     "filter_type": "String",
-     "layout": {
-      "h": 2,
-      "i": "comn4laz",
-      "w": 3,
-      "x": 3,
-      "y": 0
-     },
-     "links": {
-      "workbook-5-active-order-qty": "`workbook-5-tna_kpi_active_orders_and_failure`.`merchant`",
-      "workbook-5-average-delay-by-functional-stage-days-behind-plan": "`workbook-5-tna_stage_delay_bar_chart`.`merchant`",
-      "workbook-5-critical-bottleneck": "`workbook-5-tna_kpi_critical_bottleneck`.`merchant`",
-      "workbook-5-critical-path-slippage-timeline-planned-vs-actual": "`workbook-5-tna_critical_path_timeline`.`merchant`",
-      "workbook-5-ex-factory-slippage": "`workbook-5-tna_kpi_ex_factory_slippage`.`merchant`",
-      "workbook-5-milestone-failure-rate": "`workbook-5-tna_kpi_active_orders_and_failure`.`merchant`",
-      "workbook-5-milestone-health-distribution": "`workbook-5-tna_milestone_health_donut`.`merchant`"
-     },
-     "type": "filter"
-    },
-    {
-     "filter_name": "Style No",
-     "filter_type": "String",
-     "layout": {
-      "h": 2,
-      "i": "8o3f6y42",
-      "w": 3,
-      "x": 9,
-      "y": 0
-     },
-     "links": {
-      "workbook-5-active-order-qty": "`workbook-5-tna_kpi_active_orders_and_failure`.`style_no`",
-      "workbook-5-average-delay-by-functional-stage-days-behind-plan": "`workbook-5-tna_stage_delay_bar_chart`.`style_no`",
-      "workbook-5-critical-bottleneck": "`workbook-5-tna_kpi_critical_bottleneck`.`style_no`",
-      "workbook-5-critical-path-slippage-timeline-planned-vs-actual": "`workbook-5-tna_critical_path_timeline`.`style_no`",
-      "workbook-5-ex-factory-slippage": "`workbook-5-tna_kpi_ex_factory_slippage`.`style_no`",
-      "workbook-5-milestone-failure-rate": "`workbook-5-tna_kpi_active_orders_and_failure`.`style_no`",
-      "workbook-5-milestone-health-distribution": "`workbook-5-tna_milestone_health_donut`.`style_no`"
-     },
-     "type": "filter"
-    },
-    {
-     "filter_name": "Sales Order",
-     "filter_type": "String",
-     "layout": {
-      "h": 2,
-      "i": "iip76pcp",
-      "w": 3,
-      "x": 12,
-      "y": 0
-     },
-     "links": {
-      "workbook-5-active-order-qty": "`workbook-5-tna_kpi_active_orders_and_failure`.`sales_order`",
-      "workbook-5-average-delay-by-functional-stage-days-behind-plan": "`workbook-5-tna_stage_delay_bar_chart`.`sales_order`",
-      "workbook-5-critical-bottleneck": "`workbook-5-tna_kpi_critical_bottleneck`.`sales_order`",
-      "workbook-5-critical-path-slippage-timeline-planned-vs-actual": "`workbook-5-tna_critical_path_timeline`.`sales_order`",
-      "workbook-5-ex-factory-slippage": "`workbook-5-tna_kpi_ex_factory_slippage`.`sales_order`",
-      "workbook-5-milestone-failure-rate": "`workbook-5-tna_kpi_active_orders_and_failure`.`sales_order`",
-      "workbook-5-milestone-health-distribution": "`workbook-5-tna_milestone_health_donut`.`sales_order`"
-     },
-     "type": "filter"
-    },
-    {
-     "filter_name": "Manager",
-     "filter_type": "String",
-     "layout": {
-      "h": 2,
-      "i": "ea1881cl",
-      "w": 3,
-      "x": 6,
-      "y": 0
-     },
-     "links": {
-      "workbook-5-active-order-qty": "`workbook-5-tna_kpi_active_orders_and_failure`.`manager`",
-      "workbook-5-average-delay-by-functional-stage-days-behind-plan": "`workbook-5-tna_stage_delay_bar_chart`.`manager`",
-      "workbook-5-critical-bottleneck": "`workbook-5-tna_kpi_critical_bottleneck`.`manager`",
-      "workbook-5-critical-path-slippage-timeline-planned-vs-actual": "`workbook-5-tna_critical_path_timeline`.`manager`",
-      "workbook-5-ex-factory-slippage": "`workbook-5-tna_kpi_ex_factory_slippage`.`manager`",
-      "workbook-5-milestone-failure-rate": "`workbook-5-tna_kpi_active_orders_and_failure`.`manager`",
-      "workbook-5-milestone-health-distribution": "`workbook-5-tna_milestone_health_donut`.`manager`"
-     },
-     "type": "filter"
-    },
-    {
-     "chart": "workbook-5-average-delay-by-functional-stage-days-behind-plan",
-     "layout": {
-      "h": 20,
-      "i": "2q52lzmh",
-      "w": 10,
-      "x": 0,
-      "y": 6
-     },
-     "type": "chart"
-    },
-    {
-     "default_operator": "in",
-     "default_value": [
-      "VA",
-      "VJ"
-     ],
-     "filter_name": "Factory",
-     "filter_type": "String",
-     "layout": {
-      "h": 2,
-      "i": "i2aisy1l",
-      "w": 3,
-      "x": 15,
-      "y": 0
-     },
-     "links": {
-      "workbook-5-active-order-qty": "`workbook-5-tna_kpi_active_orders_and_failure`.`factory`",
-      "workbook-5-average-delay-by-functional-stage-days-behind-plan": "`workbook-5-tna_stage_delay_bar_chart`.`factory`",
-      "workbook-5-critical-bottleneck": "`workbook-5-tna_kpi_critical_bottleneck`.`factory`",
-      "workbook-5-ex-factory-slippage": "`workbook-5-tna_kpi_ex_factory_slippage`.`factory`",
-      "workbook-5-milestone-failure-rate": "`workbook-5-tna_kpi_active_orders_and_failure`.`factory`",
-      "workbook-5-milestone-health-distribution": "`workbook-5-tna_milestone_health_donut`.`factory`"
-     },
-     "type": "filter"
-    }
-   ],
-   "name": "workbook-5-tna-velocity-\u2014-executive-production-milestone-dashboard",
-   "title": "TNA VELOCITY \u2014 EXECUTIVE PRODUCTION & MILESTONE DASHBOARD",
-   "vertical_compact_layout": 0,
-   "visible_to_roles": [
-    {
-     "role": "Desk User"
-    }
-   ],
-   "workbook": "workbook-5"
-  }
- },
- "docstatus": 0,
- "doctype": "Insights Workbook",
- "folders": [
-  {
-   "sort_order": 0,
-   "title": "Untitled",
-   "type": "query"
-  }
- ],
- "idx": 27,
- "is_standard": 1,
- "modified": "2026-11-10 15:19:28.685946",
- "modified_by": "Administrator",
- "module": "Merch TNA Tracker",
- "name": "workbook-5",
- "owner": "Administrator",
- "queries": {
-  "workbook-5-tna_critical_path_timeline": {
-   "folder": "Untitled",
-   "is_builder_query": 0,
-   "is_native_query": 1,
-   "is_script_query": 0,
-   "name": "workbook-5-tna_critical_path_timeline",
-   "operations": [
-    {
-     "data_source": "Site DB",
-     "raw_sql": "SELECT \n    t.buyer,\n    t.factory,\n    t.manager,\n    t.merchant,\n    t.style_no,\n    t.sales_order,\n    COALESCE(e.sequence, 99) AS seq,\n    CONCAT(LPAD(COALESCE(e.sequence, 99), 2, '0'), ' - ', d.event_name) AS milestone_ordered,\n    d.event_name AS milestone,\n    d.plan_date AS planned_date,\n    d.actual_date AS actual_date,\n    d.days_offset AS planned_day_offset,\n    (d.days_offset + DATEDIFF(d.actual_date, d.plan_date)) AS actual_day_offset,\n    -- 1. Positive number for delays (e.g., +21 days late)\n    DATEDIFF(d.actual_date, d.plan_date) AS delay_days,\n    -- 2. Negative number for delays (e.g., -21 days variance, matching your cards)\n    DATEDIFF(d.plan_date, d.actual_date) AS variance_days,\n    CASE \n        WHEN DATEDIFF(d.actual_date, d.plan_date) > 14 THEN 'Severe Delay (>14d)'\n        WHEN DATEDIFF(d.actual_date, d.plan_date) BETWEEN 7 AND 14 THEN 'Moderate Delay (7\u201314d)'\n        WHEN DATEDIFF(d.actual_date, d.plan_date) BETWEEN 1 AND 6 THEN 'Minor Delay (1\u20136d)'\n        ELSE 'On Time (<=0d)'\n    END AS delay_severity\nFROM `tabOrder TNA Tracker` t\nJOIN `tabTNA Tracker Detail` d ON d.parent = t.name\nLEFT JOIN `tabTNA Event` e ON e.name = d.event_name\nWHERE t.order_status != 'Completed'\n  AND d.actual_date IS NOT NULL",
-     "type": "sql"
-    }
-   ],
-   "sort_order": 0,
-   "title": "TNA_Critical_Path_Timeline",
-   "use_live_connection": 1,
-   "workbook": "workbook-5"
-  },
-  "workbook-5-tna_kpi_active_orders_and_failure": {
-   "folder": null,
-   "is_builder_query": 0,
-   "is_native_query": 1,
-   "is_script_query": 0,
-   "name": "workbook-5-tna_kpi_active_orders_and_failure",
-   "operations": [
-    {
-     "data_source": "Site DB",
-     "raw_sql": "SELECT \n    t.name AS tracker_id,\n    t.factory,\n    t.buyer,\n    t.manager,\n    t.merchant,\n    t.style_no,\n    t.sales_order,\n    t.order_status,\n    t.so_qty,\n    t.total_events,\n    t.failed_events,\n    ROUND((t.failed_events / NULLIF(t.total_events, 0)) * 100, 1) AS order_failure_rate_pct\nFROM `tabOrder TNA Tracker` t\nWHERE t.order_status != 'Completed'",
-     "type": "sql"
-    }
-   ],
-   "sort_order": 0,
-   "title": "TNA_KPI_Active_Orders_And_Failure",
-   "use_live_connection": 1,
-   "workbook": "workbook-5"
-  },
-  "workbook-5-tna_kpi_critical_bottleneck": {
-   "folder": null,
-   "is_builder_query": 0,
-   "is_native_query": 1,
-   "is_script_query": 0,
-   "name": "workbook-5-tna_kpi_critical_bottleneck",
-   "operations": [
-    {
-     "data_source": "Site DB",
-     "raw_sql": "SELECT \n    t.buyer,\n    t.factory,\n    t.manager,\n    t.merchant,\n    t.style_no,\n    t.sales_order,\n    d.event_name AS bottleneck_event,\n    DATEDIFF(d.plan_date, d.actual_date) AS delay_days,\n    CONCAT(\n        d.event_name, ' (', t.buyer, ' - ', t.style_no, ') | Plan: ', \n        DATE_FORMAT(d.plan_date, '%d-%b'), ' -> Act: ', DATE_FORMAT(d.actual_date, '%d-%b')\n    ) AS bottleneck_details\nFROM `tabOrder TNA Tracker` t\nJOIN `tabTNA Tracker Detail` d ON d.parent = t.name\nWHERE t.order_status != 'Completed'\n  AND d.actual_date IS NOT NULL\n  AND d.actual_date > d.plan_date\nORDER BY DATEDIFF(d.plan_date, d.actual_date) ASC",
-     "type": "sql"
-    }
-   ],
-   "sort_order": 2,
-   "title": "TNA_KPI_Critical_Bottleneck",
-   "use_live_connection": 1,
-   "workbook": "workbook-5"
-  },
-  "workbook-5-tna_kpi_ex_factory_slippage": {
-   "folder": null,
-   "is_builder_query": 0,
-   "is_native_query": 1,
-   "is_script_query": 0,
-   "name": "workbook-5-tna_kpi_ex_factory_slippage",
-   "operations": [
-    {
-     "data_source": "Site DB",
-     "raw_sql": "SELECT \n    t.name AS tracker_id,\n    t.factory,\n    t.buyer,\n    t.manager,\n    t.merchant,\n    t.style_no,\n    t.sales_order,\n    t.ex_fty_date AS planned_ex_fty,\n    d.plan_date AS hod_plan_date,\n    d.actual_date AS hod_actual_date,\n    COALESCE(\n        DATEDIFF(d.plan_date, d.actual_date),\n        0\n    ) AS ex_fty_slippage_days\nFROM `tabOrder TNA Tracker` t\nLEFT JOIN `tabTNA Tracker Detail` d ON d.parent = t.name AND d.event_name = 'HOD'",
-     "type": "sql"
-    }
-   ],
-   "sort_order": 1,
-   "title": "TNA_KPI_Ex_Factory_Slippage",
-   "use_live_connection": 1,
-   "workbook": "workbook-5"
-  },
-  "workbook-5-tna_milestone_health_donut": {
-   "folder": "Untitled",
-   "is_builder_query": 0,
-   "is_native_query": 1,
-   "is_script_query": 0,
-   "name": "workbook-5-tna_milestone_health_donut",
-   "operations": [
-    {
-     "data_source": "Site DB",
-     "raw_sql": "SELECT \n    t.buyer,\n    t.factory,\n    t.manager,\n    t.merchant,\n    t.style_no,\n    t.sales_order,\n    d.name AS detail_row_id,\n    d.event_name,\n    CASE \n        WHEN d.actual_date IS NULL THEN 'Marked N/A (Unlogged)'\n        WHEN DATEDIFF(d.actual_date, d.plan_date) > 14 THEN 'Severe Delay (>14d)'\n        WHEN DATEDIFF(d.actual_date, d.plan_date) BETWEEN 7 AND 14 THEN 'Moderate Delay (7\u201314d)'\n        WHEN DATEDIFF(d.actual_date, d.plan_date) BETWEEN 1 AND 6 THEN 'Minor Delay (1\u20136d)'\n        ELSE 'On Time / Early (<=0d)'\n    END AS health_category\nFROM `tabOrder TNA Tracker` t\nJOIN `tabTNA Tracker Detail` d ON d.parent = t.name\nWHERE t.order_status != 'Completed'",
-     "type": "sql"
-    }
-   ],
-   "sort_order": 1,
-   "title": "TNA_Milestone_Health_Donut",
-   "use_live_connection": 1,
-   "workbook": "workbook-5"
-  },
-  "workbook-5-tna_stage_delay_bar_chart": {
-   "folder": "Untitled",
-   "is_builder_query": 0,
-   "is_native_query": 1,
-   "is_script_query": 0,
-   "name": "workbook-5-tna_stage_delay_bar_chart",
-   "operations": [
-    {
-     "data_source": "Site DB",
-     "raw_sql": "SELECT\n    t.name AS tracker,\n    t.factory,\n    t.buyer,\n    t.manager,\n    t.merchant,\n    t.style_no,\n    t.sales_order,\n    d.event_name,\n    DATEDIFF(d.actual_date, d.plan_date) AS total_delay,\n    DATEDIFF(d.actual_date, d.plan_date) AS `Total Delay`,\n    CASE WHEN DATEDIFF(d.actual_date, d.plan_date) BETWEEN 1 AND 6\n         THEN DATEDIFF(d.actual_date, d.plan_date) END AS `Minor Delay (1-6d)`,\n    CASE WHEN DATEDIFF(d.actual_date, d.plan_date) BETWEEN 7 AND 14\n         THEN DATEDIFF(d.actual_date, d.plan_date) END AS `Moderate Delay (7-14d)`,\n    CASE WHEN DATEDIFF(d.actual_date, d.plan_date) > 14\n         THEN DATEDIFF(d.actual_date, d.plan_date) END AS `Severe Delay (>14d)`\nFROM `tabOrder TNA Tracker` t\nJOIN `tabTNA Tracker Detail` d ON d.parent = t.name\nWHERE t.order_status != 'Completed'\n    AND d.actual_date IS NOT NULL\n    AND d.actual_date > d.plan_date",
-     "type": "sql"
-    }
-   ],
-   "sort_order": 2,
-   "title": "TNA_Stage_Delay_Bar_Chart",
-   "use_live_connection": 1,
-   "workbook": "workbook-5"
-  }
- },
- "title": "Workbook 5"
 }
