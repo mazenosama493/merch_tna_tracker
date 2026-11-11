@@ -5,6 +5,13 @@ app_description = "Time and Action Tracker for Merchandising"
 app_email = "mazenosama987654321@gmial.com"
 app_license = "mit"
 
+permission_query_conditions = {
+    "Order TNA Tracker": "merch_tna_tracker.merch_tna_tracker.doctype.order_tna_tracker.order_tna_tracker.get_permission_query_conditions"
+}
+has_permission = {
+    "Order TNA Tracker": "merch_tna_tracker.merch_tna_tracker.doctype.order_tna_tracker.order_tna_tracker.has_permission"
+}
+
 fixtures = [
     {
         "dt": "Workspace",
@@ -85,6 +92,10 @@ fixtures = [
                 ]
             ]
         ]
+    },
+    {
+        "dt": "Custom DocPerm",
+        "filters": [["parent", "=", "Order TNA Tracker"]],
     },
     {
         "dt": "Property Setter",

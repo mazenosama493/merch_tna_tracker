@@ -13,14 +13,35 @@ CHILD_TABLE = "tna_details"
 ACTUAL_DATE_FIELD = "actual_date"
 ALLOWED_ROLES_TO_DELETE_ROWS = {"System Manager", "TNA Tracker Admin"}
 
+# Role given to merchants, and roles that are never restricted
+MERCHANT_ROLE = "TNA Tracker Merchant"
+UNRESTRICTED_ROLES = {"System Manager", "TNA Tracker Admin"}
+
 
 class OrderTNATracker(Document):
     def validate(self):
         # If you already have other logic here (lead_time, tna_plan,
         # total_events, failed_events ...), keep it and just make sure
         # set_order_status() is called.
+        self.enforce_merchant_ownership()
         self.set_order_status()
         self.prevent_row_deletion()
+
+    def enforce_merchant_ownership(self):
+        """Restricted merchants can only save trackers assigned to themselves."""
+        user = frappe.session.user
+        if not _is_restricted(user):
+            return
+
+        merchant = _merchant_of(user)
+        if not merchant:
+            frappe.throw(_("Your user is not linked to a Merchant record."))
+
+        if self.is_new() and not self.merchant:
+            self.merchant = merchant
+
+        if self.merchant != merchant:
+            frappe.throw(_("You can only save trackers assigned to you."))
 
     def set_order_status(self):
         """
@@ -59,10 +80,44 @@ class OrderTNATracker(Document):
         if old_rows - new_rows:
             frappe.throw(_("You are not allowed to delete TNA Details rows"))
 
-    
+
+# ---------------------------------------------------------------------------
+# Merchant-level access (wired up in hooks.py)
+# ---------------------------------------------------------------------------
+
+def _merchant_of(user):
+    return frappe.db.get_value("Merchant", {"useremail": user}, "name")
 
 
+def _is_restricted(user):
+    roles = set(frappe.get_roles(user))
+    return MERCHANT_ROLE in roles and not (UNRESTRICTED_ROLES & roles)
 
+
+def get_permission_query_conditions(user=None):
+    """Filters list views, reports and link searches."""
+    user = user or frappe.session.user
+    if not _is_restricted(user):
+        return ""
+
+    merchant = _merchant_of(user)
+    if not merchant:
+        return "1=0"
+
+    return f"`tabOrder TNA Tracker`.merchant = {frappe.db.escape(merchant)}"
+
+
+def has_permission(doc, ptype=None, user=None, debug=False):
+    """Guards direct access (URL, API) to a single document."""
+    user = user or frappe.session.user
+    if not _is_restricted(user):
+        return True
+
+    # New, unsaved docs: validate() assigns/checks the merchant
+    if doc.is_new() or not doc.merchant:
+        return True
+
+    return doc.merchant == _merchant_of(user)
 
 
 def refresh_order_status(name):

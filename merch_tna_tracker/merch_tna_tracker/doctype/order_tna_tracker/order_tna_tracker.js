@@ -1,7 +1,6 @@
 function style_diff_cell(grid_row) {
     if (!grid_row || !grid_row.doc || !grid_row.columns || !grid_row.columns.diff_days) return;
 
-    // Keep cell uncolored if actual_date is empty
     if (!grid_row.doc.actual_date) {
         grid_row.columns.diff_days.css({
             'background-color': '',
@@ -13,47 +12,33 @@ function style_diff_cell(grid_row) {
     const is_negative = Number(grid_row.doc.diff_days) < 0;
 
     if (is_negative) {
-        // Heavy deep red styling for negative/delayed days
         grid_row.columns.diff_days.css({
             'background-color': '#d32f2f',
             'color': '#ffffff',
             'font-weight': 'bold'
         });
     } else {
-        // Heavy solid green styling for positive/on-time days
         grid_row.columns.diff_days.css({
-            'background-color': '#2e7d32', // Strong material green
-            'color': '#ffffff',            // White text for high contrast
+            'background-color': '#2e7d32',
+            'color': '#ffffff',
             'font-weight': 'bold'
         });
-        
-        /* 
-        // Or if you prefer a heavy soft green tint instead of solid dark green, uncomment below:
-        grid_row.columns.diff_days.css({
-            'background-color': '#c8e6c9', // Heavy green tint
-            'color': '#1b5e20',            // Very dark, high-contrast green text
-            'font-weight': 'bold'
-        });
-        */
     }
 }
 
-// Colors for the Order Status field
 const ORDER_STATUS_COLORS = {
-    'Not yet Started': { bg: '#f57c00', fg: '#ffffff' }, // Orange
-    'In Progress':     { bg: '#3542fd', fg: '#ffffff' }, // Yellow (dark text for contrast)
-    'Completed':       { bg: '#2e7d32', fg: '#ffffff' }  // Green
+    'Not yet Started': { bg: '#f57c00', fg: '#ffffff' },
+    'In Progress':     { bg: '#3542fd', fg: '#ffffff' },
+    'Completed':       { bg: '#2e7d32', fg: '#ffffff' }
 };
 
 function style_order_status(frm, status) {
     const field = frm.fields_dict.order_status;
     if (!field || !field.$wrapper) return;
 
-    // Use the status passed in (just calculated) or fall back to the saved value
     status = status || frm.doc.order_status || 'Not yet Started';
     const color = ORDER_STATUS_COLORS[status] || ORDER_STATUS_COLORS['Not yet Started'];
 
-    // Read-only fields render as .control-value, editable ones as input/select
     field.$wrapper.find('.control-value, .control-input input, .control-input select').css({
         'background-color': color.bg,
         'color': color.fg,
@@ -62,8 +47,63 @@ function style_order_status(frm, status) {
     });
 }
 
+function is_restricted_merchant() {
+    return (
+        frappe.user.has_role('Merchant') &&
+        !frappe.user.has_role('System Manager') &&
+        !frappe.user.has_role('Merch Manager') &&
+        frappe.session.user !== 'Administrator'
+    );
+}
+
+function apply_merchant_restrictions(frm) {
+    if (!is_restricted_merchant()) return;
+
+    // 1. Lock manager and merchant fields outside the child table
+    const locked_parent_fields = ['manager', 'merchant'];
+    locked_parent_fields.forEach(function(field) {
+        frm.set_df_property(field, 'read_only', 1);
+    });
+
+    // 2. Prevent adding or deleting rows in the child table
+    frm.set_df_property('tna_details', 'cannot_add_rows', true);
+    frm.set_df_property('tna_details', 'cannot_delete_rows', true);
+
+    let grid = frm.fields_dict.tna_details && frm.fields_dict.tna_details.grid;
+    if (grid) {
+        grid.cannot_add_rows = true;
+        grid.cannot_delete_rows = true;
+
+        // 3. Lock all child table columns except actual_date
+        if (grid.docfields) {
+            grid.docfields.forEach(function(df) {
+                if (df.fieldname !== 'actual_date') {
+                    grid.update_docfield_property(df.fieldname, 'read_only', 1);
+                } else {
+                    grid.update_docfield_property(df.fieldname, 'read_only', 0);
+                }
+            });
+        }
+
+        frm.refresh_field('tna_details');
+
+        grid.wrapper.find('.grid-add-row, .grid-remove-rows, .grid-remove-all-rows, .grid-duplicate-rows').hide();
+        grid.wrapper.find('.grid-row-check').hide();
+
+        (grid.grid_rows || []).forEach(function(grid_row) {
+            style_diff_cell(grid_row);
+        });
+    }
+}
+
 frappe.ui.form.on('Order TNA Tracker', {
+    onload: function(frm) {
+        apply_merchant_restrictions(frm);
+    },
+
     refresh: function(frm) {
+        apply_merchant_restrictions(frm);
+
         $(frm.wrapper)
             .off('grid-row-render.diff-days')
             .on('grid-row-render.diff-days', function(event, grid_row) {
@@ -72,18 +112,15 @@ frappe.ui.form.on('Order TNA Tracker', {
                 }
             });
 
-        // Style already-rendered rows on form refresh
         if (frm.fields_dict.tna_details && frm.fields_dict.tna_details.grid) {
             (frm.fields_dict.tna_details.grid.grid_rows || []).forEach(function(grid_row) {
                 style_diff_cell(grid_row);
             });
         }
 
-        // Color the Order Status field when the form loads / reloads after save
         style_order_status(frm);
     },
 
-    // Re-color whenever the status value changes
     order_status: function(frm) {
         style_order_status(frm);
     },
@@ -106,9 +143,6 @@ frappe.ui.form.on('Order TNA Tracker', {
                 return;
             }
 
-            // 1. Pick the LONGEST plan that still fits inside the lead time
-            //    (delivery_lead_time <= lead_time), e.g. lead time 46 with
-            //    plans 45 and 60 -> picks 45.
             frappe.call({
                 method: 'frappe.client.get_list',
                 args: {
@@ -126,8 +160,6 @@ frappe.ui.form.on('Order TNA Tracker', {
                         frm.set_value('tna_plan', matched_plan);
                         frm.trigger('load_plan_events');
                     } else {
-                        // 2. Lead time is shorter than every plan:
-                        //    fall back to the shortest available plan
                         frm.trigger('fetch_fallback_plan');
                     }
                 }
@@ -192,7 +224,7 @@ frappe.ui.form.on('Order TNA Tracker', {
             frm.set_value('total_events', (plan_doc.events || []).length);
             frm.set_value('failed_events', 0);
 
-            // Freshly loaded plan has no actual dates -> Not yet Started
+            apply_merchant_restrictions(frm);
             frm.trigger('update_order_status');
         });
     },
@@ -211,9 +243,6 @@ frappe.ui.form.on('Order TNA Tracker', {
         frm.trigger('update_order_status');
     },
 
-    // Not yet Started : no rows, or no row has an actual date   -> orange
-    // In Progress     : at least one row has an actual date     -> yellow
-    // Completed       : every row has an actual date            -> green
     update_order_status: function(frm) {
         const rows = frm.doc.tna_details || [];
         const done = rows.filter(function(r) { return r.actual_date; }).length;
@@ -226,13 +255,25 @@ frappe.ui.form.on('Order TNA Tracker', {
         }
 
         frm.set_value('order_status', status);
-
-        // Color immediately with the status just calculated
         style_order_status(frm, status);
     }
 });
 
 frappe.ui.form.on('TNA Tracker Detail', {
+    form_render: function(frm, cdt, cdn) {
+        if (is_restricted_merchant()) {
+            let grid_row = frm.fields_dict.tna_details.grid.grid_rows_by_docname[cdn];
+            if (grid_row && grid_row.grid_form) {
+                Object.keys(grid_row.grid_form.fields_dict).forEach(function(fname) {
+                    if (fname !== 'actual_date') {
+                        grid_row.grid_form.fields_dict[fname].df.read_only = 1;
+                        grid_row.grid_form.fields_dict[fname].refresh();
+                    }
+                });
+            }
+        }
+    },
+
     diff_days: function(frm, cdt, cdn) {
         let grid_row = frm.fields_dict.tna_details.grid.grid_rows_by_docname[cdn];
         if (grid_row) {
@@ -262,7 +303,6 @@ frappe.ui.form.on('TNA Tracker Detail', {
             frappe.model.set_value(cdt, cdn, 'diff_days', 0);
         }
 
-        // Re-style immediately (handles cases where diff_days was already 0)
         let grid_row = frm.fields_dict.tna_details.grid.grid_rows_by_docname[cdn];
         if (grid_row) {
             style_diff_cell(grid_row);

@@ -8,7 +8,8 @@
  "engine": "InnoDB",
  "field_order": [
   "merchant_section",
-  "merchant_name"
+  "merchant_name",
+  "useremail"
  ],
  "fields": [
   {
@@ -23,12 +24,20 @@
    "label": "Merchant Name",
    "reqd": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "useremail",
+   "fieldtype": "Link",
+   "label": "User(Email)",
+   "options": "User",
+   "reqd": 1,
+   "unique": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-11-08 14:53:09.319150",
+ "modified": "2026-11-11 09:21:19.924916",
  "modified_by": "Administrator",
  "module": "Merch TNA Tracker",
  "name": "Merchant",
