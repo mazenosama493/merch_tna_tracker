@@ -42,7 +42,6 @@
    "fieldname": "plan_date",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "is_virtual": 1,
    "label": "Plan Date",
    "read_only": 1,
    "reqd": 1
@@ -71,7 +70,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-11-09 11:34:21.426908",
+ "modified": "2026-11-12 08:59:32.910158",
  "modified_by": "Administrator",
  "module": "Merch TNA Tracker",
  "name": "TNA Tracker Detail",
