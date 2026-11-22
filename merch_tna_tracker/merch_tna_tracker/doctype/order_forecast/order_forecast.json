@@ -1,0 +1,214 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2026-11-16 13:30:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "forecast_section",
+  "naming_series",
+  "buyer",
+  "forecast_month",
+  "column_break_forecast",
+  "confidence",
+  "status",
+  "value_section",
+  "qty",
+  "value",
+  "column_break_value",
+  "currency",
+  "value_usd",
+  "conversion_section",
+  "confirmed_qty",
+  "remaining_qty",
+  "column_break_conversion",
+  "remaining_value",
+  "remaining_value_usd",
+  "month_change_section",
+  "month_change_log"
+ ],
+ "fields": [
+  {
+   "fieldname": "forecast_section",
+   "fieldtype": "Section Break",
+   "label": "Forecast"
+  },
+  {
+   "default": "FC-.YYYY.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "FC-.YYYY.-.#####",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "buyer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Buyer",
+   "options": "Merch Buyer",
+   "reqd": 1
+  },
+  {
+   "description": "Any day in the month. It is saved as the 1st of the month.",
+   "fieldname": "forecast_month",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Forecast Month",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_forecast",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Medium",
+   "fieldname": "confidence",
+   "fieldtype": "Select",
+   "label": "Confidence",
+   "options": "Low\nMedium\nHigh"
+  },
+  {
+   "default": "Projected",
+   "description": "Worked out from the confirmed qty.",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Projected\nPartly Confirmed\nConfirmed",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "value_section",
+   "fieldtype": "Section Break",
+   "label": "Quantity & Value"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty",
+   "non_negative": 1,
+   "precision": "0",
+   "reqd": 1
+  },
+  {
+   "description": "In the buyer's currency.",
+   "fieldname": "value",
+   "fieldtype": "Float",
+   "label": "Value",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_value",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "buyer.order_currency",
+   "fieldname": "currency",
+   "fieldtype": "Select",
+   "label": "Currency",
+   "options": "\nUSD\nEUR",
+   "read_only": 1
+  },
+  {
+   "fieldname": "value_usd",
+   "fieldtype": "Float",
+   "label": "Value USD",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "conversion_section",
+   "fieldtype": "Section Break",
+   "label": "Conversion"
+  },
+  {
+   "description": "Qty still wanted on the Order Lines linked to this forecast.",
+   "fieldname": "confirmed_qty",
+   "fieldtype": "Float",
+   "label": "Confirmed Qty",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "description": "Still projected. The Summary uses this number.",
+   "fieldname": "remaining_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Remaining Qty",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_conversion",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remaining_value",
+   "fieldtype": "Float",
+   "label": "Remaining Value",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remaining_value_usd",
+   "fieldtype": "Float",
+   "label": "Remaining Value USD",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "month_change_section",
+   "fieldtype": "Section Break",
+   "label": "Forecast Month Change History"
+  },
+  {
+   "fieldname": "month_change_log",
+   "fieldtype": "Table",
+   "label": "Month Change Log",
+   "options": "Forecast Month Change"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Order Line",
+   "link_fieldname": "forecast"
+  }
+ ],
+ "modified": "2026-11-22 10:10:57.033199",
+ "modified_by": "Administrator",
+ "module": "Merch TNA Tracker",
+ "name": "Order Forecast",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "search_fields": "buyer",
+ "sort_field": "forecast_month",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "buyer",
+ "track_changes": 1
+}

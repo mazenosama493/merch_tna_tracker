@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "creation": "2026-11-16 12:30:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "rates_section",
+  "eur_to_usd_rate",
+  "orders_section",
+  "require_forecast"
+ ],
+ "fields": [
+  {
+   "fieldname": "rates_section",
+   "fieldtype": "Section Break",
+   "label": "Exchange Rate"
+  },
+  {
+   "default": "1.1",
+   "description": "How many USD for 1 EUR. Used to convert EUR buyers' amounts to USD in Order Line and Order Forecast.",
+   "fieldname": "eur_to_usd_rate",
+   "fieldtype": "Float",
+   "label": "EUR to USD Rate",
+   "precision": "4",
+   "reqd": 1
+  },
+  {
+   "fieldname": "orders_section",
+   "fieldtype": "Section Break",
+   "label": "Orders"
+  },
+  {
+   "default": "0",
+   "description": "Turn it on after the old orders are imported. Then every new order must say which forecast it comes from.",
+   "fieldname": "require_forecast",
+   "fieldtype": "Check",
+   "label": "Require a Forecast on New Orders"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-11-16 19:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Merch TNA Tracker",
+ "name": "Order Book Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

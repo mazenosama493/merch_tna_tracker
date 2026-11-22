@@ -8,7 +8,10 @@
  "engine": "InnoDB",
  "field_order": [
   "brand_section",
-  "brand"
+  "brand",
+  "order_book_section",
+  "order_currency",
+  "buyer_group"
  ],
  "fields": [
   {
@@ -19,14 +22,40 @@
   {
    "fieldname": "brand",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Brand",
+   "reqd": 1,
+   "set_only_once": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "order_book_section",
+   "fieldtype": "Section Break",
+   "label": "Order Book"
+  },
+  {
+   "description": "The currency this buyer's orders are priced in. Cannot be changed once the buyer has POs or forecasts.",
+   "fieldname": "order_currency",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Order Currency",
+   "options": "\nUSD\nEUR",
+   "reqd": 1
+  },
+  {
+   "description": "Optional. Use it when this record is a brand under a bigger buyer (e.g. CJ Basic under Bootbarn). Leave empty for a full buyer.",
+   "fieldname": "buyer_group",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Buyer Group",
+   "options": "Merch Buyer"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-11-08 14:54:33.246269",
+ "modified": "2026-11-16 16:00:00.000000",
  "modified_by": "Administrator",
  "module": "Merch TNA Tracker",
  "name": "Merch Buyer",
@@ -48,7 +77,9 @@
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
+ "search_fields": "order_currency,buyer_group",
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }

@@ -1,0 +1,401 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2026-11-16 13:20:00",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "order_section",
+  "naming_series",
+  "buyer_po",
+  "style_no",
+  "description",
+  "wash_color",
+  "column_break_order",
+  "buyer",
+  "season",
+  "currency",
+  "fabric_ref",
+  "fabric_mill",
+  "forecast",
+  "value_section",
+  "qty",
+  "unit_price",
+  "unit_price_ddp",
+  "ddp_price",
+  "fob_price",
+  "add_discount",
+  "discount_amount",
+  "add_extra",
+  "extra_qty",
+  "column_break_value",
+  "amount",
+  "exchange_rate",
+  "amount_usd",
+  "dates_section",
+  "buyer_ex_factory_date",
+  "current_ex_factory_date",
+  "column_break_dates",
+  "actual_ex_factory_date",
+  "ship_month",
+  "status_section",
+  "status",
+  "shipped_qty",
+  "column_break_status",
+  "ship_pct",
+  "tna",
+  "section_break_kgfi",
+  "destinations",
+  "revisions_section",
+  "revisions",
+  "shipments_section",
+  "shipments",
+  "status_log_section",
+  "status_log"
+ ],
+ "fields": [
+  {
+   "fieldname": "order_section",
+   "fieldtype": "Section Break",
+   "label": "Order"
+  },
+  {
+   "default": "OL-.YYYY.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "OL-.YYYY.-.#####",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "buyer_po",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Buyer PO",
+   "options": "Buyer PO",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "style_no",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Style No",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "wash_color",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Wash / Color"
+  },
+  {
+   "fieldname": "column_break_order",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "buyer_po.buyer",
+   "fieldname": "buyer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Buyer",
+   "options": "Merch Buyer",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "buyer_po.season",
+   "fieldname": "season",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Season",
+   "options": "Season",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "buyer_po.currency",
+   "fieldname": "currency",
+   "fieldtype": "Select",
+   "label": "Currency",
+   "options": "\nUSD\nEUR",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fabric_ref",
+   "fieldtype": "Data",
+   "label": "Fabric Ref"
+  },
+  {
+   "fieldname": "fabric_mill",
+   "fieldtype": "Data",
+   "label": "Fabric Mill"
+  },
+  {
+   "description": "Optional. The forecast this order comes from. This order's qty is taken off the forecast.",
+   "fieldname": "forecast",
+   "fieldtype": "Link",
+   "label": "From Forecast",
+   "options": "Order Forecast",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "value_section",
+   "fieldtype": "Section Break",
+   "label": "Quantity & Value"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Ordered Qty",
+   "non_negative": 1,
+   "precision": "0",
+   "reqd": 1
+  },
+  {
+   "description": "In the buyer's currency.",
+   "fieldname": "unit_price",
+   "fieldtype": "Float",
+   "label": "Unit Price (FOB)",
+   "non_negative": 1,
+   "precision": "4"
+  },
+  {
+   "fieldname": "ddp_price",
+   "fieldtype": "Float",
+   "label": "DDP Price",
+   "non_negative": 1,
+   "precision": "4",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_value",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Qty x Unit Price, in the buyer's currency.",
+   "fieldname": "amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Amount",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "description": "1 for USD buyers, the EUR to USD Rate in Order Book Settings for EUR buyers.",
+   "fieldname": "exchange_rate",
+   "fieldtype": "Float",
+   "label": "Exchange Rate (to USD)",
+   "precision": "4",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amount_usd",
+   "fieldtype": "Float",
+   "label": "Amount USD",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "dates_section",
+   "fieldtype": "Section Break",
+   "label": "Dates"
+  },
+  {
+   "description": "The original date from the buyer. Locked once a date revision exists.",
+   "fieldname": "buyer_ex_factory_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Buyer Ex-Factory Date",
+   "read_only_depends_on": "eval:!doc.__islocal && (doc.revisions || []).length > 0",
+   "reqd": 1
+  },
+  {
+   "description": "Latest revised date. The TNA starts from this date.",
+   "fieldname": "current_ex_factory_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Current Ex-Factory Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_dates",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Filled from the last shipment when the order is fully shipped, if left empty.",
+   "fieldname": "actual_ex_factory_date",
+   "fieldtype": "Date",
+   "label": "Actual Ex-Factory Date"
+  },
+  {
+   "description": "First day of the current ex-factory month. The Summary report groups by it.",
+   "fieldname": "ship_month",
+   "fieldtype": "Date",
+   "label": "Ship Month",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status_section",
+   "fieldtype": "Section Break",
+   "label": "Status"
+  },
+  {
+   "default": "PO Received",
+   "description": "Partly Shipped and Shipped are set automatically from the shipments.",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "PO Received\nFabric Booked\nFabric In-House\nApprovals\nIn Production\nReady\nPartly Shipped\nShipped\nDelivered\nClosed\nCancelled",
+   "reqd": 1
+  },
+  {
+   "fieldname": "shipped_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Shipped Qty",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_status",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ship_pct",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Ship %",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "description": "Filled by the TNA link (next step).",
+   "fieldname": "tna",
+   "fieldtype": "Data",
+   "label": "TNA",
+   "read_only": 1
+  },
+  {
+   "fieldname": "revisions_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "revisions",
+   "fieldtype": "Table",
+   "label": "Date Revisions",
+   "options": "Order Date Revision"
+  },
+  {
+   "fieldname": "shipments_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "shipments",
+   "fieldtype": "Table",
+   "label": "Shipments",
+   "options": "Order Shipment"
+  },
+  {
+   "fieldname": "status_log_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "status_log",
+   "fieldtype": "Table",
+   "label": "Status Log",
+   "options": "Order Status Log"
+  },
+  {
+   "fieldname": "unit_price_ddp",
+   "fieldtype": "Float",
+   "label": "Unit Price (DDP)"
+  },
+  {
+   "fieldname": "section_break_kgfi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fob_price",
+   "fieldtype": "Float",
+   "label": "FOB Price",
+   "read_only": 1
+  },
+  {
+   "fieldname": "destinations",
+   "fieldtype": "Table",
+   "label": "Destinations",
+   "options": "Order Line Destination"
+  },
+  {
+   "depends_on": "eval:doc.add_discount == 1",
+   "fieldname": "discount_amount",
+   "fieldtype": "Percent",
+   "label": "Discount",
+   "mandatory_depends_on": "eval:doc.add_discount == 1",
+   "non_negative": 1
+  },
+  {
+   "depends_on": "eval:doc.add_extra == 1",
+   "fieldname": "extra_qty",
+   "fieldtype": "Percent",
+   "label": "Extra",
+   "mandatory_depends_on": "eval:doc.add_extra == 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "add_discount",
+   "fieldtype": "Check",
+   "label": "Add Discount"
+  },
+  {
+   "default": "0",
+   "fieldname": "add_extra",
+   "fieldtype": "Check",
+   "label": "Add Extra"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-11-22 13:33:10.644076",
+ "modified_by": "Administrator",
+ "module": "Merch TNA Tracker",
+ "name": "Order Line",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "search_fields": "buyer_po,style_no,wash_color",
+ "sort_field": "current_ex_factory_date",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "style_no",
+ "track_changes": 1
+}

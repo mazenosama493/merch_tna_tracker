@@ -49,18 +49,63 @@ function style_order_status(frm, status) {
 
 function is_restricted_merchant() {
     return (
-        frappe.user.has_role('Merchant') &&
+        frappe.user.has_role('TNA Tracker Merchant') &&
         !frappe.user.has_role('System Manager') &&
-        !frappe.user.has_role('Merch Manager') &&
+        !frappe.user.has_role('TNA Tracker Admin') &&
         frappe.session.user !== 'Administrator'
     );
+}
+
+// Actual dates must be today for every user except System Manager
+function is_system_admin() {
+    return (
+        frappe.user.has_role('System Manager') ||
+        frappe.session.user === 'Administrator'
+    );
+}
+
+function must_use_today_for_actual_date() {
+    return !is_system_admin();
+}
+
+// Validates Order Received Date / Ex Fty Date after the user changes one of them.
+// On failure it shows a message, puts the previously saved value back and returns false.
+//  - Ex Fty Date must be after Order Received Date, i.e. it cannot be equal to
+//    or before it (everyone, System Manager included)
+function validate_order_dates(frm, changed_field) {
+    const doc = frm.doc;
+    const value = doc[changed_field];
+    const saved = (frm.saved_dates || {})[changed_field] || null;
+
+    // Nothing to check if emptied, or put back to the already-saved value
+    if (!value || value === saved) return true;
+
+    let error = null;
+
+    if (doc.order_received_date && doc.ex_fty_date &&
+        frappe.datetime.get_day_diff(doc.ex_fty_date, doc.order_received_date) <= 0) {
+        error = __('Ex Fty Date must be after Order Received Date.');
+    }
+
+    if (!error) return true;
+
+    frappe.msgprint({
+        title: __('Invalid Date'),
+        indicator: 'red',
+        message: error
+    });
+
+    // Revert without firing the field handlers (so no plan reload / confirm dialog)
+    doc[changed_field] = saved;
+    frm.refresh_field(changed_field);
+    return false;
 }
 
 function apply_merchant_restrictions(frm) {
     if (!is_restricted_merchant()) return;
 
-    // 1. Lock manager and merchant fields outside the child table
-    const locked_parent_fields = ['manager', 'merchant'];
+    // 1. Lock manager, merchant and date fields outside the child table
+    const locked_parent_fields = ['buyer', 'manager', 'merchant', 'order_received_date', 'ex_fty_date'];
     locked_parent_fields.forEach(function(field) {
         frm.set_df_property(field, 'read_only', 1);
     });
@@ -104,6 +149,18 @@ frappe.ui.form.on('Order TNA Tracker', {
     refresh: function(frm) {
         apply_merchant_restrictions(frm);
 
+        // Remember the saved actual dates so a rejected edit can be reverted
+        if (!frm.is_dirty()) {
+            frm.saved_dates = {
+                order_received_date: frm.doc.order_received_date || null,
+                ex_fty_date: frm.doc.ex_fty_date || null
+            };
+            frm.saved_actual_dates = {};
+            (frm.doc.tna_details || []).forEach(function(r) {
+                frm.saved_actual_dates[r.name] = r.actual_date || null;
+            });
+        }
+
         $(frm.wrapper)
             .off('grid-row-render.diff-days')
             .on('grid-row-render.diff-days', function(event, grid_row) {
@@ -126,10 +183,12 @@ frappe.ui.form.on('Order TNA Tracker', {
     },
 
     order_received_date: function(frm) {
+        if (!validate_order_dates(frm, 'order_received_date')) return;
         frm.trigger('calculate_lead_time_and_fetch_plan');
     },
 
     ex_fty_date: function(frm) {
+        if (!validate_order_dates(frm, 'ex_fty_date')) return;
         frm.trigger('calculate_lead_time_and_fetch_plan');
     },
 
@@ -296,6 +355,24 @@ frappe.ui.form.on('TNA Tracker Detail', {
 
     actual_date: function(frm, cdt, cdn) {
         let row = locals[cdt][cdn];
+
+        // Only System Manager may enter a date other than today
+        if (row.actual_date && must_use_today_for_actual_date()) {
+            const saved = (frm.saved_actual_dates || {})[cdn] || null;
+            if (row.actual_date !== frappe.datetime.get_today() && row.actual_date !== saved) {
+                frappe.msgprint({
+                    title: __('Invalid Actual Date'),
+                    indicator: 'red',
+                    message: __('You cannot add an actual date that is not today for the event {0}.', [
+                        '<b>' + frappe.utils.escape_html(row.event_name || '') + '</b>'
+                    ])
+                });
+                // Revert to the previously saved value (or empty)
+                frappe.model.set_value(cdt, cdn, 'actual_date', saved);
+                return;
+            }
+        }
+
         if (row.plan_date && row.actual_date) {
             let diff = frappe.datetime.get_day_diff(row.plan_date, row.actual_date);
             frappe.model.set_value(cdt, cdn, 'diff_days', diff);
