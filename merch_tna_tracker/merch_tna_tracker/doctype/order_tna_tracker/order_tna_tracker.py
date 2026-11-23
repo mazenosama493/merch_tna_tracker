@@ -4,7 +4,7 @@
 import frappe
 from frappe.model.document import Document
 from frappe import _
-from frappe.utils import getdate, nowdate
+from frappe.utils import add_days, formatdate, getdate, nowdate
 
 # Child table fieldname on the parent doctype
 CHILD_TABLE = "tna_details"
@@ -12,6 +12,10 @@ CHILD_TABLE = "tna_details"
 # Date field on the child doctype "TNA Tracker Detail"
 # Change this if your field is named differently
 ACTUAL_DATE_FIELD = "actual_date"
+
+# Non-System Manager users may set an actual date this many days before
+# or after today (1 = yesterday, today or tomorrow)
+ACTUAL_DATE_DAYS_ALLOWED = 1
 ALLOWED_ROLES_TO_DELETE_ROWS = {"System Manager", "TNA Tracker Admin"}
 
 # Role given to merchants, and roles that are never restricted
@@ -30,7 +34,7 @@ class OrderTNATracker(Document):
         self.enforce_merchant_ownership()
         self.prevent_merchant_date_changes()
         self.validate_order_dates()
-        self.validate_actual_dates_are_today()
+        self.validate_actual_dates_in_window()
         self.set_order_status()
         self.prevent_row_deletion()
 
@@ -95,20 +99,23 @@ class OrderTNATracker(Document):
                 title=_("Invalid Date"),
             )
 
-    def validate_actual_dates_are_today(self):
+    def validate_actual_dates_in_window(self):
         """
         Everyone (TNA Tracker Admin, TNA Tracker Manager, TNA Tracker Merchant,
-        any other role) can only set an event's actual date to today.
-        Only System Manager is exempt.
+        any other role) can only set an event's actual date from
+        ACTUAL_DATE_DAYS_ALLOWED days before today to ACTUAL_DATE_DAYS_ALLOWED
+        days after today. Only System Manager is exempt.
 
         Only rows whose actual date was added or changed in this save are
         checked, so dates that were already saved (e.g. on a previous day)
         never block a later save.
         """
-        if not _must_use_today(frappe.session.user):
+        if not _actual_date_restricted(frappe.session.user):
             return
 
         today = getdate(nowdate())
+        earliest = getdate(add_days(today, -ACTUAL_DATE_DAYS_ALLOWED))
+        latest = getdate(add_days(today, ACTUAL_DATE_DAYS_ALLOWED))
 
         old = self.get_doc_before_save()
         old_dates = {}
@@ -127,10 +134,13 @@ class OrderTNATracker(Document):
             if old_value and getdate(old_value) == getdate(new_value):
                 continue  # unchanged
 
-            if getdate(new_value) != today:
+            if not (earliest <= getdate(new_value) <= latest):
                 frappe.throw(
-                    _("Row {0}: You cannot add an actual date that is not today for the event {1}.").format(
-                        row.idx, frappe.bold(row.get("event_name") or "")
+                    _("Row {0}: You can only add an actual date between {1} and {2} for the event {3}.").format(
+                        row.idx,
+                        formatdate(earliest),
+                        formatdate(latest),
+                        frappe.bold(row.get("event_name") or ""),
                     ),
                     title=_("Invalid Actual Date"),
                 )
@@ -191,8 +201,8 @@ def _date_str(value):
     return str(getdate(value)) if value else ""
 
 
-def _must_use_today(user):
-    """Actual dates must be today for every user except System Manager."""
+def _actual_date_restricted(user):
+    """The actual-date window applies to every user except System Manager."""
     return "System Manager" not in set(frappe.get_roles(user))
 
 

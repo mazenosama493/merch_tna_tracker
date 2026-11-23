@@ -12,7 +12,7 @@
  "link_to": "Merch TNA Tracker",
  "link_type": "Workspace Sidebar",
  "logo_url": "/assets/merch_tna_tracker/icons/Tracker.png",
- "modified": "2026-11-09 15:30:21.665434",
+ "modified": "2026-11-23 08:15:02.138497",
  "modified_by": "Administrator",
  "name": "Merch TNA Tracker",
  "owner": "Administrator",
@@ -26,6 +26,9 @@
   },
   {
    "role": "TNA Tracker Manager"
+  },
+  {
+   "role": "TNA Viewer"
   }
  ],
  "sidebar": "Merch TNA Tracker",

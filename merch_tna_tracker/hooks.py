@@ -91,6 +91,7 @@ fixtures = [
                     "TNA Tracker Admin",
                     "TNA Tracker Manager",
                     "TNA Tracker Merchant"
+                    "TNA Viewer",
                 ]
             ]
         ]

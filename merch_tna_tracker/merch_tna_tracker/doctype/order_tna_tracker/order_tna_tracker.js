@@ -56,7 +56,10 @@ function is_restricted_merchant() {
     );
 }
 
-// Actual dates must be today for every user except System Manager
+// Non-System Manager users may set an actual date this many days before or
+// after today (1 = yesterday, today or tomorrow). Keep in sync with the .py file.
+const ACTUAL_DATE_DAYS_ALLOWED = 1;
+
 function is_system_admin() {
     return (
         frappe.user.has_role('System Manager') ||
@@ -64,7 +67,8 @@ function is_system_admin() {
     );
 }
 
-function must_use_today_for_actual_date() {
+// The actual-date window applies to everyone except System Manager
+function is_actual_date_restricted() {
     return !is_system_admin();
 }
 
@@ -356,14 +360,23 @@ frappe.ui.form.on('TNA Tracker Detail', {
     actual_date: function(frm, cdt, cdn) {
         let row = locals[cdt][cdn];
 
-        // Only System Manager may enter a date other than today
-        if (row.actual_date && must_use_today_for_actual_date()) {
+        // Only System Manager may enter a date outside the allowed window around today
+        if (row.actual_date && is_actual_date_restricted()) {
             const saved = (frm.saved_actual_dates || {})[cdn] || null;
-            if (row.actual_date !== frappe.datetime.get_today() && row.actual_date !== saved) {
+            const today = frappe.datetime.get_today();
+            const earliest = frappe.datetime.add_days(today, -ACTUAL_DATE_DAYS_ALLOWED);
+            const latest = frappe.datetime.add_days(today, ACTUAL_DATE_DAYS_ALLOWED);
+            const out_of_window =
+                frappe.datetime.get_day_diff(row.actual_date, earliest) < 0 ||
+                frappe.datetime.get_day_diff(row.actual_date, latest) > 0;
+
+            if (out_of_window && row.actual_date !== saved) {
                 frappe.msgprint({
                     title: __('Invalid Actual Date'),
                     indicator: 'red',
-                    message: __('You cannot add an actual date that is not today for the event {0}.', [
+                    message: __('You can only add an actual date between {0} and {1} for the event {2}.', [
+                        frappe.datetime.str_to_user(earliest),
+                        frappe.datetime.str_to_user(latest),
                         '<b>' + frappe.utils.escape_html(row.event_name || '') + '</b>'
                     ])
                 });
