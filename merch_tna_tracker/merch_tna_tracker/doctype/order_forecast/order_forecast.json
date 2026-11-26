@@ -24,6 +24,7 @@
   "column_break_conversion",
   "remaining_value",
   "remaining_value_usd",
+  "column_break_tuve",
   "month_change_section",
   "month_change_log"
  ],
@@ -174,6 +175,10 @@
    "fieldtype": "Table",
    "label": "Month Change Log",
    "options": "Forecast Month Change"
+  },
+  {
+   "fieldname": "column_break_tuve",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
@@ -184,7 +189,7 @@
    "link_fieldname": "forecast"
   }
  ],
- "modified": "2026-11-22 10:10:57.033199",
+ "modified": "2026-11-26 10:15:58.521445",
  "modified_by": "Administrator",
  "module": "Merch TNA Tracker",
  "name": "Order Forecast",

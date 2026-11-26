@@ -7,7 +7,7 @@ import frappe
 from frappe import _
 from frappe.model.base_document import get_controller
 from frappe.model.document import Document
-from frappe.utils import flt, get_first_day, getdate, now_datetime, today
+from frappe.utils import cstr, flt, get_first_day, getdate, now_datetime, today
 
 # A forecast in one of these statuses still has  volume left.
 ACTIVE_STATUSES = ("Projected", "Partly Confirmed")
@@ -25,18 +25,18 @@ def get_buyer_group(buyer):
 
 
 def get_confirmed_qty(forecast):
-	"""Qty still wanted on the Order Lines that come from this forecast."""
+	"""Qty of the Order Lines that come from this forecast. A cancelled line gives its qty back."""
 	if not forecast or not frappe.db.table_exists("Order Line"):
 		return 0.0
 
 	confirmed = frappe.db.sql(
 		"""
-		select coalesce(sum(coalesce(net_qty, qty)), 0)
+		select coalesce(sum(qty), 0)
 		from `tabOrder Line`
-		where forecast = %s
+		where forecast = %s and ifnull(status, '') != 'Cancelled'
 		""",
 		forecast,
-	)[0]
+	)[0][0]  # the first column of the first row
 	return flt(confirmed)
 
 
@@ -45,6 +45,8 @@ def calculate_progress(qty, value, value_usd, confirmed_qty):
 	qty = flt(qty)
 	confirmed = flt(confirmed_qty)
 	remaining = max(qty - confirmed, 0.0)
+	over_forecast = max(confirmed - qty, 0.0)
+	over_forecast_percent = (over_forecast / qty * 100) if qty else 0.0
 
 	if remaining > 0:
 		status = "Partly Confirmed" if confirmed > 0 else "Projected"
@@ -56,6 +58,8 @@ def calculate_progress(qty, value, value_usd, confirmed_qty):
 		"status": status,
 		"confirmed_qty": confirmed,
 		"remaining_qty": remaining,
+		"over_forecast_qty": over_forecast,
+		"over_forecast_percent": flt(over_forecast_percent, 2),
 		"remaining_value": flt(flt(value) * ratio, 2),
 		"remaining_value_usd": flt(flt(value_usd) * ratio, 2),
 	}
@@ -80,14 +84,66 @@ class OrderForecast(Document):
 		self.set_currency()
 		self.set_month()
 		self.log_month_change()
+		self.check_month_log_not_changed()
 		self.set_amounts()
 		self.set_progress()
 		self.validate_duplicate()
 		self.warn_if_past_month()
 
+	def check_month_log_not_changed(self):
+		"""Keep the audit trail immutable except for comments and validate system-created entries."""
+		before = self.get_doc_before_save()
+		current_rows = list(self.month_change_log or [])
+
+		# A new Forecast must not arrive with user-supplied history rows.
+		if not before:
+			if current_rows:
+				frappe.throw(_("Month change history is generated automatically and cannot be added manually."))
+			return
+
+		old_rows = list(before.month_change_log or [])
+		old_by_name = {row.name: row for row in old_rows}
+		current_by_name = {row.name: row for row in current_rows if row.name}
+
+		# Existing history cannot be removed or have its audit fields changed.
+		for old in old_rows:
+			current = current_by_name.get(old.name)
+			if not current:
+				frappe.throw(_("Month change history rows cannot be deleted."))
+			for fieldname in ("from_month", "to_month", "edited_by", "edited_on"):
+				if cstr(old.get(fieldname)).strip() != cstr(current.get(fieldname)).strip():
+					frappe.throw(_("Month change history rows cannot be changed. Only the comment can be edited."))
+
+		new_rows = [row for row in current_rows if not row.name or row.name not in old_by_name]
+		month_changed = getdate(before.forecast_month) != getdate(self.forecast_month)
+
+		if not month_changed:
+			if new_rows:
+				frappe.throw(_("Month change history is generated automatically and cannot be added manually."))
+			return
+
+		# Exactly one row must be created for each saved month transition.
+		if len(new_rows) != 1:
+			frappe.throw(_("Changing Forecast Month must create exactly one Month Change Log entry."))
+
+		log_row = new_rows[0]
+		if (
+			getdate(log_row.from_month) != getdate(before.forecast_month)
+			or getdate(log_row.to_month) != getdate(self.forecast_month)
+			or log_row.edited_by != frappe.session.user
+			or not log_row.edited_on
+		):
+			frappe.throw(_("Month Change Log details are generated automatically and cannot be entered manually."))
+
 	def log_month_change(self):
+		"""Append one audit row whenever the Forecast Month changes."""
 		before = self.get_doc_before_save()
 		if not before or getdate(before.forecast_month) == getdate(self.forecast_month):
+			return
+
+		old_names = {row.name for row in (before.month_change_log or [])}
+		# Avoid duplicate rows if validate is triggered more than once before saving.
+		if any(not row.name or row.name not in old_names for row in (self.month_change_log or [])):
 			return
 
 		self.append(

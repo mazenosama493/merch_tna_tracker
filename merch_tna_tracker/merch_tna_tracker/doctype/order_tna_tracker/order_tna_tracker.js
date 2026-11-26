@@ -180,6 +180,12 @@ frappe.ui.form.on('Order TNA Tracker', {
         }
 
         style_order_status(frm);
+
+        if (!frm.is_new()) {
+            frm.add_custom_button(__('TNA Gantt'), function() {
+                frappe.set_route('tna-gantt', frm.doc.name);
+            });
+        }
     },
 
     order_status: function(frm) {

@@ -7,57 +7,42 @@ frappe.ui.form.on("Order Line", {
 		frm.set_query("forecast", () => {
 			return { filters: { status: ["in", ["Projected", "Partly Confirmed"]] } };
 		});
+
+		// A shipment can only go to one of the line's destinations.
+		frm.set_query("destination", "shipments", () => {
+			const names = (frm.doc.destinations || []).map((row) => row.destination).filter(Boolean);
+			return names.length ? { filters: { name: ["in", names] } } : {};
+		});
 	},
 
 	qty(frm) {
-		set_amounts(frm);
+		set_amount(frm);
 	},
 
 	unit_price(frm) {
-		set_amounts(frm);
-	},
-
-	unit_price_ddp(frm) {
-		set_amounts(frm);
-	},
-
-	add_discount(frm) {
-		if (!frm.doc.add_discount) {
-			frm.set_value("discount_amount", 0);
-		}
-		set_amounts(frm);
-	},
-
-	discount_amount(frm) {
-		set_amounts(frm);
-	},
-
-	add_extra(frm) {
-		if (!frm.doc.add_extra) {
-			frm.set_value("extra_qty", 0);
-		}
-		set_amounts(frm);
-	},
-
-	extra_qty(frm) {
-		set_amounts(frm);
+		set_amount(frm);
 	},
 });
 
-// Preview only. The server recalculates FOB Price, DDP Price, Amount, Exchange Rate and Amount USD when you save.
-function set_amounts(frm) {
-	const qty = flt(frm.doc.qty);
-	const extra_pct = frm.doc.add_extra ? flt(frm.doc.extra_qty) : 0;
-	const effective_qty = qty * (1 + extra_pct / 100);
+// Preview only. The server recalculates Amount, Exchange Rate and Amount USD when you save.
+function set_amount(frm) {
+	frm.set_value("amount", flt(frm.doc.qty) * flt(frm.doc.unit_price));
+}
 
-	const discount_pct = frm.doc.add_discount ? flt(frm.doc.discount_amount) : 0;
-	const discount_multiplier = 1 - discount_pct / 100;
+// With destinations, the qty of the line is the total of the destination quantities.
+frappe.ui.form.on("Order Line Destination", {
+	qty(frm) {
+		set_qty_from_destinations(frm);
+	},
 
-	const fob_price = flt(effective_qty * flt(frm.doc.unit_price) * discount_multiplier, 4);
-	const ddp_price = flt(effective_qty * flt(frm.doc.unit_price_ddp) * discount_multiplier, 4);
-	const total_amount = flt(fob_price + ddp_price, 2);
+	destinations_remove(frm) {
+		set_qty_from_destinations(frm);
+	},
+});
 
-	frm.set_value("fob_price", fob_price);
-	frm.set_value("ddp_price", ddp_price);
-	frm.set_value("amount", total_amount);
+function set_qty_from_destinations(frm) {
+	const rows = frm.doc.destinations || [];
+	if (rows.length) {
+		frm.set_value("qty", rows.reduce((sum, row) => sum + flt(row.qty), 0));
+	}
 }

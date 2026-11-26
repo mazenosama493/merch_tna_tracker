@@ -113,7 +113,7 @@ def update_po_totals(po_name):
 
 	qty, amount = frappe.db.sql(
 		"""
-		select coalesce(sum(coalesce(net_qty, qty)), 0), coalesce(sum(amount), 0)
+		select coalesce(sum(qty), 0), coalesce(sum(amount), 0)
 		from `tabOrder Line`
 		where buyer_po = %s and ifnull(status, '') != 'Cancelled'
 		""",

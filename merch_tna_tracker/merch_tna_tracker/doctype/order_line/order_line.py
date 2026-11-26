@@ -46,8 +46,9 @@ class OrderLine(Document):
 	def validate(self):
 		self.clean_text()
 		self.set_po_details()
+		self.set_destinations()
 		self.validate_forecast()
-		self.set_cancellation()
+		self.validate_qty()
 		self.set_amounts()
 		self.check_buyer_po_change()
 		self.check_history_not_changed()
@@ -114,17 +115,31 @@ class OrderLine(Document):
 				frappe.throw(_("Every new order starts as a forecast. Pick the forecast this order comes from."))
 			return
 
-		forecast = frappe.db.get_value("Order Forecast", self.forecast, ["buyer", "status"], as_dict=True)
+		forecast = frappe.db.get_value(
+			"Order Forecast", self.forecast, ["buyer", "status", "qty"], as_dict=True
+		)
 		if not forecast:
 			frappe.throw(_("Forecast {0} was not found.").format(frappe.bold(self.forecast)))
 
-		group_of = lambda buyer: call_helper("Order Forecast", "get_buyer_group", buyer)
-		if group_of(forecast.buyer) != group_of(self.buyer):
+		# Forecasts belong to one exact Brand/Buyer. Buyer Group membership does not
+		# permit another Brand to consume this forecast.
+		if forecast.buyer != self.buyer:
 			frappe.throw(
 				_("{0} is a forecast for {1}, not for {2}.").format(
 					frappe.get_desk_link("Order Forecast", self.forecast),
 					frappe.bold(forecast.buyer),
 					frappe.bold(self.buyer),
+				)
+			)
+
+		# Each individual Order Line must fit within the selected Forecast qty.
+		# This check runs after set_destinations(), because destination rows determine self.qty.
+		if flt(self.qty) > flt(forecast.qty):
+			frappe.throw(
+				_("Order Line Qty ({0}) cannot exceed Forecast Qty ({1}) in {2}.").format(
+					frappe.format_value(self.qty, {"fieldtype": "Float", "precision": 0}),
+					frappe.format_value(forecast.qty, {"fieldtype": "Float", "precision": 0}),
+					frappe.get_desk_link("Order Forecast", self.forecast),
 				)
 			)
 
@@ -141,42 +156,53 @@ class OrderLine(Document):
 
 	# ---- Quantity and value ---------------------------------------------------
 
-	def set_cancellation(self):
-		"""Part of an order can be cancelled. Amount, Ship % and the forecast then work on what is left (Net Qty)."""
-		qty = flt(self.qty)
-		if qty <= 0:
+	def set_destinations(self):
+		"""A line can be split by destination. Its qty is then the total of the destination quantities."""
+		if not self.destinations:
+			return
+
+		seen = set()
+		total = 0.0
+		for row in self.destinations:
+			if not row.destination:
+				frappe.throw(_("Destination row {0}: Destination is required.").format(row.idx))
+			if row.destination in seen:
+				frappe.throw(_("Destination row {0}: {1} is already in the table.").format(row.idx, frappe.bold(row.destination)))
+			if flt(row.qty) <= 0:
+				frappe.throw(_("Destination row {0}: Destination Qty must be greater than zero.").format(row.idx))
+
+			seen.add(row.destination)
+			total += flt(row.qty)
+
+		self.qty = total
+
+	def validate_qty(self):
+		if flt(self.qty) <= 0:
 			frappe.throw(_("Qty must be greater than zero."))
 
-		cancelled = flt(self.cancelled_qty)
-		if cancelled > qty:
-			frappe.throw(_("Cancelled Qty cannot be more than Qty."))
-
-		before = self.get_doc_before_save()
-		reopened = bool(before) and before.status == "Cancelled" and self.status != "Cancelled"
-
-		if self.status == "Cancelled":
-			cancelled = qty  # the whole line is cancelled
-		elif reopened and cancelled >= qty:
-			cancelled = 0.0  # reopened, so nothing is cancelled any more
-		elif cancelled >= qty:
-			self.status = "Cancelled"  # everything was cancelled by qty
-
-		# Once shipping started the whole line cannot be cancelled. A partial cancel is limited by the
-		# shipping tolerance on the net qty (checked in set_shipping).
-		shipped = sum(flt(row.shipped_qty) for row in self.shipments)
-		if cancelled >= qty and shipped > 0:
-			frappe.throw(
-				_("{0} pcs are already shipped, so the whole line cannot be cancelled.").format(int(shipped))
-			)
-		self.net_qty = qty
-
 	def set_amounts(self):
-		self.amount = flt(flt(self.net_qty) * flt(self.unit_price), 2)
+		self.amount = flt(flt(self.qty) * flt(self.unit_price), 2)
 
 		if self.currency == "USD":
 			self.exchange_rate = 1.0
 		else:
-			self.exchange_rate = flt(call_helper("Order Book Settings", "get_eur_to_usd_rate"), 4)
+			before = self.get_doc_before_save()
+			if self.is_new():
+				self.exchange_rate = flt(
+					call_helper("Order Book Settings", "get_eur_to_usd_rate"), 4
+				)
+			elif before and flt(before.exchange_rate) > 0:
+				# Preserve the rate captured when this Order Line was created.
+				# Ignore any client-side attempt to change it on later saves.
+				self.exchange_rate = flt(before.exchange_rate, 4)
+			else:
+				# Legacy record with no saved rate: initialize it once on its next save.
+				self.exchange_rate = flt(
+					call_helper("Order Book Settings", "get_eur_to_usd_rate"), 4
+				)
+
+		if flt(self.exchange_rate) <= 0:
+			frappe.throw(_("Exchange Rate must be greater than zero."))
 		self.amount_usd = flt(self.amount * self.exchange_rate, 2)
 
 		if flt(self.unit_price) <= 0:
@@ -271,6 +297,9 @@ class OrderLine(Document):
 
 	def set_shipping(self):
 		po_date = self.flags.po_date
+		# Empty when the line has no destinations: then a shipment's destination is optional.
+		allowed = {row.destination for row in self.destinations}
+		shipped_to = dict.fromkeys(allowed, 0.0)
 		total = 0.0
 		last_ship_date = None
 
@@ -286,22 +315,49 @@ class OrderLine(Document):
 			if flt(row.shipped_qty) <= 0:
 				frappe.throw(_("Shipment row {0}: Shipped Qty must be greater than zero.").format(row.idx))
 
+			if allowed:
+				if not row.destination:
+					frappe.throw(_("Shipment row {0}: pick the destination this shipment goes to.").format(row.idx))
+				if row.destination not in allowed:
+					frappe.throw(
+						_("Shipment row {0}: {1} is not one of this line's destinations.").format(
+							row.idx, frappe.bold(row.destination)
+						)
+					)
+				shipped_to[row.destination] += flt(row.shipped_qty)
+
 			total += flt(row.shipped_qty)
 			last_ship_date = max(last_ship_date, ship_date) if last_ship_date else ship_date
 
-		qty = flt(self.net_qty)
-		limit = qty * (1 + SHIP_TOLERANCE_PERCENT / 100)
-		if total > limit:
+		# Each destination keeps its own shipped and remaining qty.
+		for dest in self.destinations:
+			shipped = shipped_to[dest.destination]
+			if shipped > flt(dest.qty) * (1 + SHIP_TOLERANCE_PERCENT / 100):
+				frappe.throw(
+					_("Shipped to {0} ({1}) is more than its qty ({2}) plus the {3}% tolerance.").format(
+						frappe.bold(dest.destination), int(shipped), int(flt(dest.qty)), SHIP_TOLERANCE_PERCENT
+					)
+				)
+			dest.shipped_qty = shipped
+			dest.remaining_qty = max(flt(dest.qty) - shipped, 0.0)
+
+		qty = flt(self.qty)
+		if total > qty * (1 + SHIP_TOLERANCE_PERCENT / 100):
 			frappe.throw(
-				_("Total shipped ({0}) is more than the net qty ({1}) plus the {2}% tolerance.").format(
+				_("Total shipped ({0}) is more than the order qty ({1}) plus the {2}% tolerance.").format(
 					frappe.bold(int(total)), frappe.bold(int(qty)), SHIP_TOLERANCE_PERCENT
 				)
 			)
 
-		self.shipped_qty = total
-		self.ship_pct = flt(total / qty * 100, 2) if qty else 0.0
+		if total and self.status == "Cancelled":
+			frappe.throw(_("{0} pcs are already shipped, so this line cannot be cancelled.").format(int(total)))
 
-		self.flags.fully_shipped = total > 0 and total >= qty * (1 - SHIP_TOLERANCE_PERCENT / 100)
+		self.shipped_qty = total
+		self.ship_pct = flt(total / qty * 100, 2)
+
+		# The 5% tolerance is an allowed over-shipment ceiling (up to 105%),
+		# not permission to mark an order complete at 95%.
+		self.flags.fully_shipped = total >= qty
 		if self.flags.fully_shipped and not self.actual_ex_factory_date:
 			self.actual_ex_factory_date = last_ship_date
 
@@ -317,6 +373,9 @@ class OrderLine(Document):
 					frappe.bold(self.status)
 				)
 			)
+
+		if self.status == "Delivered" and not self.flags.fully_shipped:
+			frappe.throw(_("An order line cannot be Delivered until at least 100% of its ordered quantity has shipped."))
 
 	def log_status_change(self):
 		for row in self.status_log:
