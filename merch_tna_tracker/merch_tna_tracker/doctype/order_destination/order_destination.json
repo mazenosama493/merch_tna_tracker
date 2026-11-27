@@ -1,8 +1,9 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:destination_name",
- "creation": "2026-11-16 12:20:00.000000",
+ "creation": "2026-11-16 12:20:00",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
@@ -27,9 +28,9 @@
   }
  ],
  "grid_page_length": 50,
- "index_web_pages_for_search": 1,
+ "link_display_mode": "Search",
  "links": [],
- "modified": "2026-11-16 16:00:00.000000",
+ "modified": "2026-11-27 13:01:50.868827",
  "modified_by": "Administrator",
  "module": "Merch TNA Tracker",
  "name": "Order Destination",

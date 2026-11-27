@@ -1,22 +1,38 @@
 # Copyright (c) 2026, Merch TNA Tracker and contributors
 # For license information, please see license.txt
 
-import sys
+from importlib import import_module
 
 import frappe
 from frappe import _
-from frappe.model.base_document import get_controller
 from frappe.model.document import Document
 from frappe.utils import cstr, flt, get_first_day, getdate, now_datetime, today
 
-# A forecast in one of these statuses still has  volume left.
+# A forecast in one of these statuses still has volume left.
 ACTIVE_STATUSES = ("Projected", "Partly Confirmed")
 
 
 def call_helper(doctype, function_name, *args):
-	"""Call a helper that lives next to another DocType's controller, without needing the app name."""
-	module = sys.modules[get_controller(doctype).__module__]
-	return getattr(module, function_name)(*args)
+	"""Import the Order Book Settings helper directly from this app."""
+	if doctype != "Order Book Settings":
+		frappe.throw(_("Unsupported helper DocType: {0}").format(frappe.bold(doctype)))
+
+	module_path = "merch_tna_tracker.merch_tna_tracker.doctype.order_book_settings.order_book_settings"
+	try:
+		module = import_module(module_path)
+	except ImportError as exc:
+		frappe.throw(
+			_("Could not import helper module {0}: {1}").format(frappe.bold(module_path), frappe.bold(str(exc)))
+		)
+
+	helper = getattr(module, function_name, None)
+	if not callable(helper):
+		frappe.throw(
+			_("Helper function {0} was not found in {1}.").format(
+				frappe.bold(function_name), frappe.bold(module_path)
+			)
+		)
+	return helper(*args)
 
 
 def get_buyer_group(buyer):
@@ -25,28 +41,65 @@ def get_buyer_group(buyer):
 
 
 def get_confirmed_qty(forecast):
-	"""Qty of the Order Lines that come from this forecast. A cancelled line gives its qty back."""
+	"""Sum Original Quantity for active Order Lines linked to this Forecast.
+
+	Older Order Lines created before Original Quantity was introduced may still have
+	its default value of 0. For those rows, derive it from qty - extra_qty (or from
+	Extra (%) if extra_qty has not yet been populated).
+	"""
 	if not forecast or not frappe.db.table_exists("Order Line"):
 		return 0.0
 
 	confirmed = frappe.db.sql(
 		"""
-		select coalesce(sum(qty), 0)
+		select coalesce(sum(
+			case
+				when ifnull(original_qty, 0) > 0 then original_qty
+				else greatest(
+					ifnull(qty, 0) - case
+						when ifnull(extra_qty, 0) > 0 then extra_qty
+						else round(ifnull(qty, 0) * ifnull(extra, 0) / 100, 0)
+					end,
+					0
+				)
+			end
+		), 0)
 		from `tabOrder Line`
 		where forecast = %s and ifnull(status, '') != 'Cancelled'
 		""",
 		forecast,
-	)[0][0]  # the first column of the first row
+	)[0][0]
 	return flt(confirmed)
 
 
+def has_active_order_lines(forecast):
+	"""Return True when at least one non-cancelled Order Line uses this forecast."""
+	if not forecast or not frappe.db.table_exists("Order Line"):
+		return False
+
+	return bool(
+		frappe.db.sql(
+			"""
+			select name
+			from `tabOrder Line`
+			where forecast = %s and ifnull(status, '') != 'Cancelled'
+			limit 1
+			""",
+			forecast,
+		)
+	)
+
+
+def calculate_remaining_qty(qty, confirmed_qty):
+	"""Return the remaining forecast quantity, never below zero."""
+	return max(flt(qty) - flt(confirmed_qty), 0.0)
+
+
 def calculate_progress(qty, value, value_usd, confirmed_qty):
-	"""Projected qty = confirmed + remaining. Used on save and when an Order Line changes."""
+	"""Calculate confirmed and remaining forecast quantities and values."""
 	qty = flt(qty)
 	confirmed = flt(confirmed_qty)
-	remaining = max(qty - confirmed, 0.0)
-	over_forecast = max(confirmed - qty, 0.0)
-	over_forecast_percent = (over_forecast / qty * 100) if qty else 0.0
+	remaining = calculate_remaining_qty(qty, confirmed)
 
 	if remaining > 0:
 		status = "Partly Confirmed" if confirmed > 0 else "Projected"
@@ -58,8 +111,6 @@ def calculate_progress(qty, value, value_usd, confirmed_qty):
 		"status": status,
 		"confirmed_qty": confirmed,
 		"remaining_qty": remaining,
-		"over_forecast_qty": over_forecast,
-		"over_forecast_percent": flt(over_forecast_percent, 2),
 		"remaining_value": flt(flt(value) * ratio, 2),
 		"remaining_value_usd": flt(flt(value_usd) * ratio, 2),
 	}
@@ -81,6 +132,7 @@ def update_forecast_progress(forecast):
 
 class OrderForecast(Document):
 	def validate(self):
+		self.validate_locked_values()
 		self.set_currency()
 		self.set_month()
 		self.log_month_change()
@@ -89,6 +141,28 @@ class OrderForecast(Document):
 		self.set_progress()
 		self.validate_duplicate()
 		self.warn_if_past_month()
+
+
+	def validate_locked_values(self):
+		"""Once an active Order Line exists, the Forecast Qty and Value are frozen."""
+		before = self.get_doc_before_save()
+		if not before or not has_active_order_lines(before.name):
+			return
+
+		qty_changed = flt(before.qty) != flt(self.qty)
+		value_changed = flt(before.value, 2) != flt(self.value, 2)
+		if qty_changed or value_changed:
+			changed = []
+			if qty_changed:
+				changed.append(_("Forecast Qty"))
+			if value_changed:
+				changed.append(_("Forecast Value"))
+			frappe.throw(
+				_("{0} cannot be changed because this Forecast already has a confirmed Order Line. "
+				  "You can still move the Forecast Month; the remaining quantity will be recorded in the Month Change Log.").format(
+					frappe.bold(_(" and ").join(changed))
+				)
+			)
 
 	def check_month_log_not_changed(self):
 		"""Keep the audit trail immutable except for comments and validate system-created entries."""
@@ -110,7 +184,7 @@ class OrderForecast(Document):
 			current = current_by_name.get(old.name)
 			if not current:
 				frappe.throw(_("Month change history rows cannot be deleted."))
-			for fieldname in ("from_month", "to_month", "edited_by", "edited_on"):
+			for fieldname in ("from_month", "to_month", "remaining_qty_moved", "edited_by", "edited_on"):
 				if cstr(old.get(fieldname)).strip() != cstr(current.get(fieldname)).strip():
 					frappe.throw(_("Month change history rows cannot be changed. Only the comment can be edited."))
 
@@ -127,9 +201,13 @@ class OrderForecast(Document):
 			frappe.throw(_("Changing Forecast Month must create exactly one Month Change Log entry."))
 
 		log_row = new_rows[0]
+		expected_remaining_qty = calculate_remaining_qty(
+			before.qty, get_confirmed_qty(before.name)
+		)
 		if (
 			getdate(log_row.from_month) != getdate(before.forecast_month)
 			or getdate(log_row.to_month) != getdate(self.forecast_month)
+			or flt(log_row.remaining_qty_moved) != flt(expected_remaining_qty)
 			or log_row.edited_by != frappe.session.user
 			or not log_row.edited_on
 		):
@@ -146,11 +224,15 @@ class OrderForecast(Document):
 		if any(not row.name or row.name not in old_names for row in (self.month_change_log or [])):
 			return
 
+		remaining_qty_moved = calculate_remaining_qty(
+			before.qty, get_confirmed_qty(before.name)
+		)
 		self.append(
 			"month_change_log",
 			{
 				"from_month": before.forecast_month,
 				"to_month": self.forecast_month,
+				"remaining_qty_moved": remaining_qty_moved,
 				"edited_by": frappe.session.user,
 				"edited_on": now_datetime(),
 			},

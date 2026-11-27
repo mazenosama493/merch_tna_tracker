@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "autoname": "naming_series:",
  "creation": "2026-11-16 13:30:00",
  "doctype": "DocType",
@@ -182,14 +183,14 @@
   }
  ],
  "grid_page_length": 50,
- "index_web_pages_for_search": 1,
+ "link_display_mode": "Search",
  "links": [
   {
    "link_doctype": "Order Line",
    "link_fieldname": "forecast"
   }
  ],
- "modified": "2026-11-26 10:15:58.521445",
+ "modified": "2026-11-27 12:01:59.795330",
  "modified_by": "Administrator",
  "module": "Merch TNA Tracker",
  "name": "Order Forecast",

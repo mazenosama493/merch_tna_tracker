@@ -1,0 +1,826 @@
+﻿source_key,source_sheet,source_row,buyer,source_po_number,season,style_no,description,wash_color,qty,unit_price_fob,unit_price_ddp,buyer_ex_factory_date,buyer_delivery_date_not_used_as_exfactory,actual_ex_factory_date,fabric_ref,source_status,source_comments,currency
+AG Jeans!4,AG Jeans,4,AG Jeans,25115957 OP,,1197BRS,WANDERER,SULFUR DESERT DUNE,5090,13.5,,2026-04-27,2026-05-18,,Sam Sai Textie,,"buyer requested early DD, Fabric ETA slide due to LC delay & missed the planned vessel, exp fabric IH 31st March, Shade band approval awtg, 5090 pcs shipped on 18th May",USD
+AG Jeans!5,AG Jeans,5,AG Jeans,25115959 OP,,1197BRS,WANDERER,SULFUR SILVER PHANTOM,4650,13.5,,2026-04-27,2026-05-02,,Sam Sai Textie,,"2nd May FOB AIR,4588 pcs shipped out",USD
+AG Jeans!6,AG Jeans,6,AG Jeans,25115960 OP,,1197BRS,WANDERER,SULFUR DARK BARK,1585,13.5,,2026-04-27,2026-05-02,,Sam Sai Textie,,"2nd May FOB AIR,1516 pcs shipped out",USD
+AG Jeans!7,AG Jeans,7,AG Jeans,25115961 OP,,1197BRS,WANDERER,SULFUR FRESHWATER,1256,13.5,,2026-04-27,,,Sam Sai Textie,,"buyer requested early DD, Fabric ETA slide due to LC delay & missed the planned vessel, exp fabric IH 31st March, X-fty on 10th May, 1278 pcs shipped out on 10th May",USD
+AG Jeans!8,AG Jeans,8,AG Jeans,25115962 OP,,1197BRS,WANDERER,SULFUR FADED MOSS,1200,13.5,,2026-04-27,2026-05-18,,Sam Sai Textie,,"X-Fty on 10th May, 985pcs shipped on 10th May, 216 pcs shipped on 18th May",USD
+AG Jeans!9,AG Jeans,9,AG Jeans,25115963 OP,,1197BRS,WANDERER,SULFUR FRESH BLUE,1200,13.5,,2026-04-27,2026-05-18,,Sam Sai Textie,,"X-Fty on 10th May, 1051 pcs shipped out on 10th May, 141 pcs shipped out on 18th May",USD
+AG Jeans!10,AG Jeans,10,AG Jeans,25115964 OP,,1197BRS,WANDERER,SULFUR OAK BARREL,800,13.5,,2026-04-27,2026-05-02,,Sam Sai Textie,,"2nd May FOB AIR,788 pcs shipped out.",USD
+AG Jeans!11,AG Jeans,11,AG Jeans,25115965 OP,,1197BRS,WANDERER,SULFUR VINTAGE PINK,406,13.5,,2026-04-27,2026-05-02,,Sam Sai Textie,,"2nd May FOB AIR , 416 pcs shipped out",USD
+AG Jeans!12,AG Jeans,12,AG Jeans,25115967 OP,,1197BRS,WANDERER,ORANGE SPRITZ,500,13.5,,2026-04-27,2026-05-02,,Sam Sai Textie,,"2nd May FOB AIR, 494 pcs shipped out",USD
+AG Jeans!13,AG Jeans,13,AG Jeans,25115966 OP,,1197BRS,WANDERER,SULFUR BRIGHT NIGHT,4300,13.5,,2026-04-27,,,Sam Sai Textie,,4174 pcs shipped out on 18th May,USD
+AG Jeans!14,AG Jeans,14,AG Jeans,April Total,,,,,20987,,,,,,,,,USD
+AG Jeans!15,AG Jeans,15,AG Jeans,26116592 OP,,1197BRS,WANDERER,SULFUR TAWNY BEIGE,1111,13.5,,2026-05-15,,,Sam Sai Textie,,1096 pcs shipped out on 18th May,USD
+AG Jeans!17,AG Jeans,17,AG Jeans,26116983,,1H84LSA,WANDERER CHINO,NIGHT ECLIPSE,1300,23.96,,2026-08-15,,,Sharabati,,"Shade band approved , finishing trims in transit. exp IH 15th Aug.",USD
+AG Jeans!18,AG Jeans,18,AG Jeans,26116984,,1H84LSA,WANDERER CHINO,GREY STEEL,1300,23.96,,2026-08-15,,,Sharabati,,"Shade band approval awtg, finishing trims EIH 15th Aug",USD
+AG Jeans!19,AG Jeans,19,AG Jeans,26116985,,1H84LSA,WANDERER CHINO,DUSTY WHEAT,1300,23.96,,2026-08-15,,,Sharabati,,Shade band approval awtg,USD
+AG Jeans!20,AG Jeans,20,AG Jeans,26116986,,1H84LSA,WANDERER CHINO,PURE BLACK,1200,23.96,,2026-08-15,,,Sharabati,,Shade band approval awtg,USD
+AG Jeans!21,AG Jeans,21,AG Jeans,26117268,,1197BRS,WANDERER,SULFUR DESERT DUNE,800,13.5,,2026-08-01,,,Sam Sai Textie,,,USD
+AG Jeans!22,AG Jeans,22,AG Jeans,26117269,,1197BRS,WANDERER,SULFUR SILVER PHANTOM,800,13.5,,2026-08-01,,,Sam Sai Textie,,,USD
+AG Jeans!23,AG Jeans,23,AG Jeans,26117270,,1197BRS,WANDERER,SULFUR BRIGHT NIGHT,800,13.5,,2026-08-01,,,Sam Sai Textie,,,USD
+AG Jeans!24,AG Jeans,24,AG Jeans,SMS,,1H84LSA,WANDERER CHINO,3 colours,39,59.9,,2026-08-22,,,Sharabati,,,USD
+AG Jeans!25,AG Jeans,25,AG Jeans,SMS,,1197BRS,WANDERER,8 colours,117,33.75,,2026-08-22,,,Sam Sai Textie,,,USD
+AG Jeans!26,AG Jeans,26,AG Jeans,SMS,,1J63LSA,WANDERER CHINO DRAWSTRING,SULFUR DRY DUST,13,57.375,,2026-08-22,,,Sharabati,,Drawstring style - PRICE TO CONFIRM,USD
+AG Jeans!29,AG Jeans,29,AG Jeans,TBA,,1197BRS,WANDERER,WHITE,0,15.05,,2026-10-26,,,BRS - Sam Sai,TBC,Projected qnty 800 pcs changed to 8400 pcs for 8th Jan,USD
+AG Jeans!30,AG Jeans,30,AG Jeans,TBA,,1197BRS,WANDERER,SUPER BLACK,0,15.05,,2026-10-26,,,BRS - Sam Sai,TBC,Projected qnty 800 pcs changed to 8400 pcs for 8th Jan,USD
+AG Jeans!32,AG Jeans,32,AG Jeans,26117661,,VE11E38VN,EX-BOYFRIEND SHORT,WHITE,1950,15.75,,2026-12-10,,,Velocity- Sharabati Martinez,46348,col approval pending,USD
+AG Jeans!33,AG Jeans,33,AG Jeans,26117660,,VE11D49VN,SAIGE WIDE LEG CROP,SULFUR DUSTY MAUVE,1250,20.5,,2026-11-12,,,Velocity- Sharabati Martinez,46356,TBA,USD
+AG Jeans!34,AG Jeans,34,AG Jeans,26117662,,VE11D55VN,FARRAH BOOT CROP,WHITE,2700,19.25,,2026-02-11,,,VA- Sharabati Martinez,46354,col approval pending. Fab i/h 05-Oct,USD
+AG Jeans!36,AG Jeans,36,AG Jeans,26117653,,CNS1E56,CADEN STRAIGHT,DEEP TRENCHES,1000,21.19,,2026-11-12,,,RUI - Sam Sai,46363,Awaiting PPD comments. Fab i/h 10 - Oct,USD
+AG Jeans!37,AG Jeans,37,AG Jeans,26117654,,CNS1E56,CADEN STRAIGHT,PUMICE,1000,21.19,,2026-11-12,,,RUI - Sam Sai,46368,Awaiting PPD comments & lab dip approval. Fab i/h 10-Oct,USD
+AG Jeans!38,AG Jeans,38,AG Jeans,26117663,,VE11D49VN,SAIGE WIDE LEG CROP,PISTACHIO,1200,20.5,,2026-02-11,,,VA- Sharabati Martinez,46365,col approval pending. Fab i/h 05-Oct,USD
+AG Jeans!39,AG Jeans,39,AG Jeans,26117664,,VE11A48,MARI CROP,OPAL STONE,2050,19.2,,2026-03-11,,,VA- Sharabati Martinez,46365,col approval pending. Fab i/h 05-Oct,USD
+AG Jeans!40,AG Jeans,40,AG Jeans,26117995,,BID1F79,BRINLEY CROP,HARBOR LIGHT,1000,23.45,,2026-10-26,,,BID - Advance Dnm,46365,Awaiting 1st PPD comment. Fab i/h 18-Oct,USD
+AG Jeans!41,AG Jeans,41,AG Jeans,26117997,,BID1F79,BRINLEY CROP,LAVENDER BLUE,1000,23.45,,2026-11-24,,,BID - Advance Dnm,46365,,USD
+AG Jeans!42,AG Jeans,42,AG Jeans,26118000,,BID1F79,BRINLEY CROP,SUNWASHED CORAL CLAY,1520,23.45,,2026-12-24,,,BID - Advance Dnm,46365,,USD
+AG Jeans!43,AG Jeans,43,AG Jeans,26118002,,BID1F79,BRINLEY CROP,TANGERINE,1328,23.45,,2026-11-24,,,BID - Advance Dnm,46368,Awaiting 1st PPD comment. Fab i/h 18-Oct,USD
+AG Jeans!44,AG Jeans,44,AG Jeans,26118016,,BID1D49VN,SAIGE WIDE LEG CROP,SUNWASHED LIME,800,23.9,,2026-12-24,,,BID - Advance Dnm,46370,,USD
+AG Jeans!45,AG Jeans,45,AG Jeans,26118018,,BID1D49VN,SAIGE WIDE LEG CROP,SUNWASHED LILAC,800,23.9,,2026-12-24,,,BID - Advance Dnm,46372,25-Sep-26. Fab i/h 18-Oct,USD
+AG Jeans!46,AG Jeans,46,AG Jeans,26117651,,1794CNS,EVERETT,SULFUR OCEAN BREEZE,3000,18.45,,2026-01-04,,,RUI - Sam Sai,46375,Delivered 07-Aug. Awaiting comments.,USD
+AG Jeans!47,AG Jeans,47,AG Jeans,26117648,,1794CNS,EVERETT,PACIFIC MIDNIGHT,2000,18.45,,2026-03-05,,,RUI - Sam Sai,46380,Awaiting comments of 1st PPD in Sulfur Ocean Breeze.,USD
+AG Jeans!48,AG Jeans,48,AG Jeans,26117652,,1174CNS,GRADUATE,LATTE,4000,19.1,,2026-01-04,,,RUI - Sam Sai,46382,Approved 12/08/26 Fab i/h 10-Oct,USD
+AG Jeans!49,AG Jeans,49,AG Jeans,26118011,,NWD1J25,YUMI - CANDIANI,Tangerine,1262,28.08,,,,,Candiani,46386,,USD
+AG Jeans!50,AG Jeans,50,AG Jeans,26117655,,CNS1E56,CADEN STRAIGHT,SULFUR PEBBLE GREY,800,21.19,,2026-02-11,,,RUI - Sam Sai,46368,Awaiting PPD comments & lab dip approval. Fab i/h 10-Oct,USD
+AG Jeans!51,AG Jeans,51,AG Jeans,26117656,,CNS1E56,CADEN STRAIGHT,SULFUR MISTY GREY,1000,21.19,,2026-03-11,,,RUI - Sam Sai,46370,Awaiting PPD comments & lab dip approval. Fab i/h 10-Oct,USD
+AG Jeans!52,AG Jeans,52,AG Jeans,26117659,,CNS1776,CADEN SHORT,KHAKI,1450,14.14,,2026-01-14,,,RUI - Sam Sai,46372,Awaiting PPD comments.,USD
+AG Jeans!53,AG Jeans,53,AG Jeans,26117657,,CNS1776,CADEN SHORT,SULFUR MATCHA LATTE,1000,14.14,,2026-01-14,,,RUI - Sam Sai,46375,Awaiting 1st PPD comment.,USD
+AG Jeans!54,AG Jeans,54,AG Jeans,26117658,,CNS1776,CADEN SHORT,SULFUR BLACK,1400,14.14,,2026-01-14,,,RUI - Sam Sai,46379,Awaiting 1st PPD comment.,USD
+AG Jeans!55,AG Jeans,55,AG Jeans,26117647,,1E21CNS,KULLEN,SILVER FOG,3000,21.49,,2026-01-04,,,RUI - Sam Sai,46384,20/9/2026,USD
+AG Jeans!56,AG Jeans,56,AG Jeans,CANCELLED,,1H16SRT,ARCHIE SHORT,CONVOY BLUE,0,,,2026-01-15,,,LSA - Sharabati,,25/8/2026 - Cancelled on 03-Sep-26,USD
+AG Jeans!59,AG Jeans,59,AG Jeans,26118014,,NWD1J25,YUMI - CANDIANI,Sulfur Mushroom,1000,28.08,,,,,RR7216 ELAST ECRU,46389,,USD
+AG Jeans!60,AG Jeans,60,AG Jeans,26118004,,NWD1F78VN,HALLE,PWDR,1200,18.83,,,,,RR7216 ELAST ECRU,46390,,USD
+AG Jeans!61,AG Jeans,61,AG Jeans,26118007,,NWDD1G52,THE BOYFRIEND - CANDIANI,PWDR,1000,26.87,,,,,RR7216 ELAST ECRU,46391,,USD
+AG Jeans!62,AG Jeans,62,AG Jeans,26117650,,1E21CNS,KULLEN,SULFUR BERLIN STEEL,1800,21.49,,2026-04-07,,,RUI - Sam Sai,46389,25/22/2026,USD
+AG Jeans!63,AG Jeans,63,AG Jeans,26117644,,1197CNS,WANDERER -SHORT,SULFUR CRYSTAL COVE,2000,15.05,,2026-02-05,,,RUI - Sam Sai,46394,5/10/2026. Fab i/h 10-Oct,USD
+AG Jeans!64,AG Jeans,64,AG Jeans,26117665,,1197CNS,WANDERER -SHORT,SULFUR SAND,1000,15.05,,2026-02-05,,,RUI - Sam Sai,46396,12/10/2026. Fab i/h 10-Oct,USD
+AG Jeans!65,AG Jeans,65,AG Jeans,26117645,,1197CNS,WANDERER -SHORT,PACIFIC MIDNIGHT,3000,15.05,,2026-03-05,,,RUI - Sam Sai,46403,12/10/2026. Fab i/h 10-Oct,USD
+AG Jeans!66,AG Jeans,66,AG Jeans,26117646,,1197CNS,WANDERER -SHORT,SILVER FOG,3500,15.05,,2026-03-05,,,RUI - Sam Sai,46410,12/10/2026. Fab i/h 10-Oct,USD
+AG Jeans!68,AG Jeans,68,AG Jeans,26117649,,1197CNS,WANDERER -SHORT,SULFUR MATCHA LATTE,3200,15.05,,2026-04-07,,,RUI - Sam Sai,46420,12/10/2026. Fab i/h 10-Oct,USD
+AG Jeans!69,AG Jeans,69,AG Jeans,26118162,,1197BRS,WANDERER SHORT,White,3000,15.05,,2026-01-08,,,BRS - Sam Sai,46424,,USD
+AG Jeans!70,AG Jeans,70,AG Jeans,26118163,,1197BRS,WANDERER SHORT,Super Black,2500,15.05,,2026-01-08,,,BRS - Sam Sai,46429,,USD
+AG Jeans!71,AG Jeans,71,AG Jeans,26118164,,1197BRS,WANDERER SHORT,Sulphur Rope dye,1200,15.05,,2026-01-08,,,BRS - Sam Sai,46432,,USD
+AG Jeans!72,AG Jeans,72,AG Jeans,26118165,,1197BRS,WANDERER SHORT,Sulphur Fog,1000,15.05,,2026-01-08,,,BRS - Sam Sai,46435,,USD
+AG Jeans!73,AG Jeans,73,AG Jeans,26118167,,1197BRS,WANDERER SHORT,Sulphur Tangle,700,15.05,,2026-01-08,,,BRS - Sam Sai,46438,,USD
+AG Jeans!74,AG Jeans,74,AG Jeans,26118169,,1H84LSA,WANDERER CHINO,NIGHT ECLIPSE,1800,23.96,,2026-11-24,,,LSA - Sharabati,46438,"PO del date 8th Feb, planned to prepone for Nov dispatch. Fab eta 05-Oct",USD
+AG Jeans!75,AG Jeans,75,AG Jeans,26118171,,1H84LSA,WANDERER CHINO,PURE BLACK,1600,23.96,,2026-11-24,,,LSA - Sharabati,46442,"PP Approved, PO del date 8th Feb, planned to prepone for Nov dispatch.Fab eta 05-Oct",USD
+AG Jeans!77,AG Jeans,77,AG Jeans,26118172,,1H84LSA,WANDERER CHINO,DUSTY WHEAT,1800,23.96,,2026-11-24,,,LSA - Sharabati,46447,"PP Approved, PO del date 8th Feb, planned to prepone for Nov dispatch.Fab eta 05-Oct",USD
+AG Jeans!78,AG Jeans,78,AG Jeans,26118173,,1H84LSA,WANDERER CHINO,FOG,800,23.96,,2026-11-24,,,LSA - Sharabati,46449,"PP to send on 30-Aug-2026, PO del date 8th Feb, planned to prepone.Fab eta 05-Oct",USD
+Ariat!3,Ariat,3,Ariat,4500263615 / 616 / 4500262557 / 4500262301 / 4500262299 / 300,,P38707,MNS CLASSIC DENIM JKT RYLN,Dark wask,68,70,,,2026-03-26,,TDB-051B-25,68 pcs Shipped on 4/21,,USD
+Ariat!4,Ariat,4,Ariat,4500263615 / 616 / 4500262557 / 4500262301 / 4500262299 / 300,,P38709,NS DENIM VST PEYTN,Light Wash,68,69,,,2026-03-26,,TDB-051B-25,69 pcs Shipped on 4/21,,USD
+Ariat!5,Ariat,5,Ariat,April Total,,,,,136,,,,,,,,,USD
+Ariat!6,Ariat,6,Ariat,4500268601,,P36953,MNS FLANNEL LINED TRUCKER JACKET NATE,Dark wask,2435,35.64,9.1,,2026-05-28,,Foison,DDP delivery - vessel aug 13th connected 2447 pcs,,USD
+Ariat!7,Ariat,7,Ariat,4500268602,,P36952,MNS SHERPA LINED SHRT JACKET STWRT,Dark wask,975,35.81,9.1,,2026-05-28,,Arvind,"DDP delivery - vessel aug 13th connected, 425 pcs are ready & Flexport registration pending",,USD
+Ariat!9,Ariat,9,Ariat,4500305642 / 4500305640 / 4500305641,,P40305,MNS SHERPA LINED JKT MRCS,Marcus,75,122.7,,,2026-09-15,,AGI,"Fabric booking done,exp IH dt 3rd Aug. quilting, Hwear lining, trims ordered. 46 pcs shipped out on 9/23, USA 3 pcs, Netherland 10 pcs shipped on 9/24, UK - 8 pcs sent on 27th Sep. us 8 pcs shipped on 15 Oct",,USD
+Ariat!10,Ariat,10,Ariat,4500305642 / 4500305640 / 4500305641,,P40255,MNS FLIRTY FLARE DRS RNS,RINSE,58,77.97,,,2026-08-31,,Freedom,"Fabric booking IH, trims ordered, 49 pcs shipped on 8th Sep, 8 pcs shipped on 15 Oct",,USD
+Ariat!12,Ariat,12,Ariat,4500286699 / 4500290817 /816,,P38707,MNS CLASSIC DENIM JACKET RYLN,Dark wask,3350,29.13,6.81,,2026-09-01,,Twin Dragon / TDB-051B-25,"PO received with 27.49 usd, need to get revise po for 29.13, Bulk fabric ETA 7th Aug, Exp IH 14th Aug, sliding to 20th Aug. Extension requested. DDP confrmed for 11/16 ETA, 3023 pcs shipped on 8th Oct,206 pcs shipped on 8th Oct. 150 pcs planned to ship on 18th Oct(Flex booking # 4258924), 143 pcs shipped on 25 Oct",,USD
+Ariat!13,Ariat,13,Ariat,4500268167 / 168,,P36952,MNS SHERPA LINED SHRT JACKET STWRT,Dark wask,298,35.81,,,2026-05-28,,Arvind,"209 pcs shipped on 8th Oct, 205 pcs planned to ship on 18th Oct(Flex booking # 4216336)",,USD
+Ariat!14,Ariat,14,Ariat,4500309292,,P38709,NS DENIM VEST PEYTN,Light Wash,900,26.2,6.81,,2026-11-02,,Twin Dragon / TDB-051B-25,"propose to ship in Oct, PO revision required for FOB to $ 26.20, DDP confirmed for 11/6 ETA, 929 pcs shipped on 8th oct",,USD
+Ariat!15,Ariat,15,Ariat,4500309712,,P38709,NS DENIM VEST PEYTN,Light Wash,119,26.2,0,,2026-11-02,,Twin Dragon / TDB-051B-25,"propose to ship in Oct, PO revision required for FOB to $ 26.20, DDP confirmed for 11/6 ETA, planned to ship on 18th Oct(Flex Booking # 4262908)",,USD
+Ariat!16,Ariat,16,Ariat,4500309713,,P38709,NS DENIM VEST PEYTN,Light Wash,270,26.2,0,,2026-11-02,,Twin Dragon / TDB-051B-25,"propose to ship in Oct, PO revision required for FOB to $ 26.20, DDP confirmed for 11/6 ETA, planned to ship on 18th Oct(Flex Booking # 4262876),265 pcs shipped on 25 Oct",,USD
+Ariat!18,Ariat,18,Ariat,Awtg,,P41397,CALAMITYWIDE PNT,,70,64.2,,,,,,,,USD
+Ariat!19,Ariat,19,Ariat,Awtg,,P41398,APRE RODEP JKT,,70,75.84,,,,,,,,USD
+Ariat!20,Ariat,20,Ariat,Awtg,,P40391,COATED DENIM DRS,,70,77.97,,,,,,,,USD
+Ariat!21,Ariat,21,Ariat,Awtg,,P41391,PR PLEATED MONICA WIDE JEAN,,70,62.52,,,,,,,,USD
+Ariat!22,Ariat,22,Ariat,Awtg,,P41385,CORDUROY SHERPA JKT,,70,116.82,,,,,,,,USD
+Ariat!24,Ariat,24,Ariat,4500268168,,P36952,MNS SHERPA LINED SHRT JACKET STWRT,Dark wask,127,35.81,,,2026-05-28,,Arvind,Planned to ship on 12/12,,USD
+Ariat!25,Ariat,25,Ariat,4500309712,,P38709,NS DENIM VEST PEYTN,Light Wash,41,26.2,0,,2026-11-02,,Twin Dragon / TDB-051B-25,Planned to ship on 12/12,,USD
+Ariat!31,Ariat,31,Ariat,PO awtg,,P38707,MNS CLASSIC DENIM JACKET RYLN,,1860,29.13,,,2026-12-10,,,Chase order,,USD
+Ariat!32,Ariat,32,Ariat,PO awtg,,P38707,MNS CLASSIC DENIM JACKET RYLN,,940,29.13,,,2026-12-10,,,"Chase order, SIZE BREAK UP AWTG",,USD
+Ariat!34,Ariat,34,Ariat,PO awtg,,P41359,WIDE LEG 1 - HOOK UP - LIQUID - TWISTED STRIPE,,70,66.5,,,,,,,,USD
+Ariat!35,Ariat,35,Ariat,PO awtg,,P41360,UHR TWISTED SEAM WIDE LEG,,70,61.5,,,,,,,,USD
+Ariat!36,Ariat,36,Ariat,PO awtg,,P41352,TOP 1 - HOOK UP - TOP (SEINE),,70,56.5,,,,,,,,USD
+Ariat!37,Ariat,37,Ariat,PO awtg,,P41351,TOP 1 - HOOK UP - BLAZER (SEINE),,70,126.5,,,,,,,,USD
+Ariat!38,Ariat,38,Ariat,4500329929,,P14909,BOYS B4 COLTRANE BOOT JEAN,DURANGO,2500,17.84,,,2027-02-26,,AGI - 20654,,,USD
+Ariat!39,Ariat,39,Ariat,4500329931,,P18327,WMS R.E.A.L PR STR ROSA BOOT JEAN,LITA,4000,18.56,,,2027-02-26,,CONE DENIM - 9601P Atremis,,,USD
+Ariat!40,Ariat,40,Ariat,awtg,,P38707,MNS CLASSIC DENIM JACKET RYLN,Dark wask,0,29.13,,,2027-02-28,,Twin Dragon / TDB-051B-25,,,USD
+Ariat!42,Ariat,42,Ariat,4500329930,,P14909,BOYS B4 COLTRANE BOOT JEAN,DURANGO,2500,17.84,,,2027-03-29,,AGI - 20654,,,USD
+Ariat!43,Ariat,43,Ariat,4500329932,,P18327,WMS R.E.A.L PR STR ROSA BOOT JEAN,LITA,4000,18.56,,,2027-03-29,,CONE DENIM - 9601P Atremis,,,USD
+Ariat!44,Ariat,44,Ariat,awtg,,P40255,Wms Flirty Flare Drs RNS,,0,20.65,,,,,,,,USD
+Ariat!45,Ariat,45,Ariat,March Total,,,,,6500,,,,,,,,,USD
+Ariat!46,Ariat,46,Ariat,awtg,,,WMS R.E.A.L PR STR ROSA BOOT JEAN,,1500,18.56,,,,,,,,USD
+Ariat!47,Ariat,47,Ariat,awtg,,,WMS R.E.A.L PR STR ROSA BOOT JEAN,,1200,18.56,,,,,,,,USD
+Ariat!48,Ariat,48,Ariat,awtg,,P40255,Wms Flirty Flare Drs RNS,,1500,20.65,,,,,,,,USD
+Ariat!49,Ariat,49,Ariat,awtg,,P14909,BOYS B4 COLTRANE BOOT JEAN,,3500,17.84,,,,,,,,USD
+Ariat!50,Ariat,50,Ariat,April Total,,,,,7700,,,,,,,,,USD
+Ariat!51,Ariat,51,Ariat,awtg,,P40305,MNS SHERPA LINED JKT MRCS,,3000,40.9,,,,,,,,USD
+Ariat!52,Ariat,52,Ariat,awtg,,,WMS R.E.A.L PR STR ROSA BOOT JEAN,,5500,18.56,,,,,,,,USD
+Ariat!53,Ariat,53,Ariat,awtg,,,WMS R.E.A.L PR STR ROSA BOOT JEAN,,1200,18.56,,,,,,,,USD
+Ariat!54,Ariat,54,Ariat,awtg,,P41398,BOYS B4 COLTRANE BOOT JEAN,,5000,17.84,,,,,,,,USD
+Ariat!55,Ariat,55,Ariat,awtg,,,BOYS B4 COLTRANE BOOT JEAN,,1200,17.84,,,,,,,,USD
+Ariat!56,Ariat,56,Ariat,awtg,,P40255,Wms Flirty Flare Drs RNS,Rinse,0,20.65,,,2027-05-02,,AR-F-009428 W's Stretch Denim Dress 11 oz,"Fabric pre booking on 10th Nov, PO due on 15th Dec",,USD
+Ariat!58,Ariat,58,Ariat,awtg,,,MNS CORDUROY SHERPA JKT CDRC,,3000,,,,,,,,,USD
+Ariat!59,Ariat,59,Ariat,awtg,,,WMS R.E.A.L PR STR ROSA BOOT JEAN,,5500,,,,,,,,,USD
+Ariat!60,Ariat,60,Ariat,awtg,,,WMS R.E.A.L PR STR ROSA BOOT JEAN,,1200,,,,,,,,,USD
+Ariat!61,Ariat,61,Ariat,awtg,,,WMS APRE RODEO JKT MLVRN,,1000,,,,,,,,,USD
+Ariat!62,Ariat,62,Ariat,awtg,,,WMS CALAMITY WIDE PNT MLVRN,,1000,,,,,,,,,USD
+Ariat!63,Ariat,63,Ariat,awtg,,,WMS PR PLEATED MONICA WIDE JEAN SBA,,5000,,,,,,,,,USD
+Ariat!64,Ariat,64,Ariat,awtg,,,WMS COATED DENIM DRS OXBLD,,,,,,,,,,,USD
+Ariat!65,Ariat,65,Ariat,awtg,,,BOYS B4 COLTRANE BOOT JEAN,,,,,,,,,,,USD
+Ariat!66,Ariat,66,Ariat,awtg,,P40305,Mns Sherpa Lined Jkt MRCS,,0,40.9,,,2027-06-07,,AR-F-009357 M's Black Coffee Rigid Denim 12.4 oz/AR-F 008940 Shanghai Escopel,"Fabric pre booking on 10th Nov, PO due on 15th Dec",,USD
+Ariat!68,Ariat,68,Ariat,awtg,,P38707,MNS CLASSIC DENIM JACKET RYLN,Dark wask,3000,29.13,,,2027-07-01,,Twin Dragon / TDB-051B-25,,,USD
+Ariat!69,Ariat,69,Ariat,awtg,,P40391,WMS R.E.A.L PR STR ROSA BOOT JEAN,,3000,25.99,,,2027-07-12,,AR-F-009420 W's Cabernet Coated Stretch Denim 10 oz,,,USD
+Ariat!70,Ariat,70,Ariat,awtg,,P41385,WMS R.E.A.L PR STR ROSA BOOT JEAN,,3000,38.94,,,2027-07-12,,AR-F-009392 M's 14 Wale Corduroy 10 oz/AR-F- 008940 Shanghai Ecopel Lining,,,USD
+Ariat!71,Ariat,71,Ariat,awtg,,P41391,BOYS B4 COLTRANE BOOT JEAN,,3000,20.84,,,2027-07-12,,AR-F-009628 W's Pleated Wide Leg Rigid 10.5 oz,,,USD
+Ariat!72,Ariat,72,Ariat,awtg,,P41397,BOYS B4 COLTRANE BOOT JEAN,,3000,21.4,,,2027-07-12,,AR-F-009387 W's Chenille Denim,,,USD
+Ariat!73,Ariat,73,Ariat,awtg,,P41398,Wms Apre Rodeo Jkt MLVRN,,3000,13.63,,,2027-07-12,,AR-F-009387 W's Chenille Denim,,,USD
+Ariat!74,Ariat,74,Ariat,July Total,,,,,15000,,,,,,,,,USD
+Diesel!4,Diesel,4,Diesel,Received,SS25,M Male,THOMMER-R,RINCE,2898,13.78,,2025-08-15,,2025-08-15,DIEGO TOP BLUE,1716pcs shipped 17 aug,,EUR
+Diesel!5,Diesel,5,Diesel,Received,SS25,M Male,MARKEE,RINCE,897,13.5,,2025-08-15,,2025-08-31,,Shipped 31/Aug,,EUR
+Diesel!6,Diesel,6,Diesel,Received,SS25,M Male,SAFADO-X,DARK BLUE,1645,14.1,,2025-08-15,,2025-08-31,ADEOLA SHINY BLUE,Shipped 31/Aug,,EUR
+Diesel!7,Diesel,7,Diesel,Received,SS25,M Male,TEPPHAR-X,DARK BLUE,1539,14.1,,2025-08-15,,2025-08-31,,Shipped 31/Aug,,EUR
+Diesel!8,Diesel,8,Diesel,Received,SS25,M Male,SAFADO-X,MID BLUE,1234,14.4,,2025-08-15,,2025-08-31,DIEGO TOP BLUE,Shipped 31/Aug,,EUR
+Diesel!9,Diesel,9,Diesel,Received,SS25,M Male,ZATINY-X,MID BLUE,1404,16.15,,2025-08-15,,2025-08-31,,Shipped 31/Aug,,EUR
+Diesel!10,Diesel,10,Diesel,Received,SS25,M Male,THOMMER-R,MID BLUE,2361,15.63,,2025-08-15,,2025-08-31,,Shipped 31/Aug,,EUR
+Diesel!11,Diesel,11,Diesel,Received,SS25,M Male,MARKEE,MID BLUE,877,14.93,,2025-08-15,,2025-08-31,,Shipped 31/Aug,,EUR
+Diesel!12,Diesel,12,Diesel,Received,SS25,M Male,TEPPHAR-X,LIGHT BLUE,1218,15.1,,2025-08-15,,2025-08-31,ADEOLA SHINY BLUE,Shipped 31/Aug,,EUR
+Diesel!13,Diesel,13,Diesel,Received,SS25,M Male,BUSTER-X,LIGHT BLUE,1152,15.1,,2025-08-15,,2025-08-31,,Shipped 31/Aug,,EUR
+Diesel!14,Diesel,14,Diesel,Received,SS25,M Male,TEPPHAR-X,MID BLUE WITH ABRASION,1236,15.6,,2025-08-15,,2025-08-31,ADEOLA SHINY BLUE,Shipped 31/Aug,,EUR
+Diesel!15,Diesel,15,Diesel,Received,SS25,F Female,D-JOY-R,MID BLUE,694,14.4,,2025-08-15,,2025-08-31,DIEGO TOP BLUE,Shipped 31/Aug,,EUR
+Diesel!16,Diesel,16,Diesel,Received,SS25,F Female,D-KEMAI,MID BLUE,406,16.52,,2025-08-15,,2025-08-31,,Shipped 31/Aug,,EUR
+Diesel!17,Diesel,17,Diesel,August Total,,,,,17561,,,,,,,,,EUR
+Diesel!18,Diesel,18,Diesel,Received,SS25,M Male,TEPPHAR-X,BLACK WASH DOWN,1581,15.57,,2025-08-30,,2025-09-17,DIJON TOP BLACK,Shipped on 17/Sep,,EUR
+Diesel!19,Diesel,19,Diesel,Received,SS25,M Male,BUSTER-X,BLACK WASH DOWN,826,15.85,,2025-08-30,,2025-09-17,,Shipped on 17/Sep,,EUR
+Diesel!20,Diesel,20,Diesel,Received,SS25,M Male,THOMMER-R,BLACK WASH DOWN,2001,16.25,,2025-08-30,,2025-09-17,,Shipped on 17/Sep,,EUR
+Diesel!21,Diesel,21,Diesel,Received,SS25,M Male,MARKEE,BLACK WASH DOWN,680,16.1,,2025-08-30,,2025-09-17,,Shipped on 17/Sep,,EUR
+Diesel!22,Diesel,22,Diesel,Received,SS25,F Female,WIDEE-R,MID BLUE,560,15.45,,2025-08-15,,2025-09-17,,Shipped on 17/Sep,,EUR
+Diesel!23,Diesel,23,Diesel,Received,202601,A03558,2019 D-STRUKT,Mid Blue,10744,14.4,,2025-09-07,,2025-09-17,OCW ROX REIN,Shipped 99% italy - 7-Sep 9515 pcs,,EUR
+Diesel!24,Diesel,24,Diesel,Received,202601,A10229,2023 D-FINITIVE,Dark Blue,7075,14.45,,2025-09-14,,2025-09-07,OCW ELVIS STR OCEAN,Shipped 100% italy - 7-Sep 5937 pcs,,EUR
+Diesel!26,Diesel,26,Diesel,Received,Drop 2,A11003,1969 D-EBBEY,Mid Blue,3005,14.48,,2025-09-25,,2025-10-15,OCW ANWAR 10 STR. ROYAL,"INDC 31/Oct, Shipped 22nd Oct",,EUR
+Diesel!27,Diesel,27,Diesel,Received,Drop 2,A12025,D-STRUKT-R,Olive Green,1400,15.9,,2025-10-30,,2025-12-13,OCW- STRATA GR /STR SING,"Shipped on 11th Jan (83.35% with full value, 16.65% with 60% discount) Air prepaid.",,EUR
+Diesel!28,Diesel,28,Diesel,Received,Drop 2,A21968,D-MAUKI-SHORT,Mid Blue,2054,14,,2025-10-30,,2025-12-20,OCW - Slouchy 24 Ocean,Shipped 98% italy - 20-Nov 1577 pcs,,EUR
+Diesel!29,Diesel,29,Diesel,Received,Drop 2,A21678,D-MAUKI,Mid Blue,5217,17,,2025-10-30,,2025-12-20,OCW - Walker STR Ocean,Shipped 99% italy - 20-Nov 4684 pcs,,EUR
+Diesel!30,Diesel,30,Diesel,Received,Drop 2,A20798,JKT/MAL-DM,Mid Blue,1113,24.5,,2025-10-30,,2025-12-20,OCW - Slouchy 24 Ocean,Shipped 98% italy - 20-Nov 721 pcs,,EUR
+Diesel!31,Diesel,31,Diesel,Received,Drop 2,A20799,JKT/FEM-DM,Mid Blue,607,23.38,,2025-10-30,,2025-12-20,OCW - Slouchy 24 Ocean,Shipped 100% italy - 20-Nov 350 pcs,,EUR
+Diesel!32,Diesel,32,Diesel,Received,Drop 2,A18062,KRASHEE,Mid Blue,701,16.83,,2025-10-30,,2025-12-20,OCW - Walker STR Ocean,Shipped on 3 Nov,,EUR
+Diesel!33,Diesel,33,Diesel,Received,Drop 2,00SB6D,THOMMER-X,Mid Blue,4115,15,,2025-10-30,,2025-12-20,OCW - Walker STR Ocean,Shipped 100% italy - 20-Nov 3233 pcs,,EUR
+Diesel!34,Diesel,34,Diesel,Received,Drop 2,A21849,D-FIN-X,Mid Blue,1242,14.56,,2025-10-30,,2025-12-20,OCW - Walker STR Ocean,Shipped 100% on 3 Nov,,EUR
+Diesel!35,Diesel,35,Diesel,Received,Drop 2,A03624,1978 D-AKEMI,Mid Blue,2347,16.54,,2025-10-30,,2025-12-20,OCW - Slouchy 24 Ocean,1561 pcs Shipped on 3 Nov,,EUR
+Diesel!37,Diesel,37,Diesel,Received,Repeat,M Male,SAFADO-X,MID BLUE,2400,14.1,,2025-11-14,,2025-12-07,ADEOLA SHINY BLUE,"FI done on 10th Dec,",,EUR
+Diesel!38,Diesel,38,Diesel,Received,Repeat,M Male,BUSTER-X,LIGHT BLUE,2400,15.1,,2025-11-14,,2025-12-07,ADEOLA SHINY BLUE,"FI done on 10th Dec,",,EUR
+Diesel!40,Diesel,40,Diesel,Received,Repeat,M Male,ZATINY-X,LIGHT BLUE,1200,16.15,,2025-12-21,,2025-12-07,DIEGO TOP BLUE,FI done on 18th Dec.,,EUR
+Diesel!42,Diesel,42,Diesel,Received,,,2025 USA %,,,,,,,,,,,EUR
+Diesel!43,Diesel,43,Diesel,2025 GRAND TOTAL,,,,,68829,,,,,,,,,EUR
+Diesel!45,Diesel,45,Diesel,CD_BM 2025 1701 to 1709,Drop 3,A03594,1979 SLEENKER,LIGHT BLUE,7117,15.76,,2026-01-04,,,Esna Str Ocean,6377 pcs shipped on 19 Jan 99.44%,,EUR
+Diesel!47,Diesel,47,Diesel,CD_BM 2025 2603 /2608 /2600,FW 25,A03624,1978 D-AKEMI,,1516,17.57,,2026-03-06,,,OCW-SLOUCHY 24 OCEAN ORG. (SHARABATI),1156 pcs shipped on 9th March,,EUR
+Diesel!48,Diesel,48,Diesel,CD_BM 2025 2604 /2609 / 2601,FW 25,A03625,1978 D-AKEMI,,995,17.57,,2026-03-06,,,OCW-SLOUCHY 24 OCEAN ORG. (SHARABATI),469 pcs shipped on 9th March,,EUR
+Diesel!49,Diesel,49,Diesel,CD_BM 2025 2605 / 2610 / 2602,FW 25,A21678,D-MAUKI,,2529,18.32,,2026-03-06,,,OCW-WALKER STR OCEAN (SHARABATI),2195 pcs shipped on 9th March,,EUR
+Diesel!50,Diesel,50,Diesel,CD_BM 2025 2606,FW 25,A21769,D-MAUKI,,2281,18.32,,2026-03-06,,,OCW-WALKER STR OCEAN (SHARABATI),2274 pcs shipped on 9th March,,EUR
+Diesel!51,Diesel,51,Diesel,CD_BM 2025 2607,FW 25,A21770,D-MAUKI,,205,18.32,,2026-03-06,,,OCW-WALKER STR OCEAN (SHARABATI),196 pcs shipped on 9th March,,EUR
+Diesel!53,Diesel,53,Diesel,CD_BM 2025 2823,FW 26,A06430,REGULAR-SHORT,Med Wash,569,15.1,,2026-03-14,,2026-02-27,OCW ANWAR 10 RGD WS ROYAL (SHARABATI),569 pcs shipped out on 19th March,,EUR
+Diesel!54,Diesel,54,Diesel,CD_BM 2025 2825 / 2854 / 2858 / 2859 / 2860 / 2964 / 2966 / 2965 / 2852 / 2853,FW 26,A03594,1979 SLEENKER,Dark Wash,12133,16.25,,2026-03-06,,2026-02-27,SOPHIA QUARTZ BLUE_RGN65 (DNM),11062 pcs shipped on 9th March,,EUR
+Diesel!55,Diesel,55,Diesel,CD_BM 2025 2826 / 2827 / 2828,FW 26,00C06Q,1985 LARKEE,Light Wash,642,17.15,,2026-03-14,,,OCW ROX REIN (SHARABATI),"597 pcs shipped on 2nd Apr,45 pcs are ready to ship on 28th Apr Mode APP Short qty Shipped on 16 May",,EUR
+Diesel!56,Diesel,56,Diesel,CD_BM 2025 2838 / 2839 / 2840 / 2845 / 2846 / 2818/ 2819,FW 26,A13820,D-HUSH,Light Wash,2086,16.5,,2026-03-23,,2026-02-27,OCW ROX REIN (SHARABATI),1818 pcs shipped on 2nd Apr,,EUR
+Diesel!57,Diesel,57,Diesel,CD_BM 2025 2831 / 2832/ 2833 / 2842 / 2815,FW 26,A19869,1971 D-SENT,Med Wash,922,16.57,,2026-03-23,,2026-02-27,OCW ROX REIN (SHARABATI),868 pcs shipped on 2nd April,,EUR
+Diesel!58,Diesel,58,Diesel,CD_BM 2025 2829 / 2830,FW 26,A17897,1992 D-JIANN,Med Wash,1021,16.46,,,,2026-02-27,OCW ROX REIN (SHARABATI),"928 pcs shipped on 2nd April,93 pcs are ready to ship on 28th Apr , mode APP Short qty shipped on 16 May",,EUR
+Diesel!59,Diesel,59,Diesel,CD_BM 2025 2834 / 2835 / 2836 / 2837 / 2843 / 2844 / 2816 / 2817,FW 26,A03624,1978 D-AKEMI,Light Wash,3922,17.14,,2026-03-23,,2026-02-27,OCW ROX REIN (SHARABATI),3689 pcs shipped on 2nd April,,EUR
+Diesel!60,Diesel,60,Diesel,CD_BM 2025 2820 / 2821 / 2822 / 2841,FW 26,A18974,2024 D-MACS,Light Wash,1339,16.85,,2026-03-23,,2026-02-27,OCW HAZEL CHARP (SHARABATI),1265 pcs shipped out on 23rd Apr,,EUR
+Diesel!61,Diesel,61,Diesel,CD_BM 2025 2824 / 2849 / 2856 / 2857 / 2961 / 2962 / 2963 / 2950 / 2851,FW 26,A03558,2019 D-STRUKT,,10836,15.76,,2026-03-14,,2026-02-27,OCW OWL OCEAN (SHARABATI),10507 pcs shipped out on 19th March,,EUR
+Diesel!62,Diesel,62,Diesel,CD_BM 2026 203/204/205 /208/209 /193/194,FW 26,A22459 / 60 /60,1981 D-WENT,Med Vintage Wash,1915,16.45,,2026-03-10,,2026-02-27,OCW ROX REIN (SHARABATI),1671 pcs Aired on 12th March,,EUR
+Diesel!63,Diesel,63,Diesel,CD_BM 2026 40/478/49/50/32/82/83/479/26/30/25/80/29/78/79/28/31/46/23/52/54/47/51/53/55/477/48/24/27/33/77,SS27,,,,492,35,,2026-03-15,,,,"474 pcs couriered from 17th March on 4th Apr, 32 pcs shipped out on 7th April.",,EUR
+Diesel!65,Diesel,65,Diesel,CD_BM 2026 197/198/199,FW 26,A15795 / A17046 / A17047,1980 D-EEPER,Dark Wash,697,16.5,,2026-04-10,,2026-04-21,OCW ANWAR 10 RGD WS ROYAL (SHARABATI),697 pcs shipped out on 23rd Apr,,EUR
+Diesel!66,Diesel,66,Diesel,CD_BM 2026 206/207/212/213/210/214/195/196/211,FW 26,A10229 /30/31,2023 D-FINITIVE,Dark Wash,7357,16.8,,2026-04-10,,2026-04-21,OCW ROX OCEAN (SHARABATI),"6523 pcs shipped out on 23rd April,133 pcs need to recut- buyer confirmed no need of recut",,EUR
+Diesel!67,Diesel,67,Diesel,CD_BM 2026 679/680/681/702/703,FW25,A13342,THOMMER-R,,5488,14.89,,2026-04-30,,,DIEGO TOP BLUE(DNM),Connected in 6th June Vessel,,EUR
+Diesel!68,Diesel,68,Diesel,CD_BM 2026 682 /683/684/685/704,FW25,A19035,MARKEE,,500,14.86,,2026-04-30,,,DIEGO TOP BLUE(DNM),Connected in 6th June Vessel,,EUR
+Diesel!69,Diesel,69,Diesel,CD_BM 2026 686 /687/769,FW25,00SOPS,SAFADO-X,,500,15.76,,2026-04-30,,,DIEGO TOP BLUE(DNM),Connected in 6th June Vessel,,EUR
+Diesel!70,Diesel,70,Diesel,CD_BM 2026 688 /689/705/706,FW25,A00896,ZATINY - X,,564,17.51,,2026-04-30,,,DIEGO TOP BLUE(DNM),Connected in 6th June Vessel,,EUR
+Diesel!71,Diesel,71,Diesel,CD_BM 2026 690 /691 /692 / 693 / 770,FW25,A19035,MARKEE,,500,16.15,,2026-04-30,,,SLOUCHY 22 OCEAN,Connected in 6th June Vessel,,EUR
+Diesel!72,Diesel,72,Diesel,CD_BM 2026 694 /695 /696 / 697 / 698 / 699,FW25,A21990,DKEMAI,,500,16,,2026-04-30,,,SLOUCHY 22 OCEAN,Connected in 6th June Vessel,,EUR
+Diesel!73,Diesel,73,Diesel,CD_BM 2026 700 /701,FW25,A20799,JKT/FEM-DM,,500,22.95,,2026-04-30,,,SLOUCHY 22 OCEAN,Connected in 6th June Vessel,,EUR
+Diesel!75,Diesel,75,Diesel,CD_BM 2026 200/201/202,FW 26,A15797 / 98 / 99,1993 D-VYL,Med Wash,893,16.88,,2026-05-22,,,OCW ROX REIN (SHARABATI),Connected 6th June vessel.,,EUR
+Diesel!76,Diesel,76,Diesel,SHORT SHIP,SS25,MULTIPLE,,,537,,,,,2026-05-23,,,,EUR
+Diesel!78,Diesel,78,Diesel,CK_BM 2026 1747 / 1748 / 1749 / 1750 / 1745 / 1746,SS26,A03624,1978 D-AKEMI,,1742,18.08,,2026-08-17,,2026-08-26,OCW-SLOUCHY 24 OCEAN ORG. (SHARABATI),"Shipped 1042 pcs, BL & Euro1 awtg",,EUR
+Diesel!79,Diesel,79,Diesel,CK_BM 2026 2187 / 2188 / 2189 / 2206/2207/ 2171 /2172,SS27,A17055 / 17056 / 17057,2007 ZATINY,,4624,18.55,,2026-08-14,,2026-09-10,RG DARWIN STR/H WS INK 23,"Non specific trims and moliton thread to order immedtly, sewing completed, WCD 2nd Sep.9th X-fty,3851 pcs shipped out on 10th Sep",,EUR
+Diesel!80,Diesel,80,Diesel,CK_BM 2026 2181 / 2182 / 2183 / 2204/2205 / 2161/2168,SS27,A15797 / 15798 / 15799,1993 D-VYL,,5307,19.77,,2026-08-14,,2026-09-10,OCW OWL /W BLACK,"Non specific trims and moliton thread to order immedtly, Bulk wash completed, Printing completed 1200 pcs , 270 carelabel in transit. 9th X-fty,4891 pcs shipped out on 10th Sep",,EUR
+Diesel!81,Diesel,81,Diesel,"Non specific trims and moliton thread to order immedtly, SCD by 2nd Sep, out put till 29th Aug 2600 pcs, WCD 10th Sep. 50% qnty for 9th X-fty,3496 pcs shipped out on 10th sep",SS27,00C06P / Q / R,1985 LARKEE,,5685,19.31,,2026-08-14,,2026-09-10,RG DARWIN STR/H WS INK 23,"Non specific trims and moliton thread to order immedtly, SCD by 2nd Sep, out put till 29th Aug 2600 pcs, WCD 10th Sep. 50% qnty for 9th X-fty, 2108 pcs shipped out on 16th Sep,3496 pcs shipped on 10th Sep",,EUR
+Diesel!82,Diesel,82,Diesel,CK_BM 2026 2174/ 2175 / 2176 / 2200 / 2201 / 2163/2164,SS27,A10229/10230/10231,2023 D-FINITIVE,,4683,18.66,,2026-08-14,,2026-08-26,OCW OWL /W BLACK,"Shipped 4084 pcs, BL & Euro1 awtg",,EUR
+Diesel!83,Diesel,83,Diesel,CK_BM 2026 2199 /2210,SS27,A23113,D-ENIM-M-SHORT,,1190,19.31,,2026-08-14,,2026-09-10,UPCHARGE FOR VOLUME - AMBER ONYXBLACK_ORG50,"Non specific trims and moliton thread to order immedtly, SCD by 1st Sep. 9th X-fty,1120 pcs shipped out on 10th Sep",,EUR
+Diesel!84,Diesel,84,Diesel,CK_BM 2026 2199 /2210,SS27,A23113,D-ENIM-M-SHORT,,0,19.34,,2026-08-14,,,UPCHARGE FOR VOLUME- RGW HAZEL CHARP,Non specific trims and moliton thread to order immedtly,,EUR
+Diesel!85,Diesel,85,Diesel,CK_BM 2026 2199 /2210,SS27,A26373,1991 D-VOEED,,0,20.5,,2026-08-14,,,UPCHARGE FOR VOLUME- RGW HAZEL CHARP,Non specific trims and moliton thread to order immedtly,,EUR
+Diesel!86,Diesel,86,Diesel,CK_BM 2026 2197/ 2198,SS27,A18974 / 18975,2024 D-MACS,,1068,20.01,,2026-08-14,,2026-09-10,UPCHARGE FOR VOLUME- RGW HAZEL CHARP,"Non specific trims and moliton thread to order immedtly, WCD 2nd Sep, 9th X-fty,1051 pcs shipped out on 10th Sep",,EUR
+Diesel!87,Diesel,87,Diesel,CK_BM 2026 2190/ 2191/2192 /2173,SS27,A21245 / 21246 / 21247,1980 D-EEPER,,1320,19.6,,2026-08-14,,2026-08-26,UPCHARGE FOR WASH/STYLE- OCW CALDERA RGD /WS INK 23,Shipped 1268 pcs on 26th Aug,,EUR
+Diesel!88,Diesel,88,Diesel,CK_BM 2026 2193/ 2194 /2195 /2196 /2208/2209,SS27,A12218 / 12221/ 12222,1998 D-BUCK,,1573,19.83,,2026-08-14,,2026-08-26,RGW HAZEL CHARP,Shipped 1288 pcs shipped on 26th Aug,,EUR
+Diesel!89,Diesel,89,Diesel,CK_BM 2026 2177/ 2178 /2179 /2180 / 2202/2203/2165/2166,SS27,A13820 / 14740 / 14741,D-HUSH,,2461,19.31,,2026-08-14,,2026-09-16,OCW OWL /W BLACK,2193 pcs shipped on 16 Sep,,EUR
+Diesel!91,Diesel,91,Diesel,CKBM 2026 2647 / 2648 / 2656,SS27,A22266,DE-HELIOS,,1000,16.07,,2026-09-18,,2026-09-30,UPCHARGE FOR VOLUME- RGW HAZEL CHARP,912 pcs shipped on 30 Sep,,EUR
+Diesel!92,Diesel,92,Diesel,CKBM 2026 2641 / 2654/ 2624,SS27,A14051,DE-SIRE-SHORT,,1724,19.79,,2026-09-18,,2026-09-30,UPCHARGE FOR VOLUME- RGW HAZEL CHARP,1610 pcs shipped on 30 Sep,,EUR
+Diesel!93,Diesel,93,Diesel,CKBM 2026 2644 / 2645/2655 / 2625,SS27,A22459/22460,1981 D-WENT,,1091,22.01,,2026-09-18,,2026-09-30,RGW HAZEL CHARP,916 pcs shipped on 30 Sep,,EUR
+Diesel!94,Diesel,94,Diesel,CKBM 2026 2642/2643,SS27,A19869 / 19871,1971 D-SENT,,417,26.69,,2026-09-18,,2026-09-30,"RGW HAZEL CHARP, fob 22.31 with out MOQ upcharge + 4.38 moq upcharge",417 pcs shipped on 30 Sep,,EUR
+Diesel!95,Diesel,95,Diesel,CKBM 2026 2626/2627/2628/2629/2630/2631,SS27,A11003/004/005,1969 D-EBBEY,,1000,17.26,,2026-09-18,,2026-09-30,RG-ANWAR 10 STR ROYAL,"772 pcs shipped on 30 Sep, 226 pcs shipped on 8 Oct",,EUR
+Diesel!96,Diesel,96,Diesel,CKBM 2026 2637/2638/2639/2640/2652/2653/2623,SS27,A06925 / 06926/13495,1996 D-SIRE,,3369,20.4,,2026-09-18,,2026-09-30,,3187 pcs shipped on 30 Sep,,EUR
+Diesel!97,Diesel,97,Diesel,SMS,FW27,,,,248,40.97,,2026-09-05,,2026-09-27,,"240 pcs shipped on 27th Sep,",,EUR
+Diesel!99,Diesel,99,Diesel,CKBM 2026 2632/2633/2634/2650,SS27,A03558 /3562/6563,2019 D-STRUKT,,8052,18.76,,2026-09-18,,2026-10-08,RG DARWIN STR/H WS INK 23,7898 pcs shipped on 8 Oct,,EUR
+Diesel!100,Diesel,100,Diesel,CKBM 2026 2646,SS27,A27087,DE-MAMI,,262,24.67,,2026-09-18,,2026-10-08,"UPCHARGE FOR VOLUME- RGW HAZEL CHARP, fob 18.67 & with upcharge 24.67",262 pcs shipped on 8 Oct,,EUR
+Diesel!101,Diesel,101,Diesel,CKBM 2026 2635/2636/2651,SS27,A13820 / 14740,D-HUSH,,1313,18.51,,2026-09-18,,2026-10-08,RG DARWIN STR/H WS INK 23,1296 pcs shipped on 8 Oct,,EUR
+Diesel!102,Diesel,102,Diesel,CKBM 2026 2649 / 2657,SS27,A22266,DE-HELIOS,,441,19.886,,2027-01-01,,2026-10-20,"UPCHARGE FOR VOLUME- RGW HAZEL CHARP, Original Jan del, preponed to Oct, fob with upcharge 19.886, without upcharge 16.64",353 pcs shipped on 20 Oct,,EUR
+Diesel!103,Diesel,103,Diesel,CKBM 2026 2649 / 2657,SS27,A03557,DE-LUNAR,,0,14.55,,2027-01-04,,,UPCHARGE FOR VOLUME - AMBER ONYXBLACK_ORG50,Non specific trims and moliton thread to order immedtly,,EUR
+Diesel!104,Diesel,104,Diesel,CKBM 2026 2835 / 2836 / 2837,SS27,A03594 / 3595 / 3596,1979 SLEENKER,,1500,17,,2026-10-10,,2026-10-20,,1500 pcs shipped on 20 Oct,,EUR
+Diesel!105,Diesel,105,Diesel,CKBM 2026 2832 / 2833 / 2834,SS27,A03558 / 3562 / 3563,2019 D-STRUKT,,2100,16.95,,2026-10-10,,2026-10-20,,2100 pcs shipped on 20 Oct,,EUR
+Diesel!107,Diesel,107,Diesel,CKBM 2026 2832 / 2833 / 2834,,,2026 USA & CDA %,,,,,,,,,,,EUR
+Diesel!108,Diesel,108,Diesel,2026 GRAND TOTAL,,,,,120726,,,,,,,,,EUR
+Diesel!110,Diesel,110,Diesel,CKBM 2026 3797 / 3798,SS26,A12019,,,2667,18.15,,2027-01-10,,,OCW - Walker STR/W ocean,thread confirmation recvd on 20 oct,,EUR
+Diesel!111,Diesel,111,Diesel,CKBM 2026 3797 / 3798,SS26,A12019,,,4028,18.75,,2027-01-10,,,OCW - Owl / W Ocean,thread confirmation recvd on 20 oct,,EUR
+Diesel!113,Diesel,113,Diesel,awtg,FW27,A19853,1969 D-EBBEY-T,,2100,21.64,,2026-03-03,,,SOPHIA QUARTZBLUE RGN_65 (DNM),,,EUR
+Diesel!114,Diesel,114,Diesel,awtg,FW27,A14051,DE-SIRE-SHORT,,850,18.23,,2026-03-03,,,RG-CALDERA RGD /WS INK 23 (SHARABATI),,,EUR
+Diesel!115,Diesel,115,Diesel,awtg,FW27,A19869,1971 D-SENT,,1900,20.55,,2026-03-03,,,RG-CALDERA RGD /WS INK 23 (SHARABATI),,,EUR
+Diesel!116,Diesel,116,Diesel,awtg,FW27,A25895,1990 D-WAIGEE,,1500,21.72,,2026-03-03,,,RGW-HAZEL CHARP (SHARABATI),,,EUR
+Diesel!117,Diesel,117,Diesel,awtg,FW27,A28565,2011 D-KAIM,,1700,22.5,,2026-03-03,,,AMBER LIMEBLUE_ORG50 (DNM),,,EUR
+Diesel!118,Diesel,118,Diesel,awtg,FW27,A27958,D-MACRO-SHORT,,350,19.15,,2026-03-03,,,AMBER LIMEBLUE_ORG50 (DNM),,,EUR
+Diesel!119,Diesel,119,Diesel,awtg,FW27,A22266,DE-HELIOS,,450,15.81,,2026-03-03,,,AMBER LIMEBLUE_ORG50 (DNM),,,EUR
+Diesel!120,Diesel,120,Diesel,awtg,FW27,A28565,2011 D-KAIM,,2000,19.7,,2026-03-03,,,AMBER PRIME BLUE_RGN100 (DNM),,,EUR
+Diesel!121,Diesel,121,Diesel,awtg,FW27,A27958,D-MACRO-SHORT,,800,16.6,,2026-03-03,,,AMBER PRIME BLUE_RGN100 (DNM),,,EUR
+Diesel!122,Diesel,122,Diesel,awtg,FW27,A15795,1980 D-EEPER,,1200,21.87,,2026-03-03,,,AMBER PRIME BLUE_RGN100 (DNM),,,EUR
+Diesel!123,Diesel,123,Diesel,awtg,FW27,A28561,D-TREMOR,,1000,22.6,,2026-03-03,,,AMBER ONYX BLACK 100RGN (DNM),,,EUR
+Diesel!124,Diesel,124,Diesel,awtg,FW27,A14051,DE-SIRE-SHORT,,450,19.14,,2026-03-03,,,AMBER ONYX BLACK 100RGN (DNM),,,EUR
+Diesel!125,Diesel,125,Diesel,awtg,FW27 addition,A17055,2007 - ZATINY,,2600,19.7,,2026-03-03,,,CARNABY LUNABLUE_ORG50,,,EUR
+Diesel!126,Diesel,126,Diesel,awtg,FW27 addition,00C06Q,1985 LARKEE,,6500,19.8,,2026-03-03,,,CARNABY LUNABLUE_ORG50,,,EUR
+Diesel!127,Diesel,127,Diesel,awtg,FW27 addition,A24527,D-LARKEE-SHORT,,1000,17.3,,2026-03-03,,,CARNABY LUNABLUE_ORG50,,,EUR
+Diesel!128,Diesel,128,Diesel,awtg,FW27 addition,00C06Q,1985 LARKEE,,5200,20.3,,2026-03-03,,,CARNABY LUNABLUE_ORG50,,,EUR
+Diesel!129,Diesel,129,Diesel,awtg,FW27 addition,A24527,D-LARKEE-SHORT,,1000,17.6,,2026-03-03,,,CARNABY LUNABLUE_ORG50,,,EUR
+Diesel!131,Diesel,131,Diesel,awtg,FW27,A19853,1969 D-EBBEY-T,,1100,22.19,,2026-04-15,,,SOPHIA ASHBLUE_ORG50 (DNM),,,EUR
+Diesel!132,Diesel,132,Diesel,awtg,FW27,A25895,1990 D-WAIGEE,,3500,20.92,,2026-04-15,,,RG-CALDERA RGD /WS INK 23 (SHARABATI),,,EUR
+Diesel!133,Diesel,133,Diesel,awtg,FW27,A24080,1987 D-KHELZ,,2500,23.2,,2026-04-15,,,AMBER PRIME BLUE_RGN100 (DNM),,,EUR
+Diesel!134,Diesel,134,Diesel,awtg,FW27,A22459,1981 D-WENT,,1300,22.21,,2026-04-15,,,AMBER ONYX BLACK 100RGN (DNM),,,EUR
+Diesel!135,Diesel,135,Diesel,awtg,FW27,A06925,1996 D-SIRE,,1900,22,,2026-04-15,,,AMBER ONYX BLACK 100RGN (DNM),,,EUR
+Diesel!136,Diesel,136,Diesel,awtg,FW27 addition,A15797,1993 D-VYL,,2800,19.69,,,,,CARNABY ONYXBLACK OD BLACK_ORG50,,,EUR
+Diesel!137,Diesel,137,Diesel,awtg,FW27 addition,A17055,2007 ZATINY,,3500,19.99,,,,,CARNABY ONYXBLACK OD BLACK_ORG50,,,EUR
+Diesel!138,Diesel,138,Diesel,awtg,FW27 addition,A17055,2023 D-FINITIVE,,4000,21.4,,,,,GALLWON ONIX BLACK 99% REGEN,,,EUR
+Diesel!140,Diesel,140,Diesel,2027 GRAND TOTAL,,,,,57895,,,,,,,,,EUR
+Diesel!141,Diesel,141,Diesel,2027 GRAND TOTAL,,,2027 USA%,,,,,,,,,,,EUR
+Diesel!143,Diesel,143,Diesel,2027 GRAND TOTAL,,,,,247450,,,,,,,17.62924242,,EUR
+Diesel!144,Diesel,144,Diesel,2027 GRAND TOTAL,,,ALL TIMES USA & CDA %,,,,,,,,,,,EUR
+BOOTBARN!3,BOOTBARN,3,CJ BASIC,625057,SP25,CJSP25J02-LTW,Light bleach,5 Pkt jeans - CAMINO,6800,14.61,,2025-12-06,2025-03-14,,SS23303A,DDP - Delivered,Short Ship,USD
+BOOTBARN!4,BOOTBARN,4,RANK 45,631469,SP25,RMSP25J03-DKW,Dark Blue,5 Pkt jeans - COYOTE,5500,24.12,,2025-12-06,2025-03-07,,ST22341F-6,DDP - Delivered,Short Ship,USD
+BOOTBARN!5,BOOTBARN,5,RANK 45,631468,SP25,RMSP25J05-LTW,Light bleach,5 Pkt jeans- BUNKER,5500,24.24,,2025-12-06,2025-03-07,,ST22341F-6,DDP - Delivered,,USD
+BOOTBARN!6,BOOTBARN,6,CJ BLACK,632552,SP25,CJBSP25J08-DKW,Dark Blue,5 Pkt jeans - Jericho,2000,21,,2025-01-02,2025-02-18,,SS24133B,DDP - Delivered,,USD
+BOOTBARN!7,BOOTBARN,7,CJ BLACK,632558,SP25,CJBSP25J09-BLK,Black Rinse,5 Pkt jeans - Lawson,2000,19.14,,2025-01-02,2025-02-07,,SS24133DQ(BK),DDP - Delivered,,USD
+BOOTBARN!8,BOOTBARN,8,CJ BLACK,632555,SP25,CJBSP25J20-DKW,Dark Blue,5 Pkt jeans - Jericho,2000,21.15,,2025-01-02,2025-02-18,,SS24133B,DDP - Delivered,,USD
+BOOTBARN!9,BOOTBARN,9,CJ BASIC,625064,SP25,CJSP25J03-WHT,Optical White,5 Pkt jeans - Blanco,3001,14.94,,2025-01-10,2025-03-14,,ST21308SW-6/HSM,DDP - Delivered,,USD
+BOOTBARN!10,BOOTBARN,10,CJ BASIC,SAMPLE-CJSP25J02-LTW,SP25,CJSP25J02-LTW,Bleached,5 Pkt jeans - CAMINO,3,23.38,,2025-01-10,,,SS23303A,Delivered,,USD
+BOOTBARN!11,BOOTBARN,11,RANK 45,SAMPLE-RMSP25J03-DKW,SP25,RMSP25J03-DKW,Dark Blue,5 Pkt jeans - COYOTE,3,36.99,,2025-01-10,,,ST22341F-6,Delivered,,USD
+BOOTBARN!12,BOOTBARN,12,RANK 45,SAMPLE-RMSP25J05-LTW,SP25,RMSP25J05-LTW,Light bleach,5 Pkt jeans- BUNKER,3,37.18,,2025-01-10,,,ST22341F-6,Delivered,,USD
+BOOTBARN!13,BOOTBARN,13,CJ BLACK,SAMPLE-CJBSP25J08-DKW,SP25,CJBSP25J08-DKW,Blue,5 Pkt jeans - Jericho,3,40.32,,2025-01-10,,,SS24133B,Delivered,,USD
+BOOTBARN!14,BOOTBARN,14,CJ BLACK,SAMPLE-CJBSP25J09-BLK,SP25,CJBSP25J09-BLK,Black Rinse,5 Pkt jeans - Lawson,3,36.75,,2025-01-10,,,SS24133DQ(BK),Delivered,,USD
+BOOTBARN!15,BOOTBARN,15,CJ BLACK,SAMPLE-CJBSP25J20-DKW,SP25,CJBSP25J20-DKW,Blue,5 Pkt jeans - Jericho,3,40.61,,2025-01-10,,,SS24133B,Delivered,,USD
+BOOTBARN!16,BOOTBARN,16,CJ BASIC,SAMPLE-CJSP25J03-WHT,SP25,CJSP25J03-WHT,Optical White,5 Pkt jeans - Blanco,3,25.52,,2025-01-10,,,ST21308SW-6/HSM,Delivered,,USD
+BOOTBARN!17,BOOTBARN,17,Bootbarn,SAMPLE-CJSP25J03-WHT,Jan Sub Total,,,,26822,,,,,,,,,USD
+BOOTBARN!18,BOOTBARN,18,CJ BLACK,639117,SU25,CJBSP25J08-DKW,Dark Blue,5 Pkt jeans - Jericho,3001,21,,2025-02-25,2025-03-30,,SS24133B,DDP - Delivered,,USD
+BOOTBARN!19,BOOTBARN,19,CJ BLACK,639114,SU25,CJBSP25J09-BLK,Black Rinse,5 Pkt jeans - Lawson,3001,19.14,,2025-02-25,2025-03-30,,SS24133DQ(BK),DDP - Delivered,,USD
+BOOTBARN!20,BOOTBARN,20,Bootbarn,639114,Feb Sub Total,,,WASH,6002,,,,,,,,,USD
+BOOTBARN!21,BOOTBARN,21,CJ BLACK,655240 / 655243,FA25,CJBFA25J16-DKW,Dark Blue,MITCHUM,4001,20.33,,2025-05-25,2025-06-30,,SS24306B,Shipped 12/jun,,USD
+BOOTBARN!22,BOOTBARN,22,CJ BLACK,655279 / 655282,FA25,CJBFA25J15-BLK,Black Rinse,LAWSON,4001,22.13,,2025-05-19,2025-07-08,,SS24133DQ(BK),Shipped 12/jun,,USD
+BOOTBARN!23,BOOTBARN,23,RANK 45,655246 / 655247,FA25,RMFA25J01-MDW,Med Blue,ROADRUNNER,8000,20.13,,2025-06-16,2025-07-08,,SS23639C,Shipped 2/Jul,2% discount for tariff assistance,USD
+BOOTBARN!24,BOOTBARN,24,RANK 45,655248 / 655250,FA25,RMFA25J03-MDW,Med Blue,ROADRUNNER,4001,23.64,,2025-06-05,2025-07-16,,AXF075V1-4,Shipped 12/jun,2% discount for tariff assistance,USD
+BOOTBARN!25,BOOTBARN,25,RANK 45,655253 / 655254,FA25,RMFA25J04-LTW,Light bleach,BUNKER,4001,24.6,,2025-06-05,2025-07-16,,AXF075V1-4,Shipped 12/jun,2% discount for tariff assistance,USD
+BOOTBARN!26,BOOTBARN,26,CJ BLACK,SAMPLE-CJBFA25J16-DKW,FA25,CJBFA25J16-DKW,,MITCHUM,3,40.66,,2025-05-20,,,SS24306B,Delivered,,USD
+BOOTBARN!27,BOOTBARN,27,CJ BLACK,SAMPLE-CJBFA25J15-BLK,FA25,CJBFA25J15-BLK,,LAWSON,3,44.26,,2025-05-20,,,SS24133DQ(BK),Delivered,,USD
+BOOTBARN!28,BOOTBARN,28,RANK 45,SAMPLE-RMFA25J01-MDW,FA25,RMFA25J01-MDW,,ROADRUNNER,3,40.26,,2025-05-20,,,SS23639C,Delivered,,USD
+BOOTBARN!29,BOOTBARN,29,RANK 45,SAMPLE-RMFA25J03-MDW,FA25,RMFA25J03-MDW,,ROADRUNNER,3,47.28,,2025-05-20,,,AXF075V1-4,Delivered,,USD
+BOOTBARN!30,BOOTBARN,30,RANK 45,SAMPLE-RMFA25J04-LTW,FA25,RMFA25J04-LTW,,BUNKER,3,49.2,,2025-05-20,,,AXF075V1-4,Delivered,,USD
+BOOTBARN!31,BOOTBARN,31,Bootbarn,SAMPLE-RMFA25J04-LTW,May Sub Total,,,,24019,,,,,,,,,USD
+BOOTBARN!32,BOOTBARN,32,RANK 45,655182 / 655201,SU25,RMSU25J01-LTW,Dark Blue,SOMERSET,6000,22.43,,2025-06-20,2025-08-19,,SS22421F,Shipped 2/Jul,2% discount for tariff assistance,USD
+BOOTBARN!33,BOOTBARN,33,RANK 45,655227 / 655228,SU25,RMSU25J02-DKW,Dark Blue,ROCKFORD,6000,21.01,,2025-06-20,2025-08-19,,SS23303P-8,Shipped 2/Jul,2% discount for tariff assistance,USD
+BOOTBARN!34,BOOTBARN,34,RANK 45,SAMPLE-RMSU25J01-LTW,SU25,RMSU25J01-LTW,Dark Blue,SOMERSET,3,45.78,,2025-05-31,,,SS22421F,Delivered,,USD
+BOOTBARN!35,BOOTBARN,35,RANK 45,SAMPLE-RMSU25J02-DKW,SU25,RMSU25J02-DKW,Dark Blue,ROCKFORD,3,42.02,,2025-05-31,,,SS23303P-8,Delivered,,USD
+BOOTBARN!36,BOOTBARN,36,Bootbarn,SAMPLE-RMSU25J02-DKW,Jun Sub Total,,,,12006,,,,,,,,,USD
+BOOTBARN!37,BOOTBARN,37,CJ BLACK,656359,HO25,CJBFA25J15,,LAWSON,1400,22.13,,2025-08-30,,,SS24133DQ(BK),Shipping 13/Aug,2 weeks early,USD
+BOOTBARN!38,BOOTBARN,38,CJ BLACK,656362,HO25,CJBFA25J15,,LAWSON,2600,22.13,,2025-08-30,,,SS24133DQ(BK),Shipping 13/Aug,2 weeks early,USD
+BOOTBARN!39,BOOTBARN,39,RANK 45,SAMPLE-RMHO25J01-DKW,HO25,RMHO25J01,,BROOKS,4,41.94,,2025-08-30,,,SS22421F,Shipped,,USD
+BOOTBARN!40,BOOTBARN,40,RANK 45,SAMPLE-RMHO25J04-DKW,HO25,RMHO25J04,,THUNDER,4,40.81,,2025-08-30,,,SS23639C,Shipped,,USD
+BOOTBARN!41,BOOTBARN,41,CJ BLACK,SAMPLE-CJBFA25J15-BLK,SP26,CJBFA25J15,,LAWSON,1,44.26,,2025-09-15,,,SS24133DQ(BK),Pulled in Aug - 25/Aug,,USD
+BOOTBARN!43,BOOTBARN,43,CJ BLACK,656356,HO25,CJBHO25J50,,RINSE,1400,22.01,,2025-10-15,2025-09-30,,Crispy RR7216-JLC,Shipped 18/OCt,,USD
+BOOTBARN!44,BOOTBARN,44,CJ BLACK,656358,HO25,CJBHO25J50,,RINSE,2600,22.01,,2025-10-15,2025-09-30,,Crispy RR7216-JLC,Shipped 18/OCt,,USD
+BOOTBARN!45,BOOTBARN,45,CJ BLACK,SAMPLE-CJBHO25J50-DKW,HO25,CJBHO25J50,,RINSE,3,44.02,,2025-09-20,2025-09-10,,Crispy RR7216-JLC,Shipped,,USD
+BOOTBARN!46,BOOTBARN,46,RANK 45,656367,HO25,RMHO25J01,,BROOKS,2883,20.97,,2025-09-10,2025-08-25,,SS22421F,Shipped 17/Sep,2% discount for tariff assistance,USD
+BOOTBARN!47,BOOTBARN,47,RANK 45,656369,HO25,RMHO25J01,,BROOKS,5317,20.97,,2025-09-10,2025-08-25,,SS22421F,Shipped 17/Sep,2% discount for tariff assistance,USD
+BOOTBARN!48,BOOTBARN,48,RANK 45,661456,HO25,RMHO25J04,,THUNDER,2882,20.82,,2025-09-10,2025-08-25,,SS23639C,Shipped 17/Sep,,USD
+BOOTBARN!49,BOOTBARN,49,RANK 45,661457,HO25,RMHO25J04,,THUNDER,5318,20.82,,,2025-08-25,,SS23639C,Shipped 17/Sep - Shipped 91% (700pcs short - repairing to offer in next vessel),,USD
+BOOTBARN!50,BOOTBARN,50,RANK 45,SAMPLE-RMSP26J01-LTW,SP26,RMSP26J01,,STRIKER,4,39.2,,2025-09-15,2025-09-25,,SS23639C,Pulled in Aug,,USD
+BOOTBARN!52,BOOTBARN,52,CJ BASIC,SAMPLE-CJHO25J20-LTW,HO25,CJSU25J20,,BRONSON,3,63.29,,2025-10-15,2025-10-15,,SS24272C,Shipped -13 Oct 25,,USD
+BOOTBARN!53,BOOTBARN,53,CJ BASIC,SAMPLE-CJHO25J21-DKW,HO25,CJSU25J21,,EASTWOOD,3,69.9,,2025-10-15,2025-10-15,,SS24272C,Shipped,,USD
+BOOTBARN!54,BOOTBARN,54,CJ BLACK,664908,SP26,CJBFA25J15,,LAWSON,2117,20.49,,2025-10-10,2025-10-05,,SS24133DQ(BK),Shipped 18/OCt,,USD
+BOOTBARN!55,BOOTBARN,55,CJ BLACK,664909,SP26,CJBFA25J15,,LAWSON,2884,20.49,,2025-10-10,2025-10-05,,SS24133DQ(BK),Shipped 18/OCt,,USD
+BOOTBARN!56,BOOTBARN,56,CJ BLACK,SAMPLE-CJBSP25J09-BLK,SP26,CJBSP25J09,,LAWSON,1,36.75,,2025-10-22,2025-10-20,,SS24133DQ(BK),Shipped -13 Oct 25,,USD
+BOOTBARN!57,BOOTBARN,57,RANK 45,665835,SP26,RMSP26J01,,STRIKER,3105,19.6,,2025-10-10,2025-10-20,,SS23639C,shipped 15 Nov 25,,USD
+BOOTBARN!58,BOOTBARN,58,RANK 45,665836,SP26,RMSP26J01,,STRIKER,6896,19.6,,2025-10-10,2025-10-20,,SS23639C,shipped 15 Nov 25,,USD
+BOOTBARN!59,BOOTBARN,59,SHYNNE,667326,SP26,SWSP26J25 - Flare,,ARCHER,3122,11.69,,2025-10-25,2025-10-15,,SS5886,shipped 15 Nov 25,,USD
+BOOTBARN!60,BOOTBARN,60,SHYNNE,667325,SP26,SWSP26J25 - Flare,,ARCHER,2078,11.69,,2025-10-25,2025-10-15,,SS5886,shipped 15 Nov 25,,USD
+BOOTBARN!61,BOOTBARN,61,SHYNNE,667329,SP26,SWSP26J25 - Flare,,Kelly Stretch,1800,13.39,,2025-10-25,2025-10-15,,SS5886,shipped 15 Nov 25,,USD
+BOOTBARN!63,BOOTBARN,63,CJ BASIC,661417,HO25,CJSU25J20,,BRONSON,2000,35,,2025-11-05,2025-11-05,,SS24272C,Shipped 9 nov 25,,USD
+BOOTBARN!64,BOOTBARN,64,CJ BASIC,661418,HO25,CJSU25J20,,BRONSON,3000,35,,2025-11-05,2025-11-05,,SS24272C,Shipped 9 nov 25,,USD
+BOOTBARN!65,BOOTBARN,65,CJ BASIC,661413,HO25,CJSU25J21,,EASTWOOD,2000,34.95,,2025-11-05,2025-11-05,,SS24272C,Shipped 9 nov 25,,USD
+BOOTBARN!66,BOOTBARN,66,CJ BASIC,661414,HO25,CJSU25J21,,EASTWOOD,3000,34.95,,2025-11-05,2025-11-05,,SS24272C,Shipped 9 nov 25,,USD
+BOOTBARN!67,BOOTBARN,67,CJ BLACK,664914,SP26,CJBSP25J09,,LAWSON,2000,22.13,,2025-11-14,2025-10-23,,SS24133DQ(BK),Shipped 23 oct 25,,USD
+BOOTBARN!68,BOOTBARN,68,CJ BLACK,664916,SP26,CJBSP25J09,,LAWSON,2001,22.13,,2025-11-14,2025-10-23,,SS24133DQ(BK),Shipped 23 oct 25,,USD
+BOOTBARN!69,BOOTBARN,69,CJ BLACK,664928,SP26,CJBSP25J08,,JERICHO,2100,20.34,,2025-11-14,2025-11-14,,SS24133B,Shipped 27 Nov 25,,USD
+BOOTBARN!70,BOOTBARN,70,CJ BLACK,664929,SP26,CJBSP25J08,,JERICHO,3900,20.34,,2025-11-14,2025-11-14,,SS24133B,Shipped 8 nov 25,,USD
+BOOTBARN!71,BOOTBARN,71,CJ BASIC,666436,SP26,CJHO21J21-LTW,,BUCKSIN,4752,13.25,,2025-11-14,2025-11-14,,SS24260C,Shipped 13 Dec 25,,USD
+BOOTBARN!72,BOOTBARN,72,CJ BASIC,666438,SP26,CJHO21J21-LTW,,BUCKSIN,10248,13.25,,2025-11-14,2025-11-14,,SS24260C,Shipped 13 Dec 25,,USD
+BOOTBARN!73,BOOTBARN,73,CJ BASIC,666439,SP26,CJSP20J09-LTW,,HAMSHAKLE,7541,12.94,,2025-11-14,2025-11-14,,SS24260C,Shipped 13 Dec 25,,USD
+BOOTBARN!74,BOOTBARN,74,CJ BASIC,666440,SP26,CJSP20J09-LTW,,HAMSHAKLE,22459,12.94,,2025-11-14,2025-11-14,,SS24260C,Shipped 13 Dec 25,,USD
+BOOTBARN!75,BOOTBARN,75,CJ BASIC,666441,SP26,CJSP25J02-LTW,,CAMINO,9066,13.84,,2025-11-14,2025-11-14,,SS23303A,Shipped 27 Nov 25,,USD
+BOOTBARN!76,BOOTBARN,76,CJ BASIC,666442,SP26,CJSP25J02-LTW,,CAMINO,10935,13.84,,2025-11-14,2025-11-14,,SS23303A,Shipped 27 Nov 25,,USD
+BOOTBARN!78,BOOTBARN,78,CJ BASIC,674071,SP26,CJHO21J21-LTW,,BUCKSKIN,17741,12.35,,2025-12-29,2025-12-29,,SS24260C,17738 pcs shipped on 17 Jan 26,,USD
+BOOTBARN!79,BOOTBARN,79,CJ BASIC,674072,SP26,CJHO21J21-LTW,,BUCKSKIN,26259,12.35,,2025-12-29,2025-12-29,,SS24260C,"Shipped 5 Jan 26 - roll over due to late delivery- missed 8 Jan vessel, In Dc date slide of 4 days expected",roll over due to late shipment,USD
+BOOTBARN!80,BOOTBARN,80,CJ BASIC,674043,SP26,CJFA20J43-DKW,,BARN SOUR,5362,12.57,,2025-12-29,2025-12-29,,SS24260C,5530 pcs shipped on 17 Jan 26,,USD
+BOOTBARN!81,BOOTBARN,81,CJ BASIC,674045,SP26,CJFA20J43-DKW,,BARN SOUR,7638,12.57,,2025-12-29,2025-12-29,,SS24260C,7919 pcs shipped on 17 Jan 26,,USD
+BOOTBARN!82,BOOTBARN,82,CJ BASIC,674020,SP26,CJSP25J02-LTW,,CAMINO,5994,11.66,,2025-12-29,2025-12-29,,SS23303A,6023 pcs shipped on 21st Feb - 10% Discount due to late delivery - EVS 13 Feb 26. inital FOB 12.96$,Discount due to late delivery,USD
+BOOTBARN!83,BOOTBARN,83,CJ BASIC,674030,SP26,CJSP25J02-LTW,,CAMINO,7106,11.66,,2025-12-29,2025-12-29,,SS23303A,7189 pcs shipped on 21st Feb - 10% Discount due to late delivery - EVS 13 Feb 26. inital FOB 12.96$,Discount due to late delivery,USD
+BOOTBARN!84,BOOTBARN,84,CJ BASIC,674073,SP26,CJSP20J09-LTW,,HAMSHACKLE,11278,12.82,,2025-12-29,2025-12-29,,SS24260C,"Shipped 5 Jan 26 - roll over due to late delivery- missed 8 Jan vessel, In Dc date slide of 4 days expected",roll over due to late shipment,USD
+BOOTBARN!85,BOOTBARN,85,CJ BASIC,674074,SP26,CJSP20J09-LTW,,HAMSHACKLE,16722,12.82,,2025-12-29,2025-12-29,,SS24260C,"Shipped 5 Jan 26 - roll over due to late delivery- missed 8 Jan vessel, In Dc date slide of 4 days expected",roll over due to late shipment,USD
+BOOTBARN!86,BOOTBARN,86,CJ BASIC,674095,SP26,CJSP25J01-DKW - RB,,NIGHT HAWK,7703,12.26,,2025-12-29,2025-12-29,,SS24260C,Shipped 7989 pcs on 28 Jan,,USD
+BOOTBARN!87,BOOTBARN,87,CJ BASIC,674096,SP26,CJSP25J01-DKW - RB,,NIGHT HAWK,11397,12.26,,2025-12-29,2025-12-29,,SS24260C,Shipped 11911 pcs on 28 Jan,,USD
+BOOTBARN!90,BOOTBARN,90,Bootbarn,2025 grand total,,,,,317476,,,,,,,16.44193863,AVRG PRICE,USD
+BOOTBARN!94,BOOTBARN,94,CJ BLACK,675239,SP26,CJBFA25J15-BLK,SLIM STRAIGHT,LAWSON,2247,20.49,,2026-01-24,,,SS24133DQ(BK),Shipped 2352 pcs on 28 Jan,,USD
+BOOTBARN!95,BOOTBARN,95,CJ BLACK,675240,SP26,CJBFA25J15-BLK,SLIM STRAIGHT,LAWSON,2500,20.49,,2026-01-24,,,SS24133DQ(BK),Shipped 2625 pcs on 28 Jan,,USD
+BOOTBARN!96,BOOTBARN,96,CJ BLACK,675241,SP26,CJBFA25J15-BLK,SLIM STRAIGHT,LAWSON,254,20.49,,2026-01-24,,,SS24133DQ(BK),Shipped 266 pcs on 28 Jan,,USD
+BOOTBARN!97,BOOTBARN,97,CJ BASIC,SAMPLE-CJSP25J02-LTW,SU26,CJSP25J02-LTW,SLIM STRAIGHT,CAMINO,1,12.96,,2026-01-24,,,SS23303A,Dispatched on 21 Dec,,USD
+BOOTBARN!98,BOOTBARN,98,CJ BASIC,674865,SU26,CJSP20J09-LTW,RELAXED BOOT,HAMSHACKLE,16205,12.75,,2026-01-25,2026-02-23,,SS24260C,16451 pcs shipped on 23 Feb,,USD
+BOOTBARN!99,BOOTBARN,99,CJ BASIC,674868,SU26,CJSP20J09-LTW,RELAXED BOOT,HAMSHACKLE,17975,12.75,,2026-01-25,2026-02-23,,SS24260C,18459 pcs shipped on 23 Feb,,USD
+BOOTBARN!100,BOOTBARN,100,CJ BASIC,674870,SU26,CJSP20J09-LTW,RELAXED BOOT,HAMSHACKLE,1820,12.75,,2026-01-25,2026-03-12,,SS24260C,1911 pcs shipped on 9th March.Left 1 day before PO cancellation because of forwarder confirmation delay.,,USD
+BOOTBARN!101,BOOTBARN,101,CJ BASIC,674904,SU26,CJSP20J09-LTW,RELAXED BOOT,HAMSHACKLE,4920,12.75,,2026-01-31,2026-03-12,,SS24260C,5259 pcs shipped on 9th March.Left 7 days before PO cancellation because of forwarder confirmation delay.,,USD
+BOOTBARN!102,BOOTBARN,102,CJ BASIC,674912,SU26,CJSP20J09-LTW,RELAXED BOOT,HAMSHACKLE,5500,12.75,,2026-01-31,2026-03-12,,SS24260C,5767 pcs shipped on 9th March.Left 7 days before PO cancellation because of forwarder confirmation delay.,,USD
+BOOTBARN!103,BOOTBARN,103,CJ BASIC,674914,SU26,CJSP20J09-LTW,RELAXED BOOT,HAMSHACKLE,580,12.75,,2026-01-31,2026-03-12,,SS24260C,603 pcs shipped on 9th March.Left 7 days before PO cancellation because of forwarder confirmation delay.,,USD
+BOOTBARN!104,BOOTBARN,104,CJ BASIC,674860,SU26,CJHO21J21-LTW,SLIM STRAIGHT,BUCKSKIN,11745,12.24,,2026-01-30,2026-03-18,,SS24260C,Booking confirmed for 23rd cut off. Shipped 11864 pcs on 17 March,,USD
+BOOTBARN!105,BOOTBARN,105,CJ BASIC,674861,SU26,CJHO21J21-LTW,SLIM STRAIGHT,BUCKSKIN,22957,12.24,,2026-01-30,2026-03-16,,SS24260C,"PARTIAL SHIPPED 5236 pcs shipped on 9th March. balance on ETD 23 March, 17843 pcs shipped 16 March",,USD
+BOOTBARN!106,BOOTBARN,106,CJ BASIC,674862,SU26,CJHO21J21-LTW,SLIM STRAIGHT,BUCKSKIN,698,12.24,,2026-01-30,2026-03-18,,SS24260C,Booking confirmed for 23rd cut off. 712 pcs shipped on 17 March,,USD
+BOOTBARN!107,BOOTBARN,107,CJ BASIC,675527,SU26,CJFA20J43-DKW,SLIM STRAIGHT,BARN SOUR,8300,12.5,,2026-01-31,2026-02-23,,SS24260C,8422 pcs shipped on 23 Feb,,USD
+BOOTBARN!108,BOOTBARN,108,CJ BASIC,675529,SU26,CJFA20J43-DKW,SLIM STRAIGHT,BARN SOUR,14238,12.5,,2026-01-31,2026-03-16,,SS24260C,"confirmed vessel 19 march cutt off - vessel 23/3 booked on18th feb, booking confirmed. 14426 pcs shipped 16 March",,USD
+BOOTBARN!109,BOOTBARN,109,CJ BASIC,675531,SU26,CJFA20J43-DKW,SLIM STRAIGHT,BARN SOUR,462,12.5,,2026-01-31,2026-03-12,,SS24260C,494 pcs shipped on 9th March.Left 7 days before PO cancellation because of forwarder confirmation delay.,,USD
+BOOTBARN!110,BOOTBARN,110,CJ BASIC,675231,SU26,CJSP25J01-DKW - RB,RELAXED BOOT,NIGHT HAWK,6743,12.2,,2026-01-31,2026-03-12,,SS24260C,6848 pcs shipped on 9th March.Left 7 days before PO cancellation because of forwarder confirmation delay.,,USD
+BOOTBARN!111,BOOTBARN,111,CJ BASIC,675232,SU26,CJSP25J01-DKW - RB,RELAXED BOOT,NIGHT HAWK,7499,12.2,,2026-01-31,2026-03-12,,SS24260C,7511 pcs Shipped on 26th March,,USD
+BOOTBARN!112,BOOTBARN,112,CJ BASIC,675233,SU26,CJSP25J01-DKW - RB,RELAXED BOOT,NIGHT HAWK,758,12.2,,2026-01-31,2026-03-12,,SS24260C,751 pcs shipped on 9th March.Leaving 7 days before PO cancellation because of forwarder confirmation delay.,,USD
+BOOTBARN!113,BOOTBARN,113,CJ BASIC,674872,SU26,CJSP25J02-LTW,SLIM STRAIGHT,CAMINO,8423,12.96,,2026-01-24,2026-03-12,,SS23303A,8593 shipped on 9th March.Left 0 days before PO cancellation because of forwarder confirmation delay.,,USD
+BOOTBARN!114,BOOTBARN,114,CJ BASIC,674873,SU26,CJSP25J02-LTW,SLIM STRAIGHT,CAMINO,11177,12.96,,2026-01-24,2026-03-16,,SS23303A,"PARTIAL SHIPPED 6820 pcs shipped on 9th March. balance on ETD 23 March, 4597 pcs shipped 16 Mar",,USD
+BOOTBARN!115,BOOTBARN,115,CJ BASIC,674874,SU26,CJSP25J02-LTW,SLIM STRAIGHT,CAMINO,400,12.96,,2026-01-24,2026-03-12,,SS23303A,433 pcs shipped on 9th March.Its left 0 day before PO cancellation because of forwarder confirmation delay.,,USD
+BOOTBARN!116,BOOTBARN,116,RANK 45,SAMPLE-RMSU26J01-DKW,SU26,RMSU26J01-DKW,RELAXED BOOT,RODEO,4,28.5,,2026-01-24,2026-02-07,,SS23639C,4 pcs shipped on 16th March,,USD
+BOOTBARN!118,BOOTBARN,118,RANK 45,675256,SU26,RMSU26J01-DKW,RELAXED BOOT,RODEO,2204,19,,2026-02-21,2026-03-30,,SS23639C,"CONFIRMATION RECVD FOR 14TH APRIL CUT OFF, DISPATCHED ON 14TH APRIL",,USD
+BOOTBARN!119,BOOTBARN,119,RANK 45,675299,SU26,RMSU26J01-DKW,RELAXED BOOT,RODEO,3840,19,,2026-02-21,2026-03-30,,SS23639C,"CONFIRMATION RECVD FOR 14TH APRIL CUT OFF, DISPATCHED ON 14TH APRIL",,USD
+BOOTBARN!120,BOOTBARN,120,RANK 45,675300,SU26,RMSU26J01-DKW,RELAXED BOOT,RODEO,356,19,,2026-02-21,2026-03-30,,SS23639C,"CONFIRMATION RECVD FOR 14TH APRIL CUT OFF, DISPATCHED ON 14TH APRIL",,USD
+BOOTBARN!122,BOOTBARN,122,CJ BASIC,674863,SU26,CJSP20J01-MDW,SLIM STRAIGHT,EQUALIZER,11146,12.35,,2026-03-25,2026-03-28,,SS24260C,"booking made for 19 ready date - planned moved out to 31st March, Booking confirmed for 20th Apr X-fty,shipped 11703 pcs",,USD
+BOOTBARN!123,BOOTBARN,123,CJ BASIC,674864,SU26,CJSP20J01-MDW,SLIM STRAIGHT,EQUALIZER,17952,12.35,,2026-03-25,,,SS24260C,"planned to ship prior deadline , Planned x - fty 19th March, FF Booking recvd for 23rd Cut off, 18197 pcs shipped on 18th March",Early shipment,USD
+BOOTBARN!124,BOOTBARN,124,CJ BASIC,674866,SU26,CJSP20J01-MDW,SLIM STRAIGHT,EQUALIZER,906,12.35,,2026-03-25,2026-03-28,,SS24260C,"booking made for 19 ready date - planned moved out to 31st March, Booking confirmed for 20thApr X-fty",,USD
+BOOTBARN!125,BOOTBARN,125,CJ BASIC,674867,SU26,CJSU20J24-DKW- STR,SLIM STRAIGHT,NIGHT HAWK,14117,11.99,,2026-03-25,2026-03-17,,SS24260C,"planned to ship prior deadline , Planned x - fty 19th March, FF Booking confirmed, 14271 pcs shipped on 17 Marh",Early shipment,USD
+BOOTBARN!126,BOOTBARN,126,CJ BASIC,674869,SU26,CJSU20J24-DKW- STR,SLIM STRAIGHT,NIGHT HAWK,14983,11.99,,2026-03-25,2026-03-25,,SS24260C,15209 pcs shipped on 25th March,,USD
+BOOTBARN!127,BOOTBARN,127,CJ BASIC,674871,SU26,CJSU20J24-DKW- STR,SLIM STRAIGHT,NIGHT HAWK,900,11.99,,2026-03-25,2026-03-17,,SS24260C,"planned to ship prior deadline , Planned x - fty 19th March, FF Booking confirmed, 923 pcs shipped on 17 March",Early shipment,USD
+BOOTBARN!128,BOOTBARN,128,CJ BASIC,674882,SU26,CJFA23J9-DKW- SB,SLIM BOOT,NIGHT HAWK,12618,12.13,,2026-03-30,2026-04-20,,SS24260C,"Planned x - fty 11th April, FF Booking by 14 march based on 9 April ready date, confirmed to move out on 20th April",,USD
+BOOTBARN!129,BOOTBARN,129,CJ BASIC,674885,SU26,CJFA23J9-DKW- SB,SLIM BOOT,NIGHT HAWK,16176,12.13,,2026-03-30,2026-04-19,,SS24260C,"Planned x - fty 30th March, FF Booking by 7 march,awtg FF confirmation based on 28 March ready date.14th April cut off confirmed, rolled over and shipped out on 19th April",,USD
+BOOTBARN!130,BOOTBARN,130,CJ BASIC,674888,SU26,CJFA23J9-DKW- SB,SLIM BOOT,NIGHT HAWK,1206,12.13,,2026-03-30,2026-04-19,,SS24260C,"Planned x - fty 30th March, FF Booking by 7 march,awtg FF confirmation based on 28 March ready date, 14th April cut off confirmed, rolled over and shipped out on 19th Apr",,USD
+BOOTBARN!131,BOOTBARN,131,CJ BASIC,674880,SU26,CJSP20J02-MDW,RELAXED BOOT,WOLFSTOOTH,13518,12.64,,2026-03-30,2026-04-29,,SS24260C,"Planned x - fty 11th April, FF Booking by 14 march based on 16 April ready date, Shipped on 29th Apr",,USD
+BOOTBARN!132,BOOTBARN,132,CJ BASIC,674881,SU26,CJSP20J02-MDW,RELAXED BOOT,WOLFSTOOTH,14972,12.64,,2026-03-30,2026-04-19,,SS24260C,"Planned x - fty 30th March, FF Booking by 7 march,awtg FF confirmation based on 6 April ready date, 14th April cut off confirmed,rolled over and shipped out on 19th Apr",,USD
+BOOTBARN!133,BOOTBARN,133,CJ BASIC,674884,SU26,CJSP20J02-MDW,RELAXED BOOT,WOLFSTOOTH,1510,12.64,,2026-03-30,2026-04-19,,SS24260C,"Planned x - fty 30th March, FF Booking by 7 march,awtg FF confirmation based on 6 April ready date, 14th April cut off confirmed, rolled over and shipped out on 19th April",,USD
+BOOTBARN!134,BOOTBARN,134,CJ BASIC,SAMPLE-CJFA26J10-MDW,FA26,CJFA26J10-MDW,RELAXED STRAIGHT,BRONCO,4,27.98,,2026-03-27,2026-04-14,,SS24260CK,"Couriered on 14th April, invoiced",,USD
+BOOTBARN!135,BOOTBARN,135,CJ BASIC,SAMPLE-CJFA26J13-DKW,FA26,CJFA26J13-DKW,RELAXED STRAIGHT,BARN SOUR,4,28.28,,2026-03-27,2026-04-14,,SS24260CK,"Couriered on 14th April, invoiced",,USD
+BOOTBARN!136,BOOTBARN,136,CJ BASIC,SAMPLE-CJFA26J11-MDW,FA26,CJFA26J11-MDW,RELAXED STRAIGHT,OUTRIGGER,4,69,,2026-03-27,2026-04-14,,SS24272C,"Couriered on 14th April, invoiced",,USD
+BOOTBARN!137,BOOTBARN,137,CJ BASIC,SAMPLE-CJFA26J12-DKW,FA26,CJFA26J12-DKW,RELAXED STRAIGHT,GUNMETAL,4,69,,2026-03-27,2026-04-14,,SS24272C,"Couriered on 14th April, invoiced",,USD
+BOOTBARN!139,BOOTBARN,139,CJ BASIC,674875,SU26,CJSP25J02-LTW,SLIM STRAIGHT,CAMINO,6315,12.96,,2026-04-11,2026-04-29,,SS23303A,"FABRIC 4 CONTAINER DELAY, Planned X-fty 18th April, booking done based on 16 April ready dt, shipped on 29th April",,USD
+BOOTBARN!140,BOOTBARN,140,CJ BASIC,674876,SU26,CJSP25J02-LTW,SLIM STRAIGHT,CAMINO,8385,12.96,,2026-04-11,2026-04-29,,SS23303A,"Fab IH , Planned X-fty 18th April , booking done based on 16 April ready dt, shipped out on 29th April",,USD
+BOOTBARN!141,BOOTBARN,141,CJ BASIC,674877,SU26,CJSP25J02-LTW,SLIM STRAIGHT,CAMINO,300,12.96,,2026-04-11,2026-04-29,,SS23303A,"FABRIC 4 CONTAINER DELAY, Planned X-fty 18th April, booking done based on 16 April ready dt, shipped out on 29th April",,USD
+BOOTBARN!142,BOOTBARN,142,CJ BASIC,681235,FA26,CJFA26J10-MDW,RELAXED STRAIGHT,BRONCO,2368,13.99,,2026-04-24,2026-05-06,,SS24260CK,"FABRIC 4 CONTAINER DELAY, FABRIC IH DT 8 MAR 26, to book with ffw on 3 April, booked for 30th April, Finishing , packing trims IH on 28th Apr, Booking approved for 6th may X-fty, shipped out on 6th May",,USD
+BOOTBARN!143,BOOTBARN,143,CJ BASIC,681236,FA26,CJFA26J10-MDW,RELAXED STRAIGHT,BRONCO,4090,13.99,,2026-04-24,2026-05-06,,SS24260CK,"FABRIC 4 CONTAINER DELAY, FABRIC IH DT 8 MAR 26, to book with ffw on 3 April, booked for 30th April, Finishing , packing trims IH on 28th Apr, Shipped out on 6th May",,USD
+BOOTBARN!144,BOOTBARN,144,CJ BASIC,681237,FA26,CJFA26J10-MDW,RELAXED STRAIGHT,BRONCO,342,13.99,,2026-04-24,2026-05-06,,SS24260CK,"FABRIC 4 CONTAINER DELAY, FABRIC IH DT 8 MAR 26, to book with ffw on 3 April, booked for 30th April, Finishing , packing trims IH on 28th Apr, Shipped out on 6th May",,USD
+BOOTBARN!145,BOOTBARN,145,CJ BASIC,681238,FA26,CJFA26J13-DKW,RELAXED STRAIGHT,BARN SOUR,2368,14.14,,2026-04-24,2026-05-19,,SS24260CK,"FABRIC 4 CONTAINER DELAY, FABRIC IH DT 8 MAR 26, to book with ffw on 3 April, booked for 30th April, Finishing , packing trims IH ON 28th Apr. Roll over 12th may Shipped on 19 May",,USD
+BOOTBARN!146,BOOTBARN,146,CJ BASIC,681239,FA26,CJFA26J13-DKW,RELAXED STRAIGHT,BARN SOUR,4090,14.14,,2026-04-24,2026-05-20,,SS24260CK,"FABRIC 4 CONTAINER DELAY, FABRIC IH DT 8 MAR 26, to book with ffw on 3 April, booked for 30th April, Finishing , packing trims IH ON 28th Apr. Roll over 20th May shipped on 20 may",,USD
+BOOTBARN!147,BOOTBARN,147,CJ BASIC,681240,FA26,CJFA26J13-DKW,RELAXED STRAIGHT,BARN SOUR,342,14.14,,2026-04-24,2026-05-19,,SS24260CK,"FABRIC 4 CONTAINER DELAY, FABRIC IH DT 8 MAR 26, to book with ffw on 3 April, booked for 30th April, Finishing , packing trims IH ON 28th Apr. Roll over 12 th May sipped on 19 may",,USD
+BOOTBARN!148,BOOTBARN,148,CJ BLACK,681253,FA26,CJBFA25J15-BLK,SLIM STRAIGHT,LAWSON,1481,20.49,,2026-04-24,2026-05-06,,SS24133DQ(BK),"FABRIC 4 CONTAINER DELAY, FABRIC IH DT 8 MAR 26, to book with ffw on 3 April,booking confirmed for 29th April cut off, rolled over due to TOP appl,shipped on 6th May",,USD
+BOOTBARN!149,BOOTBARN,149,CJ BLACK,681256,FA26,CJBFA25J15-BLK,SLIM STRAIGHT,LAWSON,3265,20.49,,2026-04-24,2026-05-12,,SS24133DQ(BK),"FABRIC 4 CONTAINER DELAY, FABRIC IH DT 8 MAR 26, to book with ffw on 3 April,booking confirmed for 29th April cut off, rolled over due to TOP appl ,expected x-fty 12th May shipped on 19 may",,USD
+BOOTBARN!150,BOOTBARN,150,CJ BLACK,681260,FA26,CJBFA25J15-BLK,SLIM STRAIGHT,LAWSON,254,20.49,,2026-04-24,2026-05-06,,SS24133DQ(BK),"FABRIC 4 CONTAINER DELAY, FABRIC IH DT 8 MAR 26, to book with ffw on 3 April,booking confirmed for 29th April cut off, rolled over due to TOP appl, shipped out on 6th May",,USD
+BOOTBARN!152,BOOTBARN,152,CJ BLACK,681514,FA26,CJBHO25J50-DKW,SLIM STRAIGHT,RINSE,2280,22.38,,2026-05-21,2026-06-11,,Crispy RR7216-JLC,"Fabric Exp IH dt 27th Mar, Slide to 13th April, slide to 1st Week of May Expected garment ready is 10 junw, Shipped on 11th June",,USD
+BOOTBARN!153,BOOTBARN,153,CJ BLACK,681515,FA26,CJBHO25J50-DKW,SLIM STRAIGHT,RINSE,4960,22.38,,2026-05-21,2026-06-10,,Crispy RR7216-JLC,"Fabric Exp IH dt 27th Mar, Slide to 13th April, slide to 1st Week of May Expected garment ready is 10 june. Shipped on 10th June",,USD
+BOOTBARN!154,BOOTBARN,154,CJ BLACK,681516,FA26,CJBHO25J50-DKW,SLIM STRAIGHT,RINSE,160,22.38,,2026-05-21,2026-06-10,,Crispy RR7216-JLC,"Fabric Exp IH dt 27th Mar, Slide to 13th April, slide to 1st Week of May Expected garment ready is 10 june, Shipped on10th June",,USD
+BOOTBARN!155,BOOTBARN,155,CJ BASIC,687333,FA26,CJLI26J05-LTW,SLIM STRAIGHT,BUNKER,1200,18.16,,2026-05-07,,,ST22341F,"Liability fabric of Rank45 - rebranded as Basic, booking not done , Sewing trim IH 29TH Apr, Booking done for 20th May, Shipped on 20th May",,USD
+BOOTBARN!156,BOOTBARN,156,CJ BASIC,687336,FA26,CJLI26J02 - DKW,SLIM STRAIGHT,BROOKS,1300,18.38,,2026-05-07,2026-05-20,,SS22421F,"Liability fabric of Rank45 - rebranded as Basic, booking not done , Sewing trim IH 29TH Apr, Booking done for 20th May,shipped on 20th May",,USD
+BOOTBARN!157,BOOTBARN,157,CJ BASIC,687339,FA26,CJLI26J03 - MDW,SLIM STRAIGHT,ROADRUNNER,1050,20.8,,2026-05-07,2026-05-20,,AXF075V1-4,"Liability fabric of Rank45 - rebranded as Basic, booking not done , Sewing trim IH 29TH Apr, Booking done for 20th May, Shipped on 20th May",,USD
+BOOTBARN!158,BOOTBARN,158,SHYANNE,679345,SP26,SWSP26J25-MDW,HIGH RISE FLARE,ARCHER,2700,11.69,,2026-05-07,2026-05-20,,SS5886,"TOP is on hold because for finishing trims not IH, exp by 4th May, booking doen for 20th May, Shipped on 20th May",,USD
+BOOTBARN!160,BOOTBARN,160,CJ Basic - CCV,681960,FA26,CJFA26J11-MDW,RELAXED STRAIGHT,OUTRIGGER,2970,34.64,,2026-06-06,2026-05-06,,SS24272C,"Booking done for 5th May,shipped on 6th May",,USD
+BOOTBARN!161,BOOTBARN,161,CJ Basic - CCV,681962,FA26,CJFA26J11-MDW,RELAXED STRAIGHT,OUTRIGGER,6810,34.5,,2026-06-06,2026-05-20,,SS24272C,Booking to be done for 20th May X-fty shipped on 20 may,,USD
+BOOTBARN!162,BOOTBARN,162,CJ Basic - CCV,681964,FA26,CJFA26J11-MDW,RELAXED STRAIGHT,OUTRIGGER,220,34.5,,2026-06-06,2026-05-06,,SS24272C,"Booking done for 5th May,shipped on 6th May",,USD
+BOOTBARN!163,BOOTBARN,163,CJ Basic - CCV,681976,FA26,CJFA26J12-DKW,RELAXED STRAIGHT,GUNMETAL,2970,34.5,,2026-06-10,2026-06-10,,SS24272C,"Booking to be done on 10th May, Shipped out on 10th June",,USD
+BOOTBARN!164,BOOTBARN,164,CJ Basic - CCV,681980,FA26,CJFA26J12-DKW,RELAXED STRAIGHT,GUNMETAL,6810,34.5,,2026-06-10,2026-06-10,,SS24272C,"Booking to be done on 10th May, Shipped out on 10th June.",,USD
+BOOTBARN!165,BOOTBARN,165,CJ Basic - CCV,681983,FA26,CJFA26J12-DKW,RELAXED STRAIGHT,GUNMETAL,220,34.5,,2026-06-10,2026-05-20,,SS24272C,Shipped 20 May,,USD
+BOOTBARN!166,BOOTBARN,166,CJ BASIC,686559,FA26,CJSP25J01-DKW,RELAXED BOOT,NIGHT HAWK,9565,12.34,,2026-06-27,2026-06-11,,SS24260CK,"priority - rm arrangement, fabric ih on 29th Apr, Shipped on 11th June",,USD
+BOOTBARN!167,BOOTBARN,167,CJ BASIC,686560,FA26,CJSP25J01-DKW,RELAXED BOOT,NIGHT HAWK,18915,12.34,,2026-06-27,2026-06-24,,SS24260CK,"Vessel booking done on 23rd May for 20th June vessel, Cut off 23rd approved, shipped out on 24th June",,USD
+BOOTBARN!168,BOOTBARN,168,CJ BASIC,686561,FA26,CJSP25J01-DKW,RELAXED BOOT,NIGHT HAWK,1520,12.34,,2026-06-27,2026-06-10,,SS24260CK,"priority - rm arrangement , fabric ih on 29th Apr, Shipped on 10thJune",,USD
+BOOTBARN!169,BOOTBARN,169,Bootbarn,686561,June total,,,,50000,,,,,,,,,USD
+BOOTBARN!170,BOOTBARN,170,CJ BASIC,687838,HO 26,CJSP25J01-DKW,RELAXED BOOT,NIGHT HAWK,14394,12.34,,2026-07-18,2026-06-21,,SS24260CK,"EARLY SHIPMENT - Vessel booking done on 3rd June for 20th June Vessel, Roll over to apply, shipped on 21st June",,USD
+BOOTBARN!171,BOOTBARN,171,CJ BASIC,687839,HO 26,CJSP25J01-DKW,RELAXED BOOT,NIGHT HAWK,28350,12.34,,2026-07-18,2026-06-29,,SS24260CK,"EARLY SHIPMENT - Vessel booking done on 6th June for 30th June X fty, shipped on 29 June",,USD
+BOOTBARN!172,BOOTBARN,172,CJ BASIC,687840,HO 26,CJSP25J01-DKW,RELAXED BOOT,NIGHT HAWK,2256,12.34,,2026-07-18,2026-06-24,,SS24260CK,"EARLY SHIPMENT - Vessel booking done on 23rd May for 23rd June cut off, shipped out on 24th June",,USD
+BOOTBARN!173,BOOTBARN,173,CJ BASIC,692250,HO 26,CJSP20J01-MDW-900,SLIM STRAIGHT,EQUALIZER,9302,12.35,,2026-07-18,2026-07-16,,SS24260CK,Shipped on 16th July,,USD
+BOOTBARN!174,BOOTBARN,174,CJ BASIC,692253,HO 26,CJSP20J01-MDW-975,SLIM STRAIGHT,EQUALIZER,18590,12.35,,2026-07-18,2026-07-16,,SS24260CK,Shipped on 16th July,,USD
+BOOTBARN!175,BOOTBARN,175,CJ BASIC,692254,HO 26,CJSP20J01-MDW-735,SLIM STRAIGHT,EQUALIZER,2108,12.35,,2026-07-18,2026-07-16,,SS24260CK,Shipped on 16th July,,USD
+BOOTBARN!177,BOOTBARN,177,CJ BASIC,692227,HO 26,CJSP25J02-LTW-900,SLIM STRAIGHT,CAMINO,9597,12.96,,2026-08-10,2026-09-12,,SS23303A,"Booking done, due to re routing booking is delay. Hand over planned on 25th Aug. 9595 pcs moved out on 12th Sep.",,USD
+BOOTBARN!178,BOOTBARN,178,CJ BASIC,692261,HO 26,CJSP20J09-LTW-900,RELAXED BOOT,HAMSHACKLE,22505,12.75,,2026-08-30,2026-09-12,,SS24260CK,"Booking done, trying to prepone to 10th Aug, shipped 17282 pcs on 24th Aug, Bal planned to move on 25th Aug, 5478 pcs moved out on 12th Sep",,USD
+BOOTBARN!180,BOOTBARN,180,CJ BASIC,692263,HO 26,CJSP20J09-LTW-975,RELAXED BOOT,HAMSHACKLE,44995,12.75,,2026-09-07,2026-09-13,,SS24260CK,"New chemical and wash recipe is in trail, Hamma debit note to create. booking confirmed for 12 Sep HO, 45396 pcs shipped out on 13th Sep for 19th Sep vessel.",,USD
+BOOTBARN!181,BOOTBARN,181,CJ BASIC,692264,HO 26,CJSP20J09-LTW-735,RELAXED BOOT,HAMSHACKLE,7500,12.75,,2026-09-07,2026-08-24,,SS24260CK,"New chemical and wash recipe is in trail, Hamma debit note to create. plan for early shipment in Aug. Booking done.7628 pcs shipped on 24th Aug",,USD
+BOOTBARN!182,BOOTBARN,182,RANK 45,692215,HO 26,RMSP26J01-LTW-900,RELAXED BOOT,STRIKER,1819,19.95,,2026-09-11,2026-09-22,,SS23639C,"Booking confirmed HO 12 Sept - need to roll over 1 week. goods not ready, Shipped on 22nd Sep",,USD
+BOOTBARN!183,BOOTBARN,183,RANK 45,692216,HO 26,RMSP26J01-LTW-975,RELAXED BOOT,STRIKER,2660,19.95,,2026-09-11,2026-09-13,,SS23639C,"Booking confirmed HO 12 Sept , 2590pcs shipped out 13th Sep, Rolled over to 19th Sep vessel",,USD
+BOOTBARN!184,BOOTBARN,184,RANK 45,692217,HO 26,RMSP26J01-LTW-735,RELAXED BOOT,STRIKER,522,19.95,,2026-09-11,2026-09-22,,SS23639C,"Booking confirmed HO 12 Sept - need to roll over 1 week. goods not ready, 523 pcs shipped on 22nd Sep",,USD
+BOOTBARN!185,BOOTBARN,185,CJ BASIC,692230,HO 26,CJSP25J02-LTW-975,SLIM STRAIGHT,CAMINO,18895,12.96,,2026-09-11,2026-09-22,,SS23303A,"Booking confirmed HO 12 Sept - need to roll over 1 week. goods not ready, 17948 pcs shipped on 9/22",,USD
+BOOTBARN!186,BOOTBARN,186,CJ BASIC,692235,HO 26,CJSP25J02-LTW-735,SLIM STRAIGHT,CAMINO,1508,12.96,,2026-09-11,2026-09-22,,SS23303A,"Booking confirmed HO 12 Sept - need to roll over 1 week. goods not ready, 1452 pcs shipped on 9/22",,USD
+BOOTBARN!187,BOOTBARN,187,RANK 45,692269,HO 26,RMSU26J01-DKW-900,RELAXED BOOT,RODEO,1013,20.52,,2026-09-11,2026-09-22,,SS23639C,"Booking confirmed HO 12 Sept - need to roll over 1 week. goods not ready, 1062 pcs shipped on 22nd Sep",,USD
+BOOTBARN!188,BOOTBARN,188,RANK 45,692271,HO 26,RMSU26J01-DKW-975,RELAXED BOOT,RODEO,2585,20.52,,2026-09-11,2026-09-12,,SS23639C,"Booking confirmed HO 12 Sept, 2665 pcs shipped out on 13th Sep for 19th Sep vessel.",,USD
+BOOTBARN!189,BOOTBARN,189,RANK 45,692276,HO 26,RMSU26J01-DKW-735,RELAXED BOOT,RODEO,402,20.52,,2026-09-11,2026-09-22,,SS23639C,"Booking confirmed HO 12 Sept - need to roll over 1 week. goods not ready, 422 pcs shipped on 22nd Sep",,USD
+BOOTBARN!191,BOOTBARN,191,CJ BASIC,702474,SP27,CJFA23J9-DKW- SB,SLIM BOOT,NIGHT HAWK,10544,12.38,,2026-11-02,2026-10-07,,SS24260CK,"planning early shipment in Oct, Vessel booking done awtg confirmation, 11037 pcs shipped on 7th Oct",,USD
+BOOTBARN!192,BOOTBARN,192,CJ BASIC,702475,SP27,CJFA23J9-DKW- SB,SLIM BOOT,NIGHT HAWK,17360,12.38,,2026-11-02,2026-10-07,,SS24260CK,"planning early shipment in Oct, Vessel booking done awtg confirmation,, 18214 pcs shipped on 7th Oct",,USD
+BOOTBARN!193,BOOTBARN,193,CJ BASIC,702479,SP27,CJFA23J9-DKW- SB,SLIM BOOT,NIGHT HAWK,2096,12.38,,2026-11-02,2026-10-07,,SS24260CK,"planning early shipment in Oct, Vessel booking done awtg confirmation, 2197 pcs shipped on 7th Oct",,USD
+BOOTBARN!194,BOOTBARN,194,CJ BASIC,702598,SP27,CJFA26J13-DKW,RELAXED STRAIGHT,BARN SOUR,14989,13.05,,2026-11-02,2026-10-15,,SS24260CK,"CUSTOMER REQUESTED EARLY SHIPMENT, 15626 pcs shipped on 15th Oct",,USD
+BOOTBARN!195,BOOTBARN,195,CJ BASIC,702604,SP27,CJFA26J13-DKW,RELAXED STRAIGHT,BARN SOUR,13815,13.05,,2026-11-02,2026-10-15,,SS24260CK,"CUSTOMER REQUESTED EARLY SHIPMENT, 14238 pcs shipped on 15th Oct",,USD
+BOOTBARN!196,BOOTBARN,196,CJ BASIC,702612,SP27,CJFA26J13-DKW,RELAXED STRAIGHT,BARN SOUR,1196,13.05,,2026-11-02,2026-10-15,,SS24260CK,"CUSTOMER REQUESTED EARLY SHIPMENT, 1256 pcs shipped on 15th Oct",,USD
+BOOTBARN!198,BOOTBARN,198,CJ BASIC,702491,SP27,CJSP20J09-LTW,RELAXED BOOT,HAMSHACKLE,7442,13.01,,2026-11-02,2026-11-01,,SS24260CK,"planning early shipment in Oct, In washing, planned XFD 3rd Nov, revised to 31st Oct, Shipped on 1st Nov",,USD
+BOOTBARN!199,BOOTBARN,199,CJ BASIC,702498,SP27,CJSP20J09-LTW,RELAXED BOOT,HAMSHACKLE,19530,13.01,,2026-11-02,2026-10-24,,SS24260CK,"planning early shipment in Oct, In washing, planned 24th Oct, shipped on 24th Oct.",,USD
+BOOTBARN!200,BOOTBARN,200,CJ BASIC,702509,SP27,CJSP20J09-LTW,RELAXED BOOT,HAMSHACKLE,3028,13.01,,2026-11-02,2026-11-01,,SS24260CK,"planning early shipment in Oct, In washing, planned XFD 3rd Nov, revised to 31st Oct, Shipped on 1st Nov",,USD
+BOOTBARN!201,BOOTBARN,201,CJ BASIC,702460,SP27,CJHO21J21-LTW,SLIM STRAIGHT,BUCKSIN,5071,13.2,,2026-11-02,2026-11-04,,SS24260CK,"planning early shipment in Oct, In washing, planned XFD 7th Nov , shipped on 4th Nov",,USD
+BOOTBARN!202,BOOTBARN,202,CJ BASIC,702461,SP27,CJHO21J21-LTW,SLIM STRAIGHT,BUCKSIN,9015,13.2,,2026-11-02,2026-11-04,,SS24260CK,"planning early shipment in Oct, In washing, planned XFD 7th Nov , shipped on 4th Nov",,USD
+BOOTBARN!203,BOOTBARN,203,CJ BASIC,702468,SP27,CJHO21J21-LTW,SLIM STRAIGHT,BUCKSIN,914,13.2,,2026-11-02,2026-11-04,,SS24260CK,"planning early shipment in Oct, In washing, planned XFD 7th Nov , shipped on 4th Nov",,USD
+BOOTBARN!204,BOOTBARN,204,CJ BASIC,702442,SP27,CJSP25J02-LTW,SLIM STRAIGHT,CAMINO,10178,13.21,,2026-11-02,,,SS23303A,"planning early shipment in Oct, Fabric inhouse on 18th Oct, ready dt 21st Nov, Extn requested for 17th Nov Nov",,USD
+BOOTBARN!205,BOOTBARN,205,CJ BASIC,702444,SP27,CJSP25J02-LTW,SLIM STRAIGHT,CAMINO,18010,13.21,,2026-11-02,,,SS23303A,"planning early shipment in Oct, Fabric inhouse on 18th Oct, ready dt 15th Nov, extn requested.",,USD
+BOOTBARN!206,BOOTBARN,206,CJ BASIC,702447,SP27,CJSP25J02-LTW,SLIM STRAIGHT,CAMINO,1812,13.21,,2026-11-02,,,SS23303A,"planning early shipment in Oct, Fabric inhouse on 18th Oct, ready dt 21st Nov, Extn requested for 17th Nov Nov",,USD
+BOOTBARN!207,BOOTBARN,207,CJ BASIC,702562,SP27,CJFA26J10-MDW,RELAXED STRAIGHT,BRONCO,8710,12.9,,2026-11-02,2026-10-24,,SS24260CK,"CUSTOMER REQUESTED EARLY SHIPMENT, 24th oct vessel confirmed , planned to move out on 22nd Oct, shipped out on 24th Oct",,USD
+BOOTBARN!208,BOOTBARN,208,CJ BASIC,702563,SP27,CJFA26J10-MDW,RELAXED STRAIGHT,BRONCO,19200,12.9,,2026-11-02,2026-10-22,,SS24260CK,"CUSTOMER REQUESTED EARLY SHIPMENT, 24th oct cut off, planned to move out on 24th Oct, 20123 pcs shipped on 22nd Oct",,USD
+BOOTBARN!209,BOOTBARN,209,CJ BASIC,702567,SP27,CJFA26J10-MDW,RELAXED STRAIGHT,BRONCO,2090,12.9,,2026-11-02,2026-10-24,,SS24260CK,"CUSTOMER REQUESTED EARLY SHIPMENT, 24th oct vessel confirmed , planned to move out on 24th Oct, shipped out on 24th Oct",,USD
+BOOTBARN!210,BOOTBARN,210,RANK 45,702637,SP27,RMSP26J01,RELAXED BOOT,STRIKER,1775,19.9,,2026-11-02,,,SS23639C,"planning early shipment in Oct, Fabric inhouse on 18th Oct, ready dt 15th Nov, extn requested.",,USD
+BOOTBARN!211,BOOTBARN,211,RANK 45,702645,SP27,RMSP26J01,RELAXED BOOT,STRIKER,2725,19.9,,2026-11-02,,,SS23639C,"planning early shipment in Oct, Fabric inhouse on 18th Oct, ready dt 15th Nov, extn requested.",,USD
+BOOTBARN!212,BOOTBARN,212,RANK 45,702651,SP27,RMSP26J01,RELAXED BOOT,STRIKER,500,19.9,,2026-11-02,,,SS23639C,"planning early shipment in Oct, Fabric inhouse on 18th Oct, ready dt 15th Nov, extn requested.",,USD
+BOOTBARN!213,BOOTBARN,213,SHYANNE,702078,SP27,1001986-LTWSH,HR SLIM WIDE LEG,INDY,1440,21.62,,2026-11-02,,,A524AV8-6,"planning early shipment in Oct, Fabric inhouse on 18th Oct, ready dt 15th Nov, extn requested.",19.26,USD
+BOOTBARN!214,BOOTBARN,214,SHYANNE,702079,SP27,1001986-LTWSH,HR SLIM WIDE LEG,INDY,2160,21.62,,2026-11-02,,,A524AV8-6,"planning early shipment in Oct, Fabric inhouse on 18th Oct, ready dt 15th Nov, extn requested.",19.26,USD
+BOOTBARN!215,BOOTBARN,215,SHYANNE,702080,SP27,1001986-MDDRK,HR SLIM WIDE LEG,FAYE,1440,20.86,,2026-11-02,,,A524AV8-6,"planning early shipment in Oct, Fabric inhouse on 18th Oct, ready dt 21st Nov, extn requested.",18.58,USD
+BOOTBARN!216,BOOTBARN,216,SHYANNE,702081,SP27,1001986-MDDRK,HR SLIM WIDE LEG,FAYE,2160,20.68,,2026-11-02,,,A524AV8-6,"planning early shipment in Oct, Fabric inhouse on 18th Oct, ready dt 21st Nov, extn requested.",18.58,USD
+BOOTBARN!217,BOOTBARN,217,SHYANNE,702094,SP27,1001990-LTWSH,MID RISE SHORTS,INDY,2808,14.26,,2026-11-02,,,A524AV8-6,"planning early shipment in Oct,fabric in house on 15th Oct, ready dt 15th Nov, extn requested",12.54,USD
+BOOTBARN!218,BOOTBARN,218,SHYANNE,702095,SP27,1001990-LTWSH,MID RISE SHORTS,INDY,4212,14.26,,2026-11-02,,,A524AV8-6,"planning early shipment in Oct,fabric in house on 15th Oct, ready dt 15th Nov, extn requested",12.54,USD
+BOOTBARN!219,BOOTBARN,219,SHYANNE,702097,SP27,1001990-LTWSH,MID RISE SHORTS,INDY,180,14.26,,2026-11-02,,,A524AV8-6,"planning early shipment in Oct,fabric in house on 15th Oct, ready dt 15th Nov, extn requested",12.54,USD
+BOOTBARN!220,BOOTBARN,220,SHYANNE,702100,SP27,1001990-MDDRK,MID RISE SHORTS,FAYE,2808,14.21,,2026-11-02,,,A524AV8-6,"planning early shipment in Oct, Fabric inhouse on 15th Oct, ready dt 21st Nov, extn requested.",12.49,USD
+BOOTBARN!221,BOOTBARN,221,SHYANNE,702101,SP27,1001990-MDDRK,MID RISE SHORTS,FAYE,4212,14.21,,2026-11-02,,,A524AV8-6,"planning early shipment in Oct, Fabric inhouse on 15th Oct, ready dt 21st Nov, extn requested.",12.49,USD
+BOOTBARN!222,BOOTBARN,222,SHYANNE,702102,SP27,1001990-MDDRK,MID RISE SHORTS,FAYE,180,14.21,,2026-11-02,,,A524AV8-6,"planning early shipment in Oct, Fabric inhouse on 15th Oct, ready dt 21st Nov, extn requested.",12.49,USD
+BOOTBARN!223,BOOTBARN,223,CJ BLACK,706067,SP27,1001948 - MEDWSH,SLIM STRAIGHT,MEDIUM WASH 414,867,26.82,,2026-11-02,2026-11-04,,RR7216 JLC,Shipped on 4th Nov,,USD
+BOOTBARN!224,BOOTBARN,224,CJ BLACK,706074,SP27,1001948 - MEDWSH,SLIM STRAIGHT,MEDIUM WASH 414,1945,26.82,,2026-11-02,2026-11-04,,RR7216 JLC,Shipped on 4th Nov,,USD
+BOOTBARN!225,BOOTBARN,225,CJ BLACK,706069,SP27,1001948 - MEDWSH,SLIM STRAIGHT,MEDIUM WASH 414,188,26.82,,2026-11-02,2026-11-04,,RR7216 JLC,Shipped on 4th Nov,,USD
+BOOTBARN!226,BOOTBARN,226,CJ BLACK,SAMPLE - 1001948-MED-WSH,SP27,1001948 - MEDWSH,SLIM STRAIGHT,MEDIUM WASH 414,4,53.64,,2026-11-02,2026-10-22,,RR7216 JLC,Shipped on 22nd Oct,,USD
+BOOTBARN!228,BOOTBARN,228,RANK 45,702835,SP27,1001759 - BLK,STRAIGHT FIT,BLACK,2733,18.33,,2026-12-07,,,QA284D9-38K,Fabric in transit,,USD
+BOOTBARN!229,BOOTBARN,229,RANK 45,702838,SP27,1001759 - BLK,STRAIGHT FIT,BLACK,5995,18.33,,2026-12-07,,,QA284D9-38K,Fabric in transit,,USD
+BOOTBARN!230,BOOTBARN,230,RANK 45,702843,SP27,1001759 - BLK,STRAIGHT FIT,BLACK,472,18.33,,2026-12-07,,,QA284D9-38K,Fabric in transit,,USD
+BOOTBARN!231,BOOTBARN,231,RANK 45,702682,SP27,1001778 - MEDWSH,STRAIGHT FIT,MEDIUM WASH 414,2733,17.22,,2026-12-07,,,SS24629A,Fabric recvd IH on 25th Oct,,USD
+BOOTBARN!232,BOOTBARN,232,RANK 45,702692,SP27,1001778 - MEDWSH,STRAIGHT FIT,MEDIUM WASH 414,5995,17.22,,2026-12-07,,,SS24629A,Fabric recvd IH on 25th Oct,,USD
+BOOTBARN!233,BOOTBARN,233,RANK 45,702701,SP27,1001778 - MEDWSH,STRAIGHT FIT,MEDIUM WASH 414,472,17.22,,2026-12-07,,,SS24629A,Fabric recvd IH on 25th Oct,,USD
+BOOTBARN!234,BOOTBARN,234,RANK 45,702868,SP27,1001779 - MEDWSH,BOOT CUT FIT,MEDIUM WASH 414,2721,17.75,,2026-12-07,,,SS24629A,Fabric recvd IH on 25th Oct,,USD
+BOOTBARN!235,BOOTBARN,235,RANK 45,702872,SP27,1001779 - MEDWSH,BOOT CUT FIT,MEDIUM WASH 414,6005,17.75,,2026-12-07,,,SS24629A,Fabric recvd IH on 25th Oct,,USD
+BOOTBARN!236,BOOTBARN,236,RANK 45,702873,SP27,1001779 - MEDWSH,BOOT CUT FIT,MEDIUM WASH 414,474,17.75,,2026-12-07,,,SS24629A,Fabric recvd IH on 25th Oct,,USD
+BOOTBARN!237,BOOTBARN,237,RANK 45,702882,SP27,1001785 - DKWSH,BOOT CUT FIT,DARK WASH 416,2721,17.6,,2026-12-07,,,SS24629A,Fabric recvd IH on 25th Oct,,USD
+BOOTBARN!238,BOOTBARN,238,RANK 45,702885,SP27,1001785 - DKWSH,BOOT CUT FIT,DARK WASH 416,6005,17.6,,2026-12-07,,,SS24629A,Fabric recvd IH on 25th Oct,,USD
+BOOTBARN!239,BOOTBARN,239,RANK 45,702887,SP27,1001785 - DKWSH,BOOT CUT FIT,DARK WASH 416,474,17.6,,2026-12-07,,,SS24629A,Fabric recvd IH on 25th Oct,,USD
+BOOTBARN!240,BOOTBARN,240,RANK 45,702891,SP27,1001786 - MDDRK,LOOSE FIT,MEDIUM DARK WASH 418,860,18.06,,2026-12-07,,,ALCYONE 13 STR,"Ready dt 15th Nov, Booking done",,USD
+BOOTBARN!241,BOOTBARN,241,RANK 45,702892,SP27,1001786 - MDDRK,LOOSE FIT,MEDIUM DARK WASH 418,1980,18.06,,2026-12-07,,,ALCYONE 13 STR,"Ready dt 15th Nov, Booking to be done.",,USD
+BOOTBARN!242,BOOTBARN,242,RANK 45,702893,SP27,1001786 - MDDRK,LOOSE FIT,MEDIUM DARK WASH 418,160,18.06,,2026-12-07,,,ALCYONE 13 STR,"Ready dt 15th Nov, Booking done",,USD
+BOOTBARN!243,BOOTBARN,243,RANK 45,SAMPLE-1001759 - BLK,SP27,1001759 - BLK,STRAIGHT FIT,BLACK,4,36.66,,2026-12-07,,,SS24629A,Fabric in clearance,,USD
+BOOTBARN!244,BOOTBARN,244,RANK 45,SAMPLE-1001778 - MEDWSH,SP27,1001778 - MEDWSH,STRAIGHT FIT,MEDIUM WASH 414,4,34.44,,2026-12-07,,,SS24629A,Fabric in clearance,,USD
+BOOTBARN!245,BOOTBARN,245,RANK 45,SAMPLE-1001779 - MEDWSH,SP27,1001779 - MEDWSH,BOOT CUT FIT,MEDIUM WASH 414,4,34.5,,2026-12-07,,,SS24629A,Fabric in clearance,,USD
+BOOTBARN!246,BOOTBARN,246,RANK 45,SAMPLE-1001785 - DKWSH,SP27,1001785 - DKWSH,BOOT CUT FIT,DARK WASH 416,4,35.2,,2026-12-07,,,SS24629A,Fabric in clearance,,USD
+BOOTBARN!247,BOOTBARN,247,RANK 45,SAMPLE-1001786 - MDDRK,SP27,1001786 - MDDRK,LOOSE FIT,MEDIUM DARK WASH 418,4,36.12,,2026-12-07,,,ALCYONE 13 STR,Fabric in clearance,,USD
+BOOTBARN!249,BOOTBARN,249,Bootbarn,2026 TOTAL,,,,,792501,,,,,,,14.01280735,AVRG PRICE,USD
+BOOTBARN!256,BOOTBARN,256,CJ BASIC,710967,SU27,CJSP20J02-MDW,Relaxed Boot,Wolfstooth,16136,12.78,,2026-02-01,,,SS24260CK,Fabric IH on 25th Oct,,USD
+BOOTBARN!257,BOOTBARN,257,CJ BASIC,710968,SU27,CJSP20J02-MDW,Relaxed Boot,Wolfstooth,39080,12.78,,2026-02-01,,,SS24260CK,,,USD
+BOOTBARN!258,BOOTBARN,258,CJ BASIC,710971,SU27,CJSP20J02-MDW,Relaxed Boot,Wolfstooth,4784,12.78,,2026-02-01,,,SS24260CK,,,USD
+BOOTBARN!259,BOOTBARN,259,RANK 45,710979,SU27,RMSP26J01-LTW,Relaxed Boot,Striker,880,22.13,,2026-02-01,,,SS23639C,,,USD
+BOOTBARN!260,BOOTBARN,260,RANK 45,710980,SU27,RMSP26J01-LTW,Relaxed Boot,Striker,1920,22.13,,2026-02-01,,,SS23639C,,,USD
+BOOTBARN!261,BOOTBARN,261,RANK 45,710981,SU27,RMSP26J01-LTW,Relaxed Boot,Striker,200,22.13,,2026-02-01,,,SS23639C,,,USD
+BOOTBARN!262,BOOTBARN,262,CJ BASIC,710959,SU27,CJFA23J9-DKW,Slim Boot,Night Hawk,29210,12.21,,2026-02-01,,,SS24260CK,,,USD
+BOOTBARN!263,BOOTBARN,263,CJ BASIC,710960,SU27,CJFA23J9-DKW,Slim Boot,Night Hawk,43540,12.21,,2026-02-01,,,SS24260CK,,,USD
+BOOTBARN!264,BOOTBARN,264,CJ BASIC,710961,SU27,CJFA23J9-DKW,Slim Boot,Night Hawk,2250,12.21,,2026-02-01,,,SS24260CK,,,USD
+BOOTBARN!265,BOOTBARN,265,CJ BASIC,711046,SU27,CJHO21J21-LTW,Slim Straight,Bucksin,4924,13.07,,2026-02-01,,,SS24260CK,,,USD
+BOOTBARN!266,BOOTBARN,266,CJ BASIC,711047,SU27,CJHO21J21-LTW,Slim Straight,Bucksin,9160,13.07,,2026-02-01,,,SS24260CK,,,USD
+BOOTBARN!267,BOOTBARN,267,CJ BASIC,711048,SU27,CJHO21J21-LTW,Slim Straight,Bucksin,916,13.07,,2026-02-01,,,SS24260CK,,,USD
+BOOTBARN!268,BOOTBARN,268,CJ BASIC,710975,SU27,CJSP25J01-DKW,Relaxed Boot,Night Hawk,26226,12.28,,2026-02-01,,,SS24260CK,,,USD
+BOOTBARN!269,BOOTBARN,269,CJ BASIC,710976,SU27,CJSP25J01-DKW,Relaxed Boot,Night Hawk,45010,12.28,,2026-02-01,,,SS24260CK,,,USD
+BOOTBARN!270,BOOTBARN,270,CJ BASIC,710977,SU27,CJSP25J01-DKW,Relaxed Boot,Night Hawk,3764,12.28,,2026-02-01,,,SS24260CK,,,USD
+BOOTBARN!271,BOOTBARN,271,CJ BASIC,710955,SU27,CJSP20J09-LTW,Relaxed Boot,Hamshackle,7516,12.89,,2026-02-01,,,SS24260CK,,,USD
+BOOTBARN!272,BOOTBARN,272,CJ BASIC,710956,SU27,CJSP20J09-LTW,Relaxed Boot,Hamshackle,20080,12.89,,2026-02-01,,,SS24260CK,,,USD
+BOOTBARN!273,BOOTBARN,273,CJ BASIC,710957,SU27,CJSP20J09-LTW,Relaxed Boot,Hamshackle,2404,12.89,,2026-02-01,,,SS24260CK,,,USD
+BOOTBARN!274,BOOTBARN,274,CJ BASIC,710962,SU27,CJSP20J01-MDW,Slim Straight,Equalizer,8951,12.48,,2026-02-01,,,SS24260CK,,,USD
+BOOTBARN!275,BOOTBARN,275,CJ BASIC,710963,SU27,CJSP20J01-MDW,Slim Straight,Equalizer,18035,12.48,,2026-02-01,,,SS24260CK,,,USD
+BOOTBARN!276,BOOTBARN,276,CJ BASIC,710965,SU27,CJSP20J01-MDW,Slim Straight,Equalizer,3014,12.48,,2026-02-01,,,SS24260CK,,,USD
+BOOTBARN!277,BOOTBARN,277,CJ BLACK,711011,SU27,1001948,Slim Boot,Stillwater,1040,26.67,,2026-02-01,,,RR7216-JLC,"planning early shipment in Oct, In washing, planned XFD 7th Nov",,USD
+BOOTBARN!278,BOOTBARN,278,CJ BLACK,711013,SU27,1001948,Slim Boot,Stillwater,1800,26.67,,2026-02-01,,,RR7216-JLC,"planning early shipment in Oct, In washing, planned XFD 7th Nov",,USD
+BOOTBARN!279,BOOTBARN,279,CJ BLACK,711014,SU27,1001948,Slim Boot,Stillwater,160,26.67,,2026-02-01,,,RR7216-JLC,"planning early shipment in Oct, In washing, planned XFD 7th Nov",,USD
+BOOTBARN!281,BOOTBARN,281,CJ BASIC,713862,SU27 Chase,CJFA26J10-MDW,RELAXED STRAIGHT,BRONCO,22374,12.78,,2027-02-01,,,SS24260CK,,,USD
+BOOTBARN!282,BOOTBARN,282,CJ BASIC,713922,SU27 Chase,CJFA26J10-MDW,RELAXED STRAIGHT,BRONCO,30810,12.78,,2027-02-01,,,SS24260CK,,,USD
+BOOTBARN!283,BOOTBARN,283,CJ BASIC,713929,SU27 Chase,CJFA26J10-MDW,RELAXED STRAIGHT,BRONCO,2816,12.78,,2027-02-01,,,SS24260CK,,,USD
+BOOTBARN!284,BOOTBARN,284,CJ BASIC,714035,SU27 Chase,CJFA26J13-DKW,RELAXED STRAIGHT,BARN SOUR,27174,13.13,,2027-02-01,,,SS24260CK,,,USD
+BOOTBARN!285,BOOTBARN,285,CJ BASIC,714037,SU27 Chase,CJFA26J13-DKW,RELAXED STRAIGHT,BARN SOUR,38780,13.13,,2027-02-01,,,SS24260CK,,,USD
+BOOTBARN!286,BOOTBARN,286,CJ BASIC,714040,SU27 Chase,CJFA26J13-DKW,RELAXED STRAIGHT,BARN SOUR,2046,13.13,,2027-02-01,,,SS24260CK,,,USD
+BOOTBARN!287,BOOTBARN,287,RANK 45,711033,SU27,1001786,Loose Fit,Indigo,1054,17.91,,2027-02-28,,,Alcyone 13 STR,,,USD
+BOOTBARN!288,BOOTBARN,288,RANK 45,711034,SU27,1001786,Loose Fit,Indigo,1870,17.91,,2027-02-28,,,Alcyone 13 STR,,,USD
+BOOTBARN!289,BOOTBARN,289,RANK 45,711035,SU27,1001786,Loose Fit,Indigo,76,17.91,,2027-02-28,,,Alcyone 13 STR,,,USD
+BOOTBARN!290,BOOTBARN,290,RANK 45,711038,SU27,1001785,Bootcut Fit,Dark Tint,1372,18.86,,2027-02-28,,,SS24629A,,,USD
+BOOTBARN!291,BOOTBARN,291,RANK 45,711039,SU27,1001785,Bootcut Fit,Dark Tint,2500,18.86,,2027-02-28,,,SS24629A,,,USD
+BOOTBARN!292,BOOTBARN,292,RANK 45,711041,SU27,1001785,Bootcut Fit,Dark Tint,128,18.86,,2027-02-28,,,SS24629A,,,USD
+BOOTBARN!293,BOOTBARN,293,RANK 45,711030,SU27,1001779,Bootcut Fit,Nightfall Blue,1727,17.61,,2027-02-28,,,SS24629A,,,USD
+BOOTBARN!294,BOOTBARN,294,RANK 45,711031,SU27,1001779,Bootcut Fit,Nightfall Blue,3115,17.61,,2027-02-28,,,SS24629A,,,USD
+BOOTBARN!295,BOOTBARN,295,RANK 45,711032,SU27,1001779,Bootcut Fit,Nightfall Blue,158,17.61,,2027-02-28,,,SS24629A,,,USD
+BOOTBARN!296,BOOTBARN,296,RANK 45,711022,SU27,1001778,Straight Fit,Medium,1726,17.08,,2027-02-28,,,SS24629A,,,USD
+BOOTBARN!297,BOOTBARN,297,RANK 45,711024,SU27,1001778,Straight Fit,Medium,3120,17.08,,2027-02-28,,,SS24629A,,,USD
+BOOTBARN!298,BOOTBARN,298,RANK 45,711026,SU27,1001778,Straight Fit,Medium,154,17.08,,2027-02-28,,,SS24629A,,,USD
+BOOTBARN!299,BOOTBARN,299,RANK 45,711027,SU27,1001759,Straight Fit,Black,1411,19.64,,2027-02-28,,,QA284D9-38K,,,USD
+BOOTBARN!300,BOOTBARN,300,RANK 45,711028,SU27,1001759,Straight Fit,Black,2455,19.64,,2027-02-28,,,QA284D9-38K,,,USD
+BOOTBARN!301,BOOTBARN,301,RANK 45,711029,SU27,1001759,Straight Fit,Black,134,19.64,,2027-02-28,,,QA284D9-38K,,,USD
+BOOTBARN!303,BOOTBARN,303,CJ BASIC,708075,SU27,CJSP20J09-LTW,Relaxed Boot,Hamshackle,8673,13.09,,2027-03-29,,,SS24260CK,,,USD
+BOOTBARN!304,BOOTBARN,304,CJ BASIC,708076,SU27,CJSP20J09-LTW,Relaxed Boot,Hamshackle,18925,13.09,,2027-03-29,,,SS24260CK,,,USD
+BOOTBARN!305,BOOTBARN,305,CJ BASIC,708078,SU27,CJSP20J09-LTW,Relaxed Boot,Hamshackle,2402,13.09,,2027-03-29,,,SS24260CK,,,USD
+BOOTBARN!308,BOOTBARN,308,Bootbarn,2027 TOTAL,,,,,466000,,,,,,,,,USD
+BOOTBARN!310,BOOTBARN,310,Bootbarn,ALL YEARS TOTAL,,,,,1575977,,,,,,,14.22265982,AVRG PRICE,USD
+Rich & Royal!3,Rich & Royal,3,Rich & Royal,AWTG,,S2612-998,Slochy Blue Denim,700 Denim Blue,11,38.45,,,2026-07-30,,Slochy 24 Ocean,"Couriered, Invoice sent, payment pending",,EUR
+Rich & Royal!4,Rich & Royal,4,Rich & Royal,AWTG,,2704-822,White Denim Jacket,100 White,11,41.28,,,2026-08-20,,PFD ORTA 1340A,"Air shipped,Invocie sent, payment pending",,EUR
+Rich & Royal!5,Rich & Royal,5,Rich & Royal,AWTG,,2704-992,White Slouchy Denim Pants,100 White,11,38.26,,,2026-08-20,,Slouchy GR /21 STR ECRU SING,"Air shipped,Invocie sent, payment pending",,EUR
+Rich & Royal!6,Rich & Royal,6,Rich & Royal,AWTG,,2704-922,Lemonade Fizz Slouchy Denim Pants,310 Lemonade Fizz,4,38.26,,,2026-08-20,,Slouchy GR /21 STR ECRU SING,"Air shipped,Invocie sent, payment pending",,EUR
+Rich & Royal!7,Rich & Royal,7,Rich & Royal,AWTG,,2704-993,White Long Bermuda Denim Pants,100 White,11,35.76,,,2026-08-20,,Slouchy GR /21 STR ECRU SING,"Air shipped,Invocie sent, payment pending",,EUR
+Rich & Royal!8,Rich & Royal,8,Rich & Royal,AWTG,,2705-974,White Shorts with front pockets,100 White,11,30.72,,,2026-08-20,,Slouchy GR /21 STR ECRU SING,"Air shipped,Invocie sent, payment pending",,EUR
+Rich & Royal!9,Rich & Royal,9,Rich & Royal,AWTG,,2705-974,Vanilla butter Shorts with front pockets,160 Vanilla butter,4,30.72,,,2026-08-20,,Slouchy GR /21 STR ECRU SING,"Air shipped,Invocie sent, payment pending",,EUR
+Rich & Royal!10,Rich & Royal,10,Rich & Royal,AWTG,,2705-996,Bubble denim shorts,700 Light wash,11,30.66,,,2026-08-20,,OCW-ANWAR 10 RGD /WS ROYAL,"Air shipped,Invocie sent, payment pending",,EUR
+Rich & Royal!11,Rich & Royal,11,Rich & Royal,AWTG,,2703-821,Blue Peplum Denim Jacket,700 Light wash,11,63.1,,,2026-08-20,,FB1437L,"Air shipped,Invocie sent, payment pending",,EUR
+Rich & Royal!13,Rich & Royal,13,Rich & Royal,AWTG,,S2612-998,Slochy Blue Denim,700 Denim Blue,1306,20.05,,,2026-10-31,,Slochy 24 Ocean,Agreement & Business lic pending from customer,,EUR
+Rich & Royal!14,Rich & Royal,14,Rich & Royal,AWTG,,S2612-998,Slochy Blue Denim,700 Denim Blue,280,20.05,,,2026-10-31,,Slochy 24 Ocean,Agreement & Business lic pending from customer,,EUR
+Rich & Royal!15,Rich & Royal,15,Rich & Royal,AWTG,,S2612-998,Slochy Blue Denim,700 Denim Blue,17,20.05,,,2026-10-31,,Slochy 24 Ocean,Agreement & Business lic pending from customer,,EUR
+Rich & Royal!16,Rich & Royal,16,Rich & Royal,AWTG,,S2612-998,Slochy Blue Denim,700 Denim Blue,332,20.05,,,2026-10-31,,Slochy 24 Ocean,Agreement & Business lic pending from customer,,EUR
+Rich & Royal!17,Rich & Royal,17,Rich & Royal,AWTG,,S2612-998,Slochy Blue Denim,700 Denim Blue,68,20.05,,,2026-10-31,,Slochy 24 Ocean,Agreement & Business lic pending from customer,,EUR
+ZARA!3,ZARA,3,Zara,28153-D,,7513/502,KIDS DENIM PANTALON BARREL,445-GREEN BLUE,25000,7.3,,,2025-12-31,,OCF-SMOOTHIE RGD OCEAN,Shipped 9/Jan,,EUR
+ZARA!4,ZARA,4,Zara,JAN,,,,,25000,,,,,,,,,EUR
+ZARA!6,ZARA,6,Zara,37926-D,,7513/600,KIDS DENIM TOP CAPSULA RINSE E.COM,407 - DARK BLUE,5000,5.1,,,2025-02-25,,RW-DROOPY RGD ROYAL,Shipped 26/Feb,,EUR
+ZARA!7,ZARA,7,Zara,37946-D,,7513/601,KIDS DENIM VESTIDO CAPSULA RINSE E.COM,407 - DARK BLUE,5000,7,,,2025-02-25,,RW-DROOPY RGD ROYAL,Shipped 26/Feb,,EUR
+ZARA!8,ZARA,8,Zara,37933-D,,7513/604,KIDS DENIM MONO CAPSULA RINSE E.COM,407 - DARK BLUE,5000,7.62,,,2025-02-25,,RW-DROOPY RGD ROYAL,Shipped 26/Feb,,EUR
+ZARA!9,ZARA,9,Zara,41379-D,,7513/605,KIDS DENIM BERMUDA CAPSULE RINSE E. COM,407 - DARK BLUE,5000,5.5,,,2025-02-25,,RW-DROOPY RGD ROYAL,Shipped 26/Feb,,EUR
+ZARA!10,ZARA,10,Zara,52325-D,,7513/606,KIDS DENIM CAZADORA CAPSULA RINSE E.COM,407 - DARK BLUE,5000,8.45,,,2025-02-25,,RW-DROOPY RGD ROYAL,Shipped 26/Feb,,EUR
+ZARA!11,ZARA,11,Zara,52365-D,,7513/607,KIDS DENIM PANTALON CAPSULA RINSE E.COM,407 - DARK BLUE,5000,6.85,,,2025-02-25,,RW-DROOPY RGD ROYAL,Shipped 26/Feb,,EUR
+ZARA!12,ZARA,12,Zara,FEB,,,,,30000,,,,,,,,,EUR
+ZARA!13,ZARA,13,Zara,78229- D,,7513/620,KIDSA DENIM VESTIDO LAZO - Dress,Light Blue,30000,7.29,,,2025-05-13,,RW-DROOPY RGD ROYAL,shipped 13 May,,EUR
+ZARA!14,ZARA,14,Zara,78464 - D,,7513/621,KIDSA DENIM FALDA LAZO - Skirt,Light Blue,20000,6.16,,,2025-05-13,,RW-DROOPY RGD ROYAL,shipped 27 May,,EUR
+ZARA!15,ZARA,15,Zara,May,,,,,50000,,,,,,,,,EUR
+ZARA!17,ZARA,17,Zara,88718-D PRE,,7513/610,KIDSA DENIM PANTALON TIMELESS,700 Brown,3500,6.8,,,2025-07-22,,RW-DROOPY RGD Black,Shipped 15 Jul,,EUR
+ZARA!18,ZARA,18,Zara,88719-D PRE,,7513/610,KIDSA DENIM PANTALON TIMELESS,407 Dark blue,6500,6.8,,,2025-07-22,,RW-DROOPY RGD ROYAL,Shipped 15 Jul,,EUR
+ZARA!19,ZARA,19,Zara,88720-D PRE,,7513/611,KIDSA DENIM PANTALON TIMELESS,802 Gray,5000,6.8,,,2025-07-22,,RW-DROOPY RGD Black,Shipped 15 Jul,,EUR
+ZARA!20,ZARA,20,Zara,88718-D PRE,,7513/610,KIDSA DENIM PANTALON TIMELESS,700 Brown,18,6.8,,,2025-06-30,,RW-DROOPY RGD Black,Shipped 7 Jul,,EUR
+ZARA!21,ZARA,21,Zara,88719-D PRE,,7513/610,KIDSA DENIM PANTALON TIMELESS,407 Dark blue,18,6.8,,,2025-06-30,,RW-DROOPY RGD ROYAL,Shipped 7 Jul,,EUR
+ZARA!22,ZARA,22,Zara,88720-D PRE,,7513/611,KIDSA DENIM PANTALON TIMELESS,802 Gray,18,6.8,,,2025-06-30,,RW-DROOPY RGD Black,Shipped 7 Jul,,EUR
+ZARA!23,ZARA,23,Zara,88718-D PRE,,7513/610,KIDSA DENIM PANTALON TIMELESS,407 Dark blue,200,6.8,,,2025-07-22,,RW-DROOPY RGD ROYAL,Shipped 30 Jul,,EUR
+ZARA!24,ZARA,24,Zara,88719-D PRE,,7513/611,KIDSA DENIM PANTALON TIMELESS,700 Brown,145,6.8,,,2025-07-22,,RW-DROOPY RGD Black,Shipped 30 Jul,,EUR
+ZARA!25,ZARA,25,Zara,88720-D PRE,,7513/611,KIDSA DENIM PANTALON TIMELESS,802 Gray,160,6.8,,,2025-07-22,,RW-DROOPY RGD Black,Shipped 30 Jul,,EUR
+ZARA!26,ZARA,26,Zara,88719-D PRE-B,,7513/610,KIDSA DENIM PANTALON TIMELESS,407 Dark blue,2000,6.8,,,2025-08-05,,RW-DROOPY RGD ROYAL,Shipped 30 Jul,,EUR
+ZARA!27,ZARA,27,Zara,JULY Total,,,,,17559,,,,,,,,,EUR
+ZARA!29,ZARA,29,Zara,93385-D,,7513/617,KIDS DENIM PANTALON CULOTTE LACITOS,407 Dark blue,25000,6.2,,,2025-08-19,,RW-DROOPY RGD ROYAL,Shipped 19 Aug,,EUR
+ZARA!30,ZARA,30,Zara,93385-D,,7513/617,KIDS DENIM PANTALON CULOTTE LACITOS,407 Dark blue,15000,6.2,,,2025-08-25,,RW-DROOPY RGD ROYAL,Shipped 26/Aug,,EUR
+ZARA!31,ZARA,31,Zara,99205-D,,7513/617,KIDS DENIM PANTALON CULOTTE LACITOS,407 Dark blue,18,6.2,,,2025-08-15,,RW-DROOPY RGD ROYAL,Shipped 3 Aug,,EUR
+ZARA!32,ZARA,32,Zara,92286-D,,7513/560,KIDSA DENIM PANTALON TIMELESS,800 Black,6000,6.8,,,2025-08-19,,SLOUCHY RGD 06 BLACK,Shipped 19 Aug,,EUR
+ZARA!33,ZARA,33,Zara,92286-D,,7513/560,KIDSA DENIM PANTALON TIMELESS,800 Black,18,6.8,,,2025-08-15,,SLOUCHY RGD 06 BLACK,Shipped 3 Aug,,EUR
+ZARA!35,ZARA,35,Zara,S 2025,,7513/620,KIDSA DENIM VESTIDO LAZO,Light Blue,2600,7.29,,,2025-09-23,,RW-DROOPY RGD ROYAL,Shipped,,EUR
+ZARA!37,ZARA,37,Zara,59052-D,,7513/602,Shirt Dress,Rinse,22000,6.05,,,2025-10-20,,OCf-Milk Shake,Shipped on 21st Oct,,EUR
+ZARA!38,ZARA,38,Zara,64784-D,,7513/602,Shirt Dress,Rinse,18,6.05,,,2025-10-05,,OCf-Milk Shake,Shipped on 21st Oct,,EUR
+ZARA!39,ZARA,39,Zara,93385-D / 3,,7513/617,KIDS DENIM PANTALON CULOTTE LACITOS,407 Dark blue,15010,6.2,,,2025-10-28,,RW-DROOPY RGD ROYAL,Shipped on 25th of Oct,,EUR
+ZARA!41,ZARA,41,Zara,93385-D / 3,,7513/617,KIDS DENIM PANTALON CULOTTE LACITOS,407 Dark blue,15010,6.2,,,2025-11-04,,RW-DROOPY RGD ROYAL,Shipped 4th Nov,,EUR
+ZARA!42,ZARA,42,Zara,TBA,,7513/617,KIDS DENIM PANTALON CULOTTE LACITOS,407 Dark blue,15000,6.2,,,2025-11-11,,RW-DROOPY RGD ROYAL,Shipped on 11th Nov and 18th Nov,,EUR
+ZARA!44,ZARA,44,Zara,29766-D,,7513/601,D-BARREL LEG PANT,07 - DARK BLUE,3000,8.3,,,2025-12-30,,SLOUCHY RGD 06 Royal,Shipped on 30th Dec,,EUR
+ZARA!50,ZARA,50,Zara,93385-D / 4,,7513/617,KIDS DENIM PANTALON CULOTTE LACITOS,407 Dark blue,10000,6.2,,,2026-05-01,,RW-DROOPY RGD ROYAL,Shipped on 6th Jan 26,,EUR
+ZARA!52,ZARA,52,Zara,56570-D,,7513/603,D - SPECIAL BALLOON PANT (E) ASIA,400 BLUE,3019,9,,,2026-03-15,,KAYAK RGD,Shipped on 17 March,,EUR
+ZARA!53,ZARA,53,Zara,31253-25,,7513/617,KIDS DENIM PANTALON CULOTTE LACITOS,407 Dark blue,3100,6.2,,,2026-03-18,,RW-DROOPY RGD ROYAL,Shipped on 17 March,,EUR
+ZARA!55,ZARA,55,Zara,58171-D,,7513/600,D - CROCHET PATCH SHORTS,406 - LIGHTBLUE,26260,8,,,2026-03-30,,Smoothie RGD ROYAL,23748 Pcs alreday shipped on 14 April 1796 pcs shipped on 21 April total shipped qty is 25544 Pcs,,EUR
+ZARA!57,ZARA,57,Zara,34487-25,,7513/617/407,KIDS DENIM PANTALON CULOTTE LACITOS,407 Dark blue,3100,6.2,,,2026-06-25,,RW-DROOPY RGD ROYAL,"Shipped out on 25th June,3223 pcs",,EUR
+ZARA!59,ZARA,59,Zara,93502-D,,7513/700,D- BURGUNDY STUDS SKORT,681 - BURGUNDY,19,8.4,,,2026-07-25,,W-BAY BLACK OD BLC,"Final PO received,Fabric ordered , Proto sample approved for wash, 2 studs approved, stone approval pending.Thread approval pending - Stud apprvl- 30-Jun/ Stone appvl 14-Jul/",,EUR
+ZARA!60,ZARA,60,Zara,29878 - D/1,,7513/005,KIDSA DENIM PANTALON LAZO AZUL,400-BLUE,5216,5.85,,,2026-04-08,,OR-DROOPY OCEAN BLUE,5216 pcs del.,,EUR
+ZARA!61,ZARA,61,Zara,29878 - D/2,,7513/005,KIDSA DENIM PANTALON LAZO AZUL,400-BLUE,12500,5.85,,,2026-08-18,,OR-DROOPY OCEAN BLUE,Dispatched,,EUR
+ZARA!62,ZARA,62,Zara,29878 - D/3,,7513/005,KIDSA DENIM PANTALON LAZO AZUL,400-BLUE,7500,5.85,,,2026-08-25,,OR-DROOPY OCEAN BLUE,Dispatched. 7373 pcs,,EUR
+ZARA!63,ZARA,63,Zara,77837-D,,7513/001,KIDSA DENIM PANTALON DENIM TAPERED,Black 800,4000,6.69,,,2026-08-18,,SLOUCHY 06 BLACK,Final PO Rec. Fabric X-mill 18th June. SGS Test results awtd 18-Aug. Dispatched,,EUR
+ZARA!64,ZARA,64,Zara,77837-D,,7513/001,KIDSA DENIM PANTALON DENIM TAPERED,Black 800,18,6.69,,,2026-03-08,,SLOUCHY 06 BLACK,Dispatched,,EUR
+ZARA!66,ZARA,66,Zara,73103-25,,7513/600,D - CROCHET PATCH SHORTS,406 - LIGHTBLUE,2400,8,,,2026-08-15,,Smoothie RGD ROYAL,"Extension approved for 23/08.Crotch patch expected 19-Aug, Unitex label and tags reached Cairo on 16th Aug, Exp IH by 17th Aug, Metal trims EIH 20th Aug.Cardboard EIH by 19th Aug.Final ext recd 02-Sep. Delay in patch delivery",,EUR
+ZARA!67,ZARA,67,Zara,93478-D,,7513/700,D- BURGUNDY STUDS SKORT,681 - BURGUNDY,15000,8.4,,,2026-08-15,,W-BAY BLACK OD BLC,"Fab (W Denim) ready dt 22nd June, fabric ready dt slid to 29th June Bulk fab i/h 12-Aug. Ready stud sheets i/h by 20-Aug. Extension requested. Lead found in garments. On hold. Passed test . Shipment done",,EUR
+ZARA!69,ZARA,69,Zara,29878 - D/4,,7513/005,KIDSA DENIM PANTALON LAZO AZUL,400-BLUE,15000,5.85,,,2026-10-26,,OR-DROOPY OCEAN BLUE,Early shipment,,EUR
+ZARA!71,ZARA,71,Zara,60288- D,,7513/002,KIDSA DENIM PANTALON FALDA RINSE 31/12,407- DARK BLUE,18,5.7,,,2026-11-23,,OR-DROOPY OCEAN BLUE,,,EUR
+ZARA!72,ZARA,72,Zara,60287- D,,7513/003,KIDSA DENIM PETO RINSE LAZOS COLE VICHYS 31/12,407- DARK BLUE,18,6.53,,,2026-11-23,,OR-DROOPY OCEAN BLUE,,,EUR
+ZARA!73,ZARA,73,Zara,29878 - D/5,,7513/005,KIDSA DENIM PANTALON LAZO AZUL,400 - BLUE,8000,5.85,,,2026-11-30,,OR-DROOPY OCEAN BLUE,,,EUR
+ZARA!75,ZARA,75,Zara,58692- D,,7513/002,KIDSA DENIM PANTALON FALDA RINSE 31/12,407- DARK BLUE,25000,5.7,,,2026-08-12,,OR-DROOPY OCEAN BLUE,,,EUR
+ZARA!76,ZARA,76,Zara,58698- D,,7513/003,KIDSA DENIM PETO RINSE LAZOS COLE VICHYS 31/12,407- DARK BLUE,25000,6.53,,,2026-08-12,,OR-DROOPY OCEAN BLUE,,,EUR
+ZARA!77,ZARA,77,Zara,48173-D PRE,,7513/005,KIDSA DENIM PANTALON LAZO AZUL,400-BLUE,5000,5.85,,,2026-06-12,,OR-DROOPY OCEAN BLUE,Buyer requested deducting from 10k to 5k,,EUR
+ZARA!78,ZARA,78,Zara,63901- D,,7513/004,KIDS-A DENIM PANT OVERDYE GANG 05/02,400- BLUE,18,6.29,,,2026-12-27,,RRG-SLOUCHY 06 OCEAN,,,EUR
+ZARA!81,ZARA,81,Zara,59619- D,,7513/004,KIDS-A DENIM PANT OVERDYE GANG 05/02,400- BLUE,25000,6.29,,,2027-11-01,,RRG-SLOUCHY 06 OCEAN,,,EUR
+ZARA!92,ZARA,92,Zara,59619- D,,,YOY growth,,0.1036342457,,,,,,,,,EUR
+Epic-walmart!3,Epic-walmart,3,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Dark Wash with Tint and Whiskers,49000,8.75,,,2025-09-01,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!4,Epic-walmart,4,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Med Wash,,8.75,,,2025-09-01,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!5,Epic-walmart,5,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Light Wash with no Whiskers,,8.75,,,2025-09-01,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!6,Epic-walmart,6,Epic-walmart,Awaiting,,,BLACK,Rinse Wash,24500,8.75,,,2025-09-01,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!11,Epic-walmart,11,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Dark Wash with Tint and Whiskers,73500,8.75,,,2025-09-15,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!12,Epic-walmart,12,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Med Wash,,8.75,,,2025-09-15,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!13,Epic-walmart,13,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Light Wash with no Whiskers,,8.75,,,2025-09-15,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!21,Epic-walmart,21,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Dark Wash with Tint and Whiskers,73500,8.75,,,2025-10-01,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!22,Epic-walmart,22,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Med Wash,,8.75,,,2025-10-01,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!23,Epic-walmart,23,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Light Wash with no Whiskers,,8.75,,,2025-10-01,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!28,Epic-walmart,28,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Dark Wash with Tint and Whiskers,73500,8.75,,,2025-10-15,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!29,Epic-walmart,29,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Med Wash,,8.75,,,2025-10-15,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!30,Epic-walmart,30,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Light Wash with no Whiskers,,8.75,,,2025-10-15,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!37,Epic-walmart,37,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Dark Wash with Tint and Whiskers,73500,8.75,,,2025-11-01,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!38,Epic-walmart,38,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Med Wash,,8.75,,,2025-11-01,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!39,Epic-walmart,39,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Light Wash with no Whiskers,,8.75,,,2025-11-01,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!43,Epic-walmart,43,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Dark Wash with Tint and Whiskers,73500,8.75,,,2025-11-15,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!44,Epic-walmart,44,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Med Wash,,8.75,,,2025-11-15,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!45,Epic-walmart,45,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Light Wash with no Whiskers,,8.75,,,2025-11-15,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!46,Epic-walmart,46,Epic-walmart,Awaiting,,,BLACK,Rinse Wash,24500,8.75,,,2025-11-15,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!53,Epic-walmart,53,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Dark Wash with Tint and Whiskers,73500,8.75,,,2025-12-01,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!54,Epic-walmart,54,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Med Wash,,8.75,,,2025-12-01,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!55,Epic-walmart,55,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Light Wash with no Whiskers,,8.75,,,2025-12-01,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!59,Epic-walmart,59,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Dark Wash with Tint and Whiskers,73500,8.75,,,2025-12-15,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!60,Epic-walmart,60,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Med Wash,,8.75,,,2025-12-15,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!61,Epic-walmart,61,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Light Wash with no Whiskers,,8.75,,,2025-12-15,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!66,Epic-walmart,66,Epic-walmart,2025 - TOTAL,,,,,612500,,,,,,,,,
+Epic-walmart!70,Epic-walmart,70,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Dark Wash with Tint and Whiskers,73500,8.75,,,2026-01-01,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!71,Epic-walmart,71,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Med Wash,,8.75,,,2026-01-01,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!72,Epic-walmart,72,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Light Wash with no Whiskers,,8.75,,,2026-01-01,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!77,Epic-walmart,77,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Dark Wash with Tint and Whiskers,73500,8.75,,,2026-01-15,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!78,Epic-walmart,78,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Med Wash,,8.75,,,2026-01-15,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!79,Epic-walmart,79,Epic-walmart,Awaiting,,WSCM-115-2024,STRAIGHT FIT DENIM,Light Wash with no Whiskers,,8.75,,,2026-01-15,,Surialaxmi Denim 98% CO + 2% EA,,,
+Epic-walmart!84,Epic-walmart,84,Epic-walmart,2026 - TOTAL,,,,,147000,,,,,,,,,
+Silver Jeans!4,Silver Jeans,4,Silver Jeans,1010561-001,,M33314EPK285,MEN'S WOVEN DENIM PANT CVC,GRAYSON/INDIGO,228,18.65,,2026-02-03,2026-02-03,,A0029V1,"Shipped out 105 units by FOB Air mode, 655 pcs sent by Sea mode, Payment awtg",,USD
+Silver Jeans!5,Silver Jeans,5,Silver Jeans,1010561-001,,M33314EPK285,MEN'S WOVEN DENIM PANT CVC,GRAYSON/INDIGO,351,18.65,,2026-02-03,2026-02-03,,A0029V1,"Shipped out 105 units by FOB Air mode, 655 pcs sent by Sea mode, Payment awtg",,USD
+Silver Jeans!6,Silver Jeans,6,Silver Jeans,1010561-001,,M33314EPK285,MEN'S WOVEN DENIM PANT CVC,GRAYSON/INDIGO,189,18.65,,2026-02-03,2026-02-03,,A0029V1,"Shipped out 105 units by FOB Air mode, 655 pcs sent by Sea mode, Payment awtg",,USD
+Silver Jeans!7,Silver Jeans,7,Silver Jeans,1010561-002,,M33314EPK285,MEN'S WOVEN DENIM PANT CVC,GRAYSON/INDIGO,10,18.65,,2026-02-03,2026-02-03,,A0029V1,"Ready to ship, 11th May flight",,USD
+Silver Jeans!8,Silver Jeans,8,Silver Jeans,1010561-002,,M33314EPK285,MEN'S WOVEN DENIM PANT CVC,GRAYSON/INDIGO,13,18.65,,2026-02-03,2026-02-03,,A0029V1,"Ready to ship, 11th May flight",,USD
+Silver Jeans!9,Silver Jeans,9,Silver Jeans,1010561-002,,M33314EPK285,MEN'S WOVEN DENIM PANT CVC,GRAYSON/INDIGO,9,18.65,,2026-02-03,2026-02-03,,A0029V1,"Ready to ship, 11th May flight",,USD
+Redback!3,Redback,3,Redback,3202-634,,W24-D401,Casual Stretch Straight,Light Blue,1000,14.5,,2025-10-30,2026-02-28,,Tehome R368T,"1025 pcs Ready to ship since 26th Feb, shipped out on 19th Mar",,USD
+Redback!4,Redback,4,Redback,3202-634,,W24-D401,Casual Stretch Straight,Med Blue,1000,14.41,,2025-10-30,2026-02-28,,Tehome R368T,"1020 pcs Ready to ship since 26th Feb, shipped out on 19th march",,USD
+Redback!5,Redback,5,Redback,3202-634,,W24-D401,Casual Stretch Straight,Dark Blue,1000,14.07,,2025-10-30,2026-02-28,,ST22341F-6,"1048 pcs Ready to ship since 26th Feb, Shipped out on 19th mar",,USD
+Redback!6,Redback,6,Redback,3202-634,,W24-D401,Casual Stretch Straight,Grey,1000,14.05,,2025-10-30,2026-02-28,,Boom Blk,"Wash change.DD moved out - 881 pcs Ready on 26th March, shipped out on 19th Mar",,USD
+Redback!7,Redback,7,Redback,3202-634,,W24-D401,Casual Stretch Straight,Black,1000,13.96,,2025-10-30,2026-02-28,,Boom Blk / Blk,"1049 pcs Ready to ship since 26th Feb,shipped out on 19th March",,USD
+Redback!8,Redback,8,Redback,3202-634,,W24-D400,Multi Stretch Slim,Light Blue,1000,14.23,,2025-10-30,2026-02-28,,Tehome R368T,"1022 pcs Ready to ship since 26th Feb, shipped out on 19th Mar",,USD
+Redback!9,Redback,9,Redback,3202-634,,W24-D400,Multi Stretch Slim,Med Blue,1000,14.11,,2025-10-30,2026-02-28,,Tehome R368T,"1020 pcs Ready to ship since 26th Feb, Shipped out on 19th Mar",,USD
+Redback!10,Redback,10,Redback,3202-634,,W24-D400,Multi Stretch Slim,Dark Blue,1000,13.71,,2025-10-30,2026-02-28,,ST22341F-6,"1050 pcs Ready to ship since 26th Feb, Shipped out on 19th Mar",,USD
+Redback!11,Redback,11,Redback,3202-634,,W24-D400,Multi Stretch Slim,Grey,1000,13.72,,2025-10-30,2026-02-28,,Boom Blk,"Wash change.DD moved out - 1021 pcs Ready on 26th March, Shipped out on 19th Mar",,USD
+Redback!12,Redback,12,Redback,3202-634,,W24-D400,Multi Stretch Slim,Black,1000,13.62,,2025-10-30,2026-02-28,,Boom Blk / Blk,"1050 pcs Ready to ship since 26th Feb, Shipped out on 19th Mar",,USD
+Versace!4,Versace,4,Versace,OCL25-004107,,79HAB5K1 79DP500 CDWAC,Women's Style c skinny Crystal,Rinse Wash,1000,12.81,,2025-06-15,2025-07-10,,Walker STR Ocean,Shipped 16/Jul,,EUR
+Versace!5,Versace,5,Versace,OCL25-004107,,79GAB5K0 79UP504 CDW 02,Men's Style c Skinny Sky,Rinse Wash,1000,12.88,,2025-06-15,2025-07-10,,Walker STR Ocean,Shipped 16/Jul,,EUR
+Versace!6,Versace,6,Versace,OCL25-004107,,79HAB581 79DP508 CDWAC,Women's Style c skinny Crystal m.plate,Light Wash with Whiskers,1000,16.14,,2025-06-15,2025-07-10,,Walker STR Ocean,Shipped 16/Jul,,EUR
+Versace!7,Versace,7,Versace,OCL25-004107,,79GAB5S0 79UP500 CDWAC,Men's Style c slim Milano,Light Wash with Whiskers,1000,15.09,,2025-06-15,2025-07-10,,Walker STR Ocean,Shipped 16/Jul.,,EUR
+Versace!10,Versace,10,Versace,OCL25-012971,,79HAB5K1 79DP500 CDWAC,Women's Style c skinny Crystal,Rinse Wash,1000,12.81,,2026-01-08,2026-03-11,,Walker STR Ocean,"1011 pcs Shipped on 11th March, LC payment awtg",,EUR
+Versace!11,Versace,11,Versace,OCL25-012971,,79GAB5K0 79UP504 CDW 02,Men's Style c Skinny Sky,Rinse Wash,1000,12.88,,2026-01-08,2026-03-11,,Walker STR Ocean,"1013 pcs Shipped on 11th March, LC payment awtg",,EUR
+Versace!12,Versace,12,Versace,OCL25-012971,,79HAB581 79DP508 CDWAC,Women's Style c skinny Crystal m.plate,Light Wash with Whiskers,1000,16.14,,,2026-03-11,,Walker STR Ocean,"962 pcs Shipped on 11th March, LC payment awtg",,EUR
+Versace!13,Versace,13,Versace,OCL25-012971,,79GAB5S0 79UP500 CDWAC,Men's Style c slim Milano,Light Wash with Whiskers,1000,15.09,,,2026-03-11,,Walker STR Ocean,"978 pcs Shipped on 11th March, LC payment awtg",,EUR
+AEO!3,AEO,3,AEO,1195776,,5418,HIGH RISE JEGGING,950 INDIGO ABYSS,200,9.7,,,2025-12-25,,KEATON E,Shipped 4/Jan,,USD
+AEO!4,AEO,4,AEO,1195785,,5419,HIGH RISE JEGGING,982 DARK CERULEAN,200,9.7,,,2025-12-25,,KEATON E,Shipped 4/Jan,,USD
+AEO!5,AEO,5,AEO,1195777,,5418,HIGH RISE JEGGING,950 INDIGO ABYSS,1300,10,,,2025-12-25,,KEATON E,Shipped 4/Jan,,USD
+AEO!6,AEO,6,AEO,1195775,,5418,HIGH RISE JEGGING,950 INDIGO ABYSS,750,9.7,,,2025-12-25,,KEATON E,Shipped 4/Jan,,USD
+AEO!7,AEO,7,AEO,1195906,,5419,HIGH RISE JEGGING,982 DARK CERULEAN,700,9.7,,,2025-12-25,,KEATON E,Shipped 4/Jan,,USD
+AEO!8,AEO,8,AEO,1195784,,5419,HIGH RISE JEGGING,982 DARK CERULEAN,750,9.7,,,2025-12-25,,KEATON E,Shipped 4/Jan,,USD
+AEO!9,AEO,9,AEO,1197820,,5418,HIGH RISE JEGGING,950 INDIGO ABYSS,1000,10,,,2025-12-25,,KEATON E,Shipped 4/Jan,,USD
+AEO!10,AEO,10,AEO,1197814,,5419,HIGH RISE JEGGING,982 DARK CERULEAN,1000,10,,,2025-12-25,,KEATON E,Shipped 4/Jan,,USD
+AEO!11,AEO,11,AEO,1203979,,5419,HIGH RISE JEGGING,982 DARK CERULEAN,5000,10,,,2025-12-25,,KEATON E,Shipped 4/Jan,,USD
+AEO!12,AEO,12,AEO,Jan Sub Total,,,,,10900,,,,,,,,,USD
+AEO!14,AEO,14,AEO,1197821,,5418,HIGH RISE JEGGING,950 INDIGO ABYSS,1000,10,,,2025-01-15,,KEATON E,Shipped Feb,,USD
+AEO!15,AEO,15,AEO,1197815,,5419,HIGH RISE JEGGING,982 DARK CERULEAN,1000,10,,,2025-01-15,,KEATON E,Shipped Feb,,USD
+AEO!16,AEO,16,AEO,1211074,,5418,HIGH RISE JEGGING,950 INDIGO ABYSS,5000,10,,,2025-02-15,,KEATON E,,,USD
+AEO!17,AEO,17,AEO,1202197,,5419,HIGH RISE JEGGING,982 DARK CERULEAN,278,9.7,,,2025-02-10,,KEATON E,Shipped Feb,,USD
+AEO!18,AEO,18,AEO,1202404,,5419,HIGH RISE JEGGING,982 DARK CERULEAN,967,9.7,,,2025-02-10,,KEATON E,Shipped Feb,,USD
+AEO!19,AEO,19,AEO,1203815,,5419,HIGH RISE JEGGING,982 DARK CERULEAN,121,9.7,,,2025-02-10,,KEATON E,Shipped Feb,,USD
+AEO!20,AEO,20,AEO,1208071,,5419,HIGH RISE JEGGING,982 DARK CERULEAN,1500,10,,,2025-02-12,,KEATON E,Shipped Feb,,USD
+AEO!21,AEO,21,AEO,FEB Sub Total,,,,,9866,,,,,,,,,USD
+AEO!23,AEO,23,AEO,1208115,,5419,HIGH RISE JEGGING,982 DARK CERULEAN,400,9.7,,,2025-03-12,,KEATON E,Shipped Feb,,USD
+AEO!24,AEO,24,AEO,MAR Sub Total,,,,-,400,,,,,,,,,USD
+AEO!25,AEO,25,AEO,1243995,,5418,HIGH RISE JEGGING,950 INDIGO ABYSS,2000,10,,,2025-05-21,,KEATON E,Shipped 21/May,,USD
+AEO!26,AEO,26,AEO,1244004,,5419,HIGH RISE JEGGING,982 DARK CERULEAN,1200,10,,,2025-05-21,,KEATON E,Shipped 21/May,,USD
+AEO!27,AEO,27,AEO,1243992,,5418,HIGH RISE JEGGING,950 INDIGO ABYSS,300,9.7,,,2025-05-21,,KEATON E,Shipped 11/June,,USD
+AEO!28,AEO,28,AEO,1244003,,5419,HIGH RISE JEGGING,982 DARK CERULEAN,320,9.7,,,2025-05-21,,KEATON E,Shipped 11/June,,USD
+AEO!29,AEO,29,AEO,Apr sub Total,,,,,3820,,,,,,,,,USD
+AEO!30,AEO,30,AEO,1243996,,5418,HIGH RISE JEGGING,950 INDIGO ABYSS,5300,10,,,2025-05-21,,KEATON E,Shipped 21/May,,USD
+AEO!31,AEO,31,AEO,1244005,,5419,HIGH RISE JEGGING,982 DARK CERULEAN,4200,10,,,2025-05-21,,KEATON E,Shipped 21/May,,USD
+AEO!32,AEO,32,AEO,1243993,,5418,HIGH RISE JEGGING,950 INDIGO ABYSS,300,9.7,,,2025-05-21,,KEATON E,Shipped 11/June,,USD
+AEO!33,AEO,33,AEO,May Sub Total,,,,,9800,,,,,,,,,USD
+AEO!35,AEO,35,AEO,1250842,,5418,HR Jegging,950 INDIGO ABYSS,3300,10,,,2025-06-16,,KEATON E,Shipped 2/Jul,,USD
+AEO!36,AEO,36,AEO,1250841,,5418,HR Jegging,950 INDIGO ABYSS,300,9.7,,,2025-06-16,,KEATON E,Shipped 2/Jul,,USD
+AEO!37,AEO,37,AEO,1252039,,5419,HR Jegging,950 INDIGO ABYSS,3000,10,,,2025-06-16,,KEATON E,Shipped 2/Jul,,USD
+AEO!38,AEO,38,AEO,1250849,,5419,HR Jegging,950 INDIGO ABYSS,180,9.7,,,2025-06-16,,KEATON E,Shipped 2/Jul,,USD
+AEO!40,AEO,40,AEO,1252035,,5418,HR Jegging,982 DARK CERULEAN,210,9.7,,,2025-06-18,,KEATON E,Shipped 2/Jul,,USD
+AEO!41,AEO,41,AEO,1252036,,5418,HR Jegging,982 DARK CERULEAN,2100,10,,,2025-06-18,,KEATON E,Shipped 2/Jul,,USD
+AEO!42,AEO,42,AEO,1252038,,5419,HR Jegging,982 DARK CERULEAN,185,9.7,,,2025-06-18,,KEATON E,Shipped 2/Jul,,USD
+AEO!43,AEO,43,AEO,1252037,,5418,HR Jegging,982 DARK CERULEAN,1400,9.7,,,2025-06-25,,KEATON E,Shipped 14/Jul,,USD
+AEO!44,AEO,44,AEO,June total,,,,,10675,,,,,,,,,USD
+DNMpure!5,DNMpure,5,DNMpure,P2500107,,BROOME,denim gilet,Snow blue,125,27.41,,,2025-03-26,,Slouchy 06 Ocean,Shipped,,EUR
+DNMpure!6,DNMpure,6,DNMpure,P2500107,,PRINCE,cooper pleated shorts,Mid Blue,203,25.49,,,2025-03-26,,Abeba Str Royal,Shipped,,EUR
+DNMpure!7,DNMpure,7,DNMpure,P2500107,,W.BROADWAY,cooper cropped,L.blue marble,216,27.26,,,2025-03-26,,Slouchy 22 Ocean,Shipped,,EUR
+DNMpure!8,DNMpure,8,DNMpure,P2500107,,FLY.FL,Flynn (flap),White,326,28.1,,,2025-03-26,,Advance-QA196-35WL,Shipped,,EUR
+DNMpure!9,DNMpure,9,DNMpure,P2500107,,HOL.BA,HOLDEN BASE,Sand,271,26.33,,,2025-03-26,,Ultraskin Pfd,Shipped,,EUR
+DNMpure!10,DNMpure,10,DNMpure,P2500107,,,,,1141,,,,,,,,,EUR
+DNMpure!11,DNMpure,11,DNMpure,P2500107,,FLY.FL,Flynn (flap),Light Blue,501,28.24,,,2025-04-11,,R368T,Shipped,,EUR
+DNMpure!12,DNMpure,12,DNMpure,P2500107,,GRAND,jacky jacket,Mid Blue,187,34.13,,,2025-04-11,,Abeba Str Royal,Shipped,,EUR
+DNMpure!13,DNMpure,13,DNMpure,P2500107,,GRAND LONG,10% long body & sleeves,Mid Blue,79,34.15,,,2025-04-11,,Abeba Str Royal,Shipped,,EUR
+DNMpure!14,DNMpure,14,DNMpure,P2500107,,HOUSTON,carter,Mid Blue,503,26.11,,,2025-04-11,,Martina W Ocean,Shipped,,EUR
+DNMpure!15,DNMpure,15,DNMpure,P2500107,,SIXTH AV.,Holden,Light Blue,275,27.86,,,2025-04-11,,Abeba Str Royal,Shipped,,EUR
+DNMpure!16,DNMpure,16,DNMpure,P2500107,,WOOSTER,cooper lace,Dirty blue,587,26.84,,,2025-04-11,,Abeba Str Royal,Shipped,,EUR
+DNMpure!17,DNMpure,17,DNMpure,P2500109,,NOS - COOPER,COOPER,Vintage dark blue,340,24.97,,,2025-04-11,,Slouchy 24 Ocean,Shipped,,EUR
+DNMpure!18,DNMpure,18,DNMpure,P2500109,,NOS - COOPER,COOPER,Mid Blue,340,24.73,,,2025-04-11,,Slouchy 24 Ocean,Shipped,,EUR
+DNMpure!19,DNMpure,19,DNMpure,P2500109,,NOS - COOPER,COOPER,Light Blue,340,24.97,,,2025-04-11,,Slouchy 24 Ocean,Shipped,,EUR
+DNMpure!20,DNMpure,20,DNMpure,P2500109,,NOS - COOPER,COOPER,Grey-ish,340,25.25,,,2025-04-11,,Slouchy 24 Anthra/Platinum/Black,Shipped,,EUR
+DNMpure!21,DNMpure,21,DNMpure,P2500109,,,,,3492,,,,,,,,,EUR
+DNMpure!23,DNMpure,23,DNMpure,P2500109,,,,,4633,,,,,,,,,EUR
+Scalper!3,Scalper,3,Scalper,SC/PO/2024-C000- 24959,,58654,CULOTTE QUES DENIM PANT SS25,BLEACH+DYE,900,18.5,,,,,CALIK NAIROBI NESTA BLUE,,,EUR
+Scalper!4,Scalper,4,Scalper,SC/PO/2024-C000- 24960,,58654,CULOTTE QUES DENIM PANT SS25,BLEACH+DYE,54,18.5,,,,,CALIK NAIROBI NESTA BLUE,,,EUR
+Scalper!5,Scalper,5,Scalper,SC/PO/2024-C000- 24961,,59768,QUES CORSE DENIM TOP SS25,BLEACH+DYE,400,14,,,,,CALIK NAIROBI NESTA BLUE,,,EUR
+Scalper!6,Scalper,6,Scalper,SC/PO/2024-C000- 24961,,59768,QUES CORSE DENIM TOP SS25,BLEACH+DYE,34,14,,,,,CALIK NAIROBI NESTA BLUE,,,EUR
+FRAME!3,FRAME,3,FRAME,2314300,,LSLS238,LE SLEEK STRAIGHT PANT,WHT,1700,20.48,,,2025-01-31,,Orta 1941A-50,,,USD
+FRAME!4,FRAME,4,FRAME,TBA,,LSP238,LE SLIM PALAZZO PANT,WHT,3000,18.6,,,2025-01-31,,Orta 1941A-50,,,USD
+FRAME!5,FRAME,5,FRAME,JAN SUB TOTAL,,,,,4700,,,,,,,,,USD
+FRAME!6,FRAME,6,FRAME,2245000,,OPLCMRA403,LE CROP MINI BOOT PANT,ACLR,5000,18.49,,,2025-04-03,,ISKO TK4315,,,USD
+FRAME!7,FRAME,7,FRAME,FEB SUB TOTAL,,,,,5000,,,,,,,,,USD
+GERRY WEBER!3,GERRY WEBER,3,GERRY WEBER,0015-012530,,925050-66930,Pants jeans long,509568/ olive green,1163,15.95,,,2025-12-26,,sharabatiultra skin /85,SHIPPED,,EUR
+GERRY WEBER!4,GERRY WEBER,4,GERRY WEBER,0015-012530,,925050-66930,Pants jeans long,905508/ beige,572,15.95,,,2025-12-26,,sharabatiultra skin /85,SHIPPED,,EUR
+GERRY WEBER!5,GERRY WEBER,5,GERRY WEBER,0015-012536,,925051-66930,Pants jeans long,509568/ olive green,1413,15.95,,,2025-12-26,,sharabatiultra skin /85,SHIPPED,,EUR
+GERRY WEBER!6,GERRY WEBER,6,GERRY WEBER,0015-012536,,925051-66930,Pants jeans long,905508/ beige,1262,15.95,,,2025-12-26,,sharabatiultra skin /85,SHIPPED,,EUR
+GERRY WEBER!7,GERRY WEBER,7,GERRY WEBER,0015-012550,,925061-66930,Pants jeans long,905508/ beige,362,15.95,,,2025-12-26,,sharabatiultra skin /85,SHIPPED,,EUR
+GERRY WEBER!8,GERRY WEBER,8,GERRY WEBER,0015-012563,,925085-66839,Pants jeans long,858002/ Med Indigo,965,17.5,,,2025-12-26,,ORTA 51006A,SHIPPED,,EUR
+GERRY WEBER!9,GERRY WEBER,9,GERRY WEBER,0015-012563,,925085-66839,Pants jeans long,864002/ Dk indigo,1276,17.5,,,2025-12-26,,ORTA 51006A,SHIPPED,,EUR
+GERRY WEBER!10,GERRY WEBER,10,GERRY WEBER,0015-012567,,925086-66839,Pants jeans long,858002/ Med Indigo,659,16.3,,,2025-12-26,,ORTA 51006A,SHIPPED,,EUR
+GERRY WEBER!11,GERRY WEBER,11,GERRY WEBER,0015-012567,,925086-66839,Pants jeans long,864002/ Dk indigo,1282,16.3,,,2025-12-26,,ORTA 51006A,SHIPPED,,EUR
+GERRY WEBER!12,GERRY WEBER,12,GERRY WEBER,0015-012096,,520223-66932,Shortend jeans Trousers,853002/ Med Indigo,1145,16,,,2025-01-26,,cabri ocean,SHIPPED,,EUR
+GERRY WEBER!13,GERRY WEBER,13,GERRY WEBER,0015-012531,,925050-66930,Pants jeans long,99600/ white,637,15.95,,,2025-12-06,,sharabatiultra skin /85,SHIPPED,,EUR
+GERRY WEBER!14,GERRY WEBER,14,GERRY WEBER,0015-012531,,925050-66930,Pants jeans long,509568/ olive green,1695,15.95,,,2025-12-06,,sharabatiultra skin /85,SHIPPED,,EUR
+GERRY WEBER!15,GERRY WEBER,15,GERRY WEBER,0015-012531,,925050-66930,Pants jeans long,905508/ beige,835,15.95,,,2025-12-06,,sharabatiultra skin /85,SHIPPED,,EUR
+GERRY WEBER!16,GERRY WEBER,16,GERRY WEBER,0015-012537,,925051-66930,Pants jeans long,99600/ white,1415,15.95,,,2025-12-06,,sharabatiultra skin /85,SHIPPED,,EUR
+GERRY WEBER!17,GERRY WEBER,17,GERRY WEBER,0015-012537,,925051-66930,Pants jeans long,509568/ olive green,1313,15.95,,,2025-12-06,,sharabatiultra skin /85,SHIPPED,,EUR
+GERRY WEBER!18,GERRY WEBER,18,GERRY WEBER,0015-012537,,925051-66930,Pants jeans long,905508/ beige,1537,15.95,,,2025-12-06,,sharabatiultra skin /85,SHIPPED,,EUR
+GERRY WEBER!19,GERRY WEBER,19,GERRY WEBER,0015-012551,,925061-66930,Pants jeans long,99600/ white,556,15.95,,,2025-12-06,,sharabatiultra skin /85,SHIPPED,,EUR
+GERRY WEBER!20,GERRY WEBER,20,GERRY WEBER,0015-012551,,925061-66930,Pants jeans long,905508/ beige,985,15.95,,,2025-12-06,,sharabatiultra skin /85,SHIPPED,,EUR
+GERRY WEBER!21,GERRY WEBER,21,GERRY WEBER,0015-012564,,925085-66839,Pants jeans long,858002/ Med Indigo,646,17.5,,,2025-01-01,,ORTA 51006A,SHIPPED,,EUR
+GERRY WEBER!22,GERRY WEBER,22,GERRY WEBER,0015-012564,,925085-66839,Pants jeans long,864002/ Dk indigo,816,17.5,,,2025-01-01,,ORTA 51006A,SHIPPED,,EUR
+GERRY WEBER!23,GERRY WEBER,23,GERRY WEBER,0015-012568,,925086-66839,Pants jeans long,858002/ Med Indigo,228,16.3,,,2025-01-01,,ORTA 51006A,SHIPPED,,EUR
+GERRY WEBER!24,GERRY WEBER,24,GERRY WEBER,0015-012568,,925086-66839,Pants jeans long,864002/ Dk indigo,1251,16.3,,,2025-01-01,,ORTA 51006A,SHIPPED,,EUR
+GERRY WEBER!25,GERRY WEBER,25,GERRY WEBER,0015-012072,,520029-31634,Shortened leisure pant,50128/green,671,18,,,2025-01-20,,bossa gold verleen /light pfd,Cancelled,,EUR
+GERRY WEBER!26,GERRY WEBER,26,GERRY WEBER,0015-012072,,520029-31634,Shortened leisure pant,80899/ Sky Blue,2477,18,,,2025-01-20,,bossa gold verleen /light pfd,45705,,EUR
+GERRY WEBER!27,GERRY WEBER,27,GERRY WEBER,0015-012072,,520029-31634,Shortened leisure pant,99700/ White,1841,18,,,2025-01-20,,bossa gold verleen /light pfd,SHIPPED,,EUR
+GERRY WEBER!28,GERRY WEBER,28,GERRY WEBER,0015-012125,,530017-31634,Jacket Denim,50128/green,653,23.5,,,2025-01-25,,bossa gold verleen /light pfd,Cancelled,,EUR
+GERRY WEBER!29,GERRY WEBER,29,GERRY WEBER,0015-012125,,530017-31634,Jacket Denim,80899/ Sky Blue,1403,23.5,,,2025-01-25,,bossa gold verleen /light pfd,45715,,EUR
+GERRY WEBER!30,GERRY WEBER,30,GERRY WEBER,0015-012532,,925050-66930,Pants jeans long,99600/ white,582,15.95,,,2025-01-12,,sharabatiultra skin /85,SHIPPED,,EUR
+GERRY WEBER!31,GERRY WEBER,31,GERRY WEBER,0015-012532,,925050-66930,Pants jeans long,509568/ olive green,50,15.95,,,2025-01-12,,sharabatiultra skin /85,SHIPPED,,EUR
+GERRY WEBER!32,GERRY WEBER,32,GERRY WEBER,0015-012532,,925050-66930,Pants jeans long,905508/ beige,106,15.95,,,2025-12-27,,sharabatiultra skin /85,SHIPPED,,EUR
+GERRY WEBER!33,GERRY WEBER,33,GERRY WEBER,0015-012538,,925051-66930,Pants jeans long,99600/ white,1075,15.95,,,2025-01-12,,sharabatiultra skin /85,SHIPPED,,EUR
+GERRY WEBER!34,GERRY WEBER,34,GERRY WEBER,0015-012538,,925051-66930,Pants jeans long,509568/ olive green,678,15.95,,,2025-01-12,,sharabatiultra skin /85,SHIPPED,,EUR
+GERRY WEBER!35,GERRY WEBER,35,GERRY WEBER,0015-012538,,925051-66930,Pants jeans long,905508/ beige,74,15.95,,,2025-01-12,,sharabatiultra skin /85,SHIPPED,,EUR
+GERRY WEBER!36,GERRY WEBER,36,GERRY WEBER,0015-012552,,925061-66930,Pants jeans long,99600/ white,734,15.95,,,2025-01-18,,sharabatiultra skin /85,SHIPPED,,EUR
+GERRY WEBER!37,GERRY WEBER,37,GERRY WEBER,0015-012552,,925061-66930,Pants jeans long,905508/ beige,77,15.95,,,2025-01-18,,sharabatiultra skin /85,SHIPPED,,EUR
+GERRY WEBER!38,GERRY WEBER,38,GERRY WEBER,0015-012105,,520246-66839,Shortend jeans Trousers,858003/Light Indigo,1146,21.62,,,2025-01-10,,ORTA 51006A pfd,SHIPPED,,EUR
+GERRY WEBER!39,GERRY WEBER,39,GERRY WEBER,0015-012106,,520247-66839,Pants jeans long,858003/Light Indigo,1208,26,,,2025-01-10,,ORTA 51006A pfd,SHIPPED,,EUR
+GERRY WEBER!40,GERRY WEBER,40,GERRY WEBER,0015-012107,,520248-66839,Shortend jeans Trousers,858003/Light Indigo,1821,18.5,,,2025-01-10,,ORTA 51006A pfd,SHIPPED,,EUR
+GERRY WEBER!41,GERRY WEBER,41,GERRY WEBER,0015-012108,,520249-66839,Bermuda Trouser,858003/Light Indigo,1661,14.95,,,2025-01-10,,ORTA 51006A pfd,SHIPPED,,EUR
+GERRY WEBER!42,GERRY WEBER,42,GERRY WEBER,0015-012166,,550323-66839,Jacket Denim,858002/ Med Indigo,915,28.4,,,2025-01-31,,ORTA 51006A,SHIPPED,,EUR
+GERRY WEBER!43,GERRY WEBER,43,GERRY WEBER,0015-012539,,925055-66932,Shortend jeans Trousers,853002/ Med Indigo,4227,15.25,,,2025-01-28,,cabri ocean,Ready Ship,,EUR
+GERRY WEBER!44,GERRY WEBER,44,GERRY WEBER,0015-012539,,925055-66932,Shortend jeans Trousers,858002/ light Indigo,8718,15.25,,,,,cabri ocean,Ready Ship,,EUR
+GERRY WEBER!45,GERRY WEBER,45,GERRY WEBER,0015-013433,,925051-66869 - NOOS,Jeans long Trouser,12800/ Black,1000,16.4,,,2025-01-26,,ULTRA JET BLACK BLACK DRS901418,SHIPPED,,EUR
+GERRY WEBER!46,GERRY WEBER,46,GERRY WEBER,0015-013433,,925051-66869 - NOOS,Jeans long Trouser,86600/ Blue,1000,16.4,,,2025-01-26,,ULTA JET BLACK DRS504258,SHIPPED,,EUR
+GERRY WEBER!47,GERRY WEBER,47,GERRY WEBER,0015-013431,,925050-66869 - NOOS,Jeans long Trouser,12800/ Black,1000,16.4,,,2025-01-26,,ULTRA JET BLACK BLACK DRS901418,SHIPPED,,EUR
+GERRY WEBER!48,GERRY WEBER,48,GERRY WEBER,0015-013431,,925050-66869 - NOOS,Jeans long Trouser,86600/ Blue,1000,16.4,,,2025-01-26,,ULTA JET BLACK DRS504258,SHIPPED,,EUR
+GERRY WEBER!49,GERRY WEBER,49,GERRY WEBER,0015-013037,,520053-31642 O2,straight fit,99600/ white,1655,16.07,,,2025-02-15,,ULTRA SKIN 85 SING,SHIPPED,,EUR
+GERRY WEBER!51,GERRY WEBER,51,GERRY WEBER,JAN SUBTOTAL,,,,,57785,,,,,,,,,EUR
+FV21!3,FV21,3,Forever 21,24045209,,127734-CURVY90S,,LIGHT,2596,12.25,45690,,2025-12-19,,ROX OCEAN,Shipped,To Return to ftry,USD
+FV21!4,FV21,4,Forever 21,24045212,,127734-CURVY90S,,LIGHT,252,12.25,45690,,2025-12-19,,ROX OCEAN,Shipped,To Return to ftry,USD
+FV21!5,FV21,5,Forever 21,24047510,,127734-CURVY90S-DEST,,MEDIUM,3894,12.3,45714,,2025-01-12,,ROX OCEAN,Shipped,To Return to ftry,USD
+FV21!6,FV21,6,Forever 21,24049601,,127734-CURVY90S,,DARK,2596,12,45722,,2025-01-20,,ROX OCEAN,Ready to Ship,HOLD AT FACTORY,USD
+FV21!7,FV21,7,Forever 21,24049606,,127734-CURVY90S,,DARK,252,12,45722,,2025-01-20,,ROX OCEAN,Ready to Ship,HOLD AT FACTORY,USD
+FV21!8,FV21,8,Forever 21,24047511,,127734-CURVY90S-DEST,,MEDIUM,308,12.3,45714,,2025-01-12,,ROX OCEAN,Shipped,To Return to ftry,USD
+FV21!9,FV21,9,Forever 21,24045250,,125948-UHRSTRT,,MEDIUM,4081,13.99,45736,,2025-02-03,,ROX OCEAN,Ready to Ship,HOLD AT FACTORY,USD
+FV21!10,FV21,10,Forever 21,24045251,,125948-UHRSTRT,,MEDIUM,196,13.99,45736,,2025-02-03,,ROX OCEAN,Ready to Ship,HOLD AT FACTORY,USD
+FV21!11,FV21,11,Forever 21,24045213,,127734-CURVY90S,,LIGHT,2288,12.25,45714,,2025-01-12,,ROX OCEAN,Shipped,To Return to ftry,USD
+FV21!12,FV21,12,Forever 21,24045220,,127734-CURVY90S,,LIGHT,196,12.25,45714,,2025-01-12,,ROX OCEAN,Shipped,To Return to ftry,USD
+FV21!13,FV21,13,Forever 21,24047515,,127734-CURVY90S,,MEDIUM,252,12.25,45690,,2025-12-19,,ROX OCEAN,Shipped,To Return to ftry,USD
+FV21!14,FV21,14,Forever 21,24047515,,127734-CURVY90S,,DARK,196,12,45690,,2025-12-19,,ROX OCEAN,Shipped,To Return to ftry,USD
+FV21!15,FV21,15,Forever 21,24047514,,127734-CURVY90S,,MEDIUM,2596,12.25,45690,,2025-12-19,,ROX OCEAN,Shipped,To Return to ftry,USD
+FV21!16,FV21,16,Forever 21,24047514,,127734-CURVY90S,,DARK,2288,12,45690,,2025-12-19,,ROX OCEAN,Shipped,To Return to ftry,USD
+FV21!17,FV21,17,Forever 21,24045195,,134088-ULTRAHIGHRISE-WALL-NEW,,MEDIUM,2596,12.48,45688,,2025-12-17,,ROX OCEAN,Shipped,To Return to ftry,USD
+FV21!18,FV21,18,Forever 21,24045196,,134088-ULTRAHIGHRISE-WALL-NEW,,MEDIUM,140,12.48,45688,,2025-12-17,,ROX OCEAN,Shipped,To Return to ftry,USD
+FV21!19,FV21,19,Forever 21,24044720,,F21PS24SWB,,Black,2651,9.71,45733,,2025-01-31,,TOGY STR BLACK,Ready to Ship,HOLD AT FACTORY,USD
+FV21!20,FV21,20,Forever 21,24044717,,F21PS24SWB,,MEDIUM,2904,9.25,45733,,2025-01-31,,TOGY STR OCEAN,Ready to Ship,HOLD AT FACTORY,USD
+FV21!21,FV21,21,Forever 21,24044717,,F21PS24SWB,,LIGHT,2904,9.25,45733,,2025-01-31,,TOGY STR OCEAN,Ready to Ship,HOLD AT FACTORY,USD
+FV21!22,FV21,22,Forever 21,24047998,,127734-CURVY90S-P,,MEDIUM,1200,14,45714,,2025-01-12,,ROX OCEAN,Shipped,To Return to ftry,USD
+FV21!23,FV21,23,Forever 21,24048000,,127734-CURVY90S-P,,MEDIUM,152,14,45714,,2025-01-12,,ROX OCEAN,Shipped,To Return to ftry,USD
+FV21!24,FV21,24,Forever 21,24052761,,125948-UHRSTRT-P,,MEDIUM,1104,16.31,45736,,2025-02-03,,ROX OCEAN,Ready to Ship,HOLD AT FACTORY,USD
+FV21!25,FV21,25,Forever 21,24052762,,125948-UHRSTRT-P,,MEDIUM,208,16.31,45736,,2025-02-03,,ROX OCEAN,Ready to Ship,HOLD AT FACTORY,USD
+FV21!26,FV21,26,Forever 21,24044734 - Bonded,,F21PS24SWB,,MEDIUM,422,8.5,45733,,2025-01-31,,TOGY STR OCEAN,Shipped,To Return to ftry,USD
+FV21!27,FV21,27,Forever 21,24044734 - Bonded,,F21PS24SWB,,LIGHT,422,8.5,45733,,2025-01-31,,TOGY STR OCEAN,Shipped,To Return to ftry,USD
+FV21!28,FV21,28,Forever 21,24056414,,127734-CURVY90S,,DARK,3201,12,45746,,2025-02-13,,ROX OCEAN,Ready to Ship,HOLD AT FACTORY,USD
+FV21!29,FV21,29,Forever 21,24056417,,127734-CURVY90S,,DARK,1204,12,45714,,2025-01-12,,ROX OCEAN,Shipped,To Return to ftry,USD
+FV21!30,FV21,30,Forever 21,24056420,,127734-CURVY90S,,MEDIUM,5203,12.25,45714,,2025-01-12,,ROX OCEAN,Shipped,To Return to ftry,USD
+FV21!31,FV21,31,Forever 21,24056422,,127734-CURVY90S,,MEDIUM,1512,12.25,45732,,2025-01-30,,ROX OCEAN,Shipped,To Return to ftry,USD
+FV21!32,FV21,32,Forever 21,24019674,,F21PSP24PL01,,MEDIUM,5764,12.58,45700,,2025-12-29,,AGI,Shipped,To Return to ftry,USD
+FV21!33,FV21,33,Forever 21,24019678,,F21PSP24PL01,,MEDIUM,308,12.58,45700,,2025-12-29,,AGI,Shipped,To Return to ftry,USD
+FV21!34,FV21,34,Forever 21,24025362,,131379,,Black,4147,13.1,45700,,2025-12-29,,Riiple Black,Shipped,To Return to ftry,USD
+FV21!35,FV21,35,Forever 21,24025363,,131379,,Black,308,13.1,45700,,2025-12-29,,TOGY STR OCEAN,Shipped,To Return to ftry,USD
+FV21!36,FV21,36,Forever 21,24056480,,F21PS24SWB,,LIGHT,5412,9.25,45746,,2025-02-13,,TOGY STR OCEAN,Ready to Ship,HOLD AT FACTORY,USD
+FV21!37,FV21,37,Forever 21,24056480,,F21PS24SWB,,MEDIUM,5005,9.25,45746,,2025-02-13,,TOGY STR OCEAN,Ready to Ship,HOLD AT FACTORY,USD
+FV21!38,FV21,38,Forever 21,24056481,,F21PS24SWB,,LIGHT,374,9.25,45746,,2025-02-13,,TOGY STR OCEAN,Ready to Ship,HOLD AT FACTORY,USD
+FV21!39,FV21,39,Forever 21,24056481,,F21PS24SWB,,MEDIUM,176,9.25,45746,,2025-02-13,,TOGY STR OCEAN,Ready to Ship,HOLD AT FACTORY,USD
+FV21!40,FV21,40,Forever 21,24056482,,F21PS24SWB,,Black,2992,9.71,45746,,2025-02-13,,TOGY STR BLACK,Ready to Ship,HOLD AT FACTORY,USD
+FV21!41,FV21,41,Forever 21,24056492,,F21PS24SWB,,Black,176,9.71,45746,,2025-02-13,,TOGY STR BLACK,Ready to Ship,HOLD AT FACTORY,USD
+FV21!42,FV21,42,Forever 21,24056513,,139196-CURVYRETRO,,MEDIUM,5610,9.8,45746,,2025-02-13,,ROX OCEAN,Ready to Ship,HOLD AT FACTORY,USD
+FV21!43,FV21,43,Forever 21,24056514,,139196-CURVYRETRO,,MEDIUM,660,9.8,45746,,2025-02-13,,ROX OCEAN,Ready to Ship,HOLD AT FACTORY,USD
+FV21!44,FV21,44,Forever 21,24057552,,139196-CURVYRETRO-P,,MEDIUM,112,11.25,45746,,2025-02-13,,ROX OCEAN,Ready to Ship,HOLD AT FACTORY,USD
+FV21!45,FV21,45,Forever 21,24057638 - WHL-JCP,,139196-CURVYRETRO,,MEDIUM,3666,9.8,45746,,2025-02-13,,ROX OCEAN,Ready to Ship,HOLD AT FACTORY,USD
+FV21!46,FV21,46,Forever 21,24057639 - WHL JCP,,139196-CURVYRETRO,,MEDIUM,50,9.8,45746,,2025-02-13,,ROX OCEAN,Ready to Ship,HOLD AT FACTORY,USD
+FV21!47,FV21,47,Forever 21,24056632 - Bonded,,F21PS24SWB,,MEDIUM,408,8.5,45746,,2025-02-13,,TOGY STR OCEAN,Shipped,To Return to ftry,USD
+FV21!48,FV21,48,Forever 21,24056632 - Bonded,,F21PS24SWB,,LIGHT,408,8.5,45746,,2025-02-13,,TOGY STR OCEAN,Shipped,To Return to ftry,USD
+FV21!49,FV21,49,Forever 21,24058530,,127734-CURVY90S-P,,MEDIUM,176,14,45732,,2025-01-30,,ROX OCEAN,Ready to Ship,HOLD AT FACTORY,USD
+FV21!50,FV21,50,Forever 21,JAN SUBTOTAL,,,,,83566,,,,,,,,,USD
+FV21!52,FV21,52,Forever 21,24068551,,127734-CURVY90S,,Medium,4257,12.25,45768,,2025-03-07,,ROX OCEAN,IN Finishing,,USD
+FV21!53,FV21,53,Forever 21,24068551,,127734-CURVY90S,,Dark,2992,12.2,45768,,2025-03-07,,ROX OCEAN,IN Finishing,,USD
+FV21!54,FV21,54,Forever 21,24068556,,127734-CURVY90S,,Medium,1008,12.25,45768,,2025-03-07,,TOGY STR OCEAN,IN Finishing,,USD
+FV21!55,FV21,55,Forever 21,24068556,,127734-CURVY90S,,Dark,812,12.2,45768,,2025-03-07,,TOGY STR OCEAN,IN Finishing,,USD
+FV21!56,FV21,56,Forever 21,24068955,,139196-CURVYRETRO,,Light,4422,9.8,45768,,2025-03-07,,ROX OCEAN,IN Finishing,,USD
+FV21!57,FV21,57,Forever 21,24068956,,139196-CURVYRETRO,,Light,308,9.8,45768,,2025-03-07,,ROX OCEAN,IN Finishing,,USD
+FV21!58,FV21,58,Forever 21,24068964,,143752-RIBCAGE,,Medium,4587,9.25,45768,,2025-03-07,,Meso Blue,IN Finishing,,USD
+FV21!59,FV21,59,Forever 21,24068965,,143752-RIBCAGE,,Medium,308,9.25,45768,,2025-03-07,,Meso Blue,IN Finishing,,USD
+FV21!60,FV21,60,Forever 21,Feb SUBTOTAL,,,,,18694,,,,,,,,,USD

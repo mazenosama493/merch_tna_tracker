@@ -1,11 +1,10 @@
 # Copyright (c) 2026, Merch TNA Tracker and contributors
 # For license information, please see license.txt
 
-import sys
+from importlib import import_module
 
 import frappe
 from frappe import _
-from frappe.model.base_document import get_controller
 from frappe.model.document import Document
 from frappe.utils import cstr, flt, get_first_day, getdate, now_datetime, today
 
@@ -36,10 +35,41 @@ HISTORY_TABLES = (
 )
 
 
+HELPER_MODULES = {
+	"Buyer PO": "merch_tna_tracker.merch_tna_tracker.doctype.buyer_po.buyer_po",
+	"Order Forecast": "merch_tna_tracker.merch_tna_tracker.doctype.order_forecast.order_forecast",
+	"Order Book Settings": "merch_tna_tracker.merch_tna_tracker.doctype.order_book_settings.order_book_settings",
+}
+
+
 def call_helper(doctype, function_name, *args):
-	"""Call a helper that lives next to another DocType's controller, without needing the app name."""
-	module = sys.modules[get_controller(doctype).__module__]
-	return getattr(module, function_name)(*args)
+	"""Import helper functions from this app directly, avoiding DocType controller cache/module resolution."""
+	module_path = HELPER_MODULES.get(doctype)
+	if not module_path:
+		frappe.throw(_("No helper module is configured for DocType {0}.").format(frappe.bold(doctype)))
+
+	try:
+		module = import_module(module_path)
+	except ImportError as exc:
+		frappe.throw(
+			_("Could not import helper module {0}: {1}").format(frappe.bold(module_path), frappe.bold(str(exc)))
+		)
+
+	helper = getattr(module, function_name, None)
+	if not callable(helper):
+		frappe.throw(
+			_("Helper function {0} was not found in {1}.").format(
+				frappe.bold(function_name), frappe.bold(module_path)
+			)
+		)
+	return helper(*args)
+
+
+def calculate_ship_percentage(total_shipped_qty, original_qty):
+	"""Return shipped percentage against Original Quantity, excluding Extra Qty."""
+	total_shipped = flt(total_shipped_qty)
+	base_qty = flt(original_qty)	
+	return flt(total_shipped / base_qty * 100, 2) if base_qty > 0 else 0.0
 
 
 class OrderLine(Document):
@@ -47,8 +77,10 @@ class OrderLine(Document):
 		self.clean_text()
 		self.set_po_details()
 		self.set_destinations()
-		self.validate_forecast()
 		self.validate_qty()
+		self.set_extra_qty()
+		self.set_original_qty()
+		self.validate_forecast()
 		self.set_amounts()
 		self.check_buyer_po_change()
 		self.check_history_not_changed()
@@ -86,7 +118,7 @@ class OrderLine(Document):
 
 	def set_po_details(self):
 		po = frappe.db.get_value(
-			"Buyer PO", self.buyer_po, ["buyer", "season", "currency", "po_date"], as_dict=True
+			"Buyer PO", self.buyer_po, ["buyer", "season", "currency", "po_date", "price_term"], as_dict=True
 		)
 		if not po:
 			frappe.throw(_("Buyer PO {0} was not found.").format(frappe.bold(self.buyer_po)))
@@ -96,6 +128,9 @@ class OrderLine(Document):
 		self.buyer = po.buyer
 		self.season = po.season
 		self.currency = po.currency
+		# Price Term belongs to Buyer PO; keep it transient instead of duplicating
+		# it as a field on Order Line.
+		self.flags.po_price_term = po.price_term or "FOB"
 		self.flags.po_date = po.po_date
 
 	def check_buyer_po_change(self):
@@ -132,12 +167,13 @@ class OrderLine(Document):
 				)
 			)
 
-		# Each individual Order Line must fit within the selected Forecast qty.
-		# This check runs after set_destinations(), because destination rows determine self.qty.
-		if flt(self.qty) > flt(forecast.qty):
+		# Forecast consumption is based on Original Quantity, excluding the extra units.
+		# This is an individual Order Line limit. Destination quantities, shipment
+		# tolerance and completion status still use full Ordered Qty; Ship % uses Original Qty.
+		if flt(self.original_qty) > flt(forecast.qty):
 			frappe.throw(
-				_("Order Line Qty ({0}) cannot exceed Forecast Qty ({1}) in {2}.").format(
-					frappe.format_value(self.qty, {"fieldtype": "Float", "precision": 0}),
+				_("Original Quantity ({0}) cannot exceed Forecast Qty ({1}) in {2}.").format(
+					frappe.format_value(self.original_qty, {"fieldtype": "Float", "precision": 0}),
 					frappe.format_value(forecast.qty, {"fieldtype": "Float", "precision": 0}),
 					frappe.get_desk_link("Order Forecast", self.forecast),
 				)
@@ -180,8 +216,45 @@ class OrderLine(Document):
 		if flt(self.qty) <= 0:
 			frappe.throw(_("Qty must be greater than zero."))
 
+	def set_extra_qty(self):
+		"""Calculate the extra units from the entered Extra percentage."""
+		extra_percent = flt(self.extra)
+		if extra_percent < 0 or extra_percent > 100:
+			frappe.throw(_("Extra (%) must be between 0% and 100%."))
+
+		# Extra Qty is calculated from full Ordered Qty and rounded to whole units.
+		self.extra_qty = flt(flt(self.qty) * extra_percent / 100, 0)
+
+	def set_original_qty(self):
+		"""Original Quantity is Ordered Qty minus the additional Extra Qty."""
+		self.original_qty = max(flt(flt(self.qty) - flt(self.extra_qty), 0), 0.0)
+
 	def set_amounts(self):
-		self.amount = flt(flt(self.qty) * flt(self.unit_price), 2)
+		# Store the pre-discount FOB component separately.
+		# Amount is the net total: FOB only for FOB POs, or FOB + DDP for DDP POs,
+		# then reduced by the line's Discount percentage.
+		fob_amount = flt(flt(self.qty) * flt(self.unit_price), 2)
+		self.fob_price = fob_amount
+		ddp_amount = 0.0
+
+		if self.flags.get("po_price_term") == "DDP":
+			if self.unit_price_ddp is None or flt(self.unit_price_ddp) <= 0:
+				frappe.throw(_("Unit Price (DDP) is required and must be greater than zero when the Buyer PO Price Term is DDP."))
+			ddp_amount = flt(flt(self.qty) * flt(self.unit_price_ddp), 2)
+			self.ddp_price = ddp_amount
+		else:
+			# DDP values must stay numeric (the database column is NOT NULL).
+			# For FOB POs, store zero instead of NULL.
+			self.unit_price_ddp = 0.0
+			self.ddp_price = 0.0
+
+		gross_amount = flt(fob_amount + ddp_amount, 2)
+		discount_percent = flt(self.discount_amount)
+		if discount_percent < 0 or discount_percent > 100:
+			frappe.throw(_("Discount must be between 0% and 100%."))
+
+		discount_value = flt(gross_amount * discount_percent / 100, 2)
+		self.amount = flt(gross_amount - discount_value, 2)
 
 		if self.currency == "USD":
 			self.exchange_rate = 1.0
@@ -206,7 +279,7 @@ class OrderLine(Document):
 		self.amount_usd = flt(self.amount * self.exchange_rate, 2)
 
 		if flt(self.unit_price) <= 0:
-			frappe.msgprint(_("No unit price entered, so Amount is 0."), indicator="orange", alert=True)
+			frappe.msgprint(_("No FOB unit price entered, so the FOB component of Amount is 0."), indicator="orange", alert=True)
 
 	# ---- Dates ----------------------------------------------------------------
 
@@ -353,7 +426,8 @@ class OrderLine(Document):
 			frappe.throw(_("{0} pcs are already shipped, so this line cannot be cancelled.").format(int(total)))
 
 		self.shipped_qty = total
-		self.ship_pct = flt(total / qty * 100, 2)
+		# Ship % is measured against Original Quantity, excluding the Extra Qty.
+		self.ship_pct = calculate_ship_percentage(total, self.original_qty)
 
 		# The 5% tolerance is an allowed over-shipment ceiling (up to 105%),
 		# not permission to mark an order complete at 95%.

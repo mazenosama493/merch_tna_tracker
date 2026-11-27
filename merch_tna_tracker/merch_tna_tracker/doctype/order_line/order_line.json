@@ -20,12 +20,14 @@
   "forecast",
   "value_section",
   "qty",
+  "extra",
+  "extra_qty",
+  "original_qty",
   "unit_price",
   "unit_price_ddp",
   "ddp_price",
   "fob_price",
   "discount_amount",
-  "extra_qty",
   "column_break_value",
   "amount",
   "exchange_rate",
@@ -138,7 +140,7 @@
    "label": "Fabric Mill"
   },
   {
-   "description": "Optional. The forecast this order comes from. This order's qty is taken off the forecast.",
+   "description": "Optional. The linked Forecast is checked and consumed using Original Quantity (Ordered Qty minus Extra Qty).",
    "fieldname": "forecast",
    "fieldtype": "Link",
    "label": "From Forecast",
@@ -151,7 +153,7 @@
    "label": "Quantity & Value"
   },
   {
-   "description": "With destinations, this is the total of the Destination Qty rows.",
+   "description": "Total Ordered Qty, including Extra Qty. With destinations, this is the total of Destination Qty rows.",
    "fieldname": "qty",
    "fieldtype": "Float",
    "in_list_view": 1,
@@ -174,15 +176,16 @@
    "fieldtype": "Float",
    "label": "DDP Price",
    "non_negative": 1,
-   "precision": "4",
-   "read_only": 1
+   "precision": "2",
+   "read_only": 1,
+   "description": "Ordered Qty x Unit Price (DDP). Included in Amount only when the linked Buyer PO Price Term is DDP. Calculated automatically."
   },
   {
    "fieldname": "column_break_value",
    "fieldtype": "Column Break"
   },
   {
-   "description": "Qty x Unit Price, in the buyer's currency.",
+   "description": "Net Order Line value in the buyer currency after discount. Subtotal is FOB Price + DDP Price for DDP POs; FOB Price only for FOB POs.",
    "fieldname": "amount",
    "fieldtype": "Float",
    "in_list_view": 1,
@@ -203,7 +206,8 @@
    "fieldtype": "Float",
    "label": "Amount USD",
    "precision": "2",
-   "read_only": 1
+   "read_only": 1,
+   "description": "Net Order Line Amount after discount, converted to USD using the exchange rate captured for this Order Line."
   },
   {
    "fieldname": "dates_section",
@@ -321,7 +325,11 @@
   {
    "fieldname": "unit_price_ddp",
    "fieldtype": "Float",
-   "label": "Unit Price (DDP)"
+   "label": "Unit Price (DDP)",
+   "description": "Required when the linked Buyer PO Price Term is DDP. Enter the DDP unit price in the buyer currency.",
+   "non_negative": 1,
+   "precision": "4",
+   "default": "0"
   },
   {
    "fieldname": "section_break_kgfi",
@@ -331,7 +339,8 @@
    "fieldname": "fob_price",
    "fieldtype": "Float",
    "label": "FOB Price",
-   "read_only": 1
+   "read_only": 1,
+   "description": "FOB component only: Ordered Qty x Unit Price (FOB). Calculated automatically."
   },
   {
    "description": "Optional. Split the order by destination. Each destination keeps its own shipped and remaining qty.",
@@ -344,13 +353,36 @@
    "default": "0",
    "fieldname": "discount_amount",
    "fieldtype": "Percent",
-   "label": "Discount",
-   "non_negative": 1
+   "label": "Discount (%)",
+   "non_negative": 1,
+   "description": "Percentage discount applied to the complete Order Line subtotal (FOB + DDP when the Buyer PO Price Term is DDP; FOB only when FOB)."
+  },
+  {
+   "fieldname": "extra",
+   "fieldtype": "Percent",
+   "label": "Extra (%)",
+   "default": "0",
+   "non_negative": 1,
+   "description": "Additional quantity percentage. Extra Qty is calculated as Ordered Qty x Extra (%) / 100."
   },
   {
    "fieldname": "extra_qty",
-   "fieldtype": "Percent",
-   "label": "Extra"
+   "fieldtype": "Float",
+   "label": "Extra Qty",
+   "precision": "0",
+   "read_only": 1,
+   "non_negative": 1,
+   "description": "Calculated automatically as Ordered Qty x Extra (%) / 100."
+  },
+  {
+   "default": "0",
+   "description": "Calculated automatically as Ordered Qty minus Extra Qty. This is the quantity checked against and consumed from the linked Forecast.",
+   "fieldname": "original_qty",
+   "fieldtype": "Float",
+   "label": "Original Quantity",
+   "non_negative": 1,
+   "precision": "0",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,

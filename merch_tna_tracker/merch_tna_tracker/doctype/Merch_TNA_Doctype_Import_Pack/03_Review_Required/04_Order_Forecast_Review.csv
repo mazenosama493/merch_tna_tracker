@@ -1,0 +1,23 @@
+﻿source_sheet,source_buyer,source_currency,expected_buyer_currency,review_reason
+SUMMARY 2025,BootBarn,,,Bootbarn row is a group aggregate; Forecasts are per Brand and no approved allocation is provided
+SUMMARY 2025,Kiabi,,,No Merch Buyer import record with a resolved currency
+SUMMARY 2025,Primark TIS,,,No Merch Buyer import record with a resolved currency
+SUMMARY 2025,Delta Galil,,,No Merch Buyer import record with a resolved currency
+SUMMARY 2025,to cover (previous Epic),,,No Merch Buyer import record with a resolved currency
+SUMMARY 2025,Good American,EUR,USD,Projected summary currency differs from current Merch Buyer currency
+SUMMARY 2025,Amazon,,,No Merch Buyer import record with a resolved currency
+SUMMARY 2025,P&B,,,No Merch Buyer import record with a resolved currency
+SUMMARY 2025,Target,,,No Merch Buyer import record with a resolved currency
+SUMMARY 2026,Bootbarn,,,Bootbarn row is a group aggregate; Forecasts are per Brand and no approved allocation is provided
+SUMMARY 2026,Pull & Bear,,,No Merch Buyer import record with a resolved currency
+SUMMARY 2026,Kontoor EU,,,No Merch Buyer import record with a resolved currency
+SUMMARY 2026,GAP,,,No Merch Buyer import record with a resolved currency
+SUMMARY 2026,Garcia - JOG,,,No Merch Buyer import record with a resolved currency
+SUMMARY 2027,Bootbarn,,,Bootbarn row is a group aggregate; Forecasts are per Brand and no approved allocation is provided
+SUMMARY 2027,Zara G (Nina),,,No Merch Buyer import record with a resolved currency
+SUMMARY 2027,Zara B (Nino),,,No Merch Buyer import record with a resolved currency
+SUMMARY 2027,Zara BG (Nina),,,No Merch Buyer import record with a resolved currency
+SUMMARY 2027,Zara BB (Nino),,,No Merch Buyer import record with a resolved currency
+SUMMARY 2027,JOG,,,No Merch Buyer import record with a resolved currency
+SUMMARY 2027,Best Seller,,,No Merch Buyer import record with a resolved currency
+SUMMARY 2027,New,,,No Merch Buyer import record with a resolved currency

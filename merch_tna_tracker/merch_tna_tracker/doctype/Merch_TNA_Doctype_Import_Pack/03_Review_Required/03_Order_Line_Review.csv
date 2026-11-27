@@ -1,0 +1,470 @@
+﻿source_sheet,source_rows,buyer,source_po_number,style_no,qty,unit_price_fob,unit_price_ddp,buyer_ex_factory_date,buyer_delivery_date_not_equivalent,review_reason
+AEO,AEO!6,AEO,1195775,5418,750,9.7,,,2025-12-25,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!3,AEO,1195776,5418,200,9.7,,,2025-12-25,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!5,AEO,1195777,5418,1300,10,,,2025-12-25,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!8,AEO,1195784,5419,750,9.7,,,2025-12-25,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!4,AEO,1195785,5419,200,9.7,,,2025-12-25,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!7,AEO,1195906,5419,700,9.7,,,2025-12-25,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!10,AEO,1197814,5419,1000,10,,,2025-12-25,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!15,AEO,1197815,5419,1000,10,,,2025-01-15,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!9,AEO,1197820,5418,1000,10,,,2025-12-25,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!14,AEO,1197821,5418,1000,10,,,2025-01-15,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!17,AEO,1202197,5419,278,9.7,,,2025-02-10,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!18,AEO,1202404,5419,967,9.7,,,2025-02-10,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!19,AEO,1203815,5419,121,9.7,,,2025-02-10,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!11,AEO,1203979,5419,5000,10,,,2025-12-25,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!20,AEO,1208071,5419,1500,10,,,2025-02-12,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!23,AEO,1208115,5419,400,9.7,,,2025-03-12,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!16,AEO,1211074,5418,5000,10,,,2025-02-15,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!27,AEO,1243992,5418,300,9.7,,,2025-05-21,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!32,AEO,1243993,5418,300,9.7,,,2025-05-21,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!25,AEO,1243995,5418,2000,10,,,2025-05-21,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!30,AEO,1243996,5418,5300,10,,,2025-05-21,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!28,AEO,1244003,5419,320,9.7,,,2025-05-21,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!26,AEO,1244004,5419,1200,10,,,2025-05-21,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!31,AEO,1244005,5419,4200,10,,,2025-05-21,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!36,AEO,1250841,5418,300,9.7,,,2025-06-16,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!35,AEO,1250842,5418,3300,10,,,2025-06-16,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!38,AEO,1250849,5419,180,9.7,,,2025-06-16,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!40,AEO,1252035,5418,210,9.7,,,2025-06-18,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!41,AEO,1252036,5418,2100,10,,,2025-06-18,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!43,AEO,1252037,5418,1400,9.7,,,2025-06-25,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!42,AEO,1252038,5419,185,9.7,,,2025-06-18,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!37,AEO,1252039,5419,3000,10,,,2025-06-16,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AEO,AEO!29,AEO,Apr sub Total,,3820,,,,,"Total/footer label, not a PO number; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date"
+AEO,AEO!21,AEO,FEB Sub Total,,9866,,,,,"Total/footer label, not a PO number; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date"
+AEO,AEO!12,AEO,Jan Sub Total,,10900,,,,,"Total/footer label, not a PO number; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date"
+AEO,AEO!44,AEO,June total,,10675,,,,,"Total/footer label, not a PO number; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date"
+AEO,AEO!24,AEO,MAR Sub Total,,400,,,,,"Total/footer label, not a PO number; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date"
+AEO,AEO!33,AEO,May Sub Total,,9800,,,,,"Total/footer label, not a PO number; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date"
+AG Jeans,AG Jeans!15,AG Jeans,26116592 OP,1197BRS,1111,13.5,,2026-05-15,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+AG Jeans,AG Jeans!63,AG Jeans,26117644,1197CNS,2000,15.05,,2026-02-05,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+AG Jeans,AG Jeans!65,AG Jeans,26117645,1197CNS,3000,15.05,,2026-03-05,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+AG Jeans,AG Jeans!66,AG Jeans,26117646,1197CNS,3500,15.05,,2026-03-05,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+AG Jeans,AG Jeans!55,AG Jeans,26117647,1E21CNS,3000,21.49,,2026-01-04,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+AG Jeans,AG Jeans!47,AG Jeans,26117648,1794CNS,2000,18.45,,2026-03-05,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+AG Jeans,AG Jeans!68,AG Jeans,26117649,1197CNS,3200,15.05,,2026-04-07,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+AG Jeans,AG Jeans!62,AG Jeans,26117650,1E21CNS,1800,21.49,,2026-04-07,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+AG Jeans,AG Jeans!46,AG Jeans,26117651,1794CNS,3000,18.45,,2026-01-04,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+AG Jeans,AG Jeans!48,AG Jeans,26117652,1174CNS,4000,19.1,,2026-01-04,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+AG Jeans,AG Jeans!50,AG Jeans,26117655,CNS1E56,800,21.19,,2026-02-11,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+AG Jeans,AG Jeans!51,AG Jeans,26117656,CNS1E56,1000,21.19,,2026-03-11,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+AG Jeans,AG Jeans!53,AG Jeans,26117657,CNS1776,1000,14.14,,2026-01-14,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+AG Jeans,AG Jeans!54,AG Jeans,26117658,CNS1776,1400,14.14,,2026-01-14,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+AG Jeans,AG Jeans!52,AG Jeans,26117659,CNS1776,1450,14.14,,2026-01-14,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+AG Jeans,AG Jeans!34,AG Jeans,26117662,VE11D55VN,2700,19.25,,2026-02-11,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+AG Jeans,AG Jeans!38,AG Jeans,26117663,VE11D49VN,1200,20.5,,2026-02-11,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+AG Jeans,AG Jeans!39,AG Jeans,26117664,VE11A48,2050,19.2,,2026-03-11,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+AG Jeans,AG Jeans!64,AG Jeans,26117665,1197CNS,1000,15.05,,2026-02-05,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+AG Jeans,AG Jeans!60,AG Jeans,26118004,NWD1F78VN,1200,18.83,,,,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AG Jeans,AG Jeans!61,AG Jeans,26118007,NWDD1G52,1000,26.87,,,,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AG Jeans,AG Jeans!49,AG Jeans,26118011,NWD1J25,1262,28.08,,,,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AG Jeans,AG Jeans!59,AG Jeans,26118014,NWD1J25,1000,28.08,,,,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+AG Jeans,AG Jeans!69,AG Jeans,26118162,1197BRS,3000,15.05,,2026-01-08,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+AG Jeans,AG Jeans!70,AG Jeans,26118163,1197BRS,2500,15.05,,2026-01-08,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+AG Jeans,AG Jeans!71,AG Jeans,26118164,1197BRS,1200,15.05,,2026-01-08,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+AG Jeans,AG Jeans!72,AG Jeans,26118165,1197BRS,1000,15.05,,2026-01-08,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+AG Jeans,AG Jeans!73,AG Jeans,26118167,1197BRS,700,15.05,,2026-01-08,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+AG Jeans,AG Jeans!14,AG Jeans,April Total,,20987,,,,,"Total/footer label, not a PO number; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date"
+AG Jeans,AG Jeans!56,AG Jeans,CANCELLED,1H16SRT,0,,,2026-01-15,,Ordered Qty must be greater than zero
+AG Jeans,AG Jeans!25,AG Jeans,SMS,1197BRS,117,33.75,,2026-08-22,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+AG Jeans,AG Jeans!24,AG Jeans,SMS,1H84LSA,39,59.9,,2026-08-22,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+AG Jeans,AG Jeans!26,AG Jeans,SMS,1J63LSA,13,57.375,,2026-08-22,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+AG Jeans,AG Jeans!30,AG Jeans,TBA,1197BRS,0,15.05,,2026-10-26,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Ordered Qty must be greater than zero
+AG Jeans,AG Jeans!29,AG Jeans,TBA,1197BRS,0,15.05,,2026-10-26,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Ordered Qty must be greater than zero
+Ariat,Ariat!3,Ariat,4500263615 / 616 / 4500262557 / 4500262301 / 4500262299 / 300,P38707,68,70,,,2026-03-26,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!4,Ariat,4500263615 / 616 / 4500262557 / 4500262301 / 4500262299 / 300,P38709,68,69,,,2026-03-26,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!13,Ariat,4500268167 / 168,P36952,298,35.81,,,2026-05-28,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!24,Ariat,4500268168,P36952,127,35.81,,,2026-05-28,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!6,Ariat,4500268601,P36953,2435,35.64,9.1,,2026-05-28,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!7,Ariat,4500268602,P36952,975,35.81,9.1,,2026-05-28,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!12,Ariat,4500286699 / 4500290817 /816,P38707,3350,29.13,6.81,,2026-09-01,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!10,Ariat,4500305642 / 4500305640 / 4500305641,P40255,58,77.97,,,2026-08-31,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!9,Ariat,4500305642 / 4500305640 / 4500305641,P40305,75,122.7,,,2026-09-15,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!14,Ariat,4500309292,P38709,900,26.2,6.81,,2026-11-02,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!15;Ariat!25,Ariat,4500309712,P38709,160,26.2,0,,2026-11-02,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date; Buyer PO is DDP but this Order Line has no DDP Unit Price; controller rejects it
+Ariat,Ariat!16,Ariat,4500309713,P38709,270,26.2,0,,2026-11-02,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date; Buyer PO is DDP but this Order Line has no DDP Unit Price; controller rejects it
+Ariat,Ariat!38,Ariat,4500329929,P14909,2500,17.84,,,2027-02-26,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!42,Ariat,4500329930,P14909,2500,17.84,,,2027-03-29,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!39,Ariat,4500329931,P18327,4000,18.56,,,2027-02-26,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!43,Ariat,4500329932,P18327,4000,18.56,,,2027-03-29,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!5;Ariat!50,Ariat,April Total,,7836,,,,,"Total/footer label, not a PO number; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date"
+Ariat,Ariat!46;Ariat!47;Ariat!52;Ariat!53,Ariat,awtg,,9400,18.56,,,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!55,Ariat,awtg,,1200,17.84,,,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!58,Ariat,awtg,,3000,,,,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!59;Ariat!60,Ariat,awtg,,6700,,,,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!61,Ariat,awtg,,1000,,,,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!62,Ariat,awtg,,1000,,,,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!63,Ariat,awtg,,5000,,,,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!64,Ariat,awtg,,0,,,,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Ordered Qty must be greater than zero; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!65,Ariat,awtg,,0,,,,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Ordered Qty must be greater than zero; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!49,Ariat,awtg,P14909,3500,17.84,,,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!40;Ariat!68,Ariat,awtg,P38707,3000,29.13,,,2027-02-28,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!44;Ariat!48,Ariat,awtg,P40255,1500,20.65,,,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!56,Ariat,awtg,P40255,0,20.65,,,2027-05-02,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Ordered Qty must be greater than zero; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!51,Ariat,awtg,P40305,3000,40.9,,,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!66,Ariat,awtg,P40305,0,40.9,,,2027-06-07,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Ordered Qty must be greater than zero; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!20,Ariat,Awtg,P40391,70,77.97,,,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!69,Ariat,awtg,P40391,3000,25.99,,,2027-07-12,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!22,Ariat,Awtg,P41385,70,116.82,,,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!70,Ariat,awtg,P41385,3000,38.94,,,2027-07-12,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!21,Ariat,Awtg,P41391,70,62.52,,,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!71,Ariat,awtg,P41391,3000,20.84,,,2027-07-12,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!18,Ariat,Awtg,P41397,70,64.2,,,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!72,Ariat,awtg,P41397,3000,21.4,,,2027-07-12,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!19,Ariat,Awtg,P41398,70,75.84,,,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!54,Ariat,awtg,P41398,5000,17.84,,,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!73,Ariat,awtg,P41398,3000,13.63,,,2027-07-12,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!74,Ariat,July Total,,15000,,,,,"Total/footer label, not a PO number; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date"
+Ariat,Ariat!45,Ariat,March Total,,6500,,,,,"Total/footer label, not a PO number; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date"
+Ariat,Ariat!31;Ariat!32,Ariat,PO awtg,P38707,2800,29.13,,,2026-12-10,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!37,Ariat,PO awtg,P41351,70,126.5,,,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!36,Ariat,PO awtg,P41352,70,56.5,,,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!34,Ariat,PO awtg,P41359,70,66.5,,,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Ariat,Ariat!35,Ariat,PO awtg,P41360,70,61.5,,,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+BOOTBARN,BOOTBARN!90,Bootbarn,2025 grand total,,317476,,,,,"Total/footer label, not a PO number; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date"
+BOOTBARN,BOOTBARN!249,Bootbarn,2026 TOTAL,,792501,,,,,"Total/footer label, not a PO number; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date"
+BOOTBARN,BOOTBARN!308,Bootbarn,2027 TOTAL,,466000,,,,,"Total/footer label, not a PO number; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date"
+BOOTBARN,BOOTBARN!20,Bootbarn,639114,,6002,,,,,Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+BOOTBARN,BOOTBARN!169,Bootbarn,686561,,50000,,,,,Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+BOOTBARN,BOOTBARN!310,Bootbarn,ALL YEARS TOTAL,,1575977,,,,,"Total/footer label, not a PO number; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date"
+BOOTBARN,BOOTBARN!17,Bootbarn,SAMPLE-CJSP25J03-WHT,,26822,,,,,Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+BOOTBARN,BOOTBARN!31,Bootbarn,SAMPLE-RMFA25J04-LTW,,24019,,,,,Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+BOOTBARN,BOOTBARN!36,Bootbarn,SAMPLE-RMSU25J02-DKW,,12006,,,,,Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+BOOTBARN,BOOTBARN!3,CJ BASIC,625057,CJSP25J02-LTW,6800,14.61,,2025-12-06,2025-03-14,Buyer PO is DDP but this Order Line has no DDP Unit Price; controller rejects it
+BOOTBARN,BOOTBARN!9,CJ BASIC,625064,CJSP25J03-WHT,3001,14.94,,2025-01-10,2025-03-14,Buyer PO is DDP but this Order Line has no DDP Unit Price; controller rejects it
+BOOTBARN,BOOTBARN!271,CJ BASIC,710955,CJSP20J09-LTW,7516,12.89,,2026-02-01,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+BOOTBARN,BOOTBARN!272,CJ BASIC,710956,CJSP20J09-LTW,20080,12.89,,2026-02-01,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+BOOTBARN,BOOTBARN!273,CJ BASIC,710957,CJSP20J09-LTW,2404,12.89,,2026-02-01,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+BOOTBARN,BOOTBARN!262,CJ BASIC,710959,CJFA23J9-DKW,29210,12.21,,2026-02-01,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+BOOTBARN,BOOTBARN!263,CJ BASIC,710960,CJFA23J9-DKW,43540,12.21,,2026-02-01,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+BOOTBARN,BOOTBARN!264,CJ BASIC,710961,CJFA23J9-DKW,2250,12.21,,2026-02-01,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+BOOTBARN,BOOTBARN!274,CJ BASIC,710962,CJSP20J01-MDW,8951,12.48,,2026-02-01,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+BOOTBARN,BOOTBARN!275,CJ BASIC,710963,CJSP20J01-MDW,18035,12.48,,2026-02-01,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+BOOTBARN,BOOTBARN!276,CJ BASIC,710965,CJSP20J01-MDW,3014,12.48,,2026-02-01,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+BOOTBARN,BOOTBARN!256,CJ BASIC,710967,CJSP20J02-MDW,16136,12.78,,2026-02-01,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+BOOTBARN,BOOTBARN!257,CJ BASIC,710968,CJSP20J02-MDW,39080,12.78,,2026-02-01,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+BOOTBARN,BOOTBARN!258,CJ BASIC,710971,CJSP20J02-MDW,4784,12.78,,2026-02-01,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+BOOTBARN,BOOTBARN!268,CJ BASIC,710975,CJSP25J01-DKW,26226,12.28,,2026-02-01,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+BOOTBARN,BOOTBARN!269,CJ BASIC,710976,CJSP25J01-DKW,45010,12.28,,2026-02-01,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+BOOTBARN,BOOTBARN!270,CJ BASIC,710977,CJSP25J01-DKW,3764,12.28,,2026-02-01,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+BOOTBARN,BOOTBARN!265,CJ BASIC,711046,CJHO21J21-LTW,4924,13.07,,2026-02-01,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+BOOTBARN,BOOTBARN!266,CJ BASIC,711047,CJHO21J21-LTW,9160,13.07,,2026-02-01,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+BOOTBARN,BOOTBARN!267,CJ BASIC,711048,CJHO21J21-LTW,916,13.07,,2026-02-01,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+BOOTBARN,BOOTBARN!6,CJ BLACK,632552,CJBSP25J08-DKW,2000,21,,2025-01-02,2025-02-18,Buyer PO is DDP but this Order Line has no DDP Unit Price; controller rejects it
+BOOTBARN,BOOTBARN!8,CJ BLACK,632555,CJBSP25J20-DKW,2000,21.15,,2025-01-02,2025-02-18,Buyer PO is DDP but this Order Line has no DDP Unit Price; controller rejects it
+BOOTBARN,BOOTBARN!7,CJ BLACK,632558,CJBSP25J09-BLK,2000,19.14,,2025-01-02,2025-02-07,Buyer PO is DDP but this Order Line has no DDP Unit Price; controller rejects it
+BOOTBARN,BOOTBARN!19,CJ BLACK,639114,CJBSP25J09-BLK,3001,19.14,,2025-02-25,2025-03-30,Buyer PO is DDP but this Order Line has no DDP Unit Price; controller rejects it
+BOOTBARN,BOOTBARN!18,CJ BLACK,639117,CJBSP25J08-DKW,3001,21,,2025-02-25,2025-03-30,Buyer PO is DDP but this Order Line has no DDP Unit Price; controller rejects it
+BOOTBARN,BOOTBARN!21,CJ BLACK,655240 / 655243,CJBFA25J16-DKW,4001,20.33,,2025-05-25,2025-06-30,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+BOOTBARN,BOOTBARN!22,CJ BLACK,655279 / 655282,CJBFA25J15-BLK,4001,22.13,,2025-05-19,2025-07-08,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+BOOTBARN,BOOTBARN!277,CJ BLACK,711011,1001948,1040,26.67,,2026-02-01,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+BOOTBARN,BOOTBARN!278,CJ BLACK,711013,1001948,1800,26.67,,2026-02-01,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+BOOTBARN,BOOTBARN!279,CJ BLACK,711014,1001948,160,26.67,,2026-02-01,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+Diesel,Diesel!43,Diesel,2025 GRAND TOTAL,,68829,,,,,"Total/footer label, not a PO number; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date"
+Diesel,Diesel!108,Diesel,2026 GRAND TOTAL,,120726,,,,,"Total/footer label, not a PO number; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date"
+Diesel,Diesel!140;Diesel!143,Diesel,2027 GRAND TOTAL,,305345,,,,,"Total/footer label, not a PO number; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date"
+Diesel,Diesel!141,Diesel,2027 GRAND TOTAL,,0,,,,,"Total/footer label, not a PO number; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Ordered Qty must be greater than zero; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date"
+Diesel,Diesel!144,Diesel,2027 GRAND TOTAL,,0,,,,,"Total/footer label, not a PO number; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Ordered Qty must be greater than zero; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date"
+Diesel,Diesel!17,Diesel,August Total,,17561,,,,,"Total/footer label, not a PO number; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date"
+Diesel,Diesel!126,Diesel,awtg,00C06Q,6500,19.8,,2026-03-03,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is before PO Date; controller rejects this
+Diesel,Diesel!128,Diesel,awtg,00C06Q,5200,20.3,,2026-03-03,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is before PO Date; controller rejects this
+Diesel,Diesel!135,Diesel,awtg,A06925,1900,22,,2026-04-15,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is before PO Date; controller rejects this
+Diesel,Diesel!114,Diesel,awtg,A14051,850,18.23,,2026-03-03,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is before PO Date; controller rejects this
+Diesel,Diesel!124,Diesel,awtg,A14051,450,19.14,,2026-03-03,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is before PO Date; controller rejects this
+Diesel,Diesel!122,Diesel,awtg,A15795,1200,21.87,,2026-03-03,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is before PO Date; controller rejects this
+Diesel,Diesel!136,Diesel,awtg,A15797,2800,19.69,,,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Diesel,Diesel!125,Diesel,awtg,A17055,2600,19.7,,2026-03-03,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is before PO Date; controller rejects this
+Diesel,Diesel!137,Diesel,awtg,A17055,3500,19.99,,,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Diesel,Diesel!138,Diesel,awtg,A17055,4000,21.4,,,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Diesel,Diesel!113,Diesel,awtg,A19853,2100,21.64,,2026-03-03,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is before PO Date; controller rejects this
+Diesel,Diesel!131,Diesel,awtg,A19853,1100,22.19,,2026-04-15,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is before PO Date; controller rejects this
+Diesel,Diesel!115,Diesel,awtg,A19869,1900,20.55,,2026-03-03,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is before PO Date; controller rejects this
+Diesel,Diesel!119,Diesel,awtg,A22266,450,15.81,,2026-03-03,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is before PO Date; controller rejects this
+Diesel,Diesel!134,Diesel,awtg,A22459,1300,22.21,,2026-04-15,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is before PO Date; controller rejects this
+Diesel,Diesel!133,Diesel,awtg,A24080,2500,23.2,,2026-04-15,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is before PO Date; controller rejects this
+Diesel,Diesel!127,Diesel,awtg,A24527,1000,17.3,,2026-03-03,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is before PO Date; controller rejects this
+Diesel,Diesel!129,Diesel,awtg,A24527,1000,17.6,,2026-03-03,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is before PO Date; controller rejects this
+Diesel,Diesel!116,Diesel,awtg,A25895,1500,21.72,,2026-03-03,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is before PO Date; controller rejects this
+Diesel,Diesel!132,Diesel,awtg,A25895,3500,20.92,,2026-04-15,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is before PO Date; controller rejects this
+Diesel,Diesel!118,Diesel,awtg,A27958,350,19.15,,2026-03-03,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is before PO Date; controller rejects this
+Diesel,Diesel!121,Diesel,awtg,A27958,800,16.6,,2026-03-03,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is before PO Date; controller rejects this
+Diesel,Diesel!123,Diesel,awtg,A28561,1000,22.6,,2026-03-03,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is before PO Date; controller rejects this
+Diesel,Diesel!117,Diesel,awtg,A28565,1700,22.5,,2026-03-03,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is before PO Date; controller rejects this
+Diesel,Diesel!120,Diesel,awtg,A28565,2000,19.7,,2026-03-03,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is before PO Date; controller rejects this
+Diesel,Diesel!48,Diesel,CD_BM 2025 2604 /2609 / 2601,A03625,995,17.57,,2026-03-06,,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!49,Diesel,CD_BM 2025 2605 / 2610 / 2602,A21678,2529,18.32,,2026-03-06,,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!60,Diesel,CD_BM 2025 2820 / 2821 / 2822 / 2841,A18974,1339,16.85,,2026-03-23,,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!61,Diesel,CD_BM 2025 2824 / 2849 / 2856 / 2857 / 2961 / 2962 / 2963 / 2950 / 2851,A03558,10836,15.76,,2026-03-14,,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!54,Diesel,CD_BM 2025 2825 / 2854 / 2858 / 2859 / 2860 / 2964 / 2966 / 2965 / 2852 / 2853,A03594,12133,16.25,,2026-03-06,,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!55,Diesel,CD_BM 2025 2826 / 2827 / 2828,00C06Q,642,17.15,,2026-03-14,,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!58,Diesel,CD_BM 2025 2829 / 2830,A17897,1021,16.46,,,,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Diesel,Diesel!57,Diesel,CD_BM 2025 2831 / 2832/ 2833 / 2842 / 2815,A19869,922,16.57,,2026-03-23,,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!59,Diesel,CD_BM 2025 2834 / 2835 / 2836 / 2837 / 2843 / 2844 / 2816 / 2817,A03624,3922,17.14,,2026-03-23,,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!56,Diesel,CD_BM 2025 2838 / 2839 / 2840 / 2845 / 2846 / 2818/ 2819,A13820,2086,16.5,,2026-03-23,,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!63,Diesel,CD_BM 2026 40/478/49/50/32/82/83/479/26/30/25/80/29/78/79/28/31/46/23/52/54/47/51/53/55/477/48/24/27/33/77,,492,35,,2026-03-15,,Style No is required but missing
+Diesel,Diesel!71,Diesel,CD_BM 2026 690 /691 /692 / 693 / 770,A19035,500,16.15,,2026-04-30,,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!72,Diesel,CD_BM 2026 694 /695 /696 / 697 / 698 / 699,A21990,500,16,,2026-04-30,,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!92,Diesel,CKBM 2026 2641 / 2654/ 2624,A14051,1724,19.79,,2026-09-18,,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!93,Diesel,CKBM 2026 2644 / 2645/2655 / 2625,A22459/22460,1091,22.01,,2026-09-18,,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!91,Diesel,CKBM 2026 2647 / 2648 / 2656,A22266,1000,16.07,,2026-09-18,,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!103,Diesel,CKBM 2026 2649 / 2657,A03557,0,14.55,,2027-01-04,,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Ordered Qty must be greater than zero
+Diesel,Diesel!102,Diesel,CKBM 2026 2649 / 2657,A22266,441,19.886,,2027-01-01,,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!107,Diesel,CKBM 2026 2832 / 2833 / 2834,,0,,,,,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Ordered Qty must be greater than zero; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Diesel,Diesel!105,Diesel,CKBM 2026 2832 / 2833 / 2834,A03558 / 3562 / 3563,2100,16.95,,2026-10-10,,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!104,Diesel,CKBM 2026 2835 / 2836 / 2837,A03594 / 3595 / 3596,1500,17,,2026-10-10,,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!110,Diesel,CKBM 2026 3797 / 3798,A12019,2667,18.15,,2027-01-10,,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!111,Diesel,CKBM 2026 3797 / 3798,A12019,4028,18.75,,2027-01-10,,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!78,Diesel,CK_BM 2026 1747 / 1748 / 1749 / 1750 / 1745 / 1746,A03624,1742,18.08,,2026-08-17,,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!82,Diesel,CK_BM 2026 2174/ 2175 / 2176 / 2200 / 2201 / 2163/2164,A10229/10230/10231,4683,18.66,,2026-08-14,,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!89,Diesel,CK_BM 2026 2177/ 2178 /2179 /2180 / 2202/2203/2165/2166,A13820 / 14740 / 14741,2461,19.31,,2026-08-14,,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!80,Diesel,CK_BM 2026 2181 / 2182 / 2183 / 2204/2205 / 2161/2168,A15797 / 15798 / 15799,5307,19.77,,2026-08-14,,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!79,Diesel,CK_BM 2026 2187 / 2188 / 2189 / 2206/2207/ 2171 /2172,A17055 / 17056 / 17057,4624,18.55,,2026-08-14,,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!84,Diesel,CK_BM 2026 2199 /2210,A23113,0,19.34,,2026-08-14,,Ordered Qty must be greater than zero
+Diesel,Diesel!85,Diesel,CK_BM 2026 2199 /2210,A26373,0,20.5,,2026-08-14,,Ordered Qty must be greater than zero
+Diesel,Diesel!81,Diesel,"Non specific trims and moliton thread to order immedtly, SCD by 2nd Sep, out put till 29th Aug 2600 pcs, WCD 10th Sep. 50% qnty for 9th X-fty,3496 pcs shipped out on 10th sep",00C06P / Q / R,5685,19.31,,2026-08-14,,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!42,Diesel,Received,,0,,,,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Ordered Qty must be greater than zero; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Diesel,Diesel!33,Diesel,Received,00SB6D,4115,15,,2025-10-30,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!23,Diesel,Received,A03558,10744,14.4,,2025-09-07,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!35,Diesel,Received,A03624,2347,16.54,,2025-10-30,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!24,Diesel,Received,A10229,7075,14.45,,2025-09-14,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!26,Diesel,Received,A11003,3005,14.48,,2025-09-25,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!27,Diesel,Received,A12025,1400,15.9,,2025-10-30,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!32,Diesel,Received,A18062,701,16.83,,2025-10-30,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!30,Diesel,Received,A20798,1113,24.5,,2025-10-30,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!31,Diesel,Received,A20799,607,23.38,,2025-10-30,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!29,Diesel,Received,A21678,5217,17,,2025-10-30,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!34,Diesel,Received,A21849,1242,14.56,,2025-10-30,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!28,Diesel,Received,A21968,2054,14,,2025-10-30,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!15,Diesel,Received,F Female,694,14.4,,2025-08-15,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!16,Diesel,Received,F Female,406,16.52,,2025-08-15,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!22,Diesel,Received,F Female,560,15.45,,2025-08-15,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!18,Diesel,Received,M Male,1581,15.57,,2025-08-30,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!19,Diesel,Received,M Male,826,15.85,,2025-08-30,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!20,Diesel,Received,M Male,2001,16.25,,2025-08-30,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!21,Diesel,Received,M Male,680,16.1,,2025-08-30,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!6,Diesel,Received,M Male,1645,14.1,,2025-08-15,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!7,Diesel,Received,M Male,1539,14.1,,2025-08-15,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!12,Diesel,Received,M Male,1218,15.1,,2025-08-15,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!13,Diesel,Received,M Male,1152,15.1,,2025-08-15,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!38,Diesel,Received,M Male,2400,15.1,,2025-11-14,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!40,Diesel,Received,M Male,1200,16.15,,2025-12-21,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!8,Diesel,Received,M Male,1234,14.4,,2025-08-15,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!9,Diesel,Received,M Male,1404,16.15,,2025-08-15,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!10,Diesel,Received,M Male,2361,15.63,,2025-08-15,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!11,Diesel,Received,M Male,877,14.93,,2025-08-15,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!37,Diesel,Received,M Male,2400,14.1,,2025-11-14,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!14,Diesel,Received,M Male,1236,15.6,,2025-08-15,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!4,Diesel,Received,M Male,2898,13.78,,2025-08-15,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!5,Diesel,Received,M Male,897,13.5,,2025-08-15,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+Diesel,Diesel!76,Diesel,SHORT SHIP,MULTIPLE,537,,,,,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Diesel,Diesel!97,Diesel,SMS,,248,40.97,,2026-09-05,,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing
+DNMpure,DNMpure!10,DNMpure,P2500107,,1141,,,,,Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+DNMpure,DNMpure!5,DNMpure,P2500107,BROOME,125,27.41,,,2025-03-26,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+DNMpure,DNMpure!11,DNMpure,P2500107,FLY.FL,501,28.24,,,2025-04-11,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+DNMpure,DNMpure!8,DNMpure,P2500107,FLY.FL,326,28.1,,,2025-03-26,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+DNMpure,DNMpure!12,DNMpure,P2500107,GRAND,187,34.13,,,2025-04-11,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+DNMpure,DNMpure!13,DNMpure,P2500107,GRAND LONG,79,34.15,,,2025-04-11,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+DNMpure,DNMpure!9,DNMpure,P2500107,HOL.BA,271,26.33,,,2025-03-26,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+DNMpure,DNMpure!14,DNMpure,P2500107,HOUSTON,503,26.11,,,2025-04-11,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+DNMpure,DNMpure!6,DNMpure,P2500107,PRINCE,203,25.49,,,2025-03-26,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+DNMpure,DNMpure!15,DNMpure,P2500107,SIXTH AV.,275,27.86,,,2025-04-11,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+DNMpure,DNMpure!7,DNMpure,P2500107,W.BROADWAY,216,27.26,,,2025-03-26,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+DNMpure,DNMpure!16,DNMpure,P2500107,WOOSTER,587,26.84,,,2025-04-11,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+DNMpure,DNMpure!21;DNMpure!23,DNMpure,P2500109,,8125,,,,,Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+DNMpure,DNMpure!20,DNMpure,P2500109,NOS - COOPER,340,25.25,,,2025-04-11,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+DNMpure,DNMpure!19,DNMpure,P2500109,NOS - COOPER,340,24.97,,,2025-04-11,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+DNMpure,DNMpure!18,DNMpure,P2500109,NOS - COOPER,340,24.73,,,2025-04-11,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+DNMpure,DNMpure!17,DNMpure,P2500109,NOS - COOPER,340,24.97,,,2025-04-11,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Epic-walmart,Epic-walmart!66,Epic-walmart,2025 - TOTAL,,612500,,,,,"Total/footer label, not a PO number; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Merch Buyer currency unresolved; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date"
+Epic-walmart,Epic-walmart!84,Epic-walmart,2026 - TOTAL,,147000,,,,,"Total/footer label, not a PO number; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Merch Buyer currency unresolved; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date"
+Epic-walmart,Epic-walmart!6;Epic-walmart!46,Epic-walmart,Awaiting,,49000,8.75,,,2025-09-01,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Merch Buyer currency unresolved; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Epic-walmart,Epic-walmart!3;Epic-walmart!11;Epic-walmart!21;Epic-walmart!28;Epic-walmart!37;Epic-walmart!43;Epic-walmart!53;Epic-walmart!59;Epic-walmart!70;Epic-walmart!77,Epic-walmart,Awaiting,WSCM-115-2024,710500,8.75,,,2025-09-01,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Merch Buyer currency unresolved; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Epic-walmart,Epic-walmart!5;Epic-walmart!13;Epic-walmart!23;Epic-walmart!30;Epic-walmart!39;Epic-walmart!45;Epic-walmart!55;Epic-walmart!61;Epic-walmart!72;Epic-walmart!79,Epic-walmart,Awaiting,WSCM-115-2024,0,8.75,,,2025-09-01,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Merch Buyer currency unresolved; Ordered Qty must be greater than zero; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Epic-walmart,Epic-walmart!4;Epic-walmart!12;Epic-walmart!22;Epic-walmart!29;Epic-walmart!38;Epic-walmart!44;Epic-walmart!54;Epic-walmart!60;Epic-walmart!71;Epic-walmart!78,Epic-walmart,Awaiting,WSCM-115-2024,0,8.75,,,2025-09-01,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Merch Buyer currency unresolved; Ordered Qty must be greater than zero; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!32,Forever 21,24019674,F21PSP24PL01,5764,12.58,45700,,2025-12-29,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!33,Forever 21,24019678,F21PSP24PL01,308,12.58,45700,,2025-12-29,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!34,Forever 21,24025362,131379,4147,13.1,45700,,2025-12-29,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!35,Forever 21,24025363,131379,308,13.1,45700,,2025-12-29,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!21,Forever 21,24044717,F21PS24SWB,2904,9.25,45733,,2025-01-31,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!20,Forever 21,24044717,F21PS24SWB,2904,9.25,45733,,2025-01-31,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!19,Forever 21,24044720,F21PS24SWB,2651,9.71,45733,,2025-01-31,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!27,Forever 21,24044734 - Bonded,F21PS24SWB,422,8.5,45733,,2025-01-31,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!26,Forever 21,24044734 - Bonded,F21PS24SWB,422,8.5,45733,,2025-01-31,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!17,Forever 21,24045195,134088-ULTRAHIGHRISE-WALL-NEW,2596,12.48,45688,,2025-12-17,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!18,Forever 21,24045196,134088-ULTRAHIGHRISE-WALL-NEW,140,12.48,45688,,2025-12-17,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!3,Forever 21,24045209,127734-CURVY90S,2596,12.25,45690,,2025-12-19,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!4,Forever 21,24045212,127734-CURVY90S,252,12.25,45690,,2025-12-19,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!11,Forever 21,24045213,127734-CURVY90S,2288,12.25,45714,,2025-01-12,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!12,Forever 21,24045220,127734-CURVY90S,196,12.25,45714,,2025-01-12,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!9,Forever 21,24045250,125948-UHRSTRT,4081,13.99,45736,,2025-02-03,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!10,Forever 21,24045251,125948-UHRSTRT,196,13.99,45736,,2025-02-03,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!5,Forever 21,24047510,127734-CURVY90S-DEST,3894,12.3,45714,,2025-01-12,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!8,Forever 21,24047511,127734-CURVY90S-DEST,308,12.3,45714,,2025-01-12,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!16,Forever 21,24047514,127734-CURVY90S,2288,12,45690,,2025-12-19,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!15,Forever 21,24047514,127734-CURVY90S,2596,12.25,45690,,2025-12-19,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!14,Forever 21,24047515,127734-CURVY90S,196,12,45690,,2025-12-19,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!13,Forever 21,24047515,127734-CURVY90S,252,12.25,45690,,2025-12-19,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!22,Forever 21,24047998,127734-CURVY90S-P,1200,14,45714,,2025-01-12,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!23,Forever 21,24048000,127734-CURVY90S-P,152,14,45714,,2025-01-12,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!6,Forever 21,24049601,127734-CURVY90S,2596,12,45722,,2025-01-20,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!7,Forever 21,24049606,127734-CURVY90S,252,12,45722,,2025-01-20,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!24,Forever 21,24052761,125948-UHRSTRT-P,1104,16.31,45736,,2025-02-03,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!25,Forever 21,24052762,125948-UHRSTRT-P,208,16.31,45736,,2025-02-03,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!28,Forever 21,24056414,127734-CURVY90S,3201,12,45746,,2025-02-13,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!29,Forever 21,24056417,127734-CURVY90S,1204,12,45714,,2025-01-12,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!30,Forever 21,24056420,127734-CURVY90S,5203,12.25,45714,,2025-01-12,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!31,Forever 21,24056422,127734-CURVY90S,1512,12.25,45732,,2025-01-30,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!36,Forever 21,24056480,F21PS24SWB,5412,9.25,45746,,2025-02-13,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!37,Forever 21,24056480,F21PS24SWB,5005,9.25,45746,,2025-02-13,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!38,Forever 21,24056481,F21PS24SWB,374,9.25,45746,,2025-02-13,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!39,Forever 21,24056481,F21PS24SWB,176,9.25,45746,,2025-02-13,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!40,Forever 21,24056482,F21PS24SWB,2992,9.71,45746,,2025-02-13,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!41,Forever 21,24056492,F21PS24SWB,176,9.71,45746,,2025-02-13,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!42,Forever 21,24056513,139196-CURVYRETRO,5610,9.8,45746,,2025-02-13,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!43,Forever 21,24056514,139196-CURVYRETRO,660,9.8,45746,,2025-02-13,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!48,Forever 21,24056632 - Bonded,F21PS24SWB,408,8.5,45746,,2025-02-13,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!47,Forever 21,24056632 - Bonded,F21PS24SWB,408,8.5,45746,,2025-02-13,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!44,Forever 21,24057552,139196-CURVYRETRO-P,112,11.25,45746,,2025-02-13,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!45,Forever 21,24057638 - WHL-JCP,139196-CURVYRETRO,3666,9.8,45746,,2025-02-13,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!46,Forever 21,24057639 - WHL JCP,139196-CURVYRETRO,50,9.8,45746,,2025-02-13,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!49,Forever 21,24058530,127734-CURVY90S-P,176,14,45732,,2025-01-30,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!53,Forever 21,24068551,127734-CURVY90S,2992,12.2,45768,,2025-03-07,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!52,Forever 21,24068551,127734-CURVY90S,4257,12.25,45768,,2025-03-07,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!55,Forever 21,24068556,127734-CURVY90S,812,12.2,45768,,2025-03-07,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!54,Forever 21,24068556,127734-CURVY90S,1008,12.25,45768,,2025-03-07,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!56,Forever 21,24068955,139196-CURVYRETRO,4422,9.8,45768,,2025-03-07,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!57,Forever 21,24068956,139196-CURVYRETRO,308,9.8,45768,,2025-03-07,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!58,Forever 21,24068964,143752-RIBCAGE,4587,9.25,45768,,2025-03-07,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!59,Forever 21,24068965,143752-RIBCAGE,308,9.25,45768,,2025-03-07,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FV21,FV21!60,Forever 21,Feb SUBTOTAL,,18694,,,,,"Total/footer label, not a PO number; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date"
+FV21,FV21!50,Forever 21,JAN SUBTOTAL,,83566,,,,,"Total/footer label, not a PO number; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date"
+FRAME,FRAME!6,FRAME,2245000,OPLCMRA403,5000,18.49,,,2025-04-03,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FRAME,FRAME!3,FRAME,2314300,LSLS238,1700,20.48,,,2025-01-31,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+FRAME,FRAME!7,FRAME,FEB SUB TOTAL,,5000,,,,,"Total/footer label, not a PO number; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date"
+FRAME,FRAME!5,FRAME,JAN SUB TOTAL,,4700,,,,,"Total/footer label, not a PO number; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date"
+FRAME,FRAME!4,FRAME,TBA,LSP238,3000,18.6,,,2025-01-31,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!25,GERRY WEBER,0015-012072,520029-31634,671,18,,,2025-01-20,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!26,GERRY WEBER,0015-012072,520029-31634,2477,18,,,2025-01-20,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!27,GERRY WEBER,0015-012072,520029-31634,1841,18,,,2025-01-20,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!12,GERRY WEBER,0015-012096,520223-66932,1145,16,,,2025-01-26,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!38,GERRY WEBER,0015-012105,520246-66839,1146,21.62,,,2025-01-10,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!39,GERRY WEBER,0015-012106,520247-66839,1208,26,,,2025-01-10,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!40,GERRY WEBER,0015-012107,520248-66839,1821,18.5,,,2025-01-10,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!41,GERRY WEBER,0015-012108,520249-66839,1661,14.95,,,2025-01-10,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!28,GERRY WEBER,0015-012125,530017-31634,653,23.5,,,2025-01-25,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!29,GERRY WEBER,0015-012125,530017-31634,1403,23.5,,,2025-01-25,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!42,GERRY WEBER,0015-012166,550323-66839,915,28.4,,,2025-01-31,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!3,GERRY WEBER,0015-012530,925050-66930,1163,15.95,,,2025-12-26,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!4,GERRY WEBER,0015-012530,925050-66930,572,15.95,,,2025-12-26,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!14,GERRY WEBER,0015-012531,925050-66930,1695,15.95,,,2025-12-06,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!15,GERRY WEBER,0015-012531,925050-66930,835,15.95,,,2025-12-06,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!13,GERRY WEBER,0015-012531,925050-66930,637,15.95,,,2025-12-06,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!31,GERRY WEBER,0015-012532,925050-66930,50,15.95,,,2025-01-12,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!32,GERRY WEBER,0015-012532,925050-66930,106,15.95,,,2025-12-27,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!30,GERRY WEBER,0015-012532,925050-66930,582,15.95,,,2025-01-12,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!5,GERRY WEBER,0015-012536,925051-66930,1413,15.95,,,2025-12-26,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!6,GERRY WEBER,0015-012536,925051-66930,1262,15.95,,,2025-12-26,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!17,GERRY WEBER,0015-012537,925051-66930,1313,15.95,,,2025-12-06,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!18,GERRY WEBER,0015-012537,925051-66930,1537,15.95,,,2025-12-06,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!16,GERRY WEBER,0015-012537,925051-66930,1415,15.95,,,2025-12-06,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!34,GERRY WEBER,0015-012538,925051-66930,678,15.95,,,2025-01-12,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!35,GERRY WEBER,0015-012538,925051-66930,74,15.95,,,2025-01-12,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!33,GERRY WEBER,0015-012538,925051-66930,1075,15.95,,,2025-01-12,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!43,GERRY WEBER,0015-012539,925055-66932,4227,15.25,,,2025-01-28,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!44,GERRY WEBER,0015-012539,925055-66932,8718,15.25,,,,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!7,GERRY WEBER,0015-012550,925061-66930,362,15.95,,,2025-12-26,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!20,GERRY WEBER,0015-012551,925061-66930,985,15.95,,,2025-12-06,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!19,GERRY WEBER,0015-012551,925061-66930,556,15.95,,,2025-12-06,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!37,GERRY WEBER,0015-012552,925061-66930,77,15.95,,,2025-01-18,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!36,GERRY WEBER,0015-012552,925061-66930,734,15.95,,,2025-01-18,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!8,GERRY WEBER,0015-012563,925085-66839,965,17.5,,,2025-12-26,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!9,GERRY WEBER,0015-012563,925085-66839,1276,17.5,,,2025-12-26,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!21,GERRY WEBER,0015-012564,925085-66839,646,17.5,,,2025-01-01,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!22,GERRY WEBER,0015-012564,925085-66839,816,17.5,,,2025-01-01,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!10,GERRY WEBER,0015-012567,925086-66839,659,16.3,,,2025-12-26,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!11,GERRY WEBER,0015-012567,925086-66839,1282,16.3,,,2025-12-26,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!23,GERRY WEBER,0015-012568,925086-66839,228,16.3,,,2025-01-01,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!24,GERRY WEBER,0015-012568,925086-66839,1251,16.3,,,2025-01-01,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!49,GERRY WEBER,0015-013037,520053-31642 O2,1655,16.07,,,2025-02-15,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!47,GERRY WEBER,0015-013431,925050-66869 - NOOS,1000,16.4,,,2025-01-26,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!48,GERRY WEBER,0015-013431,925050-66869 - NOOS,1000,16.4,,,2025-01-26,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!45,GERRY WEBER,0015-013433,925051-66869 - NOOS,1000,16.4,,,2025-01-26,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!46,GERRY WEBER,0015-013433,925051-66869 - NOOS,1000,16.4,,,2025-01-26,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+GERRY WEBER,GERRY WEBER!51,GERRY WEBER,JAN SUBTOTAL,,57785,,,,,"Total/footer label, not a PO number; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date"
+BOOTBARN,BOOTBARN!5,RANK 45,631468,RMSP25J05-LTW,5500,24.24,,2025-12-06,2025-03-07,Buyer PO is DDP but this Order Line has no DDP Unit Price; controller rejects it
+BOOTBARN,BOOTBARN!4,RANK 45,631469,RMSP25J03-DKW,5500,24.12,,2025-12-06,2025-03-07,Buyer PO is DDP but this Order Line has no DDP Unit Price; controller rejects it
+BOOTBARN,BOOTBARN!32,RANK 45,655182 / 655201,RMSU25J01-LTW,6000,22.43,,2025-06-20,2025-08-19,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+BOOTBARN,BOOTBARN!33,RANK 45,655227 / 655228,RMSU25J02-DKW,6000,21.01,,2025-06-20,2025-08-19,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+BOOTBARN,BOOTBARN!23,RANK 45,655246 / 655247,RMFA25J01-MDW,8000,20.13,,2025-06-16,2025-07-08,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+BOOTBARN,BOOTBARN!24,RANK 45,655248 / 655250,RMFA25J03-MDW,4001,23.64,,2025-06-05,2025-07-16,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+BOOTBARN,BOOTBARN!25,RANK 45,655253 / 655254,RMFA25J04-LTW,4001,24.6,,2025-06-05,2025-07-16,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation
+BOOTBARN,BOOTBARN!49,RANK 45,661457,RMHO25J04,5318,20.82,,,2025-08-25,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+BOOTBARN,BOOTBARN!259,RANK 45,710979,RMSP26J01-LTW,880,22.13,,2026-02-01,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+BOOTBARN,BOOTBARN!260,RANK 45,710980,RMSP26J01-LTW,1920,22.13,,2026-02-01,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+BOOTBARN,BOOTBARN!261,RANK 45,710981,RMSP26J01-LTW,200,22.13,,2026-02-01,,Buyer Ex-Factory Date is before PO Date; controller rejects this
+Rich & Royal,Rich & Royal!11,Rich & Royal,AWTG,2703-821,11,63.1,,,2026-08-20,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Rich & Royal,Rich & Royal!4,Rich & Royal,AWTG,2704-822,11,41.28,,,2026-08-20,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Rich & Royal,Rich & Royal!6,Rich & Royal,AWTG,2704-922,4,38.26,,,2026-08-20,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Rich & Royal,Rich & Royal!5,Rich & Royal,AWTG,2704-992,11,38.26,,,2026-08-20,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Rich & Royal,Rich & Royal!7,Rich & Royal,AWTG,2704-993,11,35.76,,,2026-08-20,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Rich & Royal,Rich & Royal!8,Rich & Royal,AWTG,2705-974,11,30.72,,,2026-08-20,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Rich & Royal,Rich & Royal!9,Rich & Royal,AWTG,2705-974,4,30.72,,,2026-08-20,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Rich & Royal,Rich & Royal!10,Rich & Royal,AWTG,2705-996,11,30.66,,,2026-08-20,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Rich & Royal,Rich & Royal!3,Rich & Royal,AWTG,S2612-998,11,38.45,,,2026-07-30,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Rich & Royal,Rich & Royal!13;Rich & Royal!14;Rich & Royal!15;Rich & Royal!16;Rich & Royal!17,Rich & Royal,AWTG,S2612-998,2003,20.05,,,2026-10-31,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Scalper,Scalper!3,Scalper,SC/PO/2024-C000- 24959,58654,900,18.5,,,,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Scalper,Scalper!4,Scalper,SC/PO/2024-C000- 24960,58654,54,18.5,,,,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Scalper,Scalper!5;Scalper!6,Scalper,SC/PO/2024-C000- 24961,59768,434,14,,,,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Versace,Versace!13,Versace,OCL25-012971,79GAB5S0 79UP500 CDWAC,1000,15.09,,,2026-03-11,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+Versace,Versace!12,Versace,OCL25-012971,79HAB581 79DP508 CDWAC,1000,16.14,,,2026-03-11,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!3,Zara,28153-D,7513/502,25000,7.3,,,2025-12-31,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!44,Zara,29766-D,7513/601,3000,8.3,,,2025-12-30,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!60,Zara,29878 - D/1,7513/005,5216,5.85,,,2026-04-08,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!61,Zara,29878 - D/2,7513/005,12500,5.85,,,2026-08-18,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!62,Zara,29878 - D/3,7513/005,7500,5.85,,,2026-08-25,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!69,Zara,29878 - D/4,7513/005,15000,5.85,,,2026-10-26,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!73,Zara,29878 - D/5,7513/005,8000,5.85,,,2026-11-30,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!53,Zara,31253-25,7513/617,3100,6.2,,,2026-03-18,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!57,Zara,34487-25,7513/617/407,3100,6.2,,,2026-06-25,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!6,Zara,37926-D,7513/600,5000,5.1,,,2025-02-25,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!8,Zara,37933-D,7513/604,5000,7.62,,,2025-02-25,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!7,Zara,37946-D,7513/601,5000,7,,,2025-02-25,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!9,Zara,41379-D,7513/605,5000,5.5,,,2025-02-25,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!77,Zara,48173-D PRE,7513/005,5000,5.85,,,2026-06-12,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!10,Zara,52325-D,7513/606,5000,8.45,,,2025-02-25,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!11,Zara,52365-D,7513/607,5000,6.85,,,2025-02-25,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!52,Zara,56570-D,7513/603,3019,9,,,2026-03-15,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!55,Zara,58171-D,7513/600,26260,8,,,2026-03-30,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!75,Zara,58692- D,7513/002,25000,5.7,,,2026-08-12,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!76,Zara,58698- D,7513/003,25000,6.53,,,2026-08-12,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!37,Zara,59052-D,7513/602,22000,6.05,,,2025-10-20,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!92,Zara,59619- D,,0.1036342457,,,,,Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!81,Zara,59619- D,7513/004,25000,6.29,,,2027-11-01,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!72,Zara,60287- D,7513/003,18,6.53,,,2026-11-23,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!71,Zara,60288- D,7513/002,18,5.7,,,2026-11-23,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!78,Zara,63901- D,7513/004,18,6.29,,,2026-12-27,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!38,Zara,64784-D,7513/602,18,6.05,,,2025-10-05,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!66,Zara,73103-25,7513/600,2400,8,,,2026-08-15,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!63;ZARA!64,Zara,77837-D,7513/001,4018,6.69,,,2026-08-18,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!13,Zara,78229- D,7513/620,30000,7.29,,,2025-05-13,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!14,Zara,78464 - D,7513/621,20000,6.16,,,2025-05-13,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!23,Zara,88718-D PRE,7513/610,200,6.8,,,2025-07-22,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!17;ZARA!20,Zara,88718-D PRE,7513/610,3518,6.8,,,2025-07-22,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!18;ZARA!21,Zara,88719-D PRE,7513/610,6518,6.8,,,2025-07-22,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!24,Zara,88719-D PRE,7513/611,145,6.8,,,2025-07-22,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!26,Zara,88719-D PRE-B,7513/610,2000,6.8,,,2025-08-05,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!19;ZARA!22;ZARA!25,Zara,88720-D PRE,7513/611,5178,6.8,,,2025-07-22,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!32;ZARA!33,Zara,92286-D,7513/560,6018,6.8,,,2025-08-19,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!29;ZARA!30,Zara,93385-D,7513/617,40000,6.2,,,2025-08-19,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!39;ZARA!41,Zara,93385-D / 3,7513/617,30020,6.2,,,2025-10-28,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!50,Zara,93385-D / 4,7513/617,10000,6.2,,,2026-05-01,Cell contains multiple PO numbers; split/abbreviated PO references need manual resolution; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!67,Zara,93478-D,7513/700,15000,8.4,,,2026-08-15,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!59,Zara,93502-D,7513/700,19,8.4,,,2026-07-25,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!31,Zara,99205-D,7513/617,18,6.2,,,2025-08-15,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!12,Zara,FEB,,30000,,,,,Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!4,Zara,JAN,,25000,,,,,Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!27,Zara,JULY Total,,17559,,,,,"Total/footer label, not a PO number; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date"
+ZARA,ZARA!15,Zara,May,,50000,,,,,Style No is required but missing; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!35,Zara,S 2025,7513/620,2600,7.29,,,2025-09-23,Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date
+ZARA,ZARA!42,Zara,TBA,7513/617,15000,6.2,,,2025-11-11,Placeholder / awaiting PO reference; No Buyer PO import row or Buyer PO blocked by currency / PO validation; Buyer Ex-Factory Date is required; source only has Buyer Delivery Date or no date

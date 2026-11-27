@@ -1,0 +1,3 @@
+﻿brand,selected_order_currency,source_currency_by_year,issue
+Epic-walmart,,,No Euro flag found in summary; order_currency must be confirmed
+Good American,USD,"{""2025"": ""EUR"", ""2026"": ""USD""}",Currency differs across years; import POs/forecasts only when the source-year currency matches the current Merch Buyer currency

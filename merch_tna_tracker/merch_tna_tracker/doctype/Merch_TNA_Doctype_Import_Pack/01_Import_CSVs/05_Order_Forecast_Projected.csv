@@ -1,0 +1,30 @@
+﻿naming_series,buyer,forecast_month,confidence,qty,value
+FC-.YYYY.-.#####,AG Jeans,2026-03-01,Medium,20000,360000
+FC-.YYYY.-.#####,AG Jeans,2026-06-01,Medium,48000,720000
+FC-.YYYY.-.#####,AG Jeans,2026-07-01,Medium,48000,720000
+FC-.YYYY.-.#####,AG Jeans,2026-08-01,Medium,48000,720000
+FC-.YYYY.-.#####,AG Jeans,2026-09-01,Medium,48000,720000
+FC-.YYYY.-.#####,AG Jeans,2026-10-01,Medium,48000,720000
+FC-.YYYY.-.#####,AG Jeans,2026-11-01,Medium,48000,720000
+FC-.YYYY.-.#####,AG Jeans,2026-12-01,Medium,48000,720000
+FC-.YYYY.-.#####,AG Jeans,2027-01-01,Medium,48000,720000
+FC-.YYYY.-.#####,AG Jeans,2027-02-01,Medium,48000,720000
+FC-.YYYY.-.#####,AG Jeans,2027-03-01,Medium,48000,720000
+FC-.YYYY.-.#####,Ariat,2026-01-01,Medium,1140,33208.2
+FC-.YYYY.-.#####,Ariat,2026-04-01,Medium,7400,133200
+FC-.YYYY.-.#####,Ariat,2026-05-01,Medium,13900,250200
+FC-.YYYY.-.#####,Ariat,2026-06-01,Medium,18200,400400
+FC-.YYYY.-.#####,Ariat,2026-07-01,Medium,18300,292800
+FC-.YYYY.-.#####,Ariat,2026-08-01,Medium,10200,163200
+FC-.YYYY.-.#####,Ariat,2026-09-01,Medium,11200,179200
+FC-.YYYY.-.#####,Bershka,2026-03-01,Medium,15000,210000
+FC-.YYYY.-.#####,Diesel,2026-05-01,Medium,5000,95000
+FC-.YYYY.-.#####,Mango,2026-03-01,Medium,20000,
+FC-.YYYY.-.#####,Rich & Royal,2026-01-01,Medium,4000,76000
+FC-.YYYY.-.#####,Rich & Royal,2026-02-01,Medium,3000,57000
+FC-.YYYY.-.#####,TRF,2026-02-01,Medium,20000,240000
+FC-.YYYY.-.#####,Target (Crystal),2026-03-01,Medium,10000,110000
+FC-.YYYY.-.#####,Zara Baby Boy,2026-03-01,Medium,10000,59000
+FC-.YYYY.-.#####,Zara Baby Girl,2026-03-01,Medium,25000,147250
+FC-.YYYY.-.#####,Zara Boys,2026-02-01,Medium,10000,
+FC-.YYYY.-.#####,Zara Girls,2026-03-01,Medium,10000,

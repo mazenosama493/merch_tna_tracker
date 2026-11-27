@@ -1,0 +1,6 @@
+﻿buyer,po_number,source_values,reason
+CJ BLACK,SAMPLE-CJBFA25J15-BLK,2025-01-04;2025-06-25,Conflicting source PO dates; imported with blank po_date
+Zara,60287- D,2027-08-23,Future PO Date blocked by Buyer PO controller; imported with blank po_date
+Zara,88718-D PRE,2025-05-03;2025-05-23,Conflicting source PO dates; imported with blank po_date
+Zara,88719-D PRE,2025-05-03;2025-05-23,Conflicting source PO dates; imported with blank po_date
+Zara,88720-D PRE,2025-05-03;2025-05-23,Conflicting source PO dates; imported with blank po_date

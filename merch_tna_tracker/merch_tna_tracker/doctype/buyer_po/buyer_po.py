@@ -7,7 +7,7 @@ from decimal import Decimal, InvalidOperation
 import frappe
 from frappe import _
 from frappe.model.document import Document
-from frappe.utils import getdate, today
+from frappe.utils import flt, getdate, today
 
 # Not real PO references, so the same value may repeat for one buyer.
 PLACEHOLDER_PO_NUMBERS = {"TBA", "TBC", "AWTG", "SMS", "NA", "N/A"}
@@ -44,6 +44,8 @@ class BuyerPO(Document):
 
 	def on_update(self):
 		self.sync_season_to_lines()
+		# Recalculate the PO total when its Price Term changes between FOB and DDP.
+		update_po_totals(self.name)
 
 	def validate_po_number(self):
 		self.po_number = normalize_po_number(self.po_number) or None
@@ -106,20 +108,81 @@ class BuyerPO(Document):
 			)
 
 
-def update_po_totals(po_name):
-	"""Called from Order Line whenever a line is saved, changed or deleted."""
+def _calculate_po_totals(po_name, price_term=None, update_lines=False):
+	"""Calculate PO totals from its Order Lines, optionally persisting line totals."""
 	if not po_name or not frappe.db.table_exists("Order Line"):
+		return {"total_qty": 0.0, "total_amount": 0.0}
+
+	price_term = price_term or frappe.db.get_value("Buyer PO", po_name, "price_term") or "FOB"
+	if price_term not in ("FOB", "DDP"):
+		frappe.throw(_("Price Term must be FOB or DDP."))
+
+	rows = frappe.get_all(
+		"Order Line",
+		filters={"buyer_po": po_name},
+		fields=["name", "qty", "unit_price", "unit_price_ddp", "discount_amount", "exchange_rate", "status"],
+	)
+
+	total_qty = 0.0
+	total_amount = 0.0
+	for row in rows:
+		qty = flt(row.qty)
+		fob_amount = flt(qty * flt(row.unit_price), 2)
+		ddp_amount = flt(qty * flt(row.unit_price_ddp), 2) if price_term == "DDP" else 0.0
+		gross_amount = flt(fob_amount + ddp_amount, 2)
+		discount_percent = flt(row.discount_amount)
+		if discount_percent < 0 or discount_percent > 100:
+			frappe.throw(_("Discount on Order Line {0} must be between 0% and 100%.").format(frappe.bold(row.name)))
+		discount_value = flt(gross_amount * discount_percent / 100, 2)
+		amount = flt(gross_amount - discount_value, 2)
+
+		if update_lines:
+			exchange_rate = flt(row.exchange_rate)
+			values = {
+				"fob_price": fob_amount,
+				"ddp_price": ddp_amount,
+				"amount": amount,
+			}
+			if exchange_rate > 0:
+				values["amount_usd"] = flt(amount * exchange_rate, 2)
+			if price_term != "DDP":
+				# Float columns are NOT NULL; clear the DDP unit price with numeric zero.
+				values["unit_price_ddp"] = 0.0
+			frappe.db.set_value("Order Line", row.name, values, update_modified=False)
+
+		if (row.status or "") != "Cancelled":
+			total_qty += qty
+			total_amount += amount
+
+	return {"total_qty": flt(total_qty, 2), "total_amount": flt(total_amount, 2)}
+
+
+def update_po_totals(po_name):
+	"""Recalculate and persist Order Line values and the aggregate Buyer PO totals."""
+	if not po_name or not frappe.db.exists("Buyer PO", po_name):
 		return
 
-	qty, amount = frappe.db.sql(
-		"""
-		select coalesce(sum(qty), 0), coalesce(sum(amount), 0)
-		from `tabOrder Line`
-		where buyer_po = %s and ifnull(status, '') != 'Cancelled'
-		""",
-		po_name,
-	)[0]
+	price_term = frappe.db.get_value("Buyer PO", po_name, "price_term") or "FOB"
+	totals = _calculate_po_totals(po_name, price_term=price_term, update_lines=True)
+	frappe.db.set_value("Buyer PO", po_name, totals, update_modified=False)
 
-	frappe.db.set_value(
-		"Buyer PO", po_name, {"total_qty": qty, "total_amount": amount}, update_modified=False
+	# Keep an already-open Buyer PO form in sync when an Order Line is saved/deleted
+	# or when the PO Price Term is changed.
+	frappe.publish_realtime(
+		"buyer_po_totals_updated",
+		{"buyer_po": po_name, **totals},
+		doctype="Buyer PO",
+		docname=po_name,
+		after_commit=True,
 	)
+
+
+@frappe.whitelist()
+def get_po_totals_preview(po_name, price_term=None):
+	"""Return current totals for the Buyer PO form without changing the database."""
+	if not po_name or not frappe.db.exists("Buyer PO", po_name):
+		frappe.throw(_("Buyer PO was not found."))
+	if not frappe.has_permission("Buyer PO", "read", po_name):
+		frappe.throw(_("You do not have permission to view this Buyer PO."), frappe.PermissionError)
+
+	return _calculate_po_totals(po_name, price_term=price_term, update_lines=False)

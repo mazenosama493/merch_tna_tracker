@@ -7,6 +7,7 @@
  "field_order": [
   "from_month",
   "to_month",
+  "remaining_qty_moved",
   "edited_by",
   "edited_on",
   "comment"
@@ -26,6 +27,16 @@
    "fieldtype": "Date",
    "in_list_view": 1,
    "label": "To Month",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "description": "Remaining forecast quantity moved from the old month to the new month at the time of the change.",
+   "fieldname": "remaining_qty_moved",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Remaining Qty Moved",
+   "precision": "0",
    "read_only": 1
   },
   {
